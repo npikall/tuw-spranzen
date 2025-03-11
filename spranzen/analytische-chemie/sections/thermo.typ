@@ -1,4 +1,4 @@
-#import "../universal.typ":*
+#import "../common.typ":*
 
 = Thermoanalytische Analyseverfahren
 Oberbegriff für Methoden, bei denen physikalische und chemische Eigenschaften eines Stoffes, eines Subsatzgemisches oder von Reaktionsgemischen als Funktion der Temperatur gemessen werden, wobei die Probe einem kontrollierten Temperaturprogramm unterzogen wird.

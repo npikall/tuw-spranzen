@@ -1,4 +1,4 @@
-#import "../universal.typ":*
+#import "../common.typ":*
 
 = Einleitung
 / Analytische Chemie: Wissenschaft der Gewinnung von Informationen über die Zusammensetzung, den Energiezustand, die Struktur und Anordnung stofflicher Systeme und deren Veränderung in Raum und Zeit.

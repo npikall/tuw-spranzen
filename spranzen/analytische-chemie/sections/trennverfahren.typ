@@ -1,4 +1,4 @@
-#import "../universal.typ":*
+#import "../common.typ":*
 
 = Trennverfahren
 

@@ -1,4 +1,4 @@
-#import "../universal.typ":*
+#import "../common.typ":*
 
 = Altfragen Studo
 #frage[DTA (Differenz-Thermoanalyse) und DSC (Differential Scanning Calorimetry) erklären, vergleichen und Skizze]
