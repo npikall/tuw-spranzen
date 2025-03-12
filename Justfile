@@ -18,3 +18,9 @@ _default:
 # convert latex files to typst
 @pandoc name:
   pandoc -f latex -t typst -o {{name}}.typ {{name}}.tex
+
+# add a new document
+@new name:
+  mkdir -p spranzen/{{name}}
+  cp -r .template/* spranzen/{{name}}
+  mkdir -p spranzen/{{name}}/assets
