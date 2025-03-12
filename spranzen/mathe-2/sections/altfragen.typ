@@ -49,18 +49,17 @@ $ y (x) = (x / 6 + 1) sin (3 x) $
 
 #frage[
 Es sind folgende Integrale (Gauß’sches Fehlerintegral) gegeben:
-$ I (a) = integral.double_(- a lt.eq x lt.eq a\
-- a lt.eq y lt.eq a) e^(- (x^2 + y^2)) thin d x thin d y , quad J (a) = integral_(- a)^a e^(- x^2) thin d x , quad K (a) = integral.double_(x^2 + y^2 lt.eq a^2) e^(- (x^2 + y^2)) thin d x thin d y $
+$ I (a) = limits(integral.double)_(- a lt.eq x lt.eq a\
+- a lt.eq y lt.eq a) e^(- (x^2 + y^2)) thin d x thin d y , quad J (a) = limits(integral)_(- a)^a e^(- x^2) thin d x , quad K (a) = limits(integral.double)_(x^2 + y^2 lt.eq a^2) e^(- (x^2 + y^2)) thin d x thin d y $
 Zeigen Sie, dass:
 $J (a)^2 = I (a) ; quad quad K (a) lt.eq I (a) lt.eq K (sqrt(2) a) ; quad quad integral_(- oo)^oo e^(- x^2) thin d x = lim_(a arrow.r oo) J (a)$
 
 ]
-#block[
 Es gilt der Satz: $ limits(integral.double)_(a lt.eq x lt.eq b\
 c lt.eq y lt.eq d) g (x) h (y) thin d x thin d y = integral_a^b g (x) thin d x integral_c^d h (y) thin d y $
 Deshalb wird aus ...
 
-]
+
 #frage[
 $Z = f (x , y)$
 ...???

@@ -14,6 +14,13 @@ _default:
 @compile arg:
   typst compile spranzen/{{arg}}/main.typ spranzen/{{arg}}/{{arg}}.pdf
 
+# compile all documents
+@compile-all:
+  for dir in spranzen/* ; do \
+    echo "Compiling:" $(basename $dir) ; \
+    typst compile $dir/main.typ $dir/$(basename $dir).pdf ; \
+  done
+
 
 # convert latex files to typst
 @pandoc name:
