@@ -1,0 +1,5 @@
+repos:
+  - repo: https://github.com/jeffa5/typstfmt
+    rev: ''
+    hooks:
+      - id: typstfmt
