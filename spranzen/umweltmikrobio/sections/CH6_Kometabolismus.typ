@@ -1,3 +1,5 @@
+#import "../common.typ":*
+
 = Kometabolismus, Abbau und Transformation
 <kometabolismus-abbau-und-transformation>
 == Abbau & Transformation
@@ -41,3 +43,4 @@ Substrate ermöglicht. Der Kontaminent reagiert dann sozusagen mit.
 <zellertragyield>
 Yield bezeichnet die Biomasseausbeute bezogen auf das verbrauchte
 Substrat.
+#missing

@@ -6,12 +6,12 @@
 #maketitle(
   title: "Umweltmikrobiologie",
   authors: ("npikall",),
-  date: datetime.today().display("[day].[month].[year]")
+  date: datetime.today().display("[day].[month].[year]"),
 )
 
 #outline()
 
-// #include "sections/CH1.typ"
+#include "sections/CH1.typ"
 // #include "sections/CH2_Gesundheit.typ"
 // #include "sections/CH3_Methoden.typ"
 // #include "sections/CH4_Diversität.typ"

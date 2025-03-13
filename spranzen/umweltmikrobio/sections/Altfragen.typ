@@ -2,8 +2,7 @@
 = Altfragen
 <altfragen>
 #frage[
-Was ist die Bedeutung von Phosphor in der Umweltmikrobiologie?
-
+  Was ist die Bedeutung von Phosphor in der Umweltmikrobiologie?
 ]
 
 Phosphor ist wichtigstes wachstumslimitierendes Substrat. Es spielt eine
@@ -12,7 +11,7 @@ DNA und der Zellmembran. Phosphat ($P O_4^(3 -)$) ist dabei die
 relevanteste Form.
 
 #frage[
-Beschreiben Sie den aeroben Abbau von aromatischen Kohlenwasserstoffen.
+  Beschreiben Sie den aeroben Abbau von aromatischen Kohlenwasserstoffen.
 ]
 
 Metabolisierung in 3 Stufen, wobei das Grundmuster des aeroben abbaus
@@ -29,29 +28,26 @@ Ringes beim Abbau von PAK gleich ist.
 + Die offenkettigen Verbindungen werden weiter in Säuren und Aldehyde
   gespalten, die in den Stoffwechsel eingeschleust werden.
 
-
 #frage[
-Was ist die Definition für #emph[Hazard] laut WHO?
+  Was ist die Definition für #emph[Hazard] laut WHO?
 ]
 
 Biologische, chemische, physikalische oder radiologische Agenzien, die
 das Potenzial haben Schaden zu verursachen. (WHO 2006)
 
 #frage[
-Beschreiben Sie die Mechanismen der mikrobiellen Korrosion von Stahl.
+  Beschreiben Sie die Mechanismen der mikrobiellen Korrosion von Stahl.
 ]
-#missing
+#missing[]
 #frage[
-Welche sind die drei Hauptübertragungswege von Infektionserkrankungen?
+  Welche sind die drei Hauptübertragungswege von Infektionserkrankungen?
 ]
 - Person zu Person (direkt, indirekt, airborne)
 - Vehikel basierend (waterborne, foodborne, airborne, soilborne)
 - Vektor basierend (anthropods/insects)
 
-
 #frage[
-Was ist $mu_(upright("max"))$ und $K_s$ in der Wachstumskinetik?
-
+  Was ist $mu_(upright("max"))$ und $K_s$ in der Wachstumskinetik?
 ]
 
 $K_s$ ist die Sättigungskonstante, Nährstoffkonzentration bei
@@ -62,9 +58,8 @@ Zellzahl/-masse pro Zeiteinheit ) \
 $ mu = mu_(upright("max")) frac(S, S + K_(S_(m a x))) $
 
 #frage[
-Beschreiben Sie die Unterschiede zwischen kontinuierlicher Fermentation
-und Belebungsbecken?
-
+  Beschreiben Sie die Unterschiede zwischen kontinuierlicher Fermentation
+  und Belebungsbecken?
 ]
 
 #strong[Kontinuierliche Fermentation:] Ein vollständig durchmischtes
@@ -82,9 +77,8 @@ eine Rückführung der MO aus dem Ablauf einer kont. Fermentation in den
 belüfteten Reaktor. In der Praxis erfolgt das durch Abtrennung der
 Biomasse im Nachklärbecken oder auch Membranfiltration.
 
-
 #frage[
-Charakterisieren Sie die Grün Alge.
+  Charakterisieren Sie die Grün Alge.
 ]
 
 #strong[Grünalge:] (450 Gattungen, \>7500 Arten)
@@ -98,8 +92,7 @@ Charakterisieren Sie die Grün Alge.
 - Fortpflanzug: asexuell und sexuell
 
 #frage[
-Beschreiben Sie die Unterschiede zwichen Katabolismus und Anabolismus.
-
+  Beschreiben Sie die Unterschiede zwichen Katabolismus und Anabolismus.
 ]
 
 #strong[Katabolismus:] Abbau von Stoffwechselprodukten von komplexen zu
@@ -111,8 +104,7 @@ Dient zur Energiegewinnung, Lieferung von Baustoffen und der Entgiftung.
 Stoffwechselreaktionen.
 
 #frage[
-Erklären Sie Viroid, defekte Viren und Prionen.
-
+  Erklären Sie Viroid, defekte Viren und Prionen.
 ]
 
 #strong[Viroide:] kurzer, zu einem Ring geschlossener RNA Einzelstrang
