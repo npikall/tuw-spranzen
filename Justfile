@@ -31,3 +31,7 @@ _default:
   mkdir -p spranzen/{{name}}
   cp -r .template/* spranzen/{{name}}
   mkdir -p spranzen/{{name}}/assets
+
+# use typst to watch a document
+@watch name:
+  typst watch spranzen/{{name}}/main.typ spranzen/{{name}}/{{name}}.pdf
