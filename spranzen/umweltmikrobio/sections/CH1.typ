@@ -211,10 +211,46 @@ Es gibt viele verschiedene Methoden zur Desinfektion bzw. Sterilisation von Ober
 - Van Leuwenhoek (1684) benutzte ein Mikroskop
 #sym.arrow Optische Mikroskope nur bis zu einer Auflösung von $0.1 upright(mu m)$ oder $100 "nm"$
 
-Meilensteine in der Kultivierung und Reinkultur von MO:
-- Louis Pasteur (Bedeutung der Strerilisation, Fermentation, ...)
+Meilensteine in der Kultivierung und Reinkultur von MO.
 
-=== Beijerink und Winogradsky
+*Louis Pasteur:* 
+- Bedeutung der Sterilisation
+- Fermentation
+- pasteurisieren
+- Impfstoffentwicklung
+Pasteur wiederlegt 1868 _Theorie der spontanen Erzeugung_ , wonach Leben aus unbelebter Materie entstehen kann, mit seinem *Schwanenhalsflaschen* Experiment.
+
+Moderne Impfstoffplattformen:
+- _whole Pathogen_ (attentuated, inactivated)
+- _viral vectors_ (replicating, non-replicating)
+- _Subunit_ (protein subunit; polysaccharide/conjugate; toxoid; virus-like particles)
+- _Nucleic Acids_ (RNA, DNA)
+
+Keimtheorie von Infektionskrankheiten:
+- 1847 Ignaz Semmelweis (Hygiene, Händewaschen, Prävention von Infektionen)
+- 1867 Lister und Pasteur (aseptische Techniken, Hinweis MO könnten Infektionen verursachen)
+- 1878 Robert Koch (beweist MO verursachen Infektionen)
+
+*Koch's Postulate:*
++ Pathogen präsent in jedem Krankheitsfall
++ Pathogen muss in Reinkultur wachsen
++ Zellen der Reinkultur lösen Krankheit in gesundem Tier aus
++ Pathogen muss isoliert werden und gezeigt werden, dass gleich mit ursprünglichen Pathogen ist.
+
+=== Beijerinck und Winogradsky
 <beijerink-und-winogradsky>
+
+Martinus Beijerinck (1851-1931) wendete erstmals die Anreicherungskultur an.
+
+#sym.arrow hoch selektive Wachstumsmedien\
+#sym.arrow hoch selektive Bebrütung
+
+Sergeij Winogradradsky (1856-1953) isolierte erfolgreich Bakterien die $upright(N)_(2^-)$ und S-Kreislauf beteiligt sind.
+
+
 === Avery MacCarty, Mullis, Woese
 <avery-maccarty-mullis-woese>
+DNA als Basis der Vererbung.
+Avery McCarty #sym.arrow S#sub[DNA] kann auch Transformation durchführen und tötet ebenfalls Mäuse (siehe Folien).
+
+Kary Mullis und Michale Smith gelten als Entwickler der PCR (Polymerasekettenreaktion) zur Amplifikation diagnostischer DNA-Fragmente zum Nachweis und Analyse von MO aus der Umwelt und Klinik.
