@@ -3,7 +3,7 @@
 
 #show:article.with(
   show-header: true,
-  header-titel:"Umweltmikrobiologie",
+  header-titel: "Umweltmikrobiologie",
 )
 
 #maketitle(
@@ -14,9 +14,15 @@
 
 #outline()
 
+// Automatic pagebreaks for each chapter
+#show heading.where(level: 1): it => {
+  pagebreak()
+  it
+}
+
 #include "sections/CH1.typ"
 #include "sections/CH2_Gesundheit.typ"
-// #include "sections/CH3_Methoden.typ"
+#include "sections/CH3_Methoden.typ"
 // #include "sections/CH4_Diversität.typ"
 // #include "sections/CH5_Nährstoffkreisl.typ"
 #include "sections/CH6_Kometabolismus.typ"
