@@ -17,7 +17,7 @@
 == Mikroskopie
 <mikroskopie>
 
-#quote(block:false)[Das Sichtbar machen des Kleinen - Die Mikroskopie]
+#quote(block: false)[Das Sichtbar machen des Kleinen - Die Mikroskopie]
 
 Das Auge sieht Sachen bis $20$-$50 upright(mu m)$. Bakterien sind meist viel kleiner (0.03 - 1$upright(mu m)$).
 
@@ -27,7 +27,7 @@ Vergrößerung gemäß den Gesetzen der Optik unter Ausnutzung von Lichtbrechung
 - Zusammengesetzte Mikroskope: zwei oder mehr optische Systeme. Objektiv erzeugt vergrößertes Bild, welches von Okular nochmals vergrößert wird.
 
 *Gebräulichste Mikroskopieverfahren:*
-- Hellfeldmikroskopie: 
+- Hellfeldmikroskopie:
   - Licht fällt durch Objekt
   - Objekt benötigt oft vorherige Einfärbung.
 - Dunkelfeldmikroskopie
@@ -46,11 +46,11 @@ Vergrößerung gemäß den Gesetzen der Optik unter Ausnutzung von Lichtbrechung
   - 3D-Bilder durch Schichtaufnahme
 - Elektronenmikroskopie ($1 "Mio"$ Vergrößerung)
   - Transmissionselektronenmikroskopie
-    - Elektronenstrahl durch Objekt
-    - zeigt das innere des Objektes
+  - Elektronenstrahl durch Objekt
+  - zeigt das innere des Objektes
   - Rasterelektronenmikroskopie
-    - Elektronenstrahl reflektiert an mit Mteall bedampfter Oberfläche
-    - Oberflächen erkennbar
+  - Elektronenstrahl reflektiert an mit Mteall bedampfter Oberfläche
+  - Oberflächen erkennbar
 
 == Arbeiten im Labor
 <arbeiten-im-labor>
@@ -64,7 +64,7 @@ Laborsicherheit wird in der Verordnung für biologische Arbeitsstoffe 1998 gereg
 
 *Laborsicherheitsstufen:*
 - S1 greinges Risiko für Beschäftigte, geringes Risiko für Bevölkerung
-  - Händewaschen 
+  - Händewaschen
   - Arbeitsflächen desinfizieren
 - S2 mäßiges Risiko für Beschäftigte, geringes Risiko für Bevölkerung
   - Nur befugtes Personal
@@ -89,7 +89,7 @@ Meist nur eine Reduktion um einige 10-er Potenzen möglich.
 
 *Log-Reduktionsstufen*
 $
-  - log_10 ("nach Desinf."/"vor Desinf.")
+- log_10 ("nach Desinf."/"vor Desinf.")
 $
 
 *Sterilisationsverfahren:*
@@ -104,6 +104,8 @@ $
 === Kultivierung von MO
 <kultivierung-von-mo>
 
+*Nährmedien und Kultivierung:*
+#missing[]
 
 === Klassifizieren von MO
 <klassifizieren-von-mo>
