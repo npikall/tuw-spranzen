@@ -59,3 +59,5 @@
   crameri-r.at(5).lighten(10%),
   crameri-r.at(8).lighten(40%),
 )
+
+#let digram-style = (node-fill: blue.lighten(50%), node-corner-radius: 5pt)

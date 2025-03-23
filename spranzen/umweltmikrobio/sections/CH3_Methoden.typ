@@ -4,8 +4,7 @@
 
 #figure(
   diagram(
-    node-fill: blue.lighten(50%),
-    node-corner-radius: 5pt,
+    ..digram-style,
     node((0,0), [Erkennen]),
     edge("-|>"),
     node((1,0), [Kultivieren]),
@@ -105,7 +104,75 @@ $
 <kultivierung-von-mo>
 
 *Nährmedien und Kultivierung:*
-#missing[]
+- Flüssigmedien (Agar Agar)
+  - Anreicherung von MO
+- Festmedien (Agar Agar)
+  - isolierung von MO (und Untersuchung der Eigenschaften)
+
+*Grundsätliche Zusammensetzung eines Nährmediums:*
+- Wasser
+- Energiequelle (organische Verbindungen, aber auch Schwefelverbindungen)
+- Kohlenstoffquelle (für heterotrophe Organismen meist Kohlenhydrate)
+- Salze (Makroelemente wie Stickstoff, Phosphor und Schwefel)
+- pH-Puffer (Verhindert Verändrung des pH-Wert)
+
+*Arten der Kulturmedien nach Funktion:*
+- Universalmedien
+- Selektivmedien
+  -um bestimmte MO zu kultivieren
+- Differentialmedien
+  - Indikatormedium, Farbstoffe die diagnostisch wirken
+
+*Anreicherungskultur:*
+Wachstumsbedingungen sind für einen MO oder MO-Gruppe günstiger als für andere.
+Das Ziel ist die Anreicherung eines Mikroorganismus oder einer bestimmten Gruppe.
+
+*Reinkultur:*
+Wachstum eines Klons von einem bestimmten Organismus unter Ausschluss jeglicher individuen anderer Arten oder Stämme von Organismen.
+- Verdünnungsreihe
+- Dreizehn-Strich-Methode
 
 === Klassifizieren von MO
 <klassifizieren-von-mo>
+Organismen werden in Gruppen (Taxa) eingeteilt. Die grundlegenste Einteilung
+erfolgt nach Domänen und die feinste die nach Gattung und Arten. Die Namen sind
+binomial und setzen sich aus Gattungsname und Art-bezeichnenden Zusatz zusammen.
+Es sind zuerzeit mehr als 10.000 Bakterien und Archaen als valide Arten beschreiben.
+
+Vorraussetzung für die Klassifizierung ist eine *Reinkultur* (aus einer Zelle).
+
+*Beschreibung neuer Arten:*
+
+#figure(
+  diagram(
+    ..digram-style,
+    node((0,0), name: <probe>, "Probe"),
+    node((1,0), name: <culture>, "Reinkultur"),
+    node((2,0), name: <char>, "Charakterisierung (16S-rRNA)"),
+    node((2,1), name: <nomen>, "Bennenung nach int. Nomenklatur"),
+    node((2,2), name: <collect>, "Typenstamm in Sammlung hinterlegen"),
+    node((1,1), name: <book>, "Aufnahme in Bergeys\nManual of systematic\nBacteriology"),
+    edge(<probe>, <culture>, "-|>"),
+    edge(<culture>, <char>, "-|>"),
+    edge(<char>, <nomen>, "-|>"),
+    edge(<nomen>, <book>, "-|>"),
+    edge(<nomen>, <collect>, "-|>"),
+  ),
+)
+
+*Kriterien zur Klassifizierung einer Reinkultur:*
+- Morphologie
+  - Kolonieform /-farbe, Zellform, Beweglichkeit
+- Physiologie
+  - Verwertung von Substraten, Analyse von Gärprodukten, Temperaturgrenzen, Säuren und Salz Toleranz
+- Biochemische und molekularbiologische Kriterien
+  - Enzymaktivität, Cytochromen,...
+
+*Analytical Profile Index Test:*
+
+Ein Schnellbestimmungssystem zur Identifizierung von Bakterien. Kombiniert mehrere Tests zur Überprüfung biochemischer Merkmale.
+Biochemische Merkmale als Zahlencode dargestellt. Das numerische Profil wird mit Datenbank abgeglichen.
+
+*PCR und Sequenzierung:*
+
+Vervielfachung ("Amplifizierung") eines kleinen Teils des erbgutes. Detektion und Identifikation der vervielfachten Produkte (mittels Gelelektrophorese).
