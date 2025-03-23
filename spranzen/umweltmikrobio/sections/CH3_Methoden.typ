@@ -176,3 +176,44 @@ Biochemische Merkmale als Zahlencode dargestellt. Das numerische Profil wird mit
 *PCR und Sequenzierung:*
 
 Vervielfachung ("Amplifizierung") eines kleinen Teils des erbgutes. Detektion und Identifikation der vervielfachten Produkte (mittels Gelelektrophorese).
+#missing[]
+
+*Sequenzanalyse BLAST:*
+
+Basic Local Alignment Search Tool. Vergeleich der experimentell ermittelten DNA
+#missing[]
+
+*Sequenzanalyse Verwandtschaftsbestimmung:*
+
+Die ideale Zielsequenz, das Gen der ribosomalen 16S-RNA (Länge etwa 1500 Basenpaare),
+hat sich über Zeit nur sehr langsam verändert. Daher ist es ideal für die Analyse von
+Verwandtschaftsbeziehungen. Aus der Anzahl der Mutationen ergibt sich ein
+evolutionärer Abstand.
+Mit Hilfe von Computerprogrammen kann man aus den Abständen einen Stammbaum erstellen.
+Die Verzweigungen sind nicht durch fossile Funde belegt und haben keine
+zeitliche Dimension.
+
+*Umweltmikrobiologie:*
+
+Ist die Ökölogie der MO, ihre Beziehung zueinander und zu ihrer Umwelt.
+Sie befasst sich mit Eukaryota, Archaea und Bacteria sowie mit Viren.
+- abiotische Faktoren (Temperatur, Salz, pH-Wert, Sauerstoffgehalt, ...)
+- biotische Faktoren (Beziehung zu intraspezifischen und interspezifischen Organismen)
+
+*Ökologische Niesche:*
+
+Ist jener n-dimensionale Raum von Umweltfaktoren, in denen Leben für einen
+Organismus möglich ist.
+
+*Beispiele für interspezifische Wechselwirkungen:*
+- Räuber-Beute
+- Antibiose
+- Parasitismus
+- Kommensialismus oder Probiose
+- Symbiose oder Mutualismus
+
+*Anwendungsgebiete Umweltmikrobiologie:*
+- Abwasserreinigung
+- Sanierung von Gewässern
+- Böden
+- Verwertung von Biomüll
