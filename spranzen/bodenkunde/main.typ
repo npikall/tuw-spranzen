@@ -266,7 +266,7 @@ wird er in die Österreichische Bodensystematik eingegliedert? (Abbildung
 @fig:Gley)
 
 #figure(
-  image("assets/Bodenbsp.png", width: 75%),
+  image("assets/Bodenbsp.png", width: 60%),
   caption: [
     Gley
   ],
@@ -283,3 +283,10 @@ Nennen Sie die wichtigsten Primär Silikate. Bildung von Tonmineralen
 durch Neubildung oder so ähnlich?
 
 Korngrößen
+#import "@preview/tiaoma:0.3.0"
+#align(center, rect(width: 60%)[
+  #show link: set text(font: "Ubuntu Mono")
+  If you want to see the source code of this document or want to contribute or raise an issue, you can find it on GitHub:
+  #tiaoma.qrcode("https://github.com/npikall/tuw-spranzen")
+  #link("https://github.com/npikall/tuw-spranzen")
+])
