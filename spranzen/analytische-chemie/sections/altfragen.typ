@@ -6,7 +6,7 @@
 *DTA:*
 
 ...misst die *Temperaturdifferenz* zwischen der Probe und einer inerten
-Referenzverbindung (zB Aluminiumoxid, Siliziumcarbid, Glaskugeln) in 
+Referenzverbindung (zB Aluminiumoxid, Siliziumcarbid, Glaskugeln) in
 Abhängigkeit der Temperatur. Wird verwendet bei:
 
 - Analyse von Polymeren, Tonmineralien, Silikaten, Katalysatoren,
@@ -14,33 +14,29 @@ Abhängigkeit der Temperatur. Wird verwendet bei:
 - Analyse von Calciumoxalat
 - Unterscheidung von Mikroorganismen
 
+#let xs = (0, 1, 2, 3, 4, 5, 6)
+#let ys = (0, 0, 1, 0, 0, -1, 0)
+
 #figure(
-  cetz.canvas({
-  import cetz-plot:*
-  import cetz.draw:line, content, bezier
-  
-  let mark = (end: "stealth", fill: black, scale: 0.7)
-  draw.set-style(
-    axes: (
-      y: (label: (anchor: "north-west", offset: -0.2), mark: mark),
-      x: (label: (anchor: "south-east", offset: -0.15), mark: mark),
+  lq.diagram(
+    grid: none,
+    xaxis: (ticks: none, mirror: false, tip: tiptoe.stealth),
+    yaxis: (ticks: (-1.5,0,1.5), subticks: none, mirror: false, tip: tiptoe.stealth),
+    xlabel: "Temperatur der Umgebung T",
+    ylabel: [Temperaturdifferenz $Delta T$],
+    lq.path(
+      ((0,0), (-1,0)),
+      ((1,0), (-.5,0)),
+      ((1.5,2), (-.2,0)),
+      ((2,0), (-.5,0)),
+      ((3,0), (-.5,0)),
+      ((3.5,-2), (-.2,0)),
+      ((4,0), (-.5,0)),
+      ((5,0), (-1,0)),
+      label: "DTA",
+      stroke: blue,
     ),
-  )
-  plot.plot(
-    size: (7, 4.5),
-    x-label: "Temperatur der Umgebung T",
-    y-label: $"Temperaturdifferenz" Delta T$,
-    x-min: 0, x-max:5,
-    y-min: -2.5, y-max: 2.5,
-    x-tick-step: none,
-    y-tick-step: none,
-    legend: "inner-north-east",
-    axis-style: "left",
-    {
-      plot.add(((0,0),(1,0),(1.5,2),(2,0),(3,0),(3.5,-2),(4,0),(5,0)), line:"spline", label:"DTA")
-    },
-  )
-})
+  ),
 )
 
 *DSC:*
@@ -48,7 +44,7 @@ Abhängigkeit der Temperatur. Wird verwendet bei:
 ...*Wärmefluss* in einer Probe und einer Referenzsubstanz wird während eines
 kontrollierten Temperaturprogrammes gemessen. Energien werden direkt ausgewertet und
 nicht die Temperaturdifferenzen. Leistungsfähigste Methode der Thermoanalyse.
-Verwendung: 
+Verwendung:
 - wie DTA, jedoch exaktere Ergebnisse und direkte Ermittlung kalorischer Größen
 - Einsatzgebiet sehr groß,
 - Reinheitsprüfungen pharmazeutischer Wirkstoffe,
@@ -71,7 +67,7 @@ Chromophore und Auxochrome,...]
 #frage[AAS (Atomabsorptionsspektroskopie): Skizzen, Erklärung, …]
 *Probenvorbereitung:* feste Proben müssen gelöst bzw. aufgeschlossen werden
 
-*Messprinzip:* 
+*Messprinzip:*
 - Resonanzabsorption in Gasen: polychromatischer Lichtstrahl wird durch ein Gas im atomaren Zustand geschickt
 - davon wird Strahlung in ganz bestimmter Wellenlänge absorbiert
 - Hohlkathodenlampe mit dem zu bestimmenden Element als Kathode erzeugt aufgrund elektrischer Glimmentladung das Emissionsspektrum des Elements
@@ -86,22 +82,25 @@ Chromophore und Auxochrome,...]
     table.hline(),
     table.header([*Vorteile*], [*Nachteile*]),
     table.hline(),
-    [Anreicherung], [Verunreinigung durch Reagenzien],
-    [Detailierte Vorschriften], [Absorptionsverluste],
-    [Standards ähnlich der Probe],[Kontamination],
+    [Anreicherung],
+    [Verunreinigung durch Reagenzien],
+    [Detailierte Vorschriften],
+    [Absorptionsverluste],
+    [Standards ähnlich der Probe],
+    [Kontamination],
     table.hline(),
   ),
 )
 
 *Strahlungsquellen:*
-- Hohlkathodenlampe:  Erzeugung von Eigenstrahlung für jedes Element wird eine spezielle Hohlkathodenlampe verwendet; besteht aus einem Edelgas (Ne, Ar) unter Druck von wenigen mbar gefüllten Glaszylinder mit eingeschmolzener Kathode und Anode
+- Hohlkathodenlampe: Erzeugung von Eigenstrahlung für jedes Element wird eine spezielle Hohlkathodenlampe verwendet; besteht aus einem Edelgas (Ne, Ar) unter Druck von wenigen mbar gefüllten Glaszylinder mit eingeschmolzener Kathode und Anode
 - Elektrodenlose Entladungslampe: Element liegt gasförmig vor #sym.arrow Mikrowellen anregung #sym.arrow höherer Intensität und Stabilität
 - Kontinuierliche Strahlungsquellen: sehr linienreich, quasi kontinuierlich; zur Bestimmung des unspezifischen Hintergrundes
 #missing
 
 #frage[Beschreiben Sie, welche Parameter in Zuge der Methodenvalidierung untersucht werden müssen und welche (praktische) Bedeutung diese haben!]
 
-*Methodenvalidierung:* 
+*Methodenvalidierung:*
 
 ...ist ein formeller und dokumentierter Nachweis, dass eine Analysemethode für ihren Einsatzzweck geeignet ist und die an sie gestellten Anforderungen erfüllt. Zunächst ist eine Kalibration notwendig.
 
@@ -165,7 +164,6 @@ Die Nernst-Spannung wird gemessen
 
 - Vorteil: schnelle Reaktionszeit, hohe Empfindlichkeit
 - Nachteil: Störungen durch Temperatur/Feuchtigkeit können das Ergebnis beeinflussen
-
 
 *Bestimmung des Sauerstoffgehalts in der Flüssigkeit:*
 
@@ -240,7 +238,7 @@ absorbierenden Substanz in Abhängigkeit von der Konzentration der absorbierende
 und der Schichtdicke. Es ist demnach gültig bei allen Prozessen, wo Strahlung absorbiert
 wird. Um eine quantitativ Bestimmung nach dem Lambert-Beer’schen Gesetz durchzuführen,
 muss man wissen mit welcher Intensität die Strahlung eintrifft und mit welcher Intensität sie
-austritt. Detektoren (CCD-Sensoren, CMOS) 
+austritt. Detektoren (CCD-Sensoren, CMOS)
 
 #frage[
   *Röntgenfluoreszenzsnalyse* inkl. Gerätetechnik und Detektoren erklären und skizzieren
@@ -250,7 +248,6 @@ Anregung von Atomen in der Probe; primärer Röntgenstrahl der idR in einer Rön
 erzeugt wird; trifft auf kernnahes Elektron des Atoms und entfernt es; offene Position wird
 von Elektron aus weiter entfernter Außenhülle gefüllt; dabei wird Fluoreszenzstrahlung
 abgegeben; die Energie dieser Strahlung ist charakteristisch für das spezielle Atom
-
 
 *Prinzip der Röntgenröhre:* mittels Hochspannung werden freigesetzten Elektronen
 beschleunigt; fallen auf Anode oder Antikathode und werden abgebremst; es entsteht Wärme
@@ -263,7 +260,7 @@ und Röntgenstrahlung mit Wellenlänge $10^(-8) "bis" 10^(-11)$m
 - *wellenlängedispersive RFA* apparativ aufwendiger; durch Kollinator trifft emittierte
   Röntgenstrahlung auf Analysatorkristall durch welchen nur Strahlung bestimmter Wellenlänge erfasst wird, durch verstellen des Winkels werden verschiedene Wellenlängen emittiert
 
-- *energiedispersive Detektoren*: 
+- *energiedispersive Detektoren*:
   - Vorteil: simultane Aufnahme (schnell)
   - Nachteil: geringe Energieauflösung, geringe Nachweisstärke, schlechtes Signal/Untergrund-Verhältnis
 
@@ -287,7 +284,7 @@ und Röntgenstrahlung mit Wellenlänge $10^(-8) "bis" 10^(-11)$m
 
 #frage[
   *Massenspektrometrie:* Erläutern Sie Prinzip, gerätetechnische Realisierung (detailliert,
-  greifen Sie dabei zumindest eine Bauform heraus, die Sie genauer – mit Skizzebeschreiben) und Informationsgehalt der Massenspektrometrie! 
+  greifen Sie dabei zumindest eine Bauform heraus, die Sie genauer – mit Skizzebeschreiben) und Informationsgehalt der Massenspektrometrie!
 ]
 
 - Ionisierung der Probe
@@ -315,5 +312,3 @@ Siehe @fig-elektroanlytische-methoden
 #frage[
   *Verfahren zur Probennahme* #sym.arrow Siehe @sssec-verfahren-probenahme
 ]
-
-

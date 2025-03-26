@@ -1,20 +1,20 @@
 #import "@preview/rubber-article:0.3.1":*
 
 #show: article.with(
-  eq-numbering:"(1.1)",
-  eq-chapterwise:true,
-  show-header:true,
-  header-titel:"Analytische Chemie",
+  eq-numbering: "(1.1)",
+  eq-chapterwise: true,
+  show-header: true,
+  header-titel: "Analytische Chemie",
 )
 #maketitle(
-  title:"Analytische Chemie",
-  authors:("npikall",),
-  date:datetime.today().display("[day].[month].[year]") 
+  title: "Analytische Chemie",
+  authors: ("np",),
+  date: datetime.today().display("[day].[month].[year]"),
 )
 
 #let colors = (aqua.lighten(20%), green.lighten(20%), orange.lighten(20%))
 #let missing = {
-  set text(fill:red)
+  set text(fill: red)
   lorem(50)
 }
 
@@ -30,8 +30,7 @@
 
 #pagebreak()
 #show: appendix.with(
-  title:"Anhang",
-  title-size:20pt,
+  title: "Anhang",
+  title-size: 20pt,
 )
 #include "sections/altfragen.typ"
-

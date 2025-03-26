@@ -12,40 +12,26 @@
 === Acidimetrie
 Dabei wird eine starke Säure (z. B. Salzsäure) als Maßlösung mit bekannter Konzentration in die Probe titriert. Ein Indikator oder ein pH-Meter zeigt den Endpunkt der Reaktion an, wenn die Base vollständig neutralisiert ist.
 
+#let xs = lq.linspace(0, 50)
+#let f(x) = 14 - 12 / (1 + calc.exp(0.8 * (x - 25)))
+#let ys = xs.map(f)
 #figure(
-  cetz.canvas({
-    import draw: *
-    import cetz-plot: *
-  
-    // Stil für Achsen und Legende setzen
-    set-style(axes: (stroke: .5pt, tick: (stroke: .5pt)),
-              legend: (stroke: none, orientation: ttb, item: (spacing: .3), scale: 80%))
-  
-    plot.plot(size: (9, 6),
-      x-label: "Volumen der zugegebenen Säure (mL)",
-      y-label: "pH-Wert",
-      x-tick-step: 5,
-      y-tick-step: 2, y-min: 0, y-max: 14,
-      legend: "inner-north",
-      {
-        let f(x) = 14 - 12 / (1 + calc.exp(0.8 * (x - 25))) // typische Titrationskurve
-        let domain = (0, 50)
-  
-        plot.add(f, domain: domain, label: "Titrationskurve",
-          style: (stroke: black))
-        plot.add(((24.5,7),), mark: "o", label:"Äquivalenzpunkt")
-      }
-    )
-  })
+  lq.diagram(
+    ylabel: "pH-Wert",
+    xlabel: "Volumen der zugegebenen Säure (mL)",
+    xaxis: (subticks: none),
+    yaxis: (subticks: none),
+    legend: (position: (top + left)),
+    lq.plot(xs, ys, label: "Titrationskurve", mark: none),
+    lq.scatter((24.5,), (7,), label: "Äquivalenzpunkt", color: red, size: 7pt),
+  ),
+  caption: [Beispiel einer Titrationskurve],
 )
-
-wichtige Indikationsmethoden in der Titrimetrie sind:
-- optische 
+Wichtige Indikationsmethoden in der Titrimetrie sind:
+- optische
 - elektrochemische
 - thermische
 - und spezielle Methoden
-
-
 
 === Komplexometrie
 Die Komplexometrie ist ein volumetrisches Analyseverfahren zur Bestimmung von Metallionen in einer Lösung. Dabei wird ein Komplexbildner (z. B. EDTA) als Maßlösung verwendet, der mit den Metallionen stabile Komplexe bildet.
