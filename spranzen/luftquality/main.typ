@@ -1055,3 +1055,11 @@ Auswirkungen auf die Wolkenbildung. Beispiele sind: #emph[Mineralstaub,
 organische Verbindungen] Verschiedene Mechanismen der Eiskeimbildung:
 #emph[immersion freezing, condensation freezing, contact freezing,
 deposition freezing / nucleation]
+
+#import "@preview/tiaoma:0.3.0"
+#align(center, rect(width: 60%)[
+  #show link: set text(font: "Ubuntu Mono")
+  If you want to see the source code of this document or want to contribute or raise an issue, you can find it on GitHub:
+  #tiaoma.qrcode("https://github.com/npikall/tuw-spranzen")
+  #link("https://github.com/npikall/tuw-spranzen")
+])
