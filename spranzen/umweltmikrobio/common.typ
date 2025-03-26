@@ -1,5 +1,5 @@
 #import "@preview/gentle-clues:1.2.0" as gc
-#import "@preview/fletcher:0.5.6" as fletcher: diagram, node, edge
+#import "@preview/fletcher:0.5.7" as fletcher: diagram, node, edge
 
 #let fragen-counter = counter("fragen")
 #let fcount = context fragen-counter.display()
@@ -38,3 +38,26 @@
     )
   ])
 }
+
+#let crameri = (
+  rgb(49%, 9%, 0%),
+  rgb(60%, 32%, 8%),
+  rgb(68%, 49%, 16%),
+  rgb(78%, 70%, 33%),
+  rgb(81%, 88%, 64%),
+  rgb(64%, 89%, 82%),
+  rgb(36%, 75%, 82%),
+  rgb(19%, 56%, 75%),
+  rgb(12%, 39%, 68%),
+  rgb(1%, 19%, 60%),
+)
+
+#let crameri-r = crameri.rev()
+
+#let cmcrameri = (
+  crameri-r.at(3).lighten(40%),
+  crameri-r.at(5).lighten(10%),
+  crameri-r.at(8).lighten(40%),
+)
+
+#let digram-style = (node-fill: blue.lighten(50%), node-corner-radius: 5pt)
