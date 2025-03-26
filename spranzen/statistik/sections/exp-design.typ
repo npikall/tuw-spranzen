@@ -1,3 +1,4 @@
+#import "../common.typ":*
 = Experimental design
 
 == Grundlegende Aspekte der statistischen Versuchsplanung
@@ -16,7 +17,6 @@ Dazu wird wie folgt vorgegangen:
 + Detailierte Festlegung der statistischen Methoden
 + Ökonomische Optimierung der Versuchsplanung (zB optimaler stichprobenumfang)
 
-
 == Varianzquellen in statistischen Experimenten
 *Primärvarianz:* Anteil der Varabilität in Daten, der durch die
 Variation der experimentellen Bedingungen erklärt werden kann
@@ -31,7 +31,6 @@ Einflüsse verursacht wird (Zufälliger Fehler)
 Das Ziel der statistischen Versuchsplanung ist es, unter anderem, die
 Primärvarianz zu maximieren, die Sekundärvarianz zu kontrollieren und die
 Fehlervarianz zu minimieren.
-
 
 == Prinzipien der statistischen Versuchsplanung
 === Arten von Störgrößen
@@ -48,7 +47,7 @@ Blockbildung ist eine Alternative zur Randomisierung bei *kleinen Stichproben*, 
 === Statistische Kontrolle von Störfaktoren
 Die statistische Kontrolle von Störfaktoren integriert diese direkt in die Modellierung, um ihren Einfluss zu berücksichtigen. Sie hängt von der verwendeten Analysemethode ab und ist oft unvermeidbar, wenn Störgrößen nicht ausgeschlossen oder gesteuert werden können, z. B. in ökonomischen Studien.
 
-=== Weitere Prinzipien 
+=== Weitere Prinzipien
 - Wiederholungen
 - Kontrollgruppen
 - Ökonomie
@@ -60,10 +59,8 @@ Eine einfache Zufallsstichprobe ist eine zufällige Auswahl von Elementen aus ei
 === Geschichtete Stichproben
 Bei geschichteten Stichproben wird die Population in homogene Schichten unterteilt, um den Einfluss bestimmter Merkmale zu berücksichtigen. Jede Schicht wird separat beprobt und kann einzeln oder gemeinsam analysiert werden. Die Stichprobengröße sollte proportional zur Schichtgröße sein, um Verzerrungen zu vermeiden.
 
-
 === Klumpenstichproben
 Bei einer Klumpenstichprobe wird die Population in natürliche Gruppen (Klumpen) unterteilt, aus denen zufällig einige ausgewählt oder vollständig analysiert werden. Sie ist kosteneffizient, berücksichtigt jedoch Störfaktoren nicht explizit. Im Gegensatz zur geschichteten Stichprobe wird angenommen, dass die Heterogenität innerhalb der Klumpen der Gesamtpopulation entspricht.
-
 
 == Inverse Probleme der Stichprobengröße
 Der minimale Stichprobenumfang, sodass ein Effekt mit einer vorgegebener Wahrscheinlichkeit durch den statistischen Versuch nachgewiesen werden kann,

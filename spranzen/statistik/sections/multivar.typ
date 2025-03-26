@@ -1,5 +1,4 @@
-#import "@preview/cetz:0.3.2"
-#import "@preview/cetz-plot:0.1.1"
+#import "../common.typ":*
 #import "@preview/suiji:0.3.0": *
 
 
@@ -42,10 +41,10 @@ Für *abhängige* Zufallsvariablen hängt die bedingte Verteilung von X2 von der
 
 Für *unabhägige* Zufallsvariablen hat die Verteilung von X1 keinen Einfluss auf die Verteilung von X2 und umgekehrt.
 
-#lorem(50)
+#missing[]
 
 == Multivariate Zufallsvariablen und Verteilungen
-#lorem(50)
+#missing[]
 
 === Kovarianz
 Eines der wichtigsten, bivariaten Abhängigkeitsmaße ist die Kovarianz. 
@@ -158,7 +157,7 @@ hat(beta) = (X prime X)^(-1) X prime Y = vec(hat(beta)_0, dots.v, hat(beta)_n)
 $
 
 == ANOVA - Analysis of Variance
-#lorem(50)
+#missing[]
 
 
 == Wichtige Hypothesentests für multivariate Statistik

@@ -1,3 +1,4 @@
+#import "../common.typ":*
 = Nichtparametrische Methoden
 == Parametrische und nichtparametrische statistische Modelle
 Ein parametrisches statistisches Modell für eine
@@ -14,7 +15,7 @@ $
 ...
 $
 
-#lorem(50)
+#missing[]
 // == Schätzung der Verteilungsfunktion
 // == Schätzung der Dichte
 // == Ordnungstatistiken und Ränge

@@ -1,33 +1,10 @@
-#import "@preview/gentle-clues:1.1.0" as gc
-#import "@preview/codly:1.2.0": *
-#import "@preview/codly-languages:0.1.1": *
-#show: codly-init.with()
-
-#codly(languages: codly-languages)
-#show raw: it => align(center,block(width: 75%, it))
-
-#let theorem(title:"Theorem", icon:gc.get-icon-for("idea"), ..args) = {
-  align(center,block(  
-  gc.clue(
-    accent-color:blue,
-    title:title,
-    icon:icon,
-    ..args
-  ), width: 85%))
-}
-
-#let example = it => align(center, gc.example(it, width: 85%))
-
-
-
-
+#import "../common.typ":*
 = Schätzungen
 
 == Stichprobe und Grundgesamtheit
 Eine *Menge* von n Zufallsvariablen ${X_1, ..., X_n}$ mit *derselben Verteilung* $F_X$ ist eine Zufallsstichprobe der Größe n der Verteilung $F_X$. Das statistische Modell, welches die Stichprobe erzeugt hat, nennt man auch Grundgesamtheit, in diesem Fall einfach die Verteilung $F_X$.
 
 Man kann an eine Stichprobe ein statistisches Modell anpassen. Dafür müssen wir ein Modell auswählen und die Eigenschaften des Modells aus der Stichprobe schätzen.
-
 
 == Simulation von Zufallsvariablen
 
@@ -91,20 +68,19 @@ Jener Wert für $Theta$ welcher die Likelihood für eine Stichprobe maximiert wi
 Dabei leitet man zuerst die Verteilung ab und setzt sie null.
 
 == Gesetz der großen Zahlen
-Das Gesetz der großen Zahlen ist eines der wichtigsten Theoreme der Statistik. 
-#theorem[ 
-  Sei $X_1, X_2, ...$ eine Folge von unabhägigen, identisch verteilten Zufallsvariablen mit $EE(X_i) = mu_X < infinity$ und $overline(X)_n = 1/n limits(sum)_(i=1)^n X_i$ dann gilt: 
+Das Gesetz der großen Zahlen ist eines der wichtigsten Theoreme der Statistik.
+#theorem[
+  Sei $X_1, X_2, ...$ eine Folge von unabhägigen, identisch verteilten Zufallsvariablen mit $EE(X_i) = mu_X < infinity$ und $overline(X)_n = 1/n limits(sum)_(i=1)^n X_i$ dann gilt:
   $ overline(X)_n arrow mu x $
 ]
 Das Gesetz der großen Zahlen besagt, dass der Durchschnitt einer großen Anzahl unabhängiger, identisch verteilter Zufallsvariablen mit hoher Wahrscheinlichkeit dem Erwartungswert der zugrunde liegenden Verteilung nahekommt.
-
 
 == Zentraler Grenzwertsatz
 Der zentrale Grenzwertsatz ist eines der wichtigsten Theoreme der Statistik.
 
 #theorem[
   Sei $X_1, X_2, ...$ eine Folge von unabhägigen, identisch verteilten Zufallsvariablen mit $EE(X_i) = mu_X$, $"Var"(X_i) = sigma^2_X < infinity$ und $overline(X)_n = 1/n limits(sum)_(i=1)^n X_i$. Dann gilt: $ sqrt(n) (overline(X)_n - mu_X) arrow cal(N) (0,sigma^2_X) $
-] 
+]
 
 Der zentrale Grenzwertsatz besagt, dass die Summe oder der Durchschnitt vieler unabhängiger, identisch verteilter Zufallsvariablen – unabhängig von der ursprünglichen Verteilung – näherungsweise einer Normalverteilung (Glockenkurve) folgt, wenn die Anzahl der Variablen groß genug ist.
 
@@ -121,13 +97,29 @@ $
 Konfidenzintervalle schließen den zu schätzenden Paramerer zwischen zwei zufälligen Werten
 (Intervall) ein.
 #figure(
-    table(
+  table(
     columns: 8,
-    stroke:0.7pt,
-    strong($q$),[0.75],[0.8],[0.9],[0.95],[0.975],[0.99],[0.995],
-    strong($z_q$),[0.674],[0.841],[1.281],[1.644],[1.959],[2.326],[2.575],
-  ), kind:"none", supplement: "none"
+    stroke: 0.7pt,
+    strong($q$),
+    [0.75],
+    [0.8],
+    [0.9],
+    [0.95],
+    [0.975],
+    [0.99],
+    [0.995],
+    strong($z_q$),
+    [0.674],
+    [0.841],
+    [1.281],
+    [1.644],
+    [1.959],
+    [2.326],
+    [2.575],
+  ),
+  kind: "none",
+  supplement: "none",
 )
 #example[
-  #lorem(50)
+  #missing[]
 ]

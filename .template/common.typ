@@ -9,11 +9,11 @@
 #import "@preview/gentle-clues:1.2.0" as gc
 
 // default indicator for missing content
-#let missing = {
+#let missing(content) = {
   set text(fill: red)
-  rect(width: 100%, stroke: red, [#lorem(15)])
+  let msg = if content == [] {"MISSING" } else { content }
+  rect(width: 100%, stroke: red, align(center, msg))
 }
-
 // default indicator for missing plots
 #let missing-plot = {
   figure(
