@@ -1,2 +1,1 @@
-#import "@preview/whalogen:0.2.0": ce
-
+#import "@preview/whalogen:0.3.0": ce

@@ -4,9 +4,9 @@
 #show:article.with()
 
 #maketitle(
-  title: "Umweltmikrobiologie",
-  authors: ("npikall",),
-  date: datetime.today().display("[day].[month].[year]")
+  title: "Grundlagen der Chemie",
+  authors: ("np",),
+  date: datetime.today().display("[day].[month].[year]"),
 )
 
 #outline()
