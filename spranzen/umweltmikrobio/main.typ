@@ -8,7 +8,7 @@
 
 #maketitle(
   title: "Umweltmikrobiologie",
-  authors: ("npikall",),
+  authors: ("np",),
   date: datetime.today().display("[day].[month].[year]"),
 )
 
