@@ -2,12 +2,12 @@
 
 #show: article.with(
   show-header: true,
-  header-titel: "Luftqualität"
+  header-titel: "Luftqualität",
 )
 
 #maketitle(
   title: "Luftqualität\n Zusammenfassung der Vorlesung",
-  authors:("npikall",)
+  authors: ("np",),
 )
 #outline()
 #pagebreak()
@@ -62,32 +62,47 @@ Dubson Units
     columns: 2,
     align: (center,left,),
     table.hline(),
-    table.header([Jahr], [Ereignis],),
+    table.header([Jahr], [Ereignis], ),
     table.hline(),
-    [400 BC], [Hippokrates äußert Vermutung von einer Verbindung],
-    [], [zwischen schlechter Luft und diversen Krankheiten],
-    [1. Jhdt n.C.], [Seneca beschreibt Gesundheitsverbesserung außerhalb
-    von stinkender Stadt],
-    [1273], [Smoke Abatement Act in London],
-    [1377], [Rechtsstreit um Mindesthöhe von Schornstein],
-    [14. Jhdt], [Beschwerde ans Gericht in London],
-    [], [(schlechter Geruch wegen niedriger Schornsteine)],
-    [1610], [Beschwerde und Verhandlung zur Lage eines Schweinestalls],
-    [19. Jdht], [London Smog],
-    [1972], [UN Konferenz in Stockholm (Wendepunkt)],
-    [CLRTAP], [Convention on Long-range Transboundary Air Pollution],
-    [EMEP], [European Monitoring and Assesment Programme],
-    table.hline(),
-  ), kind: table
+    [400 BC],
+    [Hippokrates äußert Vermutung von einer Verbindung],
+    [],
+    [zwischen schlechter Luft und diversen Krankheiten],
+    [1. Jhdt n.C.
+  ],
+  [Seneca beschreibt Gesundheitsverbesserung außerhalb
+  von stinkender Stadt],
+  [1273],
+  [Smoke Abatement Act in London],
+  [1377],
+  [Rechtsstreit um Mindesthöhe von Schornstein],
+  [14. Jhdt
+],
+[Beschwerde ans Gericht in London],
+[],
+[(schlechter Geruch wegen niedriger Schornsteine)],
+[1610],
+[Beschwerde und Verhandlung zur Lage eines Schweinestalls],
+[19. Jdht
+],
+[London Smog],
+[1972],
+[UN Konferenz in Stockholm (Wendepunkt)],
+[CLRTAP],
+[Convention on Long-range Transboundary Air Pollution],
+[EMEP],
+[European Monitoring and Assesment Programme],
+table.hline(),
+),
+kind: table,
 )
-
 
 = Luftqualitätsrichtlinie der EU
 <luftqualitätsrichtlinie-der-eu>
 == Nationales Recht in Österreich
 <nationales-recht-in-österreich>
 EU hat mit #emph[„RICHTLINIE 2008/50/EG DES EUROPÄISCHEN PARLAMENTS UND
-DES RATES vom 21. Mai 2008 über Luftqualität und saubere Luft für
+  DES RATES vom 21. Mai 2008 über Luftqualität und saubere Luft für
 Europa“] das übergeordnete Gesetz. Es befasst sich mit den Schadstoffen
 SO2, NO2, CO, O3, Benzol, PM2.5, PM10 und PB. Vierte Tochterrichtlinie
 ergänzt As, Cd, Ni und Benzo(a)pyren als Staubinhaltsstoffe. Die
@@ -257,28 +272,52 @@ Studien erschwert.
     columns: 3,
     align: (center,center,center,),
     table.hline(),
-    table.header([WHO 2021], [$mu g \/ m^3$], [],),
+    table.header([WHO 2021], [$mu g \/ m^3$], [], ),
     table.hline(),
-    [JMW], [10], [],
-    [24h], [25], [],
+    [JMW],
+    [10],
+    [],
+    [24h],
+    [25],
+    [],
     table.hline(),
-    [EU], [$mu g \/ m^3$], [],
+    [EU],
+    [$mu g \/ m^3$],
+    [],
     table.hline(),
-    [JMW], [40], [],
-    [JMW], [30], [Schutz der Vegetation],
-    [1h], [200], [Grenzwert, 18 Überschreitungen],
-    [], [400], [Alarmwert],
+    [JMW],
+    [40],
+    [],
+    [JMW],
+    [30],
+    [Schutz der Vegetation],
+    [1h],
+    [200],
+    [Grenzwert, 18 Überschreitungen],
+    [],
+    [400],
+    [Alarmwert],
     table.hline(),
-    [Österreich (IG-L)], [$mu g \/ m^3$], [],
+    [Österreich (IG-L)],
+    [$mu g \/ m^3$],
+    [],
     table.hline(),
-    [JMW], [30], [],
-    [24h], [80], [Zielwert],
-    [30min], [200], [],
-    [3h], [400], [Alarmwert],
+    [JMW],
+    [30],
+    [],
+    [24h],
+    [80],
+    [Zielwert],
+    [30min],
+    [200],
+    [],
+    [3h],
+    [400],
+    [Alarmwert],
     table.hline(),
-  ), kind: table
+  ),
+  kind: table,
 )
-
 
 == Aktuelle Situation und Trends
 <aktuelle-situation-und-trends-1>
@@ -318,24 +357,27 @@ Anthropogen: unvollständige Verbrennung (Energie und Wärmegewinnung) \
 Natürlich: Feuer, Vulkane, Pflanzen und mikrobielle Umsetzung in Böden
 und Ozeanen
 
-
 #figure(
   table(
     columns: 2,
     align: (center,center,),
     table.hline(),
-    table.header([Source], [$C O \/ y r$],),
+    table.header([Source], [$C O \/ y r$], ),
     table.hline(),
-    [Anthropogenic], [$700 dot.op 10^9 k g$],
-    [Biomassburning], [$500 dot.op 10^9 k g$],
-    [Oxidation of $C H_4$], [$900 dot.op 10^9 k g$],
-    [Oxidation of NMVOC’s], [$300 dot.op 10^9 k g$],
-    [Total Sources], [$2600 dot.op 10^9 k g$],
+    [Anthropogenic],
+    [$700 dot.op 10^9 k g$],
+    [Biomassburning],
+    [$500 dot.op 10^9 k g$],
+    [Oxidation of $C H_4$],
+    [$900 dot.op 10^9 k g$],
+    [Oxidation of NMVOC’s],
+    [$300 dot.op 10^9 k g$],
+    [Total Sources],
+    [$2600 dot.op 10^9 k g$],
     table.hline(),
-  )
-  , kind: table
-  )
-
+  ),
+  kind: table,
+)
 
 === Emissionen in Österreich
 <emissionen-in-österreich>
@@ -343,10 +385,11 @@ Ein Rückgang von ca. $60 %$ seit 1990 ist durch Verbesserung der
 Verbrennung im Verkehrsbereich, in der Industrie und bei Heizsystemen zu
 erklären.
 
-#figure(image("assets/co_emi.svg", width: 60%),
+#figure(
+  image("assets/co_emi.svg", width: 60%),
   caption: [
     CO Emissionen Österreich
-  ]
+  ],
 )
 
 === Gesundheitsauswirkungen
@@ -365,25 +408,32 @@ Rechnen.
     columns: 2,
     align: (center,center,),
     table.hline(),
-    table.header([WHO 2021], [$m g \/ m^3$],),
+    table.header([WHO 2021], [$m g \/ m^3$], ),
     table.hline(),
-    [24h], [4],
-    [8h], [10],
-    [1h], [35],
-    [15min], [100],
+    [24h],
+    [4],
+    [8h],
+    [10],
+    [1h],
+    [35],
+    [15min],
+    [100],
     table.hline(),
-    [EU], [$m g \/ m^3$],
+    [EU],
+    [$m g \/ m^3$],
     table.hline(),
-    [8h], [10],
+    [8h],
+    [10],
     table.hline(),
-    [Österreich (IG-L)], [$m g \/ m^3$],
+    [Österreich (IG-L)],
+    [$m g \/ m^3$],
     table.hline(),
-    [8h], [10],
+    [8h],
+    [10],
     table.hline(),
-  )
-  , kind: table
-  )
-
+  ),
+  kind: table,
+)
 
 === Aktuelle Situation (2020)
 <aktuelle-situation-2020>
@@ -416,10 +466,11 @@ Deutlicher Rückgang von ca. $60 %$ seit 1990. Die stärkste Reduktion im
 Bereich des Verkehrs von Gaspendelanlagen und die Anwendung von
 Lösungsmitteln in Haushalt und Gewerbe.
 
-#figure(image("assets/nmvoc_emi.svg", width: 50%),
+#figure(
+  image("assets/nmvoc_emi.svg", width: 50%),
   caption: [
     NMVOC Emissionen Österreich
-  ]
+  ],
 )
 
 === Verbindungen
@@ -437,28 +488,31 @@ Lösungsmitteln in Haushalt und Gewerbe.
 <benzol>
 Benzol ist ein krebserregendes NMVOC.
 
-
 #figure(
   table(
     columns: 2,
     align: (center,center,),
     table.hline(),
-    table.header([WHO 2021], [$mu g \/ m^3$],),
+    table.header([WHO 2021], [$mu g \/ m^3$], ),
     table.hline(),
-    [JMW], [1.7],
+    [JMW],
+    [1.7],
     table.hline(),
-    [EU], [$mu g \/ m^3$],
+    [EU],
+    [$mu g \/ m^3$],
     // table.hline(),
-    [JMW], [5],
+    [JMW],
+    [5],
     table.hline(),
-    [Österreich (IG-L)], [$mu g \/ m^3$],
+    [Österreich (IG-L)],
+    [$mu g \/ m^3$],
     // table.hline(),
-    [JMW], [5],
+    [JMW],
+    [5],
     table.hline(),
-  )
-  , kind: table
-  )
-
+  ),
+  kind: table,
+)
 
 === Reaktionen in der Troposphäre
 <reaktionen-in-der-troposphäre-3>
@@ -505,19 +559,30 @@ nur kurzfristig auf.
     columns: 3,
     align: (center,center,center,),
     table.hline(),
-    table.header([WHO 2021], [$mu g \/ m^3$], [],),
+    table.header([WHO 2021], [$mu g \/ m^3$], [], ),
     table.hline(),
-    [max 8h MW], [100 (60 im Sommer)], [max 3 Überschreitungen],
-    [EU], [$mu g \/ m^3$], [],
-    [max 8h MW], [120], [max 25 Überschreitungen],
-    [1h], [180], [],
-    [Österreich (IG-L)], [$mu g \/ m^3$], [],
-    [Analog zu EU], [], [],
+    [max 8h MW],
+    [100 (60 im Sommer)],
+    [max 3 Überschreitungen],
+    [EU],
+    [$mu g \/ m^3$],
+    [],
+    [max 8h MW],
+    [120],
+    [max 25 Überschreitungen],
+    [1h],
+    [180],
+    [],
+    [Österreich (IG-L)],
+    [$mu g \/ m^3$],
+    [],
+    [Analog zu EU],
+    [],
+    [],
     table.hline(),
-  )
-  , kind: table
-  )
-
+  ),
+  kind: table,
+)
 
 == Auswirkungen
 <auswirkungen-2>
@@ -576,29 +641,56 @@ auch bei langfristigen Expositionen zu erwarten.
     columns: 3,
     align: (center,center,center,),
     table.hline(),
-    table.header([#strong[WHO 2021];], [$mu g \/ m^3$], [],),
+    table.header([#strong[WHO 2021];], [$mu g \/ m^3$], [], ),
     table.hline(),
-    [PM10 - JMW], [15], [],
-    [PM10 - 24h], [45], [3-4 Überschreitungen erlaubt],
-    [PM2.5 - JMW], [5], [],
-    [PM2.5 - 24h], [15], [3-4 Überschreitungen erlaubt],
+    [PM10 - JMW],
+    [15],
+    [],
+    [PM10 - 24h],
+    [45],
+    [3-4 Überschreitungen erlaubt],
+    [PM2.5 - JMW],
+    [5],
+    [],
+    [PM2.5 - 24h],
+    [15],
+    [3-4 Überschreitungen erlaubt],
     table.hline(),
-    [#strong[EU]], [$mu g \/ m^3$], [],
-    [PM10 - JMW], [40], [],
-    [PM10 - 24h], [50], [35 Überschreitungen erlaubt],
-    [PM2.5 - JMW], [25], [],
-    [PM2.5 - AEI], [20], [],
+    [#strong[EU]],
+    [$mu g \/ m^3$],
+    [],
+    [PM10 - JMW],
+    [40],
+    [],
+    [PM10 - 24h],
+    [50],
+    [35 Überschreitungen erlaubt],
+    [PM2.5 - JMW],
+    [25],
+    [],
+    [PM2.5 - AEI],
+    [20],
+    [],
     table.hline(),
-    [#strong[Österreich (IG-L)];], [$mu g \/ m^3$], [],
-    [PM10 - JMW], [40], [],
-    [PM10 - 24h], [50], [25 Überschreitungen erlaubt],
-    [PM2.5 - JMW], [25], [],
-    [PM2.5 - AEI], [20], [],
+    [#strong[Österreich (IG-L)];],
+    [$mu g \/ m^3$],
+    [],
+    [PM10 - JMW],
+    [40],
+    [],
+    [PM10 - 24h],
+    [50],
+    [25 Überschreitungen erlaubt],
+    [PM2.5 - JMW],
+    [25],
+    [],
+    [PM2.5 - AEI],
+    [20],
+    [],
     table.hline(),
-  )
-  , kind: table
-  )
-
+  ),
+  kind: table,
+)
 
 == Auswirkungen
 <auswirkungen-3>
@@ -679,7 +771,7 @@ carbonaceous compounds from loss of hydrogen and/or oxygen atoms at
 temperatures above approximately 250°C. This fundamental definition of
 BC agrees with the operationally based definition by Moosmüller et al.
 (2009), who defined BC as #emph["carbonaceous material with a deep black
-appearance. Wavelength independent over the visible and near-visible
+  appearance. Wavelength independent over the visible and near-visible
 spectral regions"];.
 
 Elemental carbon (EC) is formally defined as a "substance containing
@@ -775,23 +867,27 @@ zum Tod führen.
 United Nations Economic Commission for Europe definiert 1992 folgende
 Richtwerte.
 
-
 #figure(
   table(
     columns: 3,
     align: (center,center,center,),
     table.hline(),
-    table.header([UNECE], [$mu g \/ m^3$], [],),
+    table.header([UNECE], [$mu g \/ m^3$], [], ),
     table.hline(),
-    [JMW], [8], [Schutzgut der gesamten Vegetation],
-    [MMW], [23], [Schutzgut der gesamten Vegetation],
-    [JMW], [1], [2007 für für Flechten und Moos; 2-4 für höhere
+    [JMW],
+    [8],
+    [Schutzgut der gesamten Vegetation],
+    [MMW],
+    [23],
+    [Schutzgut der gesamten Vegetation],
+    [JMW],
+    [1],
+    [2007 für für Flechten und Moos; 2-4 für höhere
     Pflanzen],
     table.hline(),
-  )
-  , kind: table
-  )
-
+  ),
+  kind: table,
+)
 
 == Aktuelle Situation und Trends
 <aktuelle-situation-und-trends-6>
@@ -815,11 +911,12 @@ Jährliche Zunahme von 2.5ppm. Aktueller Wert ist bei ca. 420ppm. Im Jahr
 Variablilität, trotzdem unterscheiden sich die Mischungsverhältnisse je
 nach Lage der Messung under der Saison.
 
-#figure([#box(image("assets/co2_data_mlo.png", width: 60%))
+#figure(
+  [#box(image("assets/co2_data_mlo.png", width: 60%))
   #box(image("assets/co2_data_deu.png", width: 60%))],
   caption: [
     $C O_2$ Data at Hohenpeissenberg, DEU
-  ]
+  ],
 )
 
 === Senken
@@ -954,7 +1051,7 @@ clouds). Die Eisbildung beeinflusst die optischen Eigenschaften der
 Wolken, aber auch Niederschlagsbildung (Bergeron Findeisen Mechanismus),
 die Lebenszeit der Wolken, den Transfer der Feuchtigkeit – mit diversen
 Auswirkungen auf die Wolkenbildung. Beispiele sind: #emph[Mineralstaub,
-Vulkanasche, Biopartikel (Bakterien, Pollen, Pilzsporen), BC /
+  Vulkanasche, Biopartikel (Bakterien, Pollen, Pilzsporen), BC /
 organische Verbindungen] Verschiedene Mechanismen der Eiskeimbildung:
 #emph[immersion freezing, condensation freezing, contact freezing,
 deposition freezing / nucleation]
