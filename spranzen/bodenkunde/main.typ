@@ -5,8 +5,8 @@
 
 #maketitle(
   title: "Bodenkunde - Altfragen",
-  authors:("npikall",),
-  date: datetime.today().display("[day].[month].[year]")
+  authors: ("np",),
+  date: datetime.today().display("[day].[month].[year]"),
 )
 
 #outline()
@@ -14,7 +14,6 @@
 
 = Fragensammlung - Einführung und Bodenbestandteile
 <fragensammlung---einführung-und-bodenbestandteile>
-
 
 #frage[Was ist ein Paläoboden und woran erkennt man einen Paläoboden?]
 Paläosol oder Paläoböden sind Böden aus früheren geologischen Zeiträumen, zum Teil unter anderen Umweltbdeingungen entstanden. (Pleistozänerboden...)
@@ -24,24 +23,24 @@ Böden sind Teil der belebten obersten Erdkruste. Nach unten durch festes oder l
 
 #frage[Welche bodenbildenden Prozesse kennen sie?]
 Verwitterung, Mineralneubildung, Zersetzung, Humifizierung, Gefügebildung, (Ton)verlagerung, Reduktionsvorgänge, Podsolierung, Turbation
-    
+
 #frage[Was ist Streu?]
 Streu ist der Bestansabfall der Vegetation, der weitgehend unzersetzt der Bodenoberfläche aufliegt und dort die Streuschicht bildet.
-    
+
 #frage[Was ist die Pedosphäre?]
 Die Gesamtheit der Böden auf der Erde wird als Pedospäre bezeichnet.
-    
+
 #frage[Wichtige Element der Pedosphäre:]
 O, Si, Al, C, Ca, K, Fe, N, $H_2O$
-    
+
 #frage[Woraus besteht Boden und wie setzen sich diese Bodenbestandteile quantitativ] zusammen?
 $25%$ Luft, $25%$ Wasser, $45%$ Minerale, $%$ organische Stoffe.
-    
+
 #frage[Was ist ein Pedon?]
 Das Pedon ist die kleinste räumliche Einheit der Bodenkunde, die gerade noch alle Charakteristika der verschiedenen Horizonte eines Boden aufweisen kann.
 
 #frage[Permafrostböden: Entstehungsbedingungen und Entstehungsprozess]
-Permafrostböden sind Böden die das ganze Jahr hindurch gefroren sind, also per Definition mindestens 2 Jahre ununterbrochen Temperaturen unter 0°C aufweisen. Daher sollte dort die Durchschnittstemperatur -1°C  und der Jahresniederschlag nicht mehr als 1000mm sein.
+Permafrostböden sind Böden die das ganze Jahr hindurch gefroren sind, also per Definition mindestens 2 Jahre ununterbrochen Temperaturen unter 0°C aufweisen. Daher sollte dort die Durchschnittstemperatur -1°C und der Jahresniederschlag nicht mehr als 1000mm sein.
 
 #frage[Nennen sie 6 Bodenfunktionen und beschreiben sie diese.]
 + Biotische Funktionen
@@ -63,7 +62,6 @@ Permafrostböden sind Böden die das ganze Jahr hindurch gefroren sind, also per
   - Ablagerung (Deponie)
   - Erholung
 
-    
 #frage[Welche bodenbildenden Faktoren kennen sie?]
 - Abiotisch
   - Ausgangsgestein
@@ -80,13 +78,12 @@ Permafrostböden sind Böden die das ganze Jahr hindurch gefroren sind, also per
 / Relief: Seehöhe, Geländeform, Exposition
 / Bodenwasser: Terrestrisch, Semiterrestrisch, (Sub-)Hydrische
 
-
 #frage[Beschreiben Sie das Verhalten des Biomasseabbaus bei verschiedenen Temperaturen und Feuchtebedingungen]
 
 Der Biomasseabbau erfolgt im Temperaturbereich von ca. 5-55°C, wobei die Maximalwerte zwischen 30-40°C liegen. Belüftetet Böden erzielen dabei wesentlich bessere Ergebnisse als nasse Böden. Biomasseproduktion erfolgt zwischen -5-40°C und erreicht sein Optimum bei ca 20-30°C.
 
 #frage[Wie beeinflusst das Klima die Bodenbildung?]
-Temperatur (Einfluss auf Bodenbildung, Kühlere Böden haben einen höheren Kohlenstoffgehalt, da Abbau der org. Masse gehemmt ist). 
+Temperatur (Einfluss auf Bodenbildung, Kühlere Böden haben einen höheren Kohlenstoffgehalt, da Abbau der org. Masse gehemmt ist).
 Niederschlag sorgt für Lösungs- und Verlagerungsvorgänge und kann auch oberflächlichle Schichten abtragen.
 
 #frage[Wie beeinflusst das Relief die Bodenbildung?]
@@ -104,7 +101,7 @@ Zeit, Lebewesen/Mensch
 
 #frage[Beschreiben sie den Schalenaufbau der Erde (Hauptbestandteile, Tiefen...)]
 - Erdkruste (10-80km)
-- oberer Erdmantel: 
+- oberer Erdmantel:
   - Lithosphäre (30-100km)
   - Asthenosphäre (100-410km)
   - Übergangszone (410-660km)
@@ -126,8 +123,8 @@ Entsteht durch rasche Auskühlung von Gesteinsschmelze an der Erdoberfläche. Di
 
 #frage[Erklären Sie die Begriffe Diagenese und Metamorphose]
 Diagenese:Verfestigung von Sedimenten und ihre weiteren Veränderung bis zur Abtragung unter niedrigen Drücken und Temperaturen.
-    
-    Metamorphose: Umwandlung der mineralogischen Zusammensetzung durch Temperatur und Druck. Es entsteht dabei ein Metamorphit.
+
+Metamorphose: Umwandlung der mineralogischen Zusammensetzung durch Temperatur und Druck. Es entsteht dabei ein Metamorphit.
 
 #frage[Wie entstehen Sedimentgesteine?]
 Entstehen durch Diagenese aus Sedimenten.
@@ -165,19 +162,19 @@ siehe Frage 28
 #frage[Welche Tonminerale kennen Sie, was sind ihre Charakteristika?]
 *Kaolinit/Halloysit* 1:1 (nicht aufweitbar) Schichtabstand 0,7 nm Besetzung des Zwischenschichtraums mit H2O (Halloysit) Vorkommen v.a. tropischer/subtropischer Klimaraum
 
-*Illit/Glaukonit* 1:2 (nicht aufweitbar) durch physikalische Verwitterung aus Glimmern Schichtabstand 1 nm (Illit) Besetzung des Zwischenschichtraums mit K,Böden aus Sedimenten häufig größter Anteil der Tonminerale im gemäßigt- humiden Klimabereich 
+*Illit/Glaukonit* 1:2 (nicht aufweitbar) durch physikalische Verwitterung aus Glimmern Schichtabstand 1 nm (Illit) Besetzung des Zwischenschichtraums mit K,Böden aus Sedimenten häufig größter Anteil der Tonminerale im gemäßigt- humiden Klimabereich
 
 *Vermiculit/Smcetit* 1:2 (aufweitbar) Unterscheidung aufgrund der Schichtladungen Starke Quellung/Schrumpfung Besetzung des Zwischenschichtraums mit austauschbare Kationen Vermiculit - K-Fixierung Bentonit Vorkommen gemäßigt humider Klimabereich
 
 #frage[Was sind 1:1 Tonminerale und wie unterscheiden sie sich von 2:1 Tonmineralen?]
 1:1 Tonminerale sind folgendermaßen aufgebaut TO. 2:1 hingegegn haben die Struktur TOT. Die 2:1 Tonminerale haben eine negative Schichtladung, und sind daher anfälliger auf Quellung, da sich hydratisierte Kationen zwischen die Schichten einlagern kann.
-    
+
 #frage[Beschreiben sie die Bildung von Tonmineralen durch den Prozess der Veränderung der Zwischenschicht am Beispiel des Glimmers]
 #missing
 
- #frage[Beschreiben sie die Umwandlung von Tonmineralen am Beispiel des Glimmers]
+#frage[Beschreiben sie die Umwandlung von Tonmineralen am Beispiel des Glimmers]
 #missing
- #frage[Beschreiben sie die Bildung von Tonmineralen durch Neubildung aus Zerfallsprodukten von Silikaten]
+#frage[Beschreiben sie die Bildung von Tonmineralen durch Neubildung aus Zerfallsprodukten von Silikaten]
 #missing
 #frage[Erklären sie den Begriff der spezifischen Oberfläche; wovon ist diese abhängig?]
 Spezifische Oberfläche ist die Oberfläche pro Mass einer Festsubstanz ($m^2/g$). Die spez. Oberfläche von Böden beträgt 1-500 $m^2/g$. Sie ist abhängig von Art und Größe der Oberfläche.
@@ -191,12 +188,12 @@ Spezifische Oberfläche ist die Oberfläche pro Mass einer Festsubstanz ($m^2/g$
 Elektrische Doppelschicht bezeichnet Grenzschichten, an denen sich elektrisch getrennt geladene Sichten gegenüber stehen.
 
 #frage[Beschreiben sie die Ladungsverhältnisse von Silikatschichten der Tonminerale]
-Theoretisch wären Ladungen ausgeglichen (0), jedoch tritt das praktisch nicht auf. Es wird $"Si"^{4+}$ mit $"Al"^{3+}$  und $"Al"^{3+}$ mit $"Fe"^{2+}$ oder $"Mg"^{2+}$ getauscht und dabei entsteht ein negativer Ladungsüberschuss (isomorpher Ersatz). Bei Tonmineralen ist die Nettoladung stets negativ.
+Theoretisch wären Ladungen ausgeglichen (0), jedoch tritt das praktisch nicht auf. Es wird $"Si"^{4+}$ mit $"Al"^{3+}$ und $"Al"^{3+}$ mit $"Fe"^{2+}$ oder $"Mg"^{2+}$ getauscht und dabei entsteht ein negativer Ladungsüberschuss (isomorpher Ersatz). Bei Tonmineralen ist die Nettoladung stets negativ.
 
 #frage[Charakterisieren sie die wichtigsten Oxide und Hydroxide]
 - *Quarz*: $"SiO"_2$, $12\%$ der Lithosphäre, $"SiO"_4$ Tetraeder, $2.65 g/"cm"^3$, Bioopal, Cristobalitm Opal
 - *Al-Oxide*: $"Al"("OH")_3$, Gibbsit, bei Verwitterung Al-haltiger Silikate
-- *Fe(III)-Oxide*: Oxidation von $"Fe"^(2+)$, aerobe Bedingungen, schwer löslich, Subtropen, kleine Kristalle, große Oberfläche, rostbraun-rot 
+- *Fe(III)-Oxide*: Oxidation von $"Fe"^(2+)$, aerobe Bedingungen, schwer löslich, Subtropen, kleine Kristalle, große Oberfläche, rostbraun-rot
 - *Mangan*: bei Verwitterung Mn-haltiger Silikate, als dunkle Konkretionen, Flecken in Böden, schwer löslich
 
 #frage[Charakterisieren sie die wichtigsten Karbonate]
@@ -212,13 +209,12 @@ Calcit schäumt bei Kontakt mit Salzsäure auf und setzt CO2 frei.
 #frage[Wie entstehen Lösskindel?]
 #missing
 
-
 = Fragensammlung - Prozesse der Bodenbildung
 <fragensammlung---prozesse-der-bodenbildung>
 
 #frage[Welche primären und sekundären Prozesse der Bodenbildun kennen sie?]
 *Primär*: Verwitterung, Entsalzung/Entkalkung, Carbonatisierung,
-Akkumulierung org. Substanz, Aggregierung 
+Akkumulierung org. Substanz, Aggregierung
 
 *Sekundär*: Verbraunung, Tonmineral-Neubildung, Tinverlagerung,
 Podsolierung, Desilifizierung, Ferralitisierung, Redoximorphe
@@ -241,7 +237,7 @@ auftritt.
 
 #frage[Wie funktioniert Salzverwitterung? ]
 Kristallisationsdruck Salzhaltiger Lösungen bricht Gestein. Wird
-  verstärkt, wenn wasserfreie Salze rehydriert werden.
+verstärkt, wenn wasserfreie Salze rehydriert werden.
 
 #frage[Beschreiben sie die verschiedenen Prozesse der chemische Verwitterung]
 - *Hydratation*: Volumsvergößerung durch Aufnahme von H2O durch Minerale
@@ -269,10 +265,11 @@ Beschreiben Sie folgenden Boden. Wie entsteht er? Welche Horizonte? Wie
 wird er in die Österreichische Bodensystematik eingegliedert? (Abbildung
 @fig:Gley)
 
-#figure(image("assets/Bodenbsp.png", width: 75%),
+#figure(
+  image("assets/Bodenbsp.png", width: 75%),
   caption: [
     Gley
-  ]
+  ],
 )
 <fig:Gley>
 
