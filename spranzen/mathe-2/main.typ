@@ -7,9 +7,9 @@
 )
 
 #maketitle(
-        title: "Mathe 2",
-        authors: ("npikall",),
-        date: datetime.today().display("[day].[month].[year]")
+  title: "Mathe 2",
+  authors: ("np",),
+  date: datetime.today().display("[day].[month].[year]"),
 )
 #outline()
 #pagebreak()
