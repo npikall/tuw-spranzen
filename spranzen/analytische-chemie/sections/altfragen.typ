@@ -51,7 +51,7 @@ Verwendung:
 - Untersuchung von Kristallisationsvorgängen in Polymeren
 
 #frage[HPLC & Bezug zu Stoffen mit absteigender Polarität]
-#missing
+#missing[]
 
 #pagebreak(weak: true)
 #frage[Thermische Gravimetrie, DSC, Prinzip, Skizze, Charaktereigenschaften, Verwendung,...]
@@ -62,7 +62,7 @@ Siehe @fig-thermogravimetrie.
 
 #frage[UV/VIS Spektroskopie: Signalerzeugung, Skizze, Verwendung, Charaktereigenschaften,
 Chromophore und Auxochrome,...]
-#missing
+#missing[]
 
 #frage[AAS (Atomabsorptionsspektroskopie): Skizzen, Erklärung, …]
 *Probenvorbereitung:* feste Proben müssen gelöst bzw. aufgeschlossen werden
@@ -96,7 +96,7 @@ Chromophore und Auxochrome,...]
 - Hohlkathodenlampe: Erzeugung von Eigenstrahlung für jedes Element wird eine spezielle Hohlkathodenlampe verwendet; besteht aus einem Edelgas (Ne, Ar) unter Druck von wenigen mbar gefüllten Glaszylinder mit eingeschmolzener Kathode und Anode
 - Elektrodenlose Entladungslampe: Element liegt gasförmig vor #sym.arrow Mikrowellen anregung #sym.arrow höherer Intensität und Stabilität
 - Kontinuierliche Strahlungsquellen: sehr linienreich, quasi kontinuierlich; zur Bestimmung des unspezifischen Hintergrundes
-#missing
+#missing[]
 
 #frage[Beschreiben Sie, welche Parameter in Zuge der Methodenvalidierung untersucht werden müssen und welche (praktische) Bedeutung diese haben!]
 
@@ -186,7 +186,7 @@ Kalibrierungslinie verglichen, um die $"O"_2$-Konzentration zu bestimmen.
   mittleren IR-Bereich beruht. Welcher Informationsgehalt kann aus einem IR-Spektrum
   abgeleitet werden?
 ]
-#missing
+#missing[]
 
 #frage[
   *Fehlerarten* in der analytischen Chemie welche tolerierbar, welche nicht, Skizze
@@ -212,7 +212,7 @@ werden kann
   *Trennverfahren:* Auflösung und Trennstufenzahl
   Definition, Skizze, Gleichung (2 für Auflösung, 1 für TSZ), Optimierung
 ]
-#missing
+#missing[]
 
 #frage[
   Analytische und nicht analytische Kriterien nennen und erklären.

@@ -125,7 +125,7 @@ Trennung zweier Stoffe durch Verteilung zwischen zwei miteinander nicht mischbar
 
 === Theoretische Grundlage der Chromatographie
 Wechselwirkung der Komponente A mit der stationären bzw. moilen Phase.
-#missing
+#missing[]
 
 == Grundlagen für die Trennung über die Gasphase
 Als Grundlage dient das Henry'sche Gesetz
@@ -149,7 +149,7 @@ $
 
 === Theoretische Trennstufen:
 Analogie zu einer diskreten Verteilungstufe der flüssig/flüssig Extraktion nach Craig oder zu einem theoretischen Boden in der Destillation.
-#missing
+#missing[]
 
 == Gaschromatographie
 == Flüssigkeitschromatographie

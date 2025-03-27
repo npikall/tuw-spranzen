@@ -161,7 +161,7 @@ Das Gelingen der Analyse hängt in entscheidendem Maße von der qualität der Pr
 *Absorption aus Gasen mittels Gaswaschflaschen:*
 
 #text(fill: red)[Kleine Grafik fehlt hier noch. Aber eigentlich nur ein Rohr in einer Flasche.]
-#missing
+#missing[]
 
 *Probennahme mittels Absorptionsröhrchen und Balgpumpe:*
 

@@ -1,22 +1,22 @@
 #import "../common.typ":*
 
 = Optische Methoden
-#missing
+#missing[]
 == Spektroskopie
-#missing
+#missing[]
 == Atomabsorptionspektrometrie
-#missing
+#missing[]
 == Optische Emissionsspektralanalyse
-#missing
+#missing[]
 == Röntgenfloureszenzanalyse
-#missing
+#missing[]
 == UV-Spektroskopie
-#missing
+#missing[]
 == Infrarotspektroskopie
-#missing
+#missing[]
 == Michelson Inferometer
-#missing
+#missing[]
 == Massenspektroskopie
-#missing
+#missing[]
 == Rasterelektronenmikroskopie (REM)
-#missing
+#missing[]

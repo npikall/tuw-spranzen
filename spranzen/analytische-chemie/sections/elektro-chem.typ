@@ -127,7 +127,7 @@ Aufzeichnung von Strom Spannungskurven von Ionen in Lösungen an Metall- oder Ha
 
 *Quantitative Info:* Stromfluss proportional zur Konzentration
 
-#missing-plot
+#missing-plot()
 
 *Polarographie:* Spezialfall der Voltametrie...
 
