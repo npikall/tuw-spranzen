@@ -1,4 +1,5 @@
 #import "@preview/rubber-article:0.3.1":*
+#import "common.typ": github-link
 
 #show: article.with(
   eq-numbering: "(1.1)",
@@ -11,12 +12,6 @@
   authors: ("np",),
   date: datetime.today().display("[day].[month].[year]"),
 )
-
-#let colors = (aqua.lighten(20%), green.lighten(20%), orange.lighten(20%))
-#let missing = {
-  set text(fill: red)
-  lorem(50)
-}
 
 #outline()
 #pagebreak()
@@ -34,3 +29,5 @@
   title-size: 20pt,
 )
 #include "sections/altfragen.typ"
+
+#github-link

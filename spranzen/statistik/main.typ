@@ -21,9 +21,6 @@
 // settings for plotting with cetz
 #show figure.where(kind: "plot"): set figure(supplement: "Grafik")
 
-// Placeholder for content that still needs to be added
-#show lorem(50): it => text(fill: red, strong(it))
-
 #outline()
 #pagebreak()
 
@@ -33,3 +30,5 @@
 #include "sections/multivar.typ"
 #include "sections/non-param.typ"
 #include "sections/exp-design.typ"
+
+#github-link
