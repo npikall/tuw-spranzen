@@ -3,22 +3,25 @@
 // of variables and functions that are used repeatedly in other files
 
 // Importing some useful packages
-#import "@preview/fletcher:0.5.5":*
-#import "@preview/cetz:0.3.3"
-#import "@preview/cetz-plot:0.1.1"
-#import "@preview/gentle-clues:1.2.0" as gc
+#import "@preview/fletcher:0.5.7": diagram, node, edge // for drawing diagrams
+#import "@preview/cetz:0.3.4" // for drawing images 
+#import "@preview/gentle-clues:1.2.0" as gc // for inserting callouts or admonitions
+#import "@preview/lilaq:0.1.0" as lq // for plotting similar to matplotlib
+#import "@preview/tiptoe:0.3.0" // for drawing arrows
+#import "@preview/pillar:0.3.1" // for drawing tables
+#import "@preview/tiaoma:0.3.0" // for generating QR codes
 
-// default indicator for missing content
+// Default indicator for missing content
 #let missing(content) = {
   set text(fill: red)
   let msg = if content == [] {"MISSING" } else { content }
   rect(width: 100%, stroke: red, align(center, msg))
 }
-// default indicator for missing plots
-#let missing-plot = {
+// Default indicator for missing plots
+#let missing-plot(content: "MISSING PLOT") = {
   figure(
-    rect(fill: red, height: 2cm, text(white, weight: 600)[Plot einfügen!]),
-    caption: [Hier fehlt ein Plot],
+    rect(fill: red, height: 2cm, text(white, weight: 600, content)),
+    caption: content,
   )
 }
 
@@ -54,3 +57,23 @@
     )
   ])
 }
+
+// Insert Github Link
+#let github-link = [
+  #align(center, rect(width: 60%)[
+    #show link: set text(font: "Ubuntu Mono")
+    If you want to see the source code of this document or want to contribute or raise an issue, you can find it on GitHub:
+    #tiaoma.qrcode("https://github.com/npikall/tuw-spranzen")
+    #link("https://github.com/npikall/tuw-spranzen")
+  ])
+]
+
+// Color Palette
+#let colors = (
+  aqua,
+  green,
+  orange,
+  red,
+  maroon,
+  navy,
+).map(c => c.lighten(20%))

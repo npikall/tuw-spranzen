@@ -170,12 +170,12 @@ siehe Frage 28
 1:1 Tonminerale sind folgendermaßen aufgebaut TO. 2:1 hingegegn haben die Struktur TOT. Die 2:1 Tonminerale haben eine negative Schichtladung, und sind daher anfälliger auf Quellung, da sich hydratisierte Kationen zwischen die Schichten einlagern kann.
 
 #frage[Beschreiben sie die Bildung von Tonmineralen durch den Prozess der Veränderung der Zwischenschicht am Beispiel des Glimmers]
-#missing
+#missing[]
 
 #frage[Beschreiben sie die Umwandlung von Tonmineralen am Beispiel des Glimmers]
-#missing
+#missing[]
 #frage[Beschreiben sie die Bildung von Tonmineralen durch Neubildung aus Zerfallsprodukten von Silikaten]
-#missing
+#missing[]
 #frage[Erklären sie den Begriff der spezifischen Oberfläche; wovon ist diese abhängig?]
 Spezifische Oberfläche ist die Oberfläche pro Mass einer Festsubstanz ($m^2/g$). Die spez. Oberfläche von Böden beträgt 1-500 $m^2/g$. Sie ist abhängig von Art und Größe der Oberfläche.
 
@@ -207,7 +207,7 @@ Theoretisch wären Ladungen ausgeglichen (0), jedoch tritt das praktisch nicht a
 Calcit schäumt bei Kontakt mit Salzsäure auf und setzt CO2 frei.
 
 #frage[Wie entstehen Lösskindel?]
-#missing
+#missing[]
 
 = Fragensammlung - Prozesse der Bodenbildung
 <fragensammlung---prozesse-der-bodenbildung>
@@ -257,7 +257,7 @@ unterliegen erst dann der Verwitterung, wenn keine Carbonate mehr
 vorhanden sind.
 
 #frage[Was ist ein Pseudomycel?]
-#missing
+#missing[]
 
 = Fragen vom 04.12.2023
 <fragen-vom-04.12.2023>
@@ -283,10 +283,4 @@ Nennen Sie die wichtigsten Primär Silikate. Bildung von Tonmineralen
 durch Neubildung oder so ähnlich?
 
 Korngrößen
-#import "@preview/tiaoma:0.3.0"
-#align(center, rect(width: 60%)[
-  #show link: set text(font: "Ubuntu Mono")
-  If you want to see the source code of this document or want to contribute or raise an issue, you can find it on GitHub:
-  #tiaoma.qrcode("https://github.com/npikall/tuw-spranzen")
-  #link("https://github.com/npikall/tuw-spranzen")
-])
+#github-link
