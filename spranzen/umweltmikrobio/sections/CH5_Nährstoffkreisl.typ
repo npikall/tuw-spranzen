@@ -1,5 +1,6 @@
-= Nährstoffkreislauf und microbial loop
+= Nährstoffkreislauf und Microbial loop
 <nährstoffkreislauf-und-microbial-loop>
+
 == Kreisläufe
 <kreisläufe>
 == Kohlenstoffkreislauf

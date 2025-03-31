@@ -24,7 +24,7 @@
 #include "sections/CH2_Gesundheit.typ"
 #include "sections/CH3_Methoden.typ"
 #include "sections/CH4_Diver.typ"
-// #include "sections/CH5_Nährstoffkreisl.typ"
+#include "sections/CH5_Nährstoffkreisl.typ"
 #include "sections/CH6_Kometabolismus.typ"
 // #include "sections/CH7_Anwendungbeispiele.typ"
 #include "sections/Altfragen.typ"
