@@ -272,18 +272,75 @@ hitzestabile DNA Polymerase.
 == Viren
 <viren>
 === Allgemeine Kennzeichen von Viren
-#missing[]
+- biologische Objekte an der Grenze des Lebendigen
+- obligat parasitisch
+- kein eigener Stoffwechsel
+- Virusvermehrung erfolgt in Wirtszelle
+
+*Aufbau von Viren:*
+- außerhalb von Zellen _Virionen_ genannt
+- virals Genom im Zentrum
+- Capsid umgibt Erbgut
+- Lipidmembran bei behüllten Viren
+
+#figure(
+  image("../assets/aufbau-virus.png", width: 50%),
+  caption: "Aufbau eines Viruses",
+)
+
 === Das Capsid
-#missing[]
+Das Capsid bildet die *äußerste Schicht* bei unbehüllten Viren. Es hat die Funktion, das *Genom zu schützen* und stellt bei unbehüllten Viren den Kontakt zu Wirtszelle her und befördert das Genom in die Zelle.
 
 === Die Virus-Hülle
-#missing[]
+Falls vorhanden, dann eine doppelschichtige Membran.
+- Lippiddoppelschicht: stammt von Plasmamembran der Wirtszelle.
+- Virale Membranproteine: gro0e Anzahl, verdrängen wirtseigene Membranproteine
+- Funktion: Schutz, Bindung an Wirtszelle, Fusionierung mit Plasmsmembran, Bildung neuer Varianten durch mutierte Hüllproteine
 
 === Virusklassifizierung
-#missing[]
+#figure(
+  table(
+    columns: 3,
+    table.hline(),
+    table.header([Gruppe], [Eigenschaften], [mRNA Produktion]),
+    table.hline(),
+    [I],
+    [Doppelstrang DNA],
+    [mRNA direkt von DNA Vorlage geschrieben],
+    [II],
+    [Einzelstrang DNA],
+    [DNA zuerst in doppelstrang Form bevor zu RNA übersetzt],
+    [III],
+    [Doppelstrang RNA],
+    [mRNA übersetzt von RNA Genom],
+    [IV],
+    [Einzelstrang RNA (+)],
+    [Genomfunktion als mRNA],
+    [V],
+    [Einzelstrang RNA (-)],
+    [mRNW von RNA Genom abgeleitet],
+    [VI],
+    [#line(length: 2cm)],
+    [#line(length: 2cm)],
+    [VII],
+    [#line(length: 2cm)],
+    [#line(length: 2cm)],
+    table.hline(),
+  ),
+)
 
 === Vermehrung von Viren
-#missing[]
++ Anlagerung (an Wirtszelle)
++ Eindringen
++ Uncoating (Freisetzung des Genoms)
++ Vermehrung des Genoms im Zytoplasma oder Zellkern
++ Zusammenbau
++ Freisetzung
+=== Spezialfälle von Viren
+- Risenviren
+- Prionen (infektiöse Proteine, unempfindlich gg. UV-Strahlung und Hitze)
+- Viroide (kurzer RNA Strang, keine Proteine oder Lipide)
+- Defekte Viren
 
 == Eukaryonten (Algen, Protozoen, Pilze)
 === Protozoen
