@@ -320,11 +320,11 @@ Falls vorhanden, dann eine doppelschichtige Membran.
     [Einzelstrang RNA (-)],
     [mRNW von RNA Genom abgeleitet],
     [VI],
-    [#line(length: 2cm)],
-    [#line(length: 2cm)],
+    [#line(length: 2cm, stroke: red)],
+    [#line(length: 2cm, stroke: red)],
     [VII],
-    [#line(length: 2cm)],
-    [#line(length: 2cm)],
+    [#line(length: 2cm, stroke: red)],
+    [#line(length: 2cm, stroke: red)],
     table.hline(),
   ),
 )
@@ -345,9 +345,123 @@ Falls vorhanden, dann eine doppelschichtige Membran.
 == Eukaryonten (Algen, Protozoen, Pilze)
 === Protozoen
 *Kennzeichen von Protozoa:*
+- eukaryotischer Zellbau (meist einzellig)
+- freilebend und parasitär
+- meist feuchte Habitate
+- Lebensweise: heterotroph, autotroph, mixotroph, aerob oder anaerob
+- Vermehrung asexuell und sexuell
 
 *Klassifikation tierischer Protisten:*
 
+#figure(
+  table(
+    columns: 3,
+    table.hline(),
+    table.header([Class], [Characteristic], [Example]),
+    table.hline(),
+    [Flagellates],
+    [motile, one or more flagella],
+    [Giardia],
+    [Ciliates],
+    [motile, covered in many short cilia],
+    [Paramecium],
+    [Amoebae],
+    [motile, move with cytoplasmic extensions],
+    [Amoeba],
+    [Sporozoa],
+    [adult is not motile; many are parasites; some form spores],
+    [Toxoplasma, Plasmodium],
+    table.hline(),
+  ),
+)
+
+*Fortbewegung bei Protozoa:*
+- Flagellen (Schwanz) rotierende Bewegung
+- Cilien (Haar) schlagende Bewegung
+
 === Schleimpilze
+*Charakeristika:*
+- Polyphyletische Gruppe
+- Heterotrophe Lebensweise
+- Habitat: feuchte Umgebung (Boden, Gras, ...)
+- Vermehrung: asexuell und sexuell (Sporen in Sporangien)
+- keine Zellwand in vegetativer Lebensphase
+- ähneln sowohl Protozoen als auch Pilzen
+
+*Dictyostelimycota - zelluläre Schleimpilze:*
+- Bildung eines Pseudoplasmodiums (keine Verschmelzung der Einzelzellen)
+- Ernährung phagothroph (Bakterien)
+- Beispielgattung Dictyostelium
+
+*Myxomycota - plasmodiale Schleimpilze:*
+- Bilden echtes Plasmodium (Verschmelzung der Einzelzellen)
+- Ernährung phagothroph (Bakterien)
+- Beispielgattung Physarum
+
 === Algen
+*Allgemein:*
+- einzellig oder mehrzellig
+- autotroph
+- manche besitzen Flagellen
+- Zellwände aus Cellulose, teilweise Pektin
+- feuchte Habitate (wasserlebende und terrestrische Spezies)
+- Fortpflanzung: asexuell und sexuell, teilweise im Generationenwechsel
+Algen sind keine einheitliche Gruppe von Organismen. Sieben Abteilungen von
+weitläufig verwandten Organismen werden als Algen bezeichnet. Die wichtigsten
+3 werden hier vorgestellt:
+
+#gc.info(title: "Euglenophyta")[
+  #show: rest => columns(2, gutter: 5pt, rest)
+  - ursprünglichste Abteilung der Algen
+  - Einzellig
+  - autotroph oder heterotroph
+  - 1-3 Flagellen
+  - pulsierende Vakuole (zur Osmoregulation)
+  #colbreak()
+  - Photorezeptor
+  - keine Zellwand stattdessen Membran
+  - Reservestoffe Kohlenhydrate
+  - hauptsächlich im Süßwasser
+  - Fortpflanzung: asexuell
+]
+
+#gc.info(title: "Pyrrophyta - Dinoflagellaten")[
+  #show: rest => columns(2, gutter: 5pt, rest)
+  - Einzellig
+  - autotroph und heterotroph
+  - 2 Flagellen
+  - Zellwand aus Cellulose
+  #colbreak()
+  - Reservestoffe Stärke
+  - Fortpflanzung: asexuell
+  - Habitat: hauptsächlich Salzwasser, manche Süßwasser
+  - einige sind biolumineszent
+  - manche sind giftig (Alexandrium, Gambierdiscus, Dinophysis)
+]
+
+#gc.info(title: "Chlorophyta - Grünalge")[
+  #show: rest => columns(2, gutter: 5pt, rest)
+  - größte Gruppe der Algen
+  - Einzellig auch Koloniebildend
+  - autotroph z.T. parasitär
+  - Zellwand innen Cellulose aussen Pektin
+  #colbreak()
+  - Reservestoffe Stärke
+  - Fortpflanzung: asexuell und sexuell
+  - Habitat: hauptsächlich Süßwasser, einige Salzwasser und feuchte Erde
+]
+
 === Pilze
+*Morphologie von Pilzen:*
+- Hyphe (Grundelement von filamentösen Pilzen)
+- Myzel (Geflecht von Hyphen)
+- Pilzthallus (Gesamtheit des Myzels, aka. Pilzkolonie)
+- Hefe (Grundelement von einzelligen Pilzen)
+
+Dimorphe Formen können zwischen filamentösem und einzelligem Wachstum wechseln.
+
+*Ökologie von Pilzen:*
+- Pilze als Destruenten
+- Flechten (Symbiose zwischen Pilzen und Algen)
+- Mycorrhiza (Symbiose zwischen Pilzen und Pflanzen)
+

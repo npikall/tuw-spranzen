@@ -19,6 +19,11 @@
   pagebreak()
   it
 }
+#set table.hline(stroke: 0.7pt)
+#show table.cell.where(y: 0): strong
+#show figure.where(kind: table): it => {
+  block(width: 80%, it)
+}
 
 #include "sections/CH1.typ"
 #include "sections/CH2_Gesundheit.typ"
@@ -26,5 +31,5 @@
 #include "sections/CH4_Diver.typ"
 #include "sections/CH5_Nährstoffkreisl.typ"
 #include "sections/CH6_Kometabolismus.typ"
-// #include "sections/CH7_Anwendungbeispiele.typ"
+#include "sections/CH7_Anwendungbeispiele.typ"
 #include "sections/Altfragen.typ"

@@ -1,5 +1,8 @@
 #import "@preview/gentle-clues:1.2.0" as gc
 #import "@preview/fletcher:0.5.7" as fletcher: diagram, node, edge
+#import "@preview/whalogen:0.3.0": ce
+#import "@preview/lilaq:0.2.0" as lq
+#import "@preview/tiptoe:0.3.0"
 
 #let fragen-counter = counter("fragen")
 #let fcount = context fragen-counter.display()
@@ -60,4 +63,8 @@
   crameri-r.at(8).lighten(40%),
 )
 
-#let digram-style = (node-fill: blue.lighten(50%), node-corner-radius: 5pt)
+#let digram-style = (
+  node-fill: blue.lighten(50%),
+  node-corner-radius: 5pt,
+  node-stroke: 0.7pt,
+)
