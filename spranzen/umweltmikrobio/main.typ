@@ -4,6 +4,8 @@
 #show:article.with(
   show-header: true,
   header-titel: "Umweltmikrobiologie",
+  eq-numbering: "(1.1)",
+  eq-chapterwise: false,
 )
 
 #maketitle(
