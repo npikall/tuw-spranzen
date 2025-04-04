@@ -1,3 +1,4 @@
+#import "../common.typ":*
 = Anwendungsbeipiele
 <anwendungsbeipiele>
 == Mineralölkohlenwasserstoffe
@@ -13,15 +14,16 @@
 
 == Abwasserreinigung
 <abwasserreinigung>
-=== Kontinuierliche Fermentation
-=== Verfahren mit Rückführung der Biomasse
-=== Schlammalter
-=== Bedeutung der Mikorbiologie
-=== Biofilme
-
-== EBPR - enhanced bio. phosphorus removal
-<ebpr---enhanced-bio.-phosphorus-removal>
-== MIC - microbial induced corrosion
-<mic---microbial-induced-corrosion>
-== Biologische Entfernung von Nitrat aus Trinkwasser
-<biologische-entfernung-von-nitrat-aus-trinkwasser>
+#missing[Einige Folien fehlen hier noch.]
+// === Kontinuierliche Fermentation
+// === Verfahren mit Rückführung der Biomasse
+// === Schlammalter
+// === Bedeutung der Mikorbiologie
+// === Biofilme
+// 
+// == EBPR - enhanced bio. phosphorus removal
+// <ebpr---enhanced-bio.-phosphorus-removal>
+// == MIC - microbial induced corrosion
+// <mic---microbial-induced-corrosion>
+// == Biologische Entfernung von Nitrat aus Trinkwasser
+// <biologische-entfernung-von-nitrat-aus-trinkwasser>

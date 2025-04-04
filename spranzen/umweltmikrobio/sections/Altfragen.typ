@@ -117,3 +117,214 @@ Replikationsapparat, Hüllproteine und Capsidproteine. \
 spongiforme Enzephalopathien. Beispiel: Creutzfeld-Jakob, BSE, Scarpie.
 Unempfindlich gegenüber UV- und Gammastrahlen, Hitze und
 Desinfektionsmittel.
+
+#frage[
+  Größenordnung (in Mikrometern): Viren, Bakterien, Pilze, Algen
+]
+- Viren: $0,02 – 0,5mu m$
+- Bakterien: $0,2 – 5mu m$
+- Hefen: $4 – 8mu m$
+- Algen:
+- Amöben: $100 – 800mu m$
+
+#frage[
+  Wie kann man Mikroorganismen klassifizieren? Welche Kriterien stehen zur Verfügung und warum werden gerade diese Kriterien verwendet?
+]
+// #missing[]
+
+#frage[
+  Vorkommen von Prokaryoten und Größenordnung vom Gesamtvorkommen
+]
+// #missing[]
+
+#frage[
+  Grünalgen: Charakteristika und wofür werden sie genutzt?
+]
+// #missing[]
+
+#frage[
+  Pilze: Rolle im Ökosystem und Bedeutung für Menschen
+]
+
+#frage[
+  3 älteste Bakterienarten aufzählen und beschreiben
+]
+
+#frage[
+  Firmicutes beschreiben
+]
+
+#frage[
+  Beschreiben Sie die Eigenschaften von Archaea und Eubacteria und ihre Unterschiede.
+
+  Archaea: Eigenschaften und Unterschiede zu Eubacteria
+]
+#frage[
+  Wie vermehrt sich ein Virus?
+]
+
+#frage[
+  4 Arten der Vireninfektion
+]
+
+#frage[
+  Welche Sicherheitsstufe braucht man im Umgang mit HI-Viren? Welche
+  Sicherheitsvorschriften sind zu treffen?
+]
+#frage[
+  Aufbau von Viren
+  Warum sind Viren keine Organismen (4 Gründe)
+]
+#frage[
+  Baltimore Klassifizierung von Viren
+]
+#frage[
+  Was versteht man unter dem Yield-Koeffizient und was sagt dieser aus?
+]
+#frage[
+  Definition: Anreicherungskultur und Reinkultur
+]
+#frage[
+  Schritte der Anzüchtung einer Kolonie
+]
+#frage[
+  Zusammenhang: Wachstumsrate – Verdopplungszeit
+]
+#frage[
+  Sterilisation in der Praxis
+]
+#frage[
+  Chemische Desinfektionsverfahren
+  Reduktionsstufen bei der Desinfektion: gibt es eine allgemein gültige Regelung?
+]
+#frage[
+  Heißluft/Dampfsterilisationsverfahren
+]
+#frage[
+  Erklären von PCR (inklusive Teilschritte)
+]
+#frage[
+  Arten der biologischen Abbaubarkeit
+]
+#frage[
+  Aufbau Belebtschlammflocke
+]
+
+#frage[
+  Wodurch unterscheidet sich eine kontinuierliche Fermentation grundlegend vom
+  Konzept des Belebungsverfahrens in der Abwasserreinigung? Führen Sie die
+  Auswirkungen des Unterschieds kurz aus
+]
+#frage[
+  Was sind die Unterschiede zwischen einem GAK-Filter (granulierter Aktivkohle) und
+  einem BAK-Filter (biologisch aktivierte Aktivkohle). Diskutieren Sie kurz die
+  Bedeutung der Unterschiede.
+]
+#frage[
+  Biologische Nitratreduktion in Trinkwasseraufbereitung
+]
+#frage[
+  Beschreiben Sie kurz mittels Skizze das „Schwanenhalsexperiment“ von Pasteur.
+  Was wurde damit widerlegt?
+]
+#frage[
+  Bedeutungen von Mikroorganismen für Umwelt
+]
+#frage[
+  4 Phasen des Wachstums von Mikroorganismen
+]
+
+#frage[
+  Charakteristika des mikrobiellen Lebens
+]
+#frage[
+  Anwendungsgebiete der Umweltmikrobiologie (mind. 3)
+]
+#frage[
+  Arbeitsordnung mit biologischen Stoffen
+]
+#frage[
+  Nennen sie drei gebräuchliche Mikroskopieverfahren und beschreiben sie diese
+]
+#frage[
+  RGT-Regel
+]
+#frage[
+  Ökologische Nische
+]
+#frage[
+  Annahmen für die Erstellung eines phylogenetischen Stammbaums
+]
+#frage[
+  Synergismus
+]
+#frage[
+  Water borne/based/vektor based erklären
+]
+#frage[
+  Definition Intoxikation
+]
+#frage[
+  Definition Infektion
+]
+#frage[
+  Was bedeutet Zoonose? (max. 3 Sätze)
+]
+#frage[
+  Wie brechen Krankheiten beim Menschen aus?
+]
+#frage[
+  Geben Sie die 3 Möglichkeiten an, wie die Entstehung von Krankheitserregern bzw.
+  Pathogenität beim Menschen erklärt werden kann (max. 2 Sätze pro Möglichkeit)
+]
+#frage[
+  Für Wasser assoziierte Krankheiten
+]
+#frage[
+  Wofür werden Screening-Tests und Kläranlagen-Simulationstests eingesetzt.
+  Einsatzbereich und Unterschiede
+]
+#frage[
+  Kurzgeschlossener und gebrochener Nährstoffkreislauf
+]
+#frage[
+  Biologischer Kohlenstoff-, Stickstoff-, Phosphor- und Schwefel-Kreislauf
+  Wie stellt man das „moderne“ Bild des mikrobiellen N-Kreislaufs von Ammonium
+  bis hin zum molekularen Stickstoff (N2) dar? Skizzieren und beschreiben sie die
+  einzelnen Schritte
+]
+#frage[
+  Definition: Dessimilation & Assimilation
+]
+#frage[
+  Erklären Sie kurz die Begriffe Katabolismus und Anabolismus und geben Sie jeweils
+  Beispiele.
+]
+#frage[
+  Was sind die wichtigsten C-Senken/Reservoirs?
+]
+#frage[
+  Erklären von abiotisch/biotisch + Beispiel
+]
+#frage[
+  Skizzieren sie die Grundlegende Überlegung hinter der Monod Kinetik und
+  diskutieren sie kurz diese Grafik
+]
+#frage[
+  CSB von #ce("CH3COOH") bestimmen
+]
+#frage[
+  Definition Anammox, Deammonifikation
+]
+#frage[
+  Bedeutung von Phosphor für die Zelle
+]
+#frage[
+  Beschreiben Sie den „Microbial-Loop“ am Bsp. Eines kippenden Sees
+]
+#frage[
+  Rechenbsp Wachstum & Verdopplung
+]
+#frage[
+  Rechenbsp limitierender Faktor
+]
