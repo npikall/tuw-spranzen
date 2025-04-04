@@ -70,9 +70,7 @@ Die 5 generellen Merkmale des Lebens:
 <evolution>
 #figure(
   diagram(
-    node-stroke: 0.7pt,
-    node-corner-radius: 5pt,
-    node-fill: blue.lighten(50%),
+    ..digram-style,
     node((0,0), [Bakterien (4 Mrd. J)]),
     edge("-|>"),
     node((1,0), [Eukaryoten (2 Mrd. J)]),
@@ -158,10 +156,8 @@ MO haben in fast allen Bereichen von Industrie und Gewerbe eine Bedeutung.
 Beispiel Ethanolerzeugung:
 #figure(
   diagram(
-    node-stroke: 0.7pt,
-    node-corner-radius: 5pt,
+    ..digram-style,
     spacing: 1em,
-    node-fill: blue.lighten(50%),
     node((0,0), name: <cell>, [Cellulose]),
     node((0,2), name: <corn>, [Maisstärke]),
     node((1,1), name: <gluc>, [Glucose]),
@@ -185,9 +181,7 @@ In der Praxis ist eine ausreichende Sterilität gegeben, wenn die Kontaminations
 Es gibt viele verschiedene Methoden zur Desinfektion bzw. Sterilisation von Oberflächen und Materialien.
 #figure(
   diagram(
-    node-corner-radius: 5pt,
-    node-stroke: 0.7pt,
-    node-fill: blue.lighten(50%),
+    ..digram-style,
     node((0,0), [Chemisch]),
     node((2,0), [Physikalisch]),
     node((1,1), [Trennung\ (Filtration)]),
@@ -213,7 +207,7 @@ Es gibt viele verschiedene Methoden zur Desinfektion bzw. Sterilisation von Ober
 
 Meilensteine in der Kultivierung und Reinkultur von MO.
 
-*Louis Pasteur:* 
+*Louis Pasteur:*
 - Bedeutung der Sterilisation
 - Fermentation
 - pasteurisieren
@@ -246,7 +240,6 @@ Martinus Beijerinck (1851-1931) wendete erstmals die Anreicherungskultur an.
 #sym.arrow hoch selektive Bebrütung
 
 Sergeij Winogradradsky (1856-1953) isolierte erfolgreich Bakterien die $upright(N)_(2^-)$ und S-Kreislauf beteiligt sind.
-
 
 === Avery MacCarty, Mullis, Woese
 <avery-maccarty-mullis-woese>
