@@ -327,9 +327,10 @@ Falls vorhanden, dann eine doppelschichtige Membran.
     [#line(length: 2cm, stroke: red)],
     table.hline(),
   ),
-)
+  caption: [Baltimore Klassifikation von Viren],
+)<tab-baltimore>
 
-=== Vermehrung von Viren
+=== Vermehrung von Viren <vermehrung-von-viren>
 + Anlagerung (an Wirtszelle)
 + Eindringen
 + Uncoating (Freisetzung des Genoms)
