@@ -35,3 +35,6 @@
 #include "sections/CH6_Kometabolismus.typ"
 #include "sections/CH7_Anwendungbeispiele.typ"
 #include "sections/Altfragen.typ"
+#pagebreak(weak: true)
+#include "sections/FAQ.typ"
+#github-link
