@@ -13,7 +13,7 @@
   authors: ("np",),
   date: datetime.today().display("[day].[month].[year]"),
 )
-
+// #v(2.5cm)
 #outline()
 
 // Automatic pagebreaks for each chapter
@@ -35,3 +35,6 @@
 #include "sections/CH6_Kometabolismus.typ"
 #include "sections/CH7_Anwendungbeispiele.typ"
 #include "sections/Altfragen.typ"
+#pagebreak(weak: true)
+#include "sections/FAQ.typ"
+#github-link

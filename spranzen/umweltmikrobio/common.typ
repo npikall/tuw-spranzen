@@ -3,6 +3,7 @@
 #import "@preview/whalogen:0.3.0": ce
 #import "@preview/lilaq:0.2.0" as lq
 #import "@preview/tiptoe:0.3.0"
+#import "@preview/tiaoma:0.3.0"
 
 #let fragen-counter = counter("fragen")
 #let fcount = context fragen-counter.display()
@@ -68,3 +69,37 @@
   node-corner-radius: 5pt,
   node-stroke: 0.7pt,
 )
+
+#let fragen-title(n: 1) = {
+  let fcount = context fragen-counter.display()
+  let title = [Frage #fcount #h(1fr) #n]
+  return title
+}
+
+#let nfrage(
+  n: 1,
+  icon: gc._get-icon-for("question"),
+  ..args,
+) = {
+  fragen-counter.step()
+  gc.clue(
+    accent-color: rgb("#179299"),
+    title: fragen-title(n: n),
+    icon: icon,
+    ..args,
+  )
+}
+
+#let antwort(display: true, body) = {
+  if display {body} else {hide(body)}
+}
+
+// Insert Github Link
+#let github-link = [
+  #align(center, rect(width: 60%)[
+    #show link: set text(font: "Ubuntu Mono")
+    If you want to see the source code of this document or want to contribute or raise an issue, you can find it on GitHub:
+    #tiaoma.qrcode("https://github.com/npikall/tuw-spranzen")
+    #link("https://github.com/npikall/tuw-spranzen")
+  ])
+]
