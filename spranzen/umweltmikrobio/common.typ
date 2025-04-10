@@ -70,6 +70,30 @@
   node-stroke: 0.7pt,
 )
 
+#let fragen-title(n: 1) = {
+  let fcount = context fragen-counter.display()
+  let title = [Frage #fcount #h(1fr) #n]
+  return title
+}
+
+#let nfrage(
+  n: 1,
+  icon: gc._get-icon-for("question"),
+  ..args,
+) = {
+  fragen-counter.step()
+  gc.clue(
+    accent-color: rgb("#179299"),
+    title: fragen-title(n: n),
+    icon: icon,
+    ..args,
+  )
+}
+
+#let antwort(display: true, body) = {
+  if display {body} else {hide(body)}
+}
+
 // Insert Github Link
 #let github-link = [
   #align(center, rect(width: 60%)[

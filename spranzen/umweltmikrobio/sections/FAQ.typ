@@ -1,35 +1,11 @@
-#import "../common.typ": gc, missing, ce, github-link
+#import "../common.typ": *
+#let antwort = antwort.with(display: true)
+#fragen-counter.update(0)
 
 = FAQ's
 Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen häufiger gestellt wurden. Die Fragen überschneiden sich mit der vorherigen Fragensammlung. Durch Anpassung des Quellcodes können die Antworten ausgeblendet werden, um die Fragen zu lernen.
 
-#let fragen-counter = counter("fragen")
-#fragen-counter.update(0)
-#let fragen-title(n: 1) = {
-  let fcount = context fragen-counter.display()
-  let title = [Frage #fcount #h(1fr) #n]
-  return title
-}
-#let frage(
-  n: 1,
-  icon: gc._get-icon-for("question"),
-  ..args,
-) = {
-  fragen-counter.step()
-  gc.clue(
-    accent-color: rgb("#179299"),
-    title: fragen-title(n: n),
-    icon: icon,
-    ..args,
-  )
-}
-
-#let antwort(display: true, body) = {
-  if display {body} else {hide(body)}
-}
-// #let antwort = antwort.with(display: false)
-
-#frage(n: ">5")[
+#nfrage(n: ">5")[
   Aufbau Belebtschlammflocke
 ]
 #antwort[
@@ -40,7 +16,7 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
   - Extrazelluläre Polymere Substanzen (EPS)
 ]
 
-#frage(n: ">5")[
+#nfrage(n: ">5")[
   GAK-Filter vs. BAK-Filter
 ]
 #antwort[
@@ -52,7 +28,7 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
   / BAK: biologisch aktivierte Aktivkohle, Adsorptive und biologische Prozesse
 ]
 
-#frage(n: 5)[
+#nfrage(n: 5)[
   Stickstoffkreislauf
 ]
 #antwort[
@@ -66,7 +42,7 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
   - Denitrifikation: NO3 wird in weniger gut belüfteten Böden von Bakterien zu elementarem N umgewandelt, wenn Pflanzen es nicht aufnehmen.
 ]
 
-#frage(n: 5)[
+#nfrage(n: 5)[
   Rechenbsp. Wachstum und Verdoppelung
 ]
 #antwort[
@@ -81,7 +57,7 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
   f(t) = c_0 dot a^t
   $
 ]
-#frage(n: 4)[
+#nfrage(n: 4)[
   Rechenbsp. limitierenderFaktor
 ]
 #antwort[
@@ -92,7 +68,7 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
   #missing[]
 ]
 
-#frage(n: 4)[
+#nfrage(n: 4)[
   Charakteristika des mikrobiellen Lebens (7 Charakteristika)
 ]
 #antwort[
@@ -105,7 +81,7 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
   - genetischer Austausch
 ]
 
-#frage(n: 4)[
+#nfrage(n: 4)[
   Heißluft/Dampfsterilisationsverfahren
 ]
 #antwort[
@@ -122,7 +98,7 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
   - 120°C, 2 bar, 20 Minuten
 ]
 
-#frage(n: 3)[
+#nfrage(n: 3)[
   Pilze: Rolle im Ökosystem und Bedeutung für den Menschen
 ]
 #antwort[
@@ -135,7 +111,7 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
     - Biotechnologie
 ]
 
-#frage(n: 3)[
+#nfrage(n: 3)[
   Was versteht man unter dem Yield-Koeffizienten und was sagt dieser aus?
 ]
 #antwort[
@@ -146,7 +122,7 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
 
   Der Rest (1-Y) wird zum Teil in nutzbare Energie als ATP und zum Teil in nicht nutzbare Energie (Wärme) übergeführt.
 ]
-#frage(n: 3)[
+#nfrage(n: 3)[
   Definition Anreicherungskultur und Reinkultur
 ]
 #antwort[
@@ -159,7 +135,7 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
   Wachstum eines Klons von einem bestimmten Organismus unter Ausschluss jeglicher Individuen anderer Arten oder Stämme von Organismen erfordert Sicherstellung, dass die Kultur aus einer einzigen Zelle hervorgegangen ist
 ]
 
-#frage(n: 3)[
+#nfrage(n: 3)[
   Bedeutung von MO für die Umwelt
 ]
 #antwort[
@@ -172,7 +148,7 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
 
 ]
 
-#frage(n: 3)[
+#nfrage(n: 3)[
   Mikroskopieverfahren
 ]
 #antwort[
@@ -203,7 +179,7 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
 
 ]
 
-#frage(n: 3)[
+#nfrage(n: 3)[
   RGT-Regel
 ]
 #antwort[
@@ -227,7 +203,7 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
   $
 ]
 
-#frage(n: 3)[
+#nfrage(n: 3)[
   Synergismus
 ]
 #antwort[
@@ -237,7 +213,7 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
   schrittweisen Teilabbau mineralisieren.
 ]
 
-#frage(n: 3)[
+#nfrage(n: 3)[
   Definition Infektion
 ]
 #antwort[
@@ -249,14 +225,14 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
   Siehe @vergleich-chemischer-und-mikrobiologischer-gefährdungen
 ]
 
-#frage(n: 3)[
+#nfrage(n: 3)[
   Was bedeutet Zoonose?
 ]
 #antwort[
   Übertragung von Erregern von Tieren auf Menschen
 ]
 
-#frage(n: 3)[
+#nfrage(n: 3)[
   3 Möglichkeiten wie Entstehung von Krankheitserregern erklärt werden kann.
 ]
 #antwort[
@@ -265,7 +241,7 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
   - Mensch ist zufälliger wirt des MO
 ]
 
-#frage(n: 3)[
+#nfrage(n: 3)[
   Kurzgeschlossener und gebrochener Nährstoffkreislauf
 ]
 #antwort[
@@ -279,7 +255,7 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
   - Nährstoffe speichern sich in Senken im System
 ]
 
-#frage(n: 3)[
+#nfrage(n: 3)[
   CSB von #ce("CH3COOH") bestimmen
 ]
 #antwort[
@@ -293,7 +269,7 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
   #sym.arrow.long $64g + 32g - 32g = 64g "CSB"$
 ]
 
-#frage(n: 3)[
+#nfrage(n: 3)[
   Erkläre Begriff AOC und den Zusammenhang mit Verschleimungen in Wasserleitungen. (Wiederverkeimung)
 ]
 
