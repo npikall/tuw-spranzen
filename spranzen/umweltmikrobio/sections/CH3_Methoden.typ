@@ -25,7 +25,7 @@ Vergrößerung gemäß den Gesetzen der Optik unter Ausnutzung von Lichtbrechung
 - Einfache Mikroskopie: nur einzelnes optisches System (Wie eine Lupe).
 - Zusammengesetzte Mikroskope: zwei oder mehr optische Systeme. Objektiv erzeugt vergrößertes Bild, welches von Okular nochmals vergrößert wird.
 
-*Gebräulichste Mikroskopieverfahren:*
+==== Gebräulichste Mikroskopieverfahren
 - Hellfeldmikroskopie:
   - Licht fällt durch Objekt
   - Objekt benötigt oft vorherige Einfärbung.
@@ -61,7 +61,7 @@ Laborsicherheit wird in der Verordnung für biologische Arbeitsstoffe 1998 gereg
 - Arbeitsschutz
 - Mitarbeiter Schulung
 
-*Laborsicherheitsstufen:*
+==== Laborsicherheitsstufen
 - S1 greinges Risiko für Beschäftigte, geringes Risiko für Bevölkerung
   - Händewaschen
   - Arbeitsflächen desinfizieren
@@ -79,19 +79,19 @@ Laborsicherheit wird in der Verordnung für biologische Arbeitsstoffe 1998 gereg
   - fest installierte Handschuhe
   - Gasdichte Sicherheitswerkbänken
 
-*Sterilisation:*
+==== Sterilisation
 Verfahren um Gegenstände von MO (einschließlich ihrer Ruhestadien) zu befreien.
 Meist nur eine Reduktion um einige 10-er Potenzen möglich.
 - Sterilisation ein Keim bei $10^6$ desinfizierten Einheiten
 - Desinfizieren reduktion, sodass keine Infektion zu erwarten wäre (5 Zehnerpotenzen)
 - Antiseptik: Antimikrobielle Präparate an Eintrittstellen
 
-*Log-Reduktionsstufen*
+==== Log-Reduktionsstufen
 $
 - log_10 ("nach Desinf."/"vor Desinf.")
 $
 
-*Sterilisationsverfahren:*
+==== Sterilisationsverfahren
 - Physikalisch
   - Dampsterilisation (Denaturierung von Proteinen)
   - Heißluftsterilisation (weniger effizient wegen geringerer Wärmeleitfähigkeit)
@@ -103,31 +103,31 @@ $
 === Kultivierung von MO
 <kultivierung-von-mo>
 
-*Nährmedien und Kultivierung:*
+==== Nährmedien und Kultivierung
 - Flüssigmedien (Agar Agar)
   - Anreicherung von MO
 - Festmedien (Agar Agar)
   - isolierung von MO (und Untersuchung der Eigenschaften)
 
-*Grundsätliche Zusammensetzung eines Nährmediums:*
+==== Grundsätliche Zusammensetzung eines Nährmediums
 - Wasser
 - Energiequelle (organische Verbindungen, aber auch Schwefelverbindungen)
 - Kohlenstoffquelle (für heterotrophe Organismen meist Kohlenhydrate)
 - Salze (Makroelemente wie Stickstoff, Phosphor und Schwefel)
 - pH-Puffer (Verhindert Verändrung des pH-Wert)
 
-*Arten der Kulturmedien nach Funktion:*
+==== Arten der Kulturmedien nach Funktion
 - Universalmedien
 - Selektivmedien
   -um bestimmte MO zu kultivieren
 - Differentialmedien
   - Indikatormedium, Farbstoffe die diagnostisch wirken
 
-*Anreicherungskultur:*
+==== Anreicherungskultur
 Wachstumsbedingungen sind für einen MO oder MO-Gruppe günstiger als für andere.
 Das Ziel ist die Anreicherung eines Mikroorganismus oder einer bestimmten Gruppe.
 
-*Reinkultur:*
+==== Reinkultur
 Wachstum eines Klons von einem bestimmten Organismus unter Ausschluss jeglicher individuen anderer Arten oder Stämme von Organismen.
 - Verdünnungsreihe
 - Dreizehn-Strich-Methode
@@ -141,7 +141,7 @@ Es sind zuerzeit mehr als 10.000 Bakterien und Archaen als valide Arten beschrei
 
 Vorraussetzung für die Klassifizierung ist eine *Reinkultur* (aus einer Zelle).
 
-*Beschreibung neuer Arten:*
+==== Beschreibung neuer Arten
 
 #figure(
   diagram(
@@ -160,7 +160,7 @@ Vorraussetzung für die Klassifizierung ist eine *Reinkultur* (aus einer Zelle).
   ),
 )
 
-*Kriterien zur Klassifizierung einer Reinkultur:*
+==== Kriterien zur Klassifizierung einer Reinkultur
 - Morphologie
   - Kolonieform /-farbe, Zellform, Beweglichkeit
 - Physiologie
@@ -168,22 +168,22 @@ Vorraussetzung für die Klassifizierung ist eine *Reinkultur* (aus einer Zelle).
 - Biochemische und molekularbiologische Kriterien
   - Enzymaktivität, Cytochromen,...
 
-*Analytical Profile Index Test:*
+==== Analytical Profile Index Test
 
 Ein Schnellbestimmungssystem zur Identifizierung von Bakterien. Kombiniert mehrere Tests zur Überprüfung biochemischer Merkmale.
 Biochemische Merkmale als Zahlencode dargestellt. Das numerische Profil wird mit Datenbank abgeglichen.
 
-*PCR und Sequenzierung:*
+==== PCR und Sequenzierung
 
 Vervielfachung ("Amplifizierung") eines kleinen Teils des erbgutes. Detektion und Identifikation der vervielfachten Produkte (mittels Gelelektrophorese).
 #missing[]
 
-*Sequenzanalyse BLAST:*
+==== Sequenzanalyse BLAST
 
 Basic Local Alignment Search Tool. Vergeleich der experimentell ermittelten DNA
 #missing[]
 
-*Sequenzanalyse Verwandtschaftsbestimmung:*
+==== Sequenzanalyse Verwandtschaftsbestimmung
 
 Die ideale Zielsequenz, das Gen der ribosomalen 16S-RNA (Länge etwa 1500 Basenpaare),
 hat sich über Zeit nur sehr langsam verändert. Daher ist es ideal für die Analyse von
@@ -193,26 +193,26 @@ Mit Hilfe von Computerprogrammen kann man aus den Abständen einen Stammbaum ers
 Die Verzweigungen sind nicht durch fossile Funde belegt und haben keine
 zeitliche Dimension.
 
-*Umweltmikrobiologie:*
+==== Umweltmikrobiologie
 
 Ist die Ökölogie der MO, ihre Beziehung zueinander und zu ihrer Umwelt.
 Sie befasst sich mit Eukaryota, Archaea und Bacteria sowie mit Viren.
 - abiotische Faktoren (Temperatur, Salz, pH-Wert, Sauerstoffgehalt, ...)
 - biotische Faktoren (Beziehung zu intraspezifischen und interspezifischen Organismen)
 
-*Ökologische Niesche:*
+==== Ökologische Niesche
 
 Ist jener n-dimensionale Raum von Umweltfaktoren, in denen Leben für einen
 Organismus möglich ist.
 
-*Beispiele für interspezifische Wechselwirkungen:*
+==== Beispiele für interspezifische Wechselwirkungen
 - Räuber-Beute
 - Antibiose
 - Parasitismus
 - Kommensialismus oder Probiose
 - Symbiose oder Mutualismus
 
-*Anwendungsgebiete Umweltmikrobiologie:*
+==== Anwendungsgebiete Umweltmikrobiologie
 - Abwasserreinigung
 - Sanierung von Gewässern
 - Böden

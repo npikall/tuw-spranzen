@@ -1,9 +1,9 @@
-#import "@preview/rubber-article:0.3.1":*
+#import "@preview/rubber-article:0.4.0":*
 #import "common.typ":*
 
 #show:article.with(
-  show-header: true,
-  header-titel: "Umweltmikrobiologie",
+  header-display: true,
+  header-title: "Umweltmikrobiologie",
   eq-numbering: "(1.1)",
   eq-chapterwise: false,
 )
@@ -13,7 +13,9 @@
   authors: ("np",),
   date: datetime.today().display("[day].[month].[year]"),
 )
-// #v(2.5cm)
+
+#show heading.where(level: 4): set heading(outlined: false, numbering: none)
+
 #outline()
 
 // Automatic pagebreaks for each chapter

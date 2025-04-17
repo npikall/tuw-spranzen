@@ -40,7 +40,7 @@ Wahrscheinlich sind situationsbedingt alle richtig. Schließlich ist der Ausgang
 / Kolonisation: Anwesenheit von MO auf Haut oder Schleimhaut
 / Kontamination: Verunreinigung von Gegenständen, der Umwelt oder von Proben mit unerwünschten MO
 
-*Wichtige Elemente des Immunsystems:*
+==== Wichtige Elemente des Immunsystems
 - Hauptelemente
   - physische / chemische Barrieren
   - gelöste Faktoren
@@ -71,8 +71,7 @@ Für die Übertragung von Krankheitserregern siehe @gesundheitliche-aspekte
 Die WHO beschreibt 9 Vorrausetzungen für einen intakte Gesundheit.
 Darunter fällt auch _sicheres sauberes Wasser zum Waschen und zur Hygiene_.
 Eine gesündere Umwelt könnte fast $23%$ der jährlichen weltweiten Todesfälle verhindern.
-
-einige wichtige WHO Definitionen für Wasser assoziierte Erkrankungen:
+Einige wichtige WHO Definitionen für Wasser assoziierte Erkrankungen:
 - *Water borne* Infektion durch verunreinigtes Wasser
 - *Water washed* Krankheiten aufgrund mangelnder Sanitärerversorgung und Hygiene
 - *Water based* Infektion durch wirbelloses Wasserlebewesen
@@ -84,9 +83,7 @@ einige wichtige WHO Definitionen für Wasser assoziierte Erkrankungen:
 / Hazard: biologische, chemische, physikalische oder radiologische Agenzien, die das Potenzial haben Schaden zu verursachen.
 
 Das _Stockholm Proposal 1999_ stellt ein vereinheitlichtes Konzept für alle Arten von Wassernutzung vor. Es beinhaltet Trinkwasser, Badewasser und Wiederverwendung von Wasser.
-
 Gesundheitsziele basieren auf tolerierbaren Risiken. Diese Risiken werden durch Risikomanagement Maßnahmen geregelt. Danach wird eine Risikorückwirkung durchgeführt.
-
 Die WHO schlägt ein tolerierbares Gesundheitsrisiko von $10^(-6)$ DALYs pro Person und Jahr vor. Kann übersetzt werden in eine Infektion pro 1.000 bis 10.000 Personen pro Jahr.
 
 === Arten der Gefährdung
@@ -95,7 +92,7 @@ Die WHO schlägt ein tolerierbares Gesundheitsrisiko von $10^(-6)$ DALYs pro Per
 - *fäkal-bürtige Pathogene*
 - *wassereigene Pathogene*
 
-*Wichtige Faktoren wasserübertragbarer intestinaler Pathogener*:
+==== Wichtige Faktoren wasserübertragbarer intestinaler Pathogener
 #eqcolumns(n: 2)[
   - Vorkommen
   - Konzentration
@@ -106,7 +103,7 @@ Die WHO schlägt ein tolerierbares Gesundheitsrisiko von $10^(-6)$ DALYs pro Per
   - Gesundheitsbelastung
 ]
 
-*Pathogene Legionellen:*
+==== Pathogene Legionellen
 - natürlichesVorkommen nur in niedrigen Konzentrationen
 - Vermehrung bei Stagnation
 - Infektion der Atemwege (durch Aerosole)
@@ -122,7 +119,7 @@ Ein universeller Pathogen Nachweis ist nicht sinnvoll oder möglich.
 
 Mikrobielle Indikatoren hingegen sind einfach zu analysieren.
 
-*Mikrobielle Indikatoren:*
+==== Mikrobielle Indikatoren
 - Verschmutzungsinidkatoren
   - Mikrobielle fäkale Verschmutzung
   - Indexindikatoren
@@ -133,7 +130,8 @@ Mikrobielle Indikatoren hingegen sind einfach zu analysieren.
 
 Der wohl bekannteste Fäkalindikator ist der _E. coli_.
 
-*Quantitative molekulare Diagnostik:*(DNA/RNA Analyse)
+==== Quantitative molekulare Diagnostik
+(DNA/RNA Analyse)
 + Probennahme
 + Anreicherung
 + Extraktion
@@ -158,7 +156,7 @@ Indirekter Dosis-Wirkungs Zusammenhang
 / Infektion: Schädigung durch infektiösen Erreger
 / Krankheit: Krankheitssymptome bei Wirt
 
-*Vergleich:*
+==== Vergleich
 - *chemisch*
   - Moleküle, $>10^10 - 10^12$ Moleküle, chronisch, biotransformation
 - *mikrobiologisch*

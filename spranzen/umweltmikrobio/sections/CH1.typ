@@ -14,7 +14,7 @@ MO sind mit $<150 upright(mu)"m"$ definiert. Sie sind im Mikro-/Nanometer Bereic
 / Eukaryoten: Zellkern, Membranen (Pilze, Algen, Protozoen)
 / Biomoleküle: RNA, DNA, Proteine, Lipide
 
-*Mikrokosmos:*
+==== Mikrokosmos
 - syntrophe Interaktionen (bedeutet "nähren")
 - Zell-Zell Interaktionen
 - Zell-Umwelt Interaktionen
@@ -23,14 +23,15 @@ MO sind mit $<150 upright(mu)"m"$ definiert. Sie sind im Mikro-/Nanometer Bereic
 
 Die Natur kultiviert "Mischkulturen" und nicht "Reinkulturen". Mikrobielle Gemeinschaften beeinflussen das tägliche Leben, bsp. das intestinale Mikrobiom ist für die Verdauung essentiell.
 
-*Reinkulturen* werden im Labor erzeugt, und haben eine große Bedeutung für:
+==== Reinkulturen
+werden im Labor erzeugt, und haben eine große Bedeutung für:
 - experimentelle Arbeit
 - Model Organismen
 - Biotechnologie und Fermentation
 - Diagnostische Arbeit
 Es ist ein großer Aufwand reinkulturen zu erhalten.
 
-*Charakteristika des mikrobiellen Lebens:*
+==== Charakteristika des mikrobiellen Lebens
 #columns(2)[
   + Metabolismus
   + Wachstum
@@ -43,7 +44,7 @@ Es ist ein großer Aufwand reinkulturen zu erhalten.
   - genetischer Austausch
 ]
 
-*Abiotische vs. biotische Kompartments:*
+==== Abiotische vs. biotische Kompartments
 
 Die 5 generellen Merkmale des Lebens:
 - *Form/Organistaion* spezifische Organisation anhand von Biomolekülen und definierte Grenzen (Aussen/Innen)
@@ -121,7 +122,7 @@ Biofilm Vorkommen:
 
 Die Top 3 Todesursachen um 1900 waren noch Infektionskrankheiten. Heute sind es Herz-Kreislauf-Erkrankungen.
 
-*Hauptübertragungswege:*
+==== Hauptübertragungswege
 - Person zu Person (Tröpfcheninfektion)
 - Vehikel basierend (Wasser, Nahrung)
 - Vektor basierend (Insekten)
@@ -132,7 +133,7 @@ Die Übertragungswege beim Vehikel Wasser können sowohl *zoonotisch* (vom Tier)
 / Epidemisch: zeitlich und räumlich begrenztes massenhaftes Auftreten
 / Pandemisch: weltweit Auftetende Epidemie
 
-*Wichtge Infektionskrankheiten:*
+==== Wichtge Infektionskrankheiten
 - verursacht durch Bakterien
 - verursacht durch Viren
 - verursacht durch Protisten
@@ -146,14 +147,14 @@ Die Übertragungswege beim Vehikel Wasser können sowohl *zoonotisch* (vom Tier)
 === Biotechnologie
 <biotechnologie>
 MO haben in fast allen Bereichen von Industrie und Gewerbe eine Bedeutung.
-*Negativ*:
-- Wachstum in fast allen Kompartimenten mit Wasser (Korrosion, Fowling)
-*Positiv*:
-- relative _low-cost_ Produktion mit MO (Enzyme, chemische Rohstoffe, ...)
-- Biotechnologie (Medikamente, Insulin, ...)
-- Umweltbiotechnologie #sym.arrow Umweltschutz (Abwasserreinigung, ...)
+- *Negativ*:
+  - Wachstum in fast allen Kompartimenten mit Wasser (Korrosion, Fowling)
+- *Positiv*:
+  - relative _low-cost_ Produktion mit MO (Enzyme, chemische Rohstoffe, ...)
+  - Biotechnologie (Medikamente, Insulin, ...)
+  - Umweltbiotechnologie #sym.arrow Umweltschutz (Abwasserreinigung, ...)
 
-Beispiel Ethanolerzeugung:
+==== Beispiel Ethanolerzeugung:
 #figure(
   diagram(
     ..digram-style,
@@ -207,7 +208,7 @@ Es gibt viele verschiedene Methoden zur Desinfektion bzw. Sterilisation von Ober
 
 Meilensteine in der Kultivierung und Reinkultur von MO.
 
-*Louis Pasteur:*
+==== Louis Pasteur
 - Bedeutung der Sterilisation
 - Fermentation
 - pasteurisieren
@@ -225,7 +226,7 @@ Keimtheorie von Infektionskrankheiten:
 - 1867 Lister und Pasteur (aseptische Techniken, Hinweis MO könnten Infektionen verursachen)
 - 1878 Robert Koch (beweist MO verursachen Infektionen)
 
-*Koch's Postulate:*
+==== Koch's Postulate
 + Pathogen präsent in jedem Krankheitsfall
 + Pathogen muss in Reinkultur wachsen
 + Zellen der Reinkultur lösen Krankheit in gesundem Tier aus

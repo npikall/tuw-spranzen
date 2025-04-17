@@ -12,12 +12,12 @@ Man kann folgende Gruppen unterscheiden:
 - Eukaryoten (mehrere Gruppen sind teil der MO)
 - Viren (keine echten MO, da kein eigener Stoffwechsel)
 
-*Artkonzept bei prokaryotischen Arten:*
+==== Artkonzept bei prokaryotischen Arten
 - monophyletischer und genomisch kohärenter Cluster von Einzelorganismen.
 - paarweise genomische DNA-DNA Hybridisierung
 - hohe phänotypische Konsistenz
 
-*Artdefinition bei Bakterien:*
+==== Artdefinition bei Bakterien
 - Bakterien Arten sind oft schwer zu unterscheiden
 - phänologische Ähnlichkeit
 - Genaustausch auch über Artgrenzen hinaus
@@ -277,7 +277,7 @@ hitzestabile DNA Polymerase.
 - kein eigener Stoffwechsel
 - Virusvermehrung erfolgt in Wirtszelle
 
-*Aufbau von Viren:*
+==== Aufbau von Viren
 - außerhalb von Zellen _Virionen_ genannt
 - virals Genom im Zentrum
 - Capsid umgibt Erbgut
@@ -345,14 +345,14 @@ Falls vorhanden, dann eine doppelschichtige Membran.
 
 == Eukaryonten (Algen, Protozoen, Pilze)
 === Protozoen
-*Kennzeichen von Protozoa:*
+==== Kennzeichen von Protozoa
 - eukaryotischer Zellbau (meist einzellig)
 - freilebend und parasitär
 - meist feuchte Habitate
 - Lebensweise: heterotroph, autotroph, mixotroph, aerob oder anaerob
 - Vermehrung asexuell und sexuell
 
-*Klassifikation tierischer Protisten:*
+==== Klassifikation tierischer Protisten
 
 #figure(
   table(
@@ -376,12 +376,12 @@ Falls vorhanden, dann eine doppelschichtige Membran.
   ),
 )
 
-*Fortbewegung bei Protozoa:*
+==== Fortbewegung bei Protozoa
 - Flagellen (Schwanz) rotierende Bewegung
 - Cilien (Haar) schlagende Bewegung
 
 === Schleimpilze
-*Charakeristika:*
+==== Charakeristika
 - Polyphyletische Gruppe
 - Heterotrophe Lebensweise
 - Habitat: feuchte Umgebung (Boden, Gras, ...)
@@ -389,18 +389,18 @@ Falls vorhanden, dann eine doppelschichtige Membran.
 - keine Zellwand in vegetativer Lebensphase
 - ähneln sowohl Protozoen als auch Pilzen
 
-*Dictyostelimycota - zelluläre Schleimpilze:*
+==== Dictyostelimycota - zelluläre Schleimpilze
 - Bildung eines Pseudoplasmodiums (keine Verschmelzung der Einzelzellen)
 - Ernährung phagothroph (Bakterien)
 - Beispielgattung Dictyostelium
 
-*Myxomycota - plasmodiale Schleimpilze:*
+==== Myxomycota - plasmodiale Schleimpilze
 - Bilden echtes Plasmodium (Verschmelzung der Einzelzellen)
 - Ernährung phagothroph (Bakterien)
 - Beispielgattung Physarum
 
 === Algen
-*Allgemein:*
+==== Allgemein
 - einzellig oder mehrzellig
 - autotroph
 - manche besitzen Flagellen
@@ -453,7 +453,7 @@ weitläufig verwandten Organismen werden als Algen bezeichnet. Die wichtigsten
 ]
 
 === Pilze
-*Morphologie von Pilzen:*
+==== Morphologie von Pilzen
 - Hyphe (Grundelement von filamentösen Pilzen)
 - Myzel (Geflecht von Hyphen)
 - Pilzthallus (Gesamtheit des Myzels, aka. Pilzkolonie)
@@ -461,7 +461,7 @@ weitläufig verwandten Organismen werden als Algen bezeichnet. Die wichtigsten
 
 Dimorphe Formen können zwischen filamentösem und einzelligem Wachstum wechseln.
 
-*Ökologie von Pilzen:*
+==== Ökologie von Pilzen
 - Pilze als Destruenten
 - Flechten (Symbiose zwischen Pilzen und Algen)
 - Mycorrhiza (Symbiose zwischen Pilzen und Pflanzen)

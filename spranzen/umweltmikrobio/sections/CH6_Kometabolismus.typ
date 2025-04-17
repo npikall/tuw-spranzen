@@ -98,7 +98,7 @@ Substrate ermöglicht. Der Kontaminent reagiert dann sozusagen mit.
   $
 ]
 
-*Michaelis Menten Gelichung:*
+==== Michaelis Menten Gelichung
 $
 v = (v_"max"dot [S])/(K_M + [S])
 $
