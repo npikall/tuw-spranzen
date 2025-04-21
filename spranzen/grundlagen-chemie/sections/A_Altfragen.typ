@@ -1,1 +1,152 @@
+#import "../common.typ":*
+= Altfragen
+== Altfragen 12.01.2012
+#frage[
+  - Geben Sie die Elektronenkonfiguration von Phosphor (Z = 15) im Grundzustand an.
+  - Welche formale Ladung (Oxidationszahl) hat Phosphor in Phosphonsäure (#ce("H3PO3"))?
+]
 
+- *Phospohor* (Z=15) #ce("1s^2 2s^2 2p^6 3s^2 3p^3")
+- *Magnesium* (Z=12) #ce("1s^2 2s^2 2p^6 3s^2")
+
+Oxidationszahl:
+- Summe der Oxidationszahlen = Ladung des Gesamtmoleküls
+- #ce("H") = +I
+- #ce("O") = -II
+
+$
+#ce("H3PO3 -> H^+I + O^-II + P^x")\
+\
+3 dot "I" + (2 dot "-II") + x = 0\
+3 -4 + x = 0\
+x = +1\
+arrow #ce("P^+III")
+$
+
+// #figure(
+// skeletize(debug:false,{
+// molecule("O")//, lewis: (lewis-double(),))
+// double()
+// molecule("P")
+// branch({
+// single(angle:2)
+// molecule("OH")
+// })
+// branch({
+// single(angle:-2)
+// molecule("OH")
+// }) 
+// single()
+// molecule("H")
+// }), caption: "Phosphonsäure"
+// )
+
+#figure(
+  image("../assets/elektronenkonfiguration.jpeg", width: 50%),
+  caption: "Elektronenkonfiguration bestimmen mittels Periodensystem",
+)
+
+#figure(
+  diagram(
+    ..diagram-style,
+    spacing: 1.5em,
+    // debug:1,
+    node((0,0), "1s"),
+    node((0,1), "2s"),
+    node((1,1), "2p"),
+    node((0,2), "3s"),
+    node((1,2), "3p"),
+    node((2,2), "3d"),
+    node((0,3), "4s"),
+    node((1,3), "4p"),
+    node((2,3), "4d"),
+    node((3,3), "4f"),
+    edge((0,0), (0,1), "-|>"),
+    edge((0,1), (1,1), "-|>"),
+    edge((1,1), (0,2), "-|>"),
+    edge((0,2), (1,2), "-|>"),
+    edge((1,2), (0,3), "-|>"),
+    edge((0,3), (2,2), "-|>"),
+    edge((2,2), (1,3), "-|>"),
+    edge((2,3), (3,3), "-|>"),
+  ),
+  caption: "Elektronenkonfiguration mittels Merkschema",
+)
+
+#frage[
+  Was versteht man unter dem Begriff „Elektronegativität“? Geben Sie je zwei Beispiele für Elemente mit hoher und niedriger Elektronegativität.
+]
+Elektronegativität ist ein Maß für die *Fähigkeit* eines Atoms, in einer chemischen Bindung die *Bindungselektronen an sich zu ziehen*.
+- Hohe Elektronegativität
+  - Fluor (F) 3,98
+  - Sauerstoff (O) 3,44
+- Niedrige Elektronegativität
+  - Lithium (Li) 0,98
+  - Natrium (Na) 0,93
+
+#frage[
+  Sie mischen 5 kg einer 40%igen Schwefelsäure mit 25 kg einer 8%igen Schwefelsäure (jeweils in Massenprozent). Welchen Gehalt in Massenprozent hat die so erhaltene Schwefelsäure?
+]
+#let sol = calc.round((0.4 * 5 + 0.08 * 25) / (5 + 25), digits: 3)
+#let sol-perc = sol * 100
+$
+5 "kg" + 25 "kg" = 30 "kg"\
+0.4 dot 5 "kg" + 0.08 dot 25 "kg" = x dot 30 "kg"\
+x = (4 "kg") / (30 "kg")\
+x = #sol arrow.long #sol-perc %
+$
+
+#frage[
+  Wieviel g Wasserstoffgas (#ce("H2")) entstehen durch Einwirkung von Schwefelsäure (#ce("H2SO4")) auf 20 g Zn (Reinheit 85%)? Es entsteht als Nebenprodukt Zinksulfat (#ce("ZnSO4")).
+
+  Molmassen:
+  - Zn 65,4 g/mol
+  - H 1,0 g/mol
+  - O 16.0 g/mol
+  - S 32,1 g/mol
+]
+
+// Gegeben:
+#let m_zn_rein = 0.85 * 20 // g
+#let M_zn = 65.4 // g/mol
+#let n_zn = m_zn_rein / M_zn // mol
+#let n_h2 = n_zn // mol, da 1 mol Zn → 1 mol H2
+#let M_h2 = 2.0 // g/mol
+#let m_h2 = n_h2 * M_h2 // g
+
+$
+"Reaktionsgleichung:"& #ce("Zn + H2SO4 -> ZnSO4 + H2")\
+
+"Reines Zink:"& 0.85 dot 20 g = #m_zn_rein "g"\
+"Stoffmenge Zink:"& n = (#m_zn_rein "g") / (#M_zn "g/mol") = #calc.round(n_zn, digits: 3) "mol"\
+"Stoffmenge Wasserstoff:"& n = #calc.round(n_h2, digits: 3) "mol"\
+"Masse Wasserstoff:"& m = #calc.round(n_h2, digits: 3) "mol" dot 2 dot 1 "g/mol" = #calc.round(m_h2, digits: 3) "g"
+$
+
+*Ergebnis:*
+Es entstehen #calc.round(m_h2, digits: 3) g Wasserstoffgas.
+
+#frage[
+  Ein Druckbehälter wird bei 298 K mit einem Gemisch von 0,25 mol/L Distickstofftetroxid (#ce("N2O4")), und 0,15 mol/L Stickstoffdioxid (#ce("NO2")) befüllt. Bei dieser Temperatur ist die Gleichgewichtskonstante K#sub[c] = 0,15 mol/L (Dissoziation von #ce("N2O4") zu #ce("NO2")). Geben Sie die Reaktionsgleichung an und berechnen Sie in welche Richtung die Reaktion verlaufen wird.
+]
+#frage[
+  Berechnen Sie den pH Wert einer 0,25 M Ammoniak Lösung (#ce("NH3")) Lösung (K#sub[B] 1,8·10 -5 ).
+]
+#frage[
+  Zink (Zn) reagiert mit konzentrierter Salpetersäure (#ce("HNO3")) zu Zinknitrat (#ce("Zn(NO3)2")), Stickstoffmonoxid (NO) und Wasser.
+  Stellen Sie die Redoxgleichung nachvollziehbar (Halbgleichungen, Bilanzierung, usw.) auf.
+]
+#frage[
+  Geben Sie je ein Beispiel (Name und Struktur) für folgende Verbindungsklasse (je 2P):
+  - Alken
+  - Keton
+  - Carbonsäure
+  - Alkin
+  - Halogenalkan
+]
+#frage[
+  Carbonsäuren und Alkohole können unter geeigneten Bedingungen eine Veresterungsreaktion eingehen. Beschreiben Sie diese Reaktion (inklusive der Bedingungen) an einem Beispiel.
+]
+#frage[
+  Erklären Sie anhand eines schematischen Energiediagrams den Begriff der „Aktivierungsenergie“. Welchen Einfluss hat ein Katalysator auf den Energieverlauf, die Geschwindigkeit sowie die Lage des Gleichgewichts der Reaktion?
+]
