@@ -193,6 +193,7 @@ $
   Zink (Zn) reagiert mit konzentrierter Salpetersäure (#ce("HNO3")) zu Zinknitrat (#ce("Zn(NO3)2")), Stickstoffmonoxid (NO) und Wasser.
   Stellen Sie die Redoxgleichung nachvollziehbar (Halbgleichungen, Bilanzierung, usw.) auf.
 ]
+
 #frage[
   Geben Sie je ein Beispiel (Name und Struktur) für folgende Verbindungsklasse (je 2P):
   - Alken
@@ -207,3 +208,50 @@ $
 #frage[
   Erklären Sie anhand eines schematischen Energiediagrams den Begriff der „Aktivierungsenergie“. Welchen Einfluss hat ein Katalysator auf den Energieverlauf, die Geschwindigkeit sowie die Lage des Gleichgewichts der Reaktion?
 ]
+
+== Altfragen 05.03.2020
+#fragen-counter.update(0)
+#frage[
+  - Geben Sie die Elektronenkonfiguration von Phosphor (Z = 15) im Grundzustand an.
+  - Welche formale Ladung (Oxidationszahl) hat Phosphor in Phosphorsäure (#ce("H3PO4"))?
+]
+- *Phosphor*: #ce("1s^2 2s^2 2p^6 3s^2 3p^3")
+- Oxidationszahl: (H=+I, O=-II)
+$
+3 dot "I" &+& 1 dot x &+& 4 dot "-II" &= 0\
+3 &+& x &-& 8 &= 0\
+&&&&x&= 5\
+$
+#frage[
+  Was versteht man unter dem Begriff „Elektronegativität“?
+  Geben Sie je zwei Beispiele für Elemente mit hoher und niedriger Elektronegativität.
+]
+Elektronegativität ist ein Maß für die *Fähigkeit* eines Atoms, in einer chemischen Bindung die *Bindungselektronen an sich zu ziehen*.
+- Hohe Elektronegativität
+  - Fluor (F) 3,98
+  - Sauerstoff (O) 3,44
+- Niedrige Elektronegativität
+  - Lithium (Li) 0,98
+  - Natrium (Na) 0,93
+#frage[
+  Wieviel kg 35%ige Schwefelsäure (#ce("H2SO4")) und wie viel kg 15%ige Schwefelsäure sind notwendig, um 600 kg einer 30%igen Schwefelsäure herzustellen?
+]
+$
+"(I)" quad& 0.15x + 0.35y = 0.3 dot 600\
+"(II)" quad& x + y = 600 arrow.long y = 600 - x\
+$
+$
+0.15x + 0.35(600 - x) &= 0.3 dot 600\
+0.15x + 210 - 0.35x &= 180\
+-0.2x &= -30\
+x &= 150\
+$
+#frage[
+  Wie viel g #ce("NH3") entstehen durch Einwirken von #ce("NaOH") auf #qty(350, "g") #ce("(NH4)2SO4")? Es entsteht als Nebenprodukt Natriumsulfat #ce("Na2SO4") und Wasser.
+  Molmassen:
+  - N #qty(14.9, "g/mol")
+- H #qty(1.0, "g/mol")
+- O #qty(16.0, "g/mol")
+- S #qty(32.1, "g/mol")
+]
+#align(center, ce("(NH4)2SO4 + 2NaOH -> Na2SO4 + 2NH3 + H2O"))
