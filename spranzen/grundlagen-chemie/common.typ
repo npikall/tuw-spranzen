@@ -12,6 +12,8 @@
 #import "@preview/tiaoma:0.3.0" // for generating QR codes
 #import "@preview/whalogen:0.3.0": ce
 #import "@preview/alchemist:0.1.5": * //skeletize, single, branch, double, molecule
+#import "@preview/unify:0.7.1": qty
+#import "@preview/rubber-article:0.4.0": ctable
 
 // Default indicator for missing content
 #let missing(content) = {
@@ -69,7 +71,7 @@
 // Insert Github Link
 #let github-link = [
   #align(center, rect(width: 60%)[
-    #show link: set text(font: ("Ubuntu Mono","PT Mono"))
+    // #show link: set text(font: ("Ubuntu Mono","PT Mono"))
     If you want to see the source code of this document or want to contribute or raise an issue, you can find it on GitHub:
     #tiaoma.qrcode("https://github.com/npikall/tuw-spranzen")
     #link("https://github.com/npikall/tuw-spranzen")

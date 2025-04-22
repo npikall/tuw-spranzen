@@ -117,10 +117,10 @@ $
 $
 "Reaktionsgleichung:"& #ce("Zn + H2SO4 -> ZnSO4 + H2")\
 
-"Reines Zink:"& 0.85 dot 20 g = #m_zn_rein "g"\
-"Stoffmenge Zink:"& n = (#m_zn_rein "g") / (#M_zn "g/mol") = #calc.round(n_zn, digits: 3) "mol"\
-"Stoffmenge Wasserstoff:"& n = #calc.round(n_h2, digits: 3) "mol"\
-"Masse Wasserstoff:"& m = #calc.round(n_h2, digits: 3) "mol" dot 2 dot 1 "g/mol" = #calc.round(m_h2, digits: 3) "g"
+"Reines Zink:"& 0.85 dot 20 g = qty(#m_zn_rein, "g")\
+"Stoffmenge Zink:"& n = qty(#m_zn_rein, "g") / qty(#M_zn, "g/mol") = qty(#calc.round(n_zn, digits: 3), "mol")\
+"Stoffmenge Wasserstoff:"& n = qty(#calc.round(n_h2, digits: 3), "mol")\
+"Masse Wasserstoff:"& m = qty(#calc.round(n_h2, digits: 3), "mol") dot 2 dot qty("1", "g/mol") = qty(#calc.round(m_h2, digits: 3), "g")
 $
 
 *Ergebnis:*
@@ -129,9 +129,66 @@ Es entstehen #calc.round(m_h2, digits: 3) g Wasserstoffgas.
 #frage[
   Ein Druckbehälter wird bei 298 K mit einem Gemisch von 0,25 mol/L Distickstofftetroxid (#ce("N2O4")), und 0,15 mol/L Stickstoffdioxid (#ce("NO2")) befüllt. Bei dieser Temperatur ist die Gleichgewichtskonstante K#sub[c] = 0,15 mol/L (Dissoziation von #ce("N2O4") zu #ce("NO2")). Geben Sie die Reaktionsgleichung an und berechnen Sie in welche Richtung die Reaktion verlaufen wird.
 ]
+
+Reaktionsgleichung: #ce("N2O4 <=> 2 NO2")
+#let (c_no2, c_n2o4) = (0.15, 0.25)
+#let Q = calc.pow(c_no2, 2) / c_n2o4
+$
+Q = c_#ce("NO2")^2 / c_#ce("N2O4") &= #c_no2^2 / #c_n2o4 = #Q\
+Q &< K_c\
+#Q &< 0.15
+$
+Hinreaktion begünstigt, Reaktion verläuft nach rechts da Q < K.
+
 #frage[
   Berechnen Sie den pH Wert einer 0,25 M Ammoniak Lösung (#ce("NH3")) Lösung (K#sub[B] 1,8·10 -5 ).
 ]
+
+#let M_nh3 = 0.25 // mol/L
+#let Kb = 1.8e-5 // mol/L
+
+// #figure(
+//   ctable(
+//     cols:"lccc",
+//     [],table.cell(colspan: 3)[#ce("AB -> A + B")],
+//     [Anfang], [$c_0 = n_0 /V$], [0], [0],
+//     [Änderung], [$-x$], [$+x$], [$+x$],
+//     [Gleichgewicht], [$c_0 - x = c_"AB"$], [$x = c_"A"$], [$x = c_"B"$],
+//   )//, caption: "Tabelle"
+// )
+
+// #align(center, ce("NH3 -> H+ + NH2^-"))
+#figure(
+  ctable(
+    cols: "lccc",
+    [],
+    table.cell(colspan: 3)[#ce("NH3 -> H+ + NH2^-")],
+    [Anfang],
+    [#M_nh3],
+    [0],
+    [0],
+    [Änderung],
+    [$-x$],
+    [$+x$],
+    [$+x$],
+    [Gleichgewicht],
+    [$#M_nh3 - x$],
+    [$x$],
+    [$x$],
+  ),
+)
+*Vereinfachung* im Nenner wenn $x << c_0$:
+#let x = calc.sqrt(Kb * M_nh3)
+$
+K_a = x^2/c_0 arrow.long x = sqrt(K_a dot c_0)\
+x = #calc.round(x, digits: 4)
+$
+
+// $
+//   K_c = (c_"A" dot c_"B") / c_"AB" = x^2/(c_0 - x)\
+//   x^2 + 
+// $
+
 #frage[
   Zink (Zn) reagiert mit konzentrierter Salpetersäure (#ce("HNO3")) zu Zinknitrat (#ce("Zn(NO3)2")), Stickstoffmonoxid (NO) und Wasser.
   Stellen Sie die Redoxgleichung nachvollziehbar (Halbgleichungen, Bilanzierung, usw.) auf.
