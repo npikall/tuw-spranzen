@@ -221,8 +221,24 @@ $
 #frage[
   Erklären Sie anhand eines schematischen Energiediagrams den Begriff der „Aktivierungsenergie“. Welchen Einfluss hat ein Katalysator auf den Energieverlauf, die Geschwindigkeit sowie die Lage des Gleichgewichts der Reaktion?
 ]
+#antwort[
+  #let xs = lq.linspace(0, 5, num: 6)
+  #let ys = (0,0,3,0,-4,-4)
+  #figure(
+    lq.diagram(
+      xaxis: (ticks: none, mirror: false, tip: tiptoe.stealth),
+      yaxis: (ticks: none, mirror: false, tip: tiptoe.stealth),
+      lq.path(
+        ((0,0),(0,0),(0,0)),
+        ((1,0),(0,0),(.5,-.3)),
+        ((2,3),(-.3,0),(.2,0)),
+        ((4,-3),(-.3,.1),(.2,0)),
+        ((5,-3),(0,0),(0,0)),
+      ),
+    ),
+  )
+]
 
-#missing[]
 == Altfragen 05.03.2020
 #fragen-counter.update(0)
 
@@ -315,7 +331,19 @@ $
 ]
 #antwort[
   Fette sind Ester des dreiwertigen Alkohols Glycerin mit 3, meist verschiedenen, überwiegend geradzahligen und unverzweigten alphatischen Monocarbonsäuren (Fettsäuren).
-  #missing[Anwendungen]
+
+  *Großtechnische Anwendungen:*
+  - Nahrungsmittelindustrie:
+    - Speiseöle, Backfette, Margarine
+    - Kosmetikindustrie:
+    - Cremes, Lotionen, Seifen (verseifte Fette)
+  - Waschmittelindustrie:
+    - Seifenherstellung durch alkalische Hydrolyse (Verseifung)
+    - Fett + NaOH → Glycerin + Seife (Natriumsalz der Fettsäure)
+  - Biotreibstoffe:
+    - Biodiesel durch Umesterung mit Methanol (Transesterifizierung)
+  - Pharmaindustrie:
+    - Lipidbasierte Trägersysteme (z. B. Liposomen)
 ]
 #frage[
   Zeichnen Sie die allgemeine Struktur einer Aminosäure. Was bauen Aminosäuren auf?
@@ -359,7 +387,32 @@ $
   )
   Sind enthalten in Brokoli, Eiern und grünem Blattgemüse.
   Aminosäuren bauen Proteine auf, die für den menschlichen Körper wichtig sind.
+
+  - Bestandteile:
+    - Aminogruppe #ce("NH2")
+    - Carbonsäuregruppe –COOH
+    - Wasserstoffatom –H
+    - Rest (Seitenkette) –R → bestimmt die Eigenschaft der Aminosäure
+  - Zentrales C-Atom = $alpha$-C-Atom (chirales Zentrum, außer bei Glycin)
+  - Aminosäuren bauen auf:
+    - Proteine (Eiweiße)
+    - durch Peptidbindung zwischen –COOH der einen und #ce("NH2") der anderen Aminosäure
+    - lineare Ketten = Peptide, lange Ketten = Proteine
 ]
 #frage[
   Erklären Sie warum Naturstoffe in der chemischen Industrie von großem Interesse sind.
 ]
+- Naturstoffe = bioaktive Moleküle natürlichen Ursprungs
+  - oft komplexe, funktionalisierte Moleküle mit spezifischer Wirkung
+- Hohe strukturelle Diversität
+  - Vielzahl unterschiedlicher funktioneller Gruppen und Stereozentren
+- Biologische Aktivität
+  - Viele Naturstoffe zeigen medizinisch/pharmazeutisch relevante Effekte (z. B. Antibiotika, Zytostatika)
+- Rohstoffquelle
+  - Gewinnung aus nachwachsenden Ressourcen (z. B. Pflanzen, Mikroorganismen)
+- Vorbild für Wirkstoffentwicklung
+  - Naturstoffe dienen als Leitstrukturen (Lead Structures) für neue Medikamente (→ Derivatisierung)
+- Anwendung in verschiedenen Industrien
+  - Pharma, Kosmetik, Lebensmittel, Pflanzenschutz
+- Biotechnologische Herstellung möglich
+  - Fermentation, Enzymkatalyse, Metabolic Engineering
