@@ -42,6 +42,15 @@ Der zugehörige pH-Wert ergibt sich über das Ionenprodukt des Wassers mithilfe 
 #align(center, ce("pH = pK_W - pOH"))
 #align(center, ce("pH = 14 - pOH") + " (bei 25 °C)")
 
+#figure(
+  ctable(
+    cols: "ccc",
+    table.header([], [Säure], [Base]),
+    [Stark], [$"pH" = -lg(c_0 ("HA"))$], [$"pOH" = -lg(c_0 ("B"))$],
+    [Schwach], [$"pH" = 1/2 dot ("pK"_S - lg(c_0 ("HA")))$], [$"pOH" = 1/2 dot ("pK"_B - lg(c_0 ("B")))$],
+  ), caption: "Formeln um den pH-Wert von starken sowie schwachen Säuren und Basen zu berechnen"
+)
+
 // - Brønsted und Lewis Definition
 // - pH-Wert
 // - Puffer

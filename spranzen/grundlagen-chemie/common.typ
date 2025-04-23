@@ -52,6 +52,10 @@
   )
 }
 
+#let antwort(display: true, body) = {
+  if display {body} else {hide(body)}
+}
+
 // Balanced Columns Function
 #let eqcolumns(n: 2, gutter: 4%, content) = {
   layout(size => [
