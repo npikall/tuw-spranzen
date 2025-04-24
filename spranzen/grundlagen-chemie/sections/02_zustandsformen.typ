@@ -1,3 +1,4 @@
+#import "../common.typ":*
 = Zustandsformen der Materie
 <zustandsformen-der-materie>
 == Gasgesetze
@@ -60,8 +61,7 @@ $ (p + frac(n^2 dot.op a, V^2)) dot.op (V - n dot.op b) = n dot.op R dot.op T $
 
 == Wechselwirkungen
 <wechselwirkungen>
-...
-
+#missing[]
 == Dampfdruck und Siedepunkt
 <dampfdruck-und-siedepunkt>
 Ist der Dampfdruck einer Flüssigkeit gleich dem Außendruck, so siedet
@@ -89,4 +89,4 @@ Komponente heißt Lösungsmittel. Man unterscheidet polare und unpolare
 Lösemittel. Die dielektrische Konstante $K$ ist ein gutes Maß, um die
 Polarität und das Löse- vermögen von Lösungsmitteln einzustufen.
 
-...
+#missing[]

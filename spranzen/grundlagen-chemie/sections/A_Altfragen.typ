@@ -1,7 +1,14 @@
 #import "../common.typ":*
 #let antwort = antwort.with(display: true)
+
 = Altfragen
 == Altfragen 12.01.2012
+
+#show heading.where(level: 2): it => {
+  pagebreak(weak: true)
+  it
+}
+
 #frage[
   - Geben Sie die Elektronenkonfiguration von Phosphor (Z = 15) im Grundzustand an.
   - Welche formale Ladung (Oxidationszahl) hat Phosphor in Phosphonsäure (#ce("H3PO3"))?
@@ -402,17 +409,237 @@ $
 #frage[
   Erklären Sie warum Naturstoffe in der chemischen Industrie von großem Interesse sind.
 ]
-- Naturstoffe = bioaktive Moleküle natürlichen Ursprungs
-  - oft komplexe, funktionalisierte Moleküle mit spezifischer Wirkung
-- Hohe strukturelle Diversität
-  - Vielzahl unterschiedlicher funktioneller Gruppen und Stereozentren
-- Biologische Aktivität
-  - Viele Naturstoffe zeigen medizinisch/pharmazeutisch relevante Effekte (z. B. Antibiotika, Zytostatika)
-- Rohstoffquelle
-  - Gewinnung aus nachwachsenden Ressourcen (z. B. Pflanzen, Mikroorganismen)
-- Vorbild für Wirkstoffentwicklung
-  - Naturstoffe dienen als Leitstrukturen (Lead Structures) für neue Medikamente (→ Derivatisierung)
-- Anwendung in verschiedenen Industrien
-  - Pharma, Kosmetik, Lebensmittel, Pflanzenschutz
-- Biotechnologische Herstellung möglich
-  - Fermentation, Enzymkatalyse, Metabolic Engineering
+#antwort[
+  - Naturstoffe = bioaktive Moleküle natürlichen Ursprungs
+    - oft komplexe, funktionalisierte Moleküle mit spezifischer Wirkung
+  - Hohe strukturelle Diversität
+    - Vielzahl unterschiedlicher funktioneller Gruppen und Stereozentren
+  - Biologische Aktivität
+    - Viele Naturstoffe zeigen medizinisch/pharmazeutisch relevante Effekte (z. B. Antibiotika, Zytostatika)
+  - Rohstoffquelle
+    - Gewinnung aus nachwachsenden Ressourcen (z. B. Pflanzen, Mikroorganismen)
+  - Vorbild für Wirkstoffentwicklung
+    - Naturstoffe dienen als Leitstrukturen (Lead Structures) für neue Medikamente (→ Derivatisierung)
+  - Anwendung in verschiedenen Industrien
+    - Pharma, Kosmetik, Lebensmittel, Pflanzenschutz
+  - Biotechnologische Herstellung möglich
+    - Fermentation, Enzymkatalyse, Metabolic Engineering
+]
+== Altfragen 04.02.2021
+#fragen-counter.update(0)
+#frage[
+  - Geben Sie die Elektronenkonfiguration von #ce("Mg^2+") (Z = 12) an.
+- Welche formale Ladung (Oxidationszahl) hat Chlor in Chloriger Säure (#ce("HClO2"))?
+]
+#antwort[
+  - #ce("1s^2 2s^2 2p^6")
+- Oxidationszahl: Cl = +III
+]
+#frage[
+  Was versteht man unter dem Begriff _Ionisierungsenergie_ und _Elektronenaffinität_?
+]
+#antwort[
+  - *Ionisierungsenergie*: Energie, die benötigt wird, um ein Elektron aus dem äußersten besetzten Orbital eines gasförmigen Atoms zu entfernen.
+  - *Elektronenaffinität*: Energieänderung, die durch Besetzung des niedrigsten unbesetzten Orbitals in einem freien Atom durch ein Elektron resultiert.
+]
+#frage[
+  Aus #qty(20, "kg") konzentrierter Salzsäure ($"w" = 32%$) soll verdünnte
+  Salzsäure ($"w" = 5%$) hergestellt werden. Wieviel Wasser muss zugegeben werden und welche Menge an verdünnter Salzsäure wird dadurch erhalten?
+]
+#antwort[#missing[]]
+#frage[
+  Welches Volumen an gasförmigem Ammoniak (#ce("NH3")) entsteht durch Einwirkung von Natriumhydroxid (#ce("NaOH")) auf #qty(25, "g") Ammoniumchlorid (#ce("NH4Cl")) unter Standardbedingungen (#qty(1013, "mbar"), $25 degree "C"$), wenn die Ausbeute 83% beträgt?
+  Als Nebenprodukt entstehen Natriumchlorid (#ce("NaCl")) und Wasser.
+  Molmassen:
+  - H #qty(1.0, "g/mol")
+- O #qty(16.0, "g/mol")
+- Cl #qty(35.5, "g/mol")
+- Na #qty(23.0, "g/mol")
+- N #qty(14.0, "g/mol")
+- R #qty(8.314, "J/K/mol")
+]
+#antwort[#missing[]]
+#frage[
+  Gasförmiges Brommonochlorid zerfällt zu Brom und Chlor.
+  Bei 500 K ist K#sub[c] = 32. Zu Beginn der Reaktion ist BrCl mit
+  einer Konzentration von 5 mM vorhanden. Welche Konzentrationen
+  an #ce("BrCI"), #ce("Br2") und #ce("Cl2") liegen im Gleichgewicht vor?
+]
+#antwort[#missing[]]
+#frage[
+  Ein Liter eines Acetat-Puffers wird aus 1 mol Essigsäure und 2 mol
+  Natriumacetat hergestellt (Essigsäure: pK#sub[A] = 4.75). Welchen pH-Wert
+  hat der Puffer vor sowie nach der Zugabe von 0.5 mol #ce("HCl")?
+]
+#antwort[#missing[]]
+#frage[
+  Dichromat (#ce("Cr2O7^2-")) reagiert mit Sulfit-Ionen (#ce("SO3^2-")) in schwefelsaurer Lösung zu #ce("Cr^3+") und Sulfat-Ionen (#ce("SO4^2-")). Stellen Sie die Redoxgleichung nachvollziehbar (Halbgleichungen, Bilanzierung, usw.) auf.
+]
+#antwort[#missing[]]
+#frage[
+  Beschreiben Sie die Standardwasserstoffelektrode und erklären Sie die Begriffe _edles Metall_ und _unedles Metall_.
+]
+#antwort[#missing[]]
+#frage[
+  Stellen Sie die Halbgleichung für die Reduktion von Hypochlorit (#ce("ClO^-")) zu Chlor (#ce("Cl2")) auf und berechnen Sie das Potential des Redoxpaares ($"E"_0 = +1.63 "V"$) bei pH 3 und $25 degree "C"$, wenn #ce("c(ClO^-)") = #qty(0.1, "mol/L") und #ce("c(Cl2)") = #qty(1, "mol/L").
+]
+#antwort[
+  $
+  E = E_0 + 0.059/n log(c_"ox"/c_"red")\
+  $
+  #missing[]
+]
+#frage[
+  Erklären Sie die strukturellen Unterschiede zwischen Alkoholen, Aldehyden und Carbonsäuren und nennen Sie je ein relevantes Beispiel (_relevant_ in Bezug auf Anwendung, Bedeutung oder Vorkommen).
+]
+#antwort[#missing[]]
+
+== Testprüfung
+#fragen-counter.update(0)
+#frage[
+  - Geben Sie die Elektronenkonfiguration von Kalium (Z = 19) im Grundzustand an.
+  - In welcher Ladung liegt Kalium üblicherweise vor?
+]
+#antwort[
+  - *Kalium*: #ce("1s^2 2s^2 2p^6 3s^2 3p^6 4s^1")
+- Oxidationszahl: K=+I
+]
+#frage[
+  Eine Verbrennungsanalyse von Vitamin C ergibt eine Zusammensetzung von 40.9% C, 4.57% H und 54.5% O. Bestimmen Sie die Summenformel von Vitamin C (M(O) = #qty(16.0, "g/mol"), M(C) = #qty(12.0, "g/mol"), M(H) = #qty(1.0, "g/mol")).
+]
+#antwort[
+  #let mol_c = calc.round(40.9 / 12, digits: 3)
+  #let mol_h = calc.round(4.57 / 1, digits: 3)
+  #let mol_o = calc.round(54.5 / 16, digits: 3)
+  #let perc_h = calc.round(mol_h / mol_o, digits: 3)
+  #let perc_c = calc.round(mol_c / mol_o, digits: 3)
+  #figure(
+    ctable(
+      cols: "c|cccc",
+      vertical-stroke: .6pt,
+      table.header([Element], [m (g/100g)], [M (g/mol)], [n (mol)], [Anteil (%)], ),
+      [C],
+      [40.9 %],
+      [12],
+      [$40.9/12 = #mol_c$],
+      [$#mol_c/#mol_o = #perc_c$],
+      [H],
+      [4.57%],
+      [1],
+      [$4.57/1 = #mol_h$],
+      [$#mol_h/#mol_o = #perc_h$],
+      [O],
+      [54.5%],
+      [16],
+      [$54.5/16 = #mol_o$],
+      [$#mol_o/#mol_o = 1$],
+    ),
+    caption: "Verbrennungsanalyse von Vitamin C",
+  )
+  #align(center, ce("C6H8O6"))
+]
+#frage[
+  Aus #qty(15, "kg") 65%iger Schwefelsäure (#ce("H2SO4")) soll eine 2%ige gemacht werden. Wieviel Wasser muss man zugeben?
+]
+#antwort[
+  $
+  0.65 dot 15 + 0y &= 0.02 dot (15+y)\
+  9.75 &= 0.02dot 15 + 0.02y\
+  -0.02y &= 0.02dot 15 - 9.75\
+  y &= -15 - 9.75/(-0.02)\
+  y &= -15 + 487.5\
+  y &= 472.5\
+  $
+]
+#frage[
+  Metallisches Eisen reagiert mit Salzsäure unter Wasserstoffentwicklung zu Eisen(II)-chlorid. Welche Masse an Eisen muss in Salzsäure gelöst werden, um unter Normalbedingungen #qty(10, "L") Wasserstoff zu entwickeln?
+  M(Fe) = #qty(55.8, "g/mol")
+
+  #align(center, ce("Fe + 2HCl -> FeCl2 + H2"))
+]
+#antwort[
+  #missing[]
+]
+#frage[
+  Ein Behälter wird mit Stickstoff und Wasserstoff in den Konzentrationen #qty(0.6, "g/mol") bzw. #qty(0.8, "g/mol") befüllt. Im Gleichgewicht findet man eine Ammoniak Konzentration vom #qty(0.2, "g/mol"). Berechnen Sie die Gleichgewichtskonstante K#sub[c]!
+]
+#antwort[
+  #align(center, ce("N + 3H <=> NH3"))
+  #let Kc = calc.round(0.2 / (0.6 * 0.8), digits: 3)
+  $
+  K_c &= k_"Hin"/k_"Rück" = (c_C dot c_D) / (c_A dot c_B) = 0.2 / (0.6 dot 0.8)\
+  K_c &= #Kc
+  $
+  #missing[]
+]
+#frage[
+  Ein Liter eines Acetat-Puffers wird aus 1 mol Essigsäure und 1 mol
+  Natriumacetat hergestellt (Essigsäure: pK#sub[A] = 4.75). Welchen pH-Wert
+  hat der Puffer, wenn außerdem noch 0.1 mol HCl zugefügt werden?
+]
+#antwort[
+  #missing[]
+]
+#frage[
+  Kaliumpermanganat (#ce("KMnO4")) reagiert in salzsaurer Lösung mit Eisen-(II)-chlorid zu #ce("MnCl2"). Stellen Sie die Redoxgleichung auf.
+]
+#antwort[
+  #missing[]
+]
+#frage[
+  Wie lautet der korrekte Name (IUPAC) zu den folgenden Verbindungen?
+  Um welche funktionelle Gruppen handelt es sich?
+
+  #h(1fr)
+  #box(
+    skeletize(config: (atom-sep: 2.2em), {
+      molecule("Br")
+      single(absolute: -90deg)
+      double(absolute: 210deg)
+      single(absolute: -90deg)
+      molecule("Cl")
+    }),
+  )
+  #h(25%)
+  #box(
+    skeletize(config: (atom-sep: 2.2em), {
+      molecule("O")
+      double(angle: -2)
+      cycle(6, {
+        single()
+        single()
+        single()
+        single()
+        branch({
+          single()
+          molecule("OH")
+        })
+        single()
+        single()
+      })
+    }),
+  )
+  #h(1fr)
+]
+#antwort[
+  #missing[]
+]
+#frage[
+  Wo kommt Lignocellulose vor und aus welchen Komponenten besteht sie?
+  Beschreiben Sie den Aufbau von Cellulose auf molekularer Ebene.
+]
+#antwort[
+  *Lignocellulose*:
+
+  Bildet die Zellwand von Pflanzen (Stützgerüst). Beispiel Holz.
+  Besteht aus _Cellulose_, _Hemizellulose_ und _Lignin_.
+  #missing[]
+]
+#frage[
+  Beschreiben Sie das Konzept eines Katalysators (Definition,
+  Energieschema). Wie läuft der Haber-Bosch Prozesses zur Synthese
+  von Ammoniak ab und warum wird ein Katalysator gebraucht?
+]
+#antwort[
+  #missing[]
+]

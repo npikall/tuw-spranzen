@@ -23,8 +23,7 @@ dieselbe Ordnungszahl.
 
 - #strong[Massenzahl] (A) $arrow.r$ Summe der Protonen und Neutronen
 
-#h(1cm) $attach(C, tl:A, bl:Z)$ #sym.arrow Schreibweise für Ordnungs- und Massenzahl
-
+#h(1cm) $attach(C, tl: A, bl: Z)$ #sym.arrow Schreibweise für Ordnungs- und Massenzahl
 
 == Isotope
 <isotope>
@@ -94,8 +93,7 @@ Buchstaben bezeichnet, wobei man auf die Begriffe der Spektroskopie s
 
 == Elektronenkonfiguration
 <elektronenkonfiguration>
-...
-
+#missing[]
 == Periodensystem
 <periodensystem>
 Schreibt man mit ansteigender Kernladungszahl die Elementsymbole mit
@@ -152,19 +150,16 @@ Es gibt grundsätzlich drei Bindungstypen:
 
 === Ionische Bindung
 <ionische-bindung>
-...
-
+#missing[]
 === Kovalente Bindung
 <kovalente-bindung>
-...
-
+#missing[]
 === Molekülorbital Theorie
 <molekülorbital-theorie>
 Die quantenmechanische Modellvorstellung erklärt die Atombindung als
 Überlappung der valenzelektronenorbitale zweier Atome.
 
-...
-
+#missing[]
 === Metallische Bindung
 <metallische-bindung>
 Metalle sind Wärme- und elektrisch Leitfähig, Verformbar (Duktilität)
