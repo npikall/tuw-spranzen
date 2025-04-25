@@ -7,7 +7,7 @@
 <gesetz-von-boyle-und-mariotte-temperatur-isotherm>
 Gase sind komprimierbar. Misst man Druck und Volumen beim komprimieren
 (Temperatur konstant) das Produkt aus Druck und Volumen konstant ist.
-$ p_1 dot.op V_1 = p_2 dot.op V_2 $
+$ p_1 dot.op V_1 = p_2 dot.op V_2 $<eq-gas-isotherm>
 
 === Gesetz von Charles (Druck, isobar)
 <gesetz-von-charles-druck-isobar>

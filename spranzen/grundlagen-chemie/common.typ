@@ -6,7 +6,7 @@
 #import "@preview/fletcher:0.5.7": diagram, node, edge // for drawing diagrams
 #import "@preview/cetz:0.3.4" // for drawing images 
 #import "@preview/gentle-clues:1.2.0" as gc // for inserting callouts or admonitions
-#import "@preview/lilaq:0.1.0" as lq // for plotting similar to matplotlib
+#import "@preview/lilaq:0.2.0" as lq // for plotting similar to matplotlib
 #import "@preview/tiptoe:0.3.0" // for drawing arrows
 #import "@preview/pillar:0.3.1" // for drawing tables
 #import "@preview/tiaoma:0.3.0" // for generating QR codes

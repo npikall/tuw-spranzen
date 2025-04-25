@@ -4,6 +4,8 @@
 #show:article.with(
   header-display: true,
   header-title: "Grundlagen der Chemie",
+  eq-numbering: "(1.1)",
+  eq-chapterwise: true,
 )
 
 #maketitle(
@@ -28,3 +30,4 @@
 #pagebreak()
 #show: appendix.with()
 #include "sections/A_Altfragen.typ"
+#include "sections/B_Altfragen.typ"
