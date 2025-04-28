@@ -1,3 +1,4 @@
+#import "../common.typ":*
 = Zustandsformen der Materie
 <zustandsformen-der-materie>
 == Gasgesetze
@@ -6,7 +7,7 @@
 <gesetz-von-boyle-und-mariotte-temperatur-isotherm>
 Gase sind komprimierbar. Misst man Druck und Volumen beim komprimieren
 (Temperatur konstant) das Produkt aus Druck und Volumen konstant ist.
-$ p_1 dot.op V_1 = p_2 dot.op V_2 $
+$ p_1 dot.op V_1 = p_2 dot.op V_2 $<eq-gas-isotherm>
 
 === Gesetz von Charles (Druck, isobar)
 <gesetz-von-charles-druck-isobar>
@@ -60,8 +61,7 @@ $ (p + frac(n^2 dot.op a, V^2)) dot.op (V - n dot.op b) = n dot.op R dot.op T $
 
 == Wechselwirkungen
 <wechselwirkungen>
-...
-
+#missing[]
 == Dampfdruck und Siedepunkt
 <dampfdruck-und-siedepunkt>
 Ist der Dampfdruck einer Flüssigkeit gleich dem Außendruck, so siedet
@@ -89,4 +89,4 @@ Komponente heißt Lösungsmittel. Man unterscheidet polare und unpolare
 Lösemittel. Die dielektrische Konstante $K$ ist ein gutes Maß, um die
 Polarität und das Löse- vermögen von Lösungsmitteln einzustufen.
 
-...
+#missing[]
