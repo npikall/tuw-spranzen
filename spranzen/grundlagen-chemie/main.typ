@@ -1,7 +1,12 @@
-#import "@preview/rubber-article:0.3.1":*
+#import "@preview/rubber-article:0.4.0":*
 #import "common.typ":*
 
-#show:article.with()
+#show:article.with(
+  header-display: true,
+  header-title: "Grundlagen der Chemie",
+  eq-numbering: "(1.1)",
+  eq-chapterwise: true,
+)
 
 #maketitle(
   title: "Grundlagen der Chemie",
@@ -21,4 +26,8 @@
 #include "sections/07_redoxreaktionen.typ"
 #include "sections/08_anorg-chem.typ"
 #include "sections/09_org-chem.typ"
+
+#pagebreak()
+#show: appendix.with()
 #include "sections/A_Altfragen.typ"
+#include "sections/B_Altfragen.typ"
