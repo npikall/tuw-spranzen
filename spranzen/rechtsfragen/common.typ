@@ -3,7 +3,7 @@
 // of variables and functions that are used repeatedly in other files
 
 // Importing some useful packages
-#import "@preview/fletcher:0.5.7": diagram, edge, node // for drawing diagrams
+#import "@preview/fletcher:0.5.8": diagram, edge, node // for drawing diagrams
 #import "@preview/cetz:0.3.4" // for drawing images
 #import "@preview/gentle-clues:1.2.0" as gc
 // for inserting callouts or admonitions
@@ -69,3 +69,12 @@
   maroon,
   navy,
 ).map(c => c.lighten(20%))
+
+#let parspace = v(1em)
+
+
+#let diagram-style = (
+  node-fill: blue.lighten(50%),
+  node-corner-radius: 5pt,
+  node-stroke: 0.7pt,
+)

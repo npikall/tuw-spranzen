@@ -17,5 +17,7 @@
   date: datetime.today().display("[day].[month].[year]"),
 )
 
+#outline()
 // Your content from the other files goes here
+#pagebreak()
 #include "sections/intro.typ"
