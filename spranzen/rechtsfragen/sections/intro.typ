@@ -53,13 +53,36 @@ entgegenwirken sollen.
 
 #figure(diagram(
   ..diagram-style,
-  spacing: 1em,
+  spacing: .3em,
+  cell-size: (1cm, 0cm),
   debug: 0,
-  node((0, 0), "Grundprinzipien"),
-  node((0, 1), "Verfassungsrecht"),
-  node((0, 2), "Gesetz"),
-  node((0, 3), "Verordnung"),
+  node((0, 0), name: <p>, "Grundprinzipien", width: 3cm),
+  node((0, 1), "Verfassungsrecht", width: 3cm),
+  node((0, 2), "Gesetz", width: 3cm),
+  node((0, 3), "Verordnung", width: 3cm),
+
+  node((-2, 0), name: <p1>, "demokratisch", fill: none, stroke: none),
+  node((-2, 1), name: <p2>, "bundesstaatlich", fill: none, stroke: none),
+  node((-2, 2), name: <p3>, "republikanisch", fill: none, stroke: none),
+  node((-2, 3), name: <p4>, "rechtsstaatlich", fill: none, stroke: none),
+  edge(<p1.east>, <p.west>),
+  edge(<p2.east>, <p.west>),
+  edge(<p3.east>, <p.west>),
+  edge(<p4.east>, <p.west>),
 ))
+#pagebreak()
+*Persönlichkeitsrechte der Natur*
 
+Strukturelle Misstände innerhalb des Rechtssystems erschweren einen effektiven
+Umweltschutz.
+- Natürliche Person / juristische Person
+- Rechtsperson (_Komplex von Rechtspflichten und subjektiven Rechten, deren
+  Einheit im Begriff der Person figürlich zum Ausdruck kommt_)
 
-== Aktuelle Entwicklungen des Umweltrechts
+Die Herausforderungen dabei sind:
+- Artikulation des Willens
+- Organisation der Vertretung
+- Pflichtendimensin
+- Natur als Trägerin von Grundrechten?
+
+// == Aktuelle Entwicklungen des Umweltrechts
