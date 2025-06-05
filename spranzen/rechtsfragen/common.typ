@@ -37,6 +37,9 @@
   fragen-counter.step()
   gc.clue(accent-color: rgb("#179299"), title: title, icon: icon, ..args)
 }
+#let antwort(display: true, body) = {
+  if display { body } else { hide(body) }
+}
 
 // Balanced Columns Function
 #let eqcolumns(n: 2, gutter: 4%, content) = {

@@ -20,3 +20,9 @@ new name:
 # use typst to watch a document
 watch name:
     typst watch spranzen/{{ name }}/main.typ spranzen/{{ name }}/{{ name }}.pdf
+
+# style the typst files
+typstyle dir:
+    @echo "{{GREEN}}Styling the typst files{{NORMAL}}"
+    typstyle --wrap-text -i spranzen/{{dir}}/
+    @echo "{{GREEN}}Typst files have been styled{{NORMAL}}"
