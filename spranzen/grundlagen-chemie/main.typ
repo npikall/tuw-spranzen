@@ -1,18 +1,16 @@
-#import "@preview/rubber-article:0.4.0":*
-#import "common.typ":*
+#import "@preview/rubber-article:0.4.0": *
+#import "common.typ": *
 
-#show:article.with(
+#show: article.with(
   header-display: true,
   header-title: "Grundlagen der Chemie",
   eq-numbering: "(1.1)",
   eq-chapterwise: true,
 )
 
-#maketitle(
-  title: "Grundlagen der Chemie",
-  authors: ("np",),
-  date: datetime.today().display("[day].[month].[year]"),
-)
+#maketitle(title: "Grundlagen der Chemie", authors: ("np",), date: datetime
+  .today()
+  .display("[day].[month].[year]"))
 
 #outline()
 #pagebreak()
@@ -28,6 +26,6 @@
 #include "sections/09_org-chem.typ"
 
 #pagebreak()
-#show: appendix.with()
+#show: appendix
 #include "sections/A_Altfragen.typ"
 #include "sections/B_Altfragen.typ"
