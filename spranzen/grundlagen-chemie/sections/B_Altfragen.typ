@@ -1,5 +1,6 @@
 #import "../common.typ": *
 #let antwort = antwort.with(display: true)
+#let blank = box(line(length: 1em, stroke: .7pt))
 
 #pagebreak()
 = Tuwel Prüfungen
@@ -39,20 +40,22 @@
   und der Mischungen mit (B) und (C).
 ]
 #antwort[
-  $
-    "pH"_A = ...\
-    "pH"_B = ...\
-    "pH"_C = ...\
-  $
+  #missing[#v(3cm)]
+  // $
+  //   "pH"_A = ...\
+  //   "pH"_B = ...\
+  //   "pH"_C = ...\
+  // $
 ]
 #frage[
   #ce("KMnO4") reagiert mit #ce("MnCl2") zu #ce("MnO2"). Stellen Sie die
   Redox-Reaktion auf.
 ]
 #antwort[
-  - Oxidation: ...
-  - Reduktion: ...
-  - Gesamtreaktion: #ce("1 KMnO4 + 1 MnCl2 + 2 H2 -> 1 MnO2 + KCl2 + 2 H2O") ???
+  #missing[#v(3cm)]
+  // - Oxidation: ...
+  // - Reduktion: ...
+  // - Gesamtreaktion: #ce("1 KMnO4 + 1 MnCl2 + 2 H2 -> 1 MnO2 + KCl2 + 2 H2O") ???
 ]
 #frage[
   Wie viel g #ce("C6H12O6") werden benötigt um eine #qty(24, "l") Lösung mit
@@ -76,14 +79,84 @@
   - die längste Kette
   - ...
 ]
-#antwort[]
+#antwort[
+  #let C = fragment("C")
+  #let A = fragment("X")
+  #let H = fragment("H")
+  #let methyl(dir) = branch({
+    single(angle: dir * 2)
+    C
+    branch({
+      single(angle: dir * 2)
+      H
+    })
+    branch({
+      single(angle: 4 * dir)
+      H
+    })
+    single()
+    H
+  })
+
+  #let ethyl(dir) = branch({
+    single(angle: dir * 2)
+    C
+    branch({
+      single(angle: dir * 4)
+      H
+    })
+    branch({
+      single(angle: dir * 0)
+      H
+    })
+    methyl(dir * 1)
+  })
+
+  #figure(
+    skeletize({
+      C
+      single()
+      C
+      methyl(-1)
+      double()
+      C
+      single()
+      C
+      ethyl(1)
+      single()
+      C
+      ethyl(-1)
+      double()
+      C
+      single()
+      C
+      single()
+      C
+    }),
+    // caption:
+  )
+]
 
 #frage[
-  Es ist ein Ausgangstoff mit #ce("C6H12O6") gegeben. Es entstehen bei einer
-  Reaktion die Stoffe #ce("CO2") und #ce("H2O"). Wie viel g Sauerstoff muss
-  hinzugegeben werden, dass...???
+  Es ist ein Ausgangsstoff mit #qty(15, "g") #ce("C6H12O6") gegeben. Es
+  entstehen bei einer Reaktion die Stoffe #ce("CO2") und #ce("H2O"). Wie viel g
+  Sauerstoff muss hinzugegeben werden, dass die Reaktion vollständig abläuft?
 ]
-#antwort[]
+#antwort[
+  #align(center, ce("C6H12O6 + 6 O2 ==> 6 CO2 + 6 H2O"))
+  #let gram_c6h12o6 = 15
+  #let molar_mass_c6h12o6 = (6 * 12.01) + (12 * 1.01) + (6 * 16)
+  #let molar_mass_o2 = 2 * 16
+  #let mol_c6h12o6 = gram_c6h12o6 / molar_mass_c6h12o6
+  #let mass_o2 = calc.round(6 * mol_c6h12o6 * molar_mass_o2, digits: 3)
+
+  $
+    M_ce("C6H12O6") = #molar_mass_c6h12o6 g / "mol"\
+    M_ce("O2") = #molar_mass_o2 g / "mol"\
+    n_ce("C6H12O6") = #gram_c6h12o6 / #molar_mass_c6h12o6 = #calc.round(mol_c6h12o6, digits: 3) "mol"\
+    m_ce("O2") = 6 dot n dot M_ce("O2") = 6 dot #calc.round(mol_c6h12o6, digits: 3) dot #molar_mass_o2 = #mass_o2 "g"\
+  $
+]
 
 #frage[
   Bestimmen sie die Oxidationszahlen von:
@@ -119,24 +192,105 @@
     fragment("OH")
   })
 ]
-#antwort[]
+#antwort[
+  #missing[#v(3cm)]
+]
 
 #frage[
   In einem Behälter befinden sich #qty(8.9, "g") #ce("O2"). Die Temperatur
   beträgt #qty(25, "C") und der Luftdruck #qty(1.1013, "bar"). Welches Volumen
   hat dieses Gas?
 ]
-#antwort[]
+#antwort[
+  #missing[#v(3cm)]
+]
 
-#frage[]
-#antwort[]
+#frage[
+  Sie haben #qty(26, "kg") einer Lösung mit 83% #ce("HNO3") und Sie wollen eine
+  Lösung mit 4% herstellen. Wie viel Wasser müssen Sie hinzufügen?
+]
+#antwort[
+  #missing[#v(3cm)]
+]
 
-#frage[]
-#antwort[]
+#frage[
+  In einem Gas befinden sich:
+  - #qty(0.005, "mol/l") #ce("H2")
+  - #qty(0.002, "mol/l") #ce("Iod")
+  - #qty(0.007, "mol/l") #ce("IH2")
+  Es gilt die Reaktion: #ce("H2 + Iod <=> IH2")
 
-#frage[]
-#antwort[]
+  Die Temperatur beträgt #qty(490, "C"), $K_c = 46$. Berechnen Sie die
+  Gleichgewichtskonstante und bestimmen Sie ob die Reaktion nach links oder
+  rechts verläuft.
+]
+#antwort[
+  #missing[]
+]
 
-#frage[]
-#antwort[]
+#frage[
+  #ce("C8H18") + #blank #ce("O2 =>") #blank #ce("CO2") + #blank #ce("H2")
+  - Stellen Sie die Reaktionsgleichung auf.
+  - Sie haben #qty(39.2, "g") eines Stoffes mit 56% #ce("C8H18"). Wie viel g
+    #ce("CO2") entstehen bei der Reaktion?
+]
+#antwort[
+  #align(center, ce("C8H18 + 8O2 => 8 CO2 + 9 H2"))
+
+  // Given:
+  #let mass_total = 39.2
+  #let mass_ch = 0.56 * mass_total
+  #let molar_mass_ch = (8 * 12) + (18 * 1)
+  #let mol_ch = mass_ch / molar_mass_ch
+  #let molar_mass_co2 = 12 + 2 * 16
+  #let gram_co2 = (8 * molar_mass_co2) * mol_ch
+
+  #set math.equation(numbering: none)
+
+  $
+    M_"C8H18" = 8 dot 12 + 18 dot 1 = #molar_mass_ch\
+    M_"CO2" = 1 dot 12 + 2 dot 16 = #molar_mass_co2\
+    m_"C8H18" = 0.56 dot #mass_total = #calc.round(mass_ch, digits: 2)\
+    n_"C8H18" = m/M = #calc.round(mass_ch, digits: 2) / #calc.round(molar_mass_ch, digits: 2) = #calc.round(mol_ch, digits: 4)\
+    m_"CO2" = (8 dot #molar_mass_co2) dot #calc.round(mol_ch, digits: 4) = #calc.round(gram_co2, digits: 2)
+  $
+]
+
+#frage[
+  Sie haben eine Taucherflasche mit #qty(60, "L") #ce("O2") bei #qty(19.5, "C")
+  und #qty(8.8, "MPa") Wie viel g #ce("O2") befinden sich in der Flasche?
+]
+#antwort[
+  // Given:
+  #let pressure_mpa = 8.8
+  #let volume_l = 60
+  #let temperature_c = 19.5
+  #let R = 8.314e-2
+
+  // Convert to base units
+  #let pressure_bar = pressure_mpa * 1e6 / 1e5
+  #let temperature_k = temperature_c + 273.15
+
+  // Setup Formula
+  $
+    p dot V = n dot R dot T\
+    n = (p dot V)/(R dot T)
+  $
+
+  // Compute mass
+  #set math.cancel(stroke: red + .8pt)
+  #let n_o2 = calc.round(
+    (pressure_bar * volume_l) / (R * temperature_k),
+    digits: 3,
+  )
+  #let molar_mass_o2 = 32
+  #let gram_o2 = molar_mass_o2 * n_o2
+  #let kg_o2 = calc.round(gram_o2 / 1000, digits: 1)
+  $
+    n = (#pressure_bar cancel("bar") dot #volume_l cancel("L"))/(8.314 dot 10^(-2) cancel("bar" "L" "K"^(-1)) "mol"^(-1) dot #temperature_k cancel("K"))\
+    \
+    n = #n_o2 "mol"\
+    m = #molar_mass_o2 "mol/g" dot #n_o2 = #gram_o2 "g" approx #kg_o2 "kg"
+  $
+]
 
