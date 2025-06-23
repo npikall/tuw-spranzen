@@ -22,7 +22,7 @@
 #include "sections/05_gleichgewicht.typ"
 #include "sections/06_sauren-basen.typ"
 #include "sections/07_redoxreaktionen.typ"
-#include "sections/08_anorg-chem.typ"
+// #include "sections/08_anorg-chem.typ"
 #include "sections/09_org-chem.typ"
 
 #pagebreak()
