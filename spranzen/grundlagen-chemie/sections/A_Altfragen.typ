@@ -332,8 +332,8 @@
   #let natsulf_mol = calc.round(350 / natsulf_M, digits: 3)
   #let sol = calc.round(natsulf_mol * nh3_M, digits: 3)
   $
-    ce("(NH4)2SO4 ->")& 4 dot 14.9 + 8 dot 1 + 32.1 + 4 dot 16 &&= qty(#natsulf_M, "g/mol")\
-    ce("2NH3 ->")& 2 dot (14.9 + 3 dot 1) &&= qty(#nh3_M, "g/mol")\
+    ce("(NH4)2SO4 ->") & 4 dot 14.9 + 8 dot 1 + 32.1 + 4 dot 16 && = qty(#natsulf_M, "g/mol") \
+    ce("2NH3 ->") & 2 dot (14.9 + 3 dot 1) && = qty(#nh3_M, "g/mol") \
   $
   $
     n_ce("(NH4)2SO4") = 350 / #natsulf_M = qty(#natsulf_mol, "mol")\
@@ -360,7 +360,8 @@
   Bestimmen Sie den pH-Wert einer #qty(0.1, "M") Natriumacetat (#ce("CH3COONa"))
   Lösung (K#sub[a] = #qty("5.6e-10", "mol/L")).
 ]
-#missing[]
+#antwort[
+]
 #frage[
   Silber (#ce("Ag")) reagiert mit konzentrierter Salpetersäure (#ce("HNO3")) zu
   Silbernitrat (#ce("AgNO3")), Stickstoffmonoxid (#ce("NO")) und Wasser. Stellen
