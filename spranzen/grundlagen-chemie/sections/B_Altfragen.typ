@@ -52,7 +52,15 @@
   Redox-Reaktion auf.
 ]
 #antwort[
-  #missing[#v(3cm)]
+  #align(center, text(blue)[#ce("KMnO4 + MnCl2 ==> MnO2 + (KCl2)")])
+  #set enum(numbering: "I")
+  + Reduktion: #ce("K MnO4 ==> MnO2") #h(1cm) #ce("MnO4^- ==> MnO2")
+  + Oxidation: #ce("MnCl2 ==> MnO2") #h(1cm) #ce("Mn^2+ ==> MnO2")
+  \
+  + #ce("MnO4^- + 4H^+ + 3e^- -> MnO2 + 2H2O")
+  + #ce("Mn^2+ + 2H2O -> MnO2 + 4H^+ + 2e^-")
+  \
+  Gesamtgleichung: #ce("2MnO4^- + 3 Mn^2+ + 2H2O -> 5 MnO2 + 4H^+")
   // - Oxidation: ...
   // - Reduktion: ...
   // - Gesamtreaktion: #ce("1 KMnO4 + 1 MnCl2 + 2 H2 -> 1 MnO2 + KCl2 + 2 H2O") ???
