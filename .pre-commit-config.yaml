@@ -13,4 +13,4 @@ repos:
         types: [file]
         additional_dependencies: ["cli:typstyle:0.13.9"]
         files: \.typ$
-        args: ["-i", "--wrap-text", "--line-width=80"]
+        args: ["-i", "--wrap-text", "--line-width=100"]
