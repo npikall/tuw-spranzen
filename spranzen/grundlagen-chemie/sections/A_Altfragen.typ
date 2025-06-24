@@ -397,7 +397,11 @@
   #let c = 0.1
   #let pks = -calc.log(ks, base: 10)
   #let pH = 0.5 * (pks - calc.log(c, base: 10))
-  #pH
+  $
+    "pK"_s = - lg(K_A) = #calc.round(pks, digits: 2)\
+    "pH" = 1/2 dot ("pK"_s - lg(c("HA"))) = 1/2 dot ("pK"_s - lg(c(#c)))\
+    "pH" = #calc.round(pH, digits: 2)
+  $
 ]
 
 #frage[
@@ -528,7 +532,14 @@
   hergestellt werden. Wieviel Wasser muss zugegeben werden und welche Menge an verdünnter Salzsäure
   wird dadurch erhalten?
 ]
-#antwort[#missing[]]
+#antwort[
+  $
+    "I": 20"kg" + x "kg" = y "kg"\
+    "II": 0.32 dot 20 + 0x + 0.05y\
+    y = (0.32 dot 20)/ 0.05 = 128\
+    x = 128 - 20 = 108 "kg"
+  $
+]
 #frage[
   Welches Volumen an gasförmigem Ammoniak (#ce("NH3")) entsteht durch Einwirkung von Natriumhydroxid
   (#ce("NaOH")) auf #qty(25, "g") Ammoniumchlorid (#ce("NH4Cl")) unter Standardbedingungen (#qty(
