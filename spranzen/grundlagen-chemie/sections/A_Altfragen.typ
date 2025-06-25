@@ -555,6 +555,7 @@
   - R #qty(8.314, "J/K/mol")
 ]
 #antwort[
+  Lin. Glg.system zum ist hier nicht notwendig, da alle Koeffizienten 1 sind.
   #align(center, ce("1 NH4Cl + 1 NaOH -> 1 NH3 + 1 NaCl + 1 H2O"))
   #let M_nh4cl = 1 * 14 + 4 * 1 + 1 * 35.5
   #let M_nh3 = 14 + 3
@@ -562,8 +563,26 @@
   $
     M_"NH4CL" & = 1 dot 14 + 4 dot 1 + 1 dot 35.5 = #M_nh4cl              \
       M_"NH3" & = 1 dot 14 + 3 dot 1 = #M_nh3                             \
-    n_"NH4CL" & = qty("25", "g") / #M_nh4cl = #calc.round(mol, digits: 3)
+    n_"NH4CL" & = qty("25", "g") / #M_nh4cl = #calc.round(mol, digits: 3) \
   $
+  Allgemeine Gasformel:
+  $
+    p dot V = n dot R dot T
+  $
+  #set math.cancel(stroke: red + 1pt)
+  $
+    V = (n dot R dot T)/(p ["mbar"]) = ([cancel("mol")] dot [cancel("N")"m" cancel("K"^(-1) "mol"^(-1))] dot [cancel("K")])/[100 cancel("N") "m"^(-2)] = 1/100 "m"^3 = 10 "dm"^3
+  $
+  #align(center, block(width: 68%, [
+    #set math.equation(numbering: none)
+    #gc.memo[
+      $
+        1 "hPa" & = 1 "mbar"  \
+            "J" & = "Nm"      \
+           "Pa" & = "N"/"m"^2
+      $
+    ]
+  ]))
 ]
 #frage[
   Gasförmiges Brommonochlorid zerfällt zu Brom und Chlor. Bei 500 K ist K#sub[c] = 32. Zu Beginn der
