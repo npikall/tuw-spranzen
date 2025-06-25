@@ -409,7 +409,7 @@
     "AgNO3",
   )), Stickstoffmonoxid (#ce("NO")) und Wasser. Stellen Sie die Redoxgleichung auf!
 ]
-#missing[]
+#missing[Lösung mit lin Glg.sys. nicht wirklich machbar!!!]
 #frage[
   Woraus bestehen Fette und welche großtechnischen Anwendungen gibt es?
 ]
@@ -554,7 +554,17 @@
   - N #qty(14.0, "g/mol")
   - R #qty(8.314, "J/K/mol")
 ]
-#antwort[#missing[]]
+#antwort[
+  #align(center, ce("1 NH4Cl + 1 NaOH -> 1 NH3 + 1 NaCl + 1 H2O"))
+  #let M_nh4cl = 1 * 14 + 4 * 1 + 1 * 35.5
+  #let M_nh3 = 14 + 3
+  #let mol = 25 / M_nh4cl
+  $
+    M_"NH4CL" & = 1 dot 14 + 4 dot 1 + 1 dot 35.5 = #M_nh4cl              \
+      M_"NH3" & = 1 dot 14 + 3 dot 1 = #M_nh3                             \
+    n_"NH4CL" & = qty("25", "g") / #M_nh4cl = #calc.round(mol, digits: 3)
+  $
+]
 #frage[
   Gasförmiges Brommonochlorid zerfällt zu Brom und Chlor. Bei 500 K ist K#sub[c] = 32. Zu Beginn der
   Reaktion ist BrCl mit einer Konzentration von 5 mM vorhanden. Welche Konzentrationen an #ce(

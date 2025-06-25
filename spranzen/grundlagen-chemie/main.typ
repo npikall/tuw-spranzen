@@ -25,7 +25,7 @@
 // #include "sections/08_anorg-chem.typ"
 #include "sections/09_org-chem.typ"
 
-#pagebreak()
+#colbreak()
 #show: appendix
 #include "sections/A_Altfragen.typ"
 #include "sections/B_Altfragen.typ"
