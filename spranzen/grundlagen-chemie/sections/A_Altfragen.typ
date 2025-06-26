@@ -616,12 +616,23 @@
   #ce("Cr^3+") und Sulfat-Ionen (#ce("SO4^2-")). Stellen Sie die Redoxgleichung nachvollziehbar
   (Halbgleichungen, Bilanzierung, usw.) auf.
 ]
-#antwort[#missing[]]
+#antwort[
+  #align(center, ce("Cr2O7^2- + 7 SO3^-2 => 2Cr^3+ + 7 SO4^2-"))
+  - Reduktion: #ce("Cr2^2+ => Cr^3+ + e^1-")
+  - Oxidation: #ce("SO3 => ...")
+]
 #frage[
   Beschreiben Sie die Standardwasserstoffelektrode und erklären Sie die Begriffe _edles Metall_ und
   _unedles Metall_.
 ]
-#antwort[#missing[]]
+#antwort[
+  Die Standardwasserstoffelektrode dient als Bezugselektrode für die Messung von
+  Elektrodenpotential.
+  #align(center, ce("2H^+ + 2e^- => H2"))
+
+  - Edles Metall: schlecht oxidierbar, positives Standardpotential
+  - Unedles Metall: gut oxidierbar, negatives Standardpotential
+]
 #frage[
   Stellen Sie die Halbgleichung für die Reduktion von Hypochlorit (#ce("ClO^-")) zu Chlor (#ce(
     "Cl2",
@@ -746,7 +757,9 @@
   #align(center, ce("Fe + 2HCl -> FeCl2 + H2"))
 ]
 #antwort[
-  #missing[]
+  $
+    n = (x "g") / (qty("55.8", "g/mol"))\
+  $
 ]
 #frage[
   Ein Behälter wird mit Stickstoff und Wasserstoff in den Konzentrationen #qty(0.6, "g/mol") bzw.
