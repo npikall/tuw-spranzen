@@ -758,7 +758,10 @@
 ]
 #antwort[
   $
-    n = (x "g") / (qty("55.8", "g/mol"))\
+         n & = (x "g") / (qty("55.8", "g/mol"))               \
+         n & = (p dot V)/(R dot T)                            \
+         n & = (1013 "mbar" dot 10 "dm"^3)/(8.314 dot 20 "K") \
+    m_"Fe" & = n dot M = 6.09 dot 55.8 approx 0.339 "kg"
   $
 ]
 #frage[
