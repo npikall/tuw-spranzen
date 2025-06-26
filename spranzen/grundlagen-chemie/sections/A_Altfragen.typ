@@ -537,7 +537,7 @@
     "I": 20"kg" + x "kg" = y "kg"\
     "II": 0.32 dot 20 + 0x + 0.05y\
     y = (0.32 dot 20)/ 0.05 = 128\
-    x = 128 - 20 = 108 "kg"
+    x = 128 - 20 = #rect[$108 "kg"$]
   $
 ]
 #frage[
@@ -571,7 +571,7 @@
   $
   #set math.cancel(stroke: red + 1pt)
   $
-    V = (n dot R dot T)/(p ["mbar"]) = ([cancel("mol")] dot [cancel("N")"m" cancel("K"^(-1) "mol"^(-1))] dot [cancel("K")])/[100 cancel("N") "m"^(-2)] = 1/100 "m"^3 = 10 "dm"^3
+    V = (n dot R dot T)/(p ["mbar"]) = ([cancel("mol")] dot [cancel("N")"m" cancel("K"^(-1) "mol"^(-1))] dot [cancel("K")])/[100 cancel("N") "m"^(-2)] = #rect[$display(1/100) "m"^3 = 10 "dm"^3$]
   $
   #align(center, block(width: 68%, [
     #set math.equation(numbering: none)
@@ -590,13 +590,27 @@
     "BrCI",
   ), #ce("Br2") und #ce("Cl2") liegen im Gleichgewicht vor?
 ]
-#antwort[#missing[]]
+#antwort[
+  #align(center, ce("2 BrCl <==> Br2 + Cl2"))
+  $ K_c = (["Br"_2] dot ["Cl"_2] )/(["BrCl"]^2) = 32 $
+  $
+      [ce("Br2")] & = x          \
+      [ce("Cl2")] & = x          \
+    [ce("2BrCl")] & = 0.005 - 2x
+  $
+  $
+    32 = x^2/((0.005 -2x)^2)\
+    #rect[$x approx 0.0022969...$]
+  $
+]
 #frage[
   Ein Liter eines Acetat-Puffers wird aus 1 mol Essigsäure und 2 mol Natriumacetat hergestellt
   (Essigsäure: pK#sub[A] = 4.75). Welchen pH-Wert hat der Puffer vor sowie nach der Zugabe von 0.5
   mol #ce("HCl")?
 ]
-#antwort[#missing[]]
+#antwort[
+  #missing[]
+]
 #frage[
   Dichromat (#ce("Cr2O7^2-")) reagiert mit Sulfit-Ionen (#ce("SO3^2-")) in schwefelsaurer Lösung zu
   #ce("Cr^3+") und Sulfat-Ionen (#ce("SO4^2-")). Stellen Sie die Redoxgleichung nachvollziehbar
@@ -625,7 +639,42 @@
   nennen Sie je ein relevantes Beispiel (_relevant_ in Bezug auf Anwendung, Bedeutung oder
   Vorkommen).
 ]
-#antwort[#missing[]]
+#antwort[
+  #let alkohol = box(skeletize(config: (angle-increment: 30deg, atom-sep: 2em), {
+    fragment("R")
+    single(angle: 0)
+    fragment("OH")
+  }))
+  #let aldehyd = box(baseline: 100% - 20pt, skeletize(
+    config: (angle-increment: 30deg, atom-sep: 1.5em),
+    {
+      fragment("R")
+      single(angle: 1)
+      branch({
+        double(angle: 3)
+        fragment("O")
+      })
+      single(angle: -1)
+      fragment("H")
+    },
+  ))
+  #let carbonacid = box(baseline: 100% - 20pt, skeletize(
+    config: (angle-increment: 30deg, atom-sep: 1.5em),
+    {
+      fragment("R")
+      single(angle: 1)
+      branch({
+        double(angle: 3)
+        fragment("O")
+      })
+      single(angle: -1)
+      fragment("OH")
+    },
+  ))
+  - Alkohol: #alkohol (Bsp: Ethanol)
+  - Aldehyde: #aldehyd (Bsp: Formaldehyd)
+  - Carbonsäure: #carbonacid (Bsp: Essigsäure)
+]
 
 == Testprüfung
 #fragen-counter.update(0)
