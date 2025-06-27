@@ -107,7 +107,7 @@
     5 "kg" + 25 "kg" = 30 "kg"\
     0.4 dot 5 "kg" + 0.08 dot 25 "kg" = x dot 30 "kg"\
     x = (4 "kg") / (30 "kg")\
-    x = #sol arrow.long #sol-perc %
+    x = #sol arrow.long #rect($#sol-perc %$)
   $
 ]
 #frage[
@@ -134,7 +134,7 @@
     "Reines Zink:"& 0.85 dot 20 g = qty(#m_zn_rein, "g")\
     "Stoffmenge Zink:"& n = qty(#m_zn_rein, "g") / qty(#M_zn, "g/mol") = qty(#calc.round(n_zn, digits: 3), "mol")\
     "Stoffmenge Wasserstoff:"& n = qty(#calc.round(n_h2, digits: 3), "mol")\
-    "Masse Wasserstoff:"& m = qty(#calc.round(n_h2, digits: 3), "mol") dot 2 dot qty("1", "g/mol") = qty(#calc.round(m_h2, digits: 3), "g")
+    "Masse Wasserstoff:"& m = qty(#calc.round(n_h2, digits: 3), "mol") dot 2 dot qty("1", "g/mol") = #rect($qty(#calc.round(m_h2, digits: 3), "g")$)
   $
 
   *Ergebnis:*
@@ -197,7 +197,7 @@
   #let x = calc.sqrt(Kb * M_nh3)
   $
     K_a = x^2/c_0 arrow.long x = sqrt(K_a dot c_0)\
-    x = #calc.round(x, digits: 4)
+    #rect($x = #calc.round(x, digits: 4)$)
   $
 
   // $
@@ -250,22 +250,69 @@
   - Halogenalkan
 ]
 #antwort[
+  #let alken = skeletize(config: (atom-sep: 2em, angle-increment: 30deg), {
+    fragment("R")
+    single(angle: 1)
+    branch({
+      single(angle: 5)
+      fragment("R")
+    })
+    double(angle: 0)
+    branch({
+      single(angle: -1)
+      fragment("R")
+    })
+    single(angle: 1)
+    fragment("R")
+  })
+  #let keton = skeletize(config: (atom-sep: 2em, angle-increment: 30deg), {
+    fragment("R")
+    single(angle: 1)
+    branch({
+      double(angle: 3)
+      fragment("O")
+    })
+    single(angle: -1)
+    fragment("R")
+  })
+  #let carbonacid = skeletize(config: (atom-sep: 2em, angle-increment: 30deg), {
+    fragment("R")
+    single(angle: 1)
+    branch({
+      double(angle: 3)
+      fragment("O")
+    })
+    single(angle: -1)
+    fragment("OH")
+  })
+  #let alkin = skeletize(config: (atom-sep: 2em, angle-increment: 30deg), {
+    fragment("R")
+    single(angle: 1)
+    triple(angle: -1)
+    single(angle: 1)
+    fragment("R")
+  })
+  #let halogenalkan = skeletize(config: (atom-sep: 3em, angle-increment: 30deg), {
+    fragment("H_3C")
+    single(angle: 0)
+    fragment("Cl")
+  })
   #figure(ctable(
     table.header([Klasse], [Struktur], [Name]),
     [Alken],
-    [],
+    [#alken],
     [Ethen],
     [Keton],
-    [],
+    [#keton],
     [Aceton],
     [Carbonsäure],
-    [],
+    [#carbonacid],
     [Ethansäure],
     [Alkin],
-    [],
+    [#alkin],
     [Ethin],
     [Halogenalkan],
-    [],
+    [#halogenalkan],
     [Trichloridmethan\ (Chloroform)],
   ))
 ]
@@ -619,7 +666,7 @@
 #antwort[
   #align(center, ce("Cr2O7^2- + 7 SO3^-2 => 2Cr^3+ + 7 SO4^2-"))
   - Reduktion: #ce("Cr2^2+ => Cr^3+ + e^1-")
-  - Oxidation: #ce("SO3 => ...")
+  - Oxidation: #ce("SO3 => ...") #text(red)[MISSING]
 ]
 #frage[
   Beschreiben Sie die Standardwasserstoffelektrode und erklären Sie die Begriffe _edles Metall_ und
@@ -794,7 +841,10 @@
   ). Stellen Sie die Redoxgleichung auf.
 ]
 #antwort[
-  #missing[]
+  #align(center, ce("2 KMnO4 + 8 FeCl2 => 2 MnCl2 + 2 KCl + 8FeO + 5Cl2"))
+  #set enum(numbering: "I")
+  + #ce("Mn^+7 => Mn^+2 + 5e^-") _Oxidation_
+  + #text(red)[MISSING!!]
 ]
 #frage[
   Wie lautet der korrekte Name (IUPAC) zu den folgenden Verbindungen? Um welche funktionelle Gruppen
@@ -828,7 +878,8 @@
   #h(1fr)
 ]
 #antwort[
-  #missing[]
+  + 1-Brom-2Chlorethen
+  + 2-Oxid-Cyclohexanol ???
 ]
 #frage[
   Wo kommt Lignocellulose vor und aus welchen Komponenten besteht sie? Beschreiben Sie den Aufbau
@@ -846,5 +897,7 @@
   Haber-Bosch Prozesses zur Synthese von Ammoniak ab und warum wird ein Katalysator gebraucht?
 ]
 #antwort[
-  #missing[]
+  Ein Katalysator setzt die Aktivierungsenergie herab und beschleunigt die Reaktion.
+
+  #ce("N2 + 3 H2 <==> 2 NH3")
 ]

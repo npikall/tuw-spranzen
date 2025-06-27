@@ -13,9 +13,8 @@
 }
 
 #frage[
-  Ein Stoff hat bei #qty(1013, "mbar") ein Volumen von #qty(1, "dm^3"). Nun
-  ändert sich der Druck auf #qty(920, "mbar"). Um welchen Faktor ändert sich das
-  Volumen des Stoffes?
+  Ein Stoff hat bei #qty(1013, "mbar") ein Volumen von #qty(1, "dm^3"). Nun ändert sich der Druck
+  auf #qty(920, "mbar"). Um welchen Faktor ändert sich das Volumen des Stoffes?
 ]
 #antwort[
   Siehe @eq-gas-isotherm
@@ -34,10 +33,9 @@
 #frage[
   Sie haben ein Gemisch mit (A) #qty(50, "ml") einer #qty(0.05, "g/mol") #ce(
     "HCl",
-  ) und (B) #qty(50, "ml") einer #qty(0.05, "g/mol") #ce("NH3")
-  ($K_B = 1.8 dot 10^(-5)$) oder (C) #qty(100, "ml") einer #qty(0.05, "g/mol")
-  dieser Mischung. Berechnen Sie den pH-Wert der der ursprünglichen Lösung (A)
-  und der Mischungen mit (B) und (C).
+  ) und (B) #qty(50, "ml") einer #qty(0.05, "g/mol") #ce("NH3") ($K_B = 1.8 dot 10^(-5)$) oder (C)
+  #qty(100, "ml") einer #qty(0.05, "g/mol") dieser Mischung. Berechnen Sie den pH-Wert der der
+  ursprünglichen Lösung (A) und der Mischungen mit (B) und (C).
 ]
 #antwort[
   #missing[#v(3cm)]
@@ -48,8 +46,7 @@
   // $
 ]
 #frage[
-  #ce("KMnO4") reagiert mit #ce("MnCl2") zu #ce("MnO2"). Stellen Sie die
-  Redox-Reaktion auf.
+  #ce("KMnO4") reagiert mit #ce("MnCl2") zu #ce("MnO2"). Stellen Sie die Redox-Reaktion auf.
 ]
 #antwort[
   #align(center, text(blue)[#ce("KMnO4 + MnCl2 ==> MnO2 + (KCl2)")])
@@ -88,67 +85,33 @@
   - ...
 ]
 #antwort[
-  #let C = fragment("C")
-  #let A = fragment("X")
-  #let H = fragment("H")
-  #let methyl(dir) = branch({
-    single(angle: dir * 2)
-    C
+  #figure(skeletize(config: (atom-sep: 2em, angle-increment: 30deg), {
+    single(angle: 1)
     branch({
-      single(angle: dir * 2)
-      H
+      single(angle: 3)
+      fragment("CH_3")
     })
+    double(angle: -1)
+    single(angle: 1)
     branch({
-      single(angle: 4 * dir)
-      H
+      single(angle: 3)
+      fragment("C_2H_5")
     })
-    single()
-    H
-  })
-
-  #let ethyl(dir) = branch({
-    single(angle: dir * 2)
-    C
+    single(angle: -1)
     branch({
-      single(angle: dir * 4)
-      H
+      single(angle: -3)
+      fragment("C_2H_5")
     })
-    branch({
-      single(angle: dir * 0)
-      H
-    })
-    methyl(dir * 1)
-  })
-
-  #figure(
-    skeletize({
-      C
-      single()
-      C
-      methyl(-1)
-      double()
-      C
-      single()
-      C
-      ethyl(1)
-      single()
-      C
-      ethyl(-1)
-      double()
-      C
-      single()
-      C
-      single()
-      C
-    }),
-    // caption:
-  )
+    double(angle: 1)
+    single(angle: -1)
+    single(angle: 1)
+  }))
 ]
 
 #frage[
-  Es ist ein Ausgangsstoff mit #qty(15, "g") #ce("C6H12O6") gegeben. Es
-  entstehen bei einer Reaktion die Stoffe #ce("CO2") und #ce("H2O"). Wie viel g
-  Sauerstoff muss hinzugegeben werden, dass die Reaktion vollständig abläuft?
+  Es ist ein Ausgangsstoff mit #qty(15, "g") #ce("C6H12O6") gegeben. Es entstehen bei einer Reaktion
+  die Stoffe #ce("CO2") und #ce("H2O"). Wie viel g Sauerstoff muss hinzugegeben werden, dass die
+  Reaktion vollständig abläuft?
 ]
 #antwort[
   #align(center, ce("C6H12O6 + 6 O2 ==> 6 CO2 + 6 H2O"))
@@ -174,7 +137,7 @@
   - #ce("KMnO4")
   - von #ce("Ca") unc #ce("Cb")
   #colbreak()
-  #skeletize({
+  #skeletize(config: (atom-sep: 2em), {
     fragment("H")
     single()
     fragment("Ca")
@@ -201,24 +164,42 @@
   })
 ]
 #antwort[
-  #missing[#v(3cm)]
+  - #ce("Na^+") +1
+  - #ce("H2O2")
+  - #ce("KMnO4")
 ]
 
 #frage[
-  In einem Behälter befinden sich #qty(8.9, "g") #ce("O2"). Die Temperatur
-  beträgt #qty(25, "C") und der Luftdruck #qty(1.1013, "bar"). Welches Volumen
-  hat dieses Gas?
+  In einem Behälter befinden sich #qty(8.9, "g") #ce("O2"). Die Temperatur beträgt #qty(25, "C") und
+  der Luftdruck #qty(1.1013, "bar"). Welches Volumen hat dieses Gas?
 ]
 #antwort[
-  #missing[#v(3cm)]
+  #let mass = 8.9 // gram O2
+  #let molar_mass = 32 // gram per mol
+  #let mol = mass / molar_mass
+  #let temp = 273.15 + 25 // Kelvin
+  #let R = 8.314
+  #let pressure = 1.1013e5
+
+  #let volume = (mol * R * temp) / (pressure)
+  #let liter = calc.round(volume * 1000, digits: 2)
+  $
+    n = m / M = (#mass "g")/ (#molar_mass "g/mol")= #mol "mol"\
+    V = (n dot R dot T) / p = (#calc.round(mol, digits: 2) "mol" dot #R dot temp "K") / ( pressure "Pa" ) = #calc.round(volume, digits: 4) "m"^3 approx liter "L"
+  $
 ]
 
 #frage[
-  Sie haben #qty(26, "kg") einer Lösung mit 83% #ce("HNO3") und Sie wollen eine
-  Lösung mit 4% herstellen. Wie viel Wasser müssen Sie hinzufügen?
+  Sie haben #qty(26, "kg") einer Lösung mit 83% #ce("HNO3") und Sie wollen eine Lösung mit 4%
+  herstellen. Wie viel Wasser müssen Sie hinzufügen?
 ]
 #antwort[
-  #missing[#v(3cm)]
+  #let mass = 26
+  #let water_mass = ((mass * 0.83) / 0.04) - 26
+  $
+    m_1 dot omega_1 + cancel(m_2 dot omega_2) = (m_1 + m_2) dot omega_3\
+    m_2 = (m_1 dot omega_1)/omega_2 - m_1 = (mass dot 0.83)/0.004 - #mass = #rect($#water_mass "kg"$)
+  $
 ]
 
 #frage[
@@ -228,9 +209,8 @@
   - #qty(0.007, "mol/l") #ce("IH2")
   Es gilt die Reaktion: #ce("H2 + Iod <=> IH2")
 
-  Die Temperatur beträgt #qty(490, "C"), $K_c = 46$. Berechnen Sie die
-  Gleichgewichtskonstante und bestimmen Sie ob die Reaktion nach links oder
-  rechts verläuft.
+  Die Temperatur beträgt #qty(490, "C"), $K_c = 46$. Berechnen Sie die Gleichgewichtskonstante und
+  bestimmen Sie ob die Reaktion nach links oder rechts verläuft.
 ]
 #antwort[
   #missing[]
@@ -239,8 +219,8 @@
 #frage[
   #ce("C8H18") + #blank #ce("O2 =>") #blank #ce("CO2") + #blank #ce("H2")
   - Stellen Sie die Reaktionsgleichung auf.
-  - Sie haben #qty(39.2, "g") eines Stoffes mit 56% #ce("C8H18"). Wie viel g
-    #ce("CO2") entstehen bei der Reaktion?
+  - Sie haben #qty(39.2, "g") eines Stoffes mit 56% #ce("C8H18"). Wie viel g #ce("CO2") entstehen
+    bei der Reaktion?
 ]
 #antwort[
   #align(center, ce("C8H18 + 8O2 => 8 CO2 + 9 H2"))
@@ -265,8 +245,8 @@
 ]
 
 #frage[
-  Sie haben eine Taucherflasche mit #qty(60, "L") #ce("O2") bei #qty(19.5, "C")
-  und #qty(8.8, "MPa") Wie viel g #ce("O2") befinden sich in der Flasche?
+  Sie haben eine Taucherflasche mit #qty(60, "L") #ce("O2") bei #qty(19.5, "C") und #qty(8.8, "MPa")
+  Wie viel g #ce("O2") befinden sich in der Flasche?
 ]
 #antwort[
   // Given:
