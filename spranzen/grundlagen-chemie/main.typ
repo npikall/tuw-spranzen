@@ -29,3 +29,4 @@
 #show: appendix
 #include "sections/A_Altfragen.typ"
 #include "sections/B_Altfragen.typ"
+#include "sections/C_Altfragen.typ"

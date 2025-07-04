@@ -638,7 +638,7 @@
   ), #ce("Br2") und #ce("Cl2") liegen im Gleichgewicht vor?
 ]
 #antwort[
-  #align(center, ce("2 BrCl <==> Br2 + Cl2"))
+  #align(center, ce("2 BrCl <=> Br2 + Cl2"))
   $ K_c = (["Br"_2] dot ["Cl"_2] )/(["BrCl"]^2) = 32 $
   $
       [ce("Br2")] & = x          \
@@ -899,5 +899,5 @@
 #antwort[
   Ein Katalysator setzt die Aktivierungsenergie herab und beschleunigt die Reaktion.
 
-  #ce("N2 + 3 H2 <==> 2 NH3")
+  #ce("N2 + 3 H2 <=> 2 NH3")
 ]
