@@ -7,7 +7,7 @@
 
 #import "../common.typ": *
 
-#let arrow = box(
+#let tarrow = box(
   tiptoe.line(tip: tiptoe.stealth, length: 1.68em),
   baseline: -.2em,
 )
@@ -50,7 +50,7 @@ Ein thermodynamischer Prozess ist eine Änderung des thermodynamischen Zustands.
 == 0. Hauptsatz der Thermodynamik
 - sys A im Gleichgewicht mit sys B
 - sys B im Gleichgewicht mit sys C
-- #arrow sys A im Gleichgewicht mit sys C
+- #tarrow sys A im Gleichgewicht mit sys C
 
 == Temperatur
 - *Intensive* Größen: unabhängig von Systemgröße (Temp, Druck, Dichte, Konzentration, etc.)
@@ -81,7 +81,7 @@ $
 
 Es ist unmöglich Energie zu erzeugen oder zu vernichten. Nur die Umwandlung ist möglich.
 
-== Zustandsgleichung eines syss
+== Zustandsgleichung eines Systems
 Zustandsgleichung idealer Gase:
 $
   p V = n R T = N k_B T
@@ -95,3 +95,23 @@ $
 $
   V = V_1 + V_2 + ... + V_k = sum_(i=1)^k V_i
 $
+
+#missing[]
+
+== Wärmekapazität
+$
+  c = lim_(Delta T arrow 0) Q / (T_f - T_i) = (delta Q) / (delta T) [J/(K dot "mol")]
+$
+
+- isobar: $C_p = Q/(Delta T)$
+\
+- isochor: $C_V = Q/(Delta T)$
+
+== Adiabatische Prozesse
+(reversible) Kompression und Expansion. $Q=0$
+
+== Carnot'scher Kreisprozess
+#missing[]
+
+== Zweiter Hautptsatz - Entropiesatz
+#missing[]
