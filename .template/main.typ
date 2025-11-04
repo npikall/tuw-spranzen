@@ -6,7 +6,7 @@
  */
 
 // Import the styling and the common types
-#import "@preview/rubber-article:0.4.0": *
+#import "@preview/rubber-article:0.5.0": *
 #import "common.typ": *
 
 // Define the document formating

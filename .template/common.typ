@@ -11,13 +11,13 @@
  */
 
 // Importing some useful packages
-#import "@preview/cetz:0.4.0" // for drawing images
+#import "@preview/cetz:0.4.2" // for drawing images
 #import "@preview/fletcher:0.5.8": diagram, edge, node // for drawing diagrams
 #import "@preview/gentle-clues:1.2.0" as gc // for inserting callouts or admonitions
-#import "@preview/lilaq:0.3.0" as lq // for plotting similar to matplotlib
+#import "@preview/lilaq:0.5.0" as lq // for plotting similar to matplotlib
 #import "@preview/pillar:0.3.3" // for drawing tables
 #import "@preview/tiaoma:0.3.0" // for generating QR codes
-#import "@preview/tiptoe:0.3.1" // for drawing arrows
+#import "@preview/tiptoe:0.3.2" // for drawing arrows
 
 // Default indicator for missing content
 #let missing(content) = {
