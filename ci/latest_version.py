@@ -1,11 +1,21 @@
+# /// script
+# requires-python = ">=3.14"
+# dependencies = [
+#     "requests",
+# ]
+# ///
 """Check for the latest versions of packages and updates the template."""  # noqa: INP001
 
+import logging
 import re
 from pathlib import Path
 
 import requests
 
-FILES_TO_UPDATE = [".template/common.typ"]
+FILES_TO_UPDATE = [".template/common.typ", ".template/main.typ"]
+
+log = logging.getLogger("update")
+logging.basicConfig(level=logging.INFO)
 
 
 def main() -> None:
@@ -18,6 +28,8 @@ def main() -> None:
 
 def get_latest_version(package: str) -> str:
     """Get the latest version of a package from the Typst packages repository."""
+    msg: str = f"Fetch latest version for {package}"
+    log.info(msg)
     url = f"https://api.github.com/repos/typst/packages/contents/packages/preview/{package}"
     response = requests.get(url)
     response.raise_for_status()
@@ -27,6 +39,8 @@ def get_latest_version(package: str) -> str:
 
 def get_packages_from_file(file: Path) -> list[str]:
     """Extract used packages names from a Typst file."""
+    msg: str = f"Get packages from {file}"
+    log.info(msg)
     with file.open("r") as f:
         content = f.read()
 
@@ -38,6 +52,8 @@ def get_packages_from_file(file: Path) -> list[str]:
 
 def update_versions(file: Path, pkg_versions: dict[str, str]) -> None:
     """Update the packages within a file."""
+    msg: str = f"Update {file}"
+    log.info(msg)
     with file.open("r") as f:
         content = f.read()
 

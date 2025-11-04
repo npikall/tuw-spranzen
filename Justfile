@@ -35,3 +35,7 @@ _default:
 # use typst to watch a document
 @watch name:
   typst watch spranzen/{{name}}/main.typ spranzen/{{name}}/{{name}}.pdf
+
+# Update the package versions in the template
+@update:
+  uv run ci/latest_version.py
