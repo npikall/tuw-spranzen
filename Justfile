@@ -38,5 +38,9 @@ new name:
     uv run scripts/new_document.py "{{ kebabcase(name) }}"
 
 # use typst to watch a document
-watch name:
-    typst watch spranzen/{{ name }}/main.typ spranzen/{{ name }}/{{ name }}.pdf
+@watch name:
+  typst watch spranzen/{{name}}/main.typ spranzen/{{name}}/{{name}}.pdf
+
+# Update the package versions in the template
+@update:
+  uv run ci/latest_version.py
