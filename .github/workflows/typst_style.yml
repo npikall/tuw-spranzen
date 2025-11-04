@@ -1,7 +1,7 @@
 name: Format Typst Files
 on:
   push:
-    branches: main
+    branches: [main, dev*]
 
 jobs:
   typstyle:
