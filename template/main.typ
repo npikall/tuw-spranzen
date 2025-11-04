@@ -5,8 +5,9 @@
  * it under the terms of the MIT License; see the LICENSE file for details.
  */
 
-#import "@local/spranzen:0.1.0": *
-#import "@preview/rubber-article:0.4.0": *
+// Import the styling and the common types
+#import "@preview/rubber-article:0.5.0": *
+#import "common.typ": *
 
 #let the-title = "{{title}}"
 #show: article.with(
