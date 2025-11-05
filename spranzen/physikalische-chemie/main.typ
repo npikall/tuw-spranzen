@@ -28,3 +28,5 @@
 // Insert modules/content
 #outline()
 #include "sections/intro.typ"
+#include "sections/phasenlehre.typ"
+#include "sections/thermodynamik.typ"
