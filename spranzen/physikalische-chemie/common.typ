@@ -18,6 +18,8 @@
 #import "@preview/pillar:0.3.3" // for drawing tables
 #import "@preview/tiaoma:0.3.0" // for generating QR codes
 #import "@preview/tiptoe:0.3.2" // for drawing arrows
+#import "@preview/whalogen:0.3.0": ce
+#import "@preview/unify:0.7.1": qty, unit
 
 // Default indicator for missing content
 #let missing(content) = {
@@ -67,7 +69,8 @@
     center,
     rect(width: 60%)[
       #show link: set text(font: "Ubuntu Mono")
-      If you want to see the source code of this document or want to contribute or raise an issue, you can find it on GitHub:
+      If you want to see the source code of this document or want to contribute or raise an issue,
+      you can find it on GitHub:
       #tiaoma.qrcode("https://github.com/npikall/tuw-spranzen")
       #link("https://github.com/npikall/tuw-spranzen")
     ],
