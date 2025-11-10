@@ -21,6 +21,5 @@
 // Your content from the other files goes here
 #pagebreak()
 #include "sections/intro.typ"
-// #include "sections/02_verfassungsrecht.typ"
+#include "sections/02_verfassungsrecht.typ"
 #include "sections/00_altfragen.typ"
-
