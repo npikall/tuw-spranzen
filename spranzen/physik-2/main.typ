@@ -27,3 +27,4 @@
 
 // Insert modules/content
 #include "sections/intro.typ"
+#include "sections/altfragen.typ"
