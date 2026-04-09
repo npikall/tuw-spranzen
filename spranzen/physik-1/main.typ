@@ -25,5 +25,6 @@
   date: datetime.today().display("[day].[month].[year]"),
 )
 
+#outline()
 // Insert modules/content
 #include "sections/intro.typ"
