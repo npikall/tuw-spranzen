@@ -1,4 +1,4 @@
-#import "@preview/rubber-article:0.3.1":*
+#import "@preview/rubber-article:0.5.2":*
 
 #show: article.with()
 

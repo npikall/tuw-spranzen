@@ -1,4 +1,4 @@
-#import "@preview/rubber-article:0.4.2": *
+#import "@preview/rubber-article:0.5.2": *
 #import "@local/spranzen:0.1.0": *
 
 #show: article.with(
