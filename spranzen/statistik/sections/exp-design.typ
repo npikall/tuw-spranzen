@@ -1,4 +1,4 @@
-#import "../common.typ":*
+#import "@local/spranzen:0.1.0": *
 = Experimental design
 
 == Grundlegende Aspekte der statistischen Versuchsplanung
@@ -74,7 +74,7 @@ abweicht, wobei die Varianz $sigma_x^2$
 nicht bekannt ist.
 
 $
-T = (sqrt(n) dot (overline(X) - mu_0))/S
+  T = (sqrt(n) dot (overline(X) - mu_0))/S
 $
 
 *Zweistichproben t-Test:*

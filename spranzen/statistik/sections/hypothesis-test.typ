@@ -1,5 +1,5 @@
-#import "../common.typ":*
-#let example = it => align(center, gc.example(it, width: 85%))
+#import "@local/spranzen:0.1.0": *
+#import "@local/spranzen-mathe:0.1.0": *
 #let memo = it => align(center, gc.memo(it, width: 85%))
 
 #show "H0": $cal(H)_0$
@@ -17,10 +17,10 @@ einer Verteilung $F_Theta$. Dabei wird eine Nullhypothese $cal(H)_0: Theta in Th
 wider, und H1 repräsentiert _Veränderung_. Enthält $Theta_0$ nur einen Punkt, so nennt man die Hypothese _einfach_, sonst _zusammengesetzt_.
 Weiters unterscheidet man zwischen einseiigen und zweiseitigen Hypothesen. Ein einfaches Beispiel:
 $
-cal(H)_0: Theta = Theta_0\
-cal(H)_1: Theta < Theta_0 quad "einseitig"\
-"oder"\
-cal(H)_1: Theta != Theta_0 quad "zweiseitig"
+  cal(H)_0: Theta = Theta_0\
+  cal(H)_1: Theta < Theta_0 quad "einseitig"\
+  "oder"\
+  cal(H)_1: Theta != Theta_0 quad "zweiseitig"
 $
 
 == Hypothesentests
@@ -70,7 +70,7 @@ Liegt der p-Wert unter dem vorgegebenen Signifikanzniveau $alpha$, so wird die H
 ]
 
 $
-PP(T gt.eq 80 | cal(H)_0: p = 1/2) = 1 - limits(sum)_(i=1)^80 binom(n, i) p_i (1 - p)^(n-i) approx 5.6 dot 10^(-10)
+  PP(T gt.eq 80 | cal(H)_0: p = 1/2) = 1 - limits(sum)_(i=1)^80 binom(n, i) p_i (1 - p)^(n-i) approx 5.6 dot 10^(-10)
 $
 
 Ein ausgang mit 80 mal Kopf ist extrem unwahrscheinlich ($5.6 dot 10^(-10) << alpha = 0.05$) bei einer fairen Münze und H0 wird abgelehnt.

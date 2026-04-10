@@ -1,4 +1,4 @@
-#import "../common.typ":*
+#import "@local/spranzen:0.1.0": *
 
 = Zufallsvariablen und Verteilungen
 == Wahrscheinlichkeiten
@@ -25,7 +25,7 @@ Wahrscheinlichkeit, dass das Ereignis A eintritt, gegeben, dass B
 eingetreten ist (angenommen $PP(B) > 0$).
 
 $
-PP(A|B) = (PP(A inter B))/PP(B)
+  PP(A|B) = (PP(A inter B))/PP(B)
 $
 
 Unabhägige Ereignisse wenn gilt: $PP(A|B) = PP(A) arrow.long PP(A inter B) = PP(A) dot PP(B)$
@@ -36,9 +36,9 @@ aus der Definition der bedingten Wahrscheinlichkeit. Das ist mathematisch
 einfach, philosophisch jedoch nicht.
 
 $
-PP(A|B) &= (PP(B|A) dot PP(A))/(PP(B))\
-\
-PP(E_i|B) &= (PP(B|E_i) dot PP(E_i))/(limits(sum)_(i=1)^infinity PP(B|E_i) dot PP(E_i))\
+  PP(A|B) &= (PP(B|A) dot PP(A))/(PP(B))\
+  \
+  PP(E_i|B) &= (PP(B|E_i) dot PP(E_i))/(limits(sum)_(i=1)^infinity PP(B|E_i) dot PP(E_i))\
 $
 
 *Beispiel Medizinischer Test:*
@@ -57,7 +57,7 @@ Es sei $+ -$ ein positives/negatives Testergebnis und K bzw $not K$ ob eine Pers
 Wie wahrscheinlich ist es, dass eine Person mit positivem Test wirklich krank ist? ($PP(K|+)$ wird *Posterior* genannt)
 
 $
-PP(K|+) = (PP(+|K) dot PP(K))/(PP(+))
+  PP(K|+) = (PP(+|K) dot PP(K))/(PP(+))
 $
 
 #let prob-positive = {
@@ -68,8 +68,8 @@ $
 }
 
 $
-PP(+) &= PP(+|K) dot PP(K) &&+ PP(+|not K) dot PP(not K)\
-&= 0.9 dot 0.01 &&+ 0.05 dot 0.99 = #prob-positive
+  PP(+) & = PP(+|K) dot PP(K) && + PP(+|not K) dot PP(not K) \
+        & = 0.9 dot 0.01      && + 0.05 dot 0.99 = #prob-positive
 $
 
 #let prob-sick-given-pos = {
@@ -80,29 +80,39 @@ $
 }
 
 $
-PP(K|+) = ( "TP"/("TP" + "FP"))= (0.9 dot 0.01)/#prob-positive approx #prob-sick-given-pos
+  PP(K|+) = ( "TP"/("TP" + "FP"))= (0.9 dot 0.01)/#prob-positive approx #prob-sick-given-pos
 $
 
-Die Wahrscheinlichkeit ist somit von 1% auf #{prob-sick-given-pos * 100}% aktualisiert worden.
+Die Wahrscheinlichkeit ist somit von 1% auf #{ prob-sick-given-pos * 100 }% aktualisiert worden.
 #figure(
   cetz.canvas({
     import cetz.draw: *
     import cetz.decorations: flat-brace
-    let (xmax, ymax) = (5,5)
-    let (xc, yc) = (1,3.5)
+    let (xmax, ymax) = (5, 5)
+    let (xc, yc) = (1, 3.5)
     let pad = 0.1
 
     // Draw Areas
 
-    rect((xc,xc), (xmax,ymax), fill: gray.darken(20%), name: "nEnH")
-    rect((xc,0), (xmax,xc), fill: blue.lighten(20%), name: "EnH")
-    rect((0,0), (xc,yc), fill: blue.lighten(50%), name: "EH")
-    rect((0,yc), (xc,ymax), fill: gray.lighten(10%), name: "nEH")
+    rect((xc, xc), (xmax, ymax), fill: gray.darken(20%), name: "nEnH")
+    rect((xc, 0), (xmax, xc), fill: blue.lighten(20%), name: "EnH")
+    rect((0, 0), (xc, yc), fill: blue.lighten(50%), name: "EH")
+    rect((0, yc), (xc, ymax), fill: gray.lighten(10%), name: "nEH")
 
     // Annotate Areas with Arrows
 
-    line((-0.5,3.5), "nEH.center", mark: (end: ">", fill: black), name: "arrow-nEH")
-    line((-0.5, 1), "EH.center", mark: (end: ">", fill: black), name: "arrow-EH")
+    line(
+      (-0.5, 3.5),
+      "nEH.center",
+      mark: (end: ">", fill: black),
+      name: "arrow-nEH",
+    )
+    line(
+      (-0.5, 1),
+      "EH.center",
+      mark: (end: ">", fill: black),
+      name: "arrow-EH",
+    )
     content("arrow-EH.start", $PP(+|K)$, anchor: "east", padding: pad)
     content("arrow-nEH.start", $PP(-|K)$, anchor: "east", padding: pad)
 
@@ -113,8 +123,8 @@ Die Wahrscheinlichkeit ist somit von 1% auf #{prob-sick-given-pos * 100}% aktual
 
     // Draw Braces and annotate
 
-    flat-brace((0,0 - pad), (xc,0 - pad), name: "H", flip: true)
-    flat-brace((xc,0 - pad), (xmax,0 - pad), name: "nH", flip: true)
+    flat-brace((0, 0 - pad), (xc, 0 - pad), name: "H", flip: true)
+    flat-brace((xc, 0 - pad), (xmax, 0 - pad), name: "nH", flip: true)
     content("H.south", $PP(K)$, anchor: "north", padding: pad)
     content("nH.south", $PP(not K)$, anchor: "north", padding: pad)
   }),
@@ -123,10 +133,22 @@ Die Wahrscheinlichkeit ist somit von 1% auf #{prob-sick-given-pos * 100}% aktual
 )
 
 Gute Erklärungen sind in folgenden Videos zu finden:
-- #link("https://www.3blue1brown.com/lessons/better-bayes", [3B1B The medical Test Paradox])
-- #link("https://www.3blue1brown.com/lessons/bayes-theorem-quick", [3B1B The quick proof of Bayes Theorem])
-- #link("https://www.3blue1brown.com/lessons/bayes-theorem", [3B1B Bayes-Theorem, the Geometry of changing Beliefs])
-- #link("https://www.youtube.com/watch?v=R13BD8qKeTg", [Veritasium The Bayesian Trap])
+- #link(
+    "https://www.3blue1brown.com/lessons/better-bayes",
+    [3B1B The medical Test Paradox],
+  )
+- #link(
+    "https://www.3blue1brown.com/lessons/bayes-theorem-quick",
+    [3B1B The quick proof of Bayes Theorem],
+  )
+- #link(
+    "https://www.3blue1brown.com/lessons/bayes-theorem",
+    [3B1B Bayes-Theorem, the Geometry of changing Beliefs],
+  )
+- #link(
+    "https://www.youtube.com/watch?v=R13BD8qKeTg",
+    [Veritasium The Bayesian Trap],
+  )
 
 == Zufallsvariablen
 Zufallsvariablen X ordnen Ereignissen eine Zahl zu (z.B. Kopf = 1 und Zahl = 0 oder bei Regen 20 mm).
@@ -139,13 +161,17 @@ X bezeichnet immer eine Zufallvariable und x einen möglichen Wert, den diese an
 Somit ist die Verteilungsfunktion, ausgewertet an x die *Unterschreitungswahrscheinlickeit* der Zufallsvariablen X für diesen Wert.
 Es gilt:
 $
-limits(lim)_(x arrow - infinity) F_X (x) &= 0\
-limits(lim)_(x arrow infinity) F_X (x) &= 1
+  limits(lim)_(x arrow - infinity) F_X (x) & = 0 \
+    limits(lim)_(x arrow infinity) F_X (x) & = 1
 $
 // Calculate values of normal distribution
 #let (mu, sigma) = (0, calc.sqrt(1))
 #let xs = lq.linspace(-5, 5, num: 50)
-#let y-dichte = xs.map(x => 1 / (sigma * calc.sqrt(2 * calc.pi)) * calc.exp(-0.5 * calc.pow((x - mu) / sigma, 2)))
+#let y-dichte = xs.map(x => (
+  1
+    / (sigma * calc.sqrt(2 * calc.pi))
+    * calc.exp(-0.5 * calc.pow((x - mu) / sigma, 2))
+))
 // Calculate the CDF of a normal distribution
 #let y-cdf = ()
 #for (idx, elem) in y-dichte.enumerate() {
@@ -155,7 +181,7 @@ $
     y-cdf.push((y-cdf.last() + elem))
   }
 }
-#{y-cdf = y-cdf.map(x => x / y-cdf.last())}
+#{ y-cdf = y-cdf.map(x => x / y-cdf.last()) }
 
 #figure(
   lq.diagram(
@@ -183,31 +209,31 @@ Zufallsvariablen werden durch Vertilungs- bzw. Dichtefunktionen charakterisiert,
 *Erwartungswert:*
 
 $
-EE(X) &= limits(integral)_cal(S) x f_X (x) dif x \
-EE(X) &= limits(sum)_(x in cal(S)) x p_X (x)
+  EE(X) & = limits(integral)_cal(S) x f_X (x) dif x \
+  EE(X) & = limits(sum)_(x in cal(S)) x p_X (x)
 $
 
 Daraus folgt:
 $
-EE(X + Y) = EE(X) + EE(Y)\
-EE(lambda dot X) = lambda dot EE(X)
+  EE(X + Y) = EE(X) + EE(Y)\
+  EE(lambda dot X) = lambda dot EE(X)
 $
 
 *Varianz:*
 $
-"Var"(X) = sigma^2= EE(X - mu_X)^2 = 1/n limits(sum)_(i=1)^n (x_i - mu)^2
+  "Var"(X) = sigma^2= EE(X - mu_X)^2 = 1/n limits(sum)_(i=1)^n (x_i - mu)^2
 $
 
 *Variationskoeffizient:*
 $
-"CV" = sigma_X/mu_X
+  "CV" = sigma_X/mu_X
 $
 
 *Standardisierte Variable:*
 
 Sie hat einen Mittelwert von 0 und einen Varianz von 1.
 $
-Y = (X - mu_X)/sigma_X
+  Y = (X - mu_X)/sigma_X
 $
 == Wichtige Verteilungen
 

@@ -1,18 +1,18 @@
-#import "../common.typ":*
+#import "@local/spranzen:0.1.0": *
 = Nichtparametrische Methoden
 == Parametrische und nichtparametrische statistische Modelle
 Ein parametrisches statistisches Modell für eine
 eindimensionale Zufallsvariable ist eine Menge an Verteilungen derselben
 Verteilungsfamilie, indiziert durch eine Parametermenge
 $
-...
+  ...
 $
 
 Ein nichtparametrisches statistisches Modell für eine
 eindimensionale Zufallsvariable ist eine Menge an Verteilungen, die
 entweder diskret oder kontinuierlich sind
 $
-...
+  ...
 $
 
 #missing[]
