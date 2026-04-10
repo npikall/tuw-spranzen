@@ -1,15 +1,15 @@
-#import "../common.typ":*
+#import "@local/spranzen:0.1.0": *
 = Methoden in der Umweltmikrobiologie
 <methoden-in-der-umweltmikrobiologie>
 
 #figure(
   diagram(
-    ..digram-style,
-    node((0,0), [Erkennen]),
+    ..diagram-style,
+    node((0, 0), [Erkennen]),
     edge("-|>"),
-    node((1,0), [Kultivieren]),
+    node((1, 0), [Kultivieren]),
     edge("-|>"),
-    node((2,0), [Klassifizieren]),
+    node((2, 0), [Klassifizieren]),
   ),
 )
 
@@ -88,7 +88,7 @@ Meist nur eine Reduktion um einige 10-er Potenzen möglich.
 
 ==== Log-Reduktionsstufen
 $
-- log_10 ("nach Desinf."/"vor Desinf.")
+  - log_10 ("nach Desinf."/"vor Desinf.")
 $
 
 ==== Sterilisationsverfahren
@@ -145,13 +145,17 @@ Vorraussetzung für die Klassifizierung ist eine *Reinkultur* (aus einer Zelle).
 
 #figure(
   diagram(
-    ..digram-style,
-    node((0,0), name: <probe>, "Probe"),
-    node((1,0), name: <culture>, "Reinkultur"),
-    node((2,0), name: <char>, "Charakterisierung (16S-rRNA)"),
-    node((2,1), name: <nomen>, "Bennenung nach int. Nomenklatur"),
-    node((2,2), name: <collect>, "Typenstamm in Sammlung hinterlegen"),
-    node((1,1), name: <book>, "Aufnahme in Bergeys\nManual of systematic\nBacteriology"),
+    ..diagram-style,
+    node((0, 0), name: <probe>, "Probe"),
+    node((1, 0), name: <culture>, "Reinkultur"),
+    node((2, 0), name: <char>, "Charakterisierung (16S-rRNA)"),
+    node((2, 1), name: <nomen>, "Bennenung nach int. Nomenklatur"),
+    node((2, 2), name: <collect>, "Typenstamm in Sammlung hinterlegen"),
+    node(
+      (1, 1),
+      name: <book>,
+      "Aufnahme in Bergeys\nManual of systematic\nBacteriology",
+    ),
     edge(<probe>, <culture>, "-|>"),
     edge(<culture>, <char>, "-|>"),
     edge(<char>, <nomen>, "-|>"),

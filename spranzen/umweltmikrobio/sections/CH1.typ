@@ -1,4 +1,4 @@
-#import "../common.typ":*
+#import "@local/spranzen:0.1.0": *
 = Einführung
 <einführung>
 == Mikroorganismen (MO)
@@ -71,18 +71,18 @@ Die 5 generellen Merkmale des Lebens:
 <evolution>
 #figure(
   diagram(
-    ..digram-style,
-    node((0,0), [Bakterien (4 Mrd. J)]),
+    ..diagram-style,
+    node((0, 0), [Bakterien (4 Mrd. J)]),
     edge("-|>"),
-    node((1,0), [Eukaryoten (2 Mrd. J)]),
+    node((1, 0), [Eukaryoten (2 Mrd. J)]),
     edge("-|>"),
-    node((0,1), [Algen (1.3 Mrd. J)]),
+    node((0, 1), [Algen (1.3 Mrd. J)]),
     edge("-|>"),
-    node((2,0), [Schalentier (0.5 Mrd. J)]),
+    node((2, 0), [Schalentier (0.5 Mrd. J)]),
     edge("-|>"),
-    node((1,1), [Pflanzen (0.5 Mrd. J)]),
+    node((1, 1), [Pflanzen (0.5 Mrd. J)]),
     edge("-|>"),
-    node((2,1), [Tiere (0.5 Mrd. J)]),
+    node((2, 1), [Tiere (0.5 Mrd. J)]),
   ),
   caption: [Mikroorganismen besiedeln die Erde seit fast 4 Mrd. Jahren],
 )
@@ -157,12 +157,12 @@ MO haben in fast allen Bereichen von Industrie und Gewerbe eine Bedeutung.
 ==== Beispiel Ethanolerzeugung:
 #figure(
   diagram(
-    ..digram-style,
+    ..diagram-style,
     spacing: 1em,
-    node((0,0), name: <cell>, [Cellulose]),
-    node((0,2), name: <corn>, [Maisstärke]),
-    node((1,1), name: <gluc>, [Glucose]),
-    node((2,1), name: <eth>, [Ethanol]),
+    node((0, 0), name: <cell>, [Cellulose]),
+    node((0, 2), name: <corn>, [Maisstärke]),
+    node((1, 1), name: <gluc>, [Glucose]),
+    node((2, 1), name: <eth>, [Ethanol]),
     edge(<cell>, <gluc>, "-|>", bend: -20deg),
     edge(<corn>, <gluc>, "-|>", bend: 20deg),
     edge(<gluc>, <eth>, "-|>", label: "Fermentation", label-sep: 10pt),
@@ -182,19 +182,19 @@ In der Praxis ist eine ausreichende Sterilität gegeben, wenn die Kontaminations
 Es gibt viele verschiedene Methoden zur Desinfektion bzw. Sterilisation von Oberflächen und Materialien.
 #figure(
   diagram(
-    ..digram-style,
-    node((0,0), [Chemisch]),
-    node((2,0), [Physikalisch]),
-    node((1,1), [Trennung\ (Filtration)]),
-    node((2,1), [Strahlen\ (UV)]),
-    node((3,1), [Wärme\ (Ausglühen)]),
-    edge((2,0), (1,1), "-|>"),
-    edge((2,0), (2,1), "-|>"),
-    edge((2,0), (3,1), "-|>"),
-    node((-1,1), [Fluide\ (Alkohole)]),
-    node((0,1), [Gase\ (Ozon)]),
-    edge((0,0), (-1,1), "-|>"),
-    edge((0,0), (0,1), "-|>"),
+    ..diagram-style,
+    node((0, 0), [Chemisch]),
+    node((2, 0), [Physikalisch]),
+    node((1, 1), [Trennung\ (Filtration)]),
+    node((2, 1), [Strahlen\ (UV)]),
+    node((3, 1), [Wärme\ (Ausglühen)]),
+    edge((2, 0), (1, 1), "-|>"),
+    edge((2, 0), (2, 1), "-|>"),
+    edge((2, 0), (3, 1), "-|>"),
+    node((-1, 1), [Fluide\ (Alkohole)]),
+    node((0, 1), [Gase\ (Ozon)]),
+    edge((0, 0), (-1, 1), "-|>"),
+    edge((0, 0), (0, 1), "-|>"),
   ),
 )
 

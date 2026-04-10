@@ -1,4 +1,6 @@
-#import "../common.typ":*
+#import "@local/spranzen:0.1.0": *
+#import "@local/spranzen-chemie:0.1.0": *
+#import "@preview/lilaq:0.1.0" as lq
 
 = Kometabolismus, Abbau und Transformation
 <kometabolismus-abbau-und-transformation>
@@ -51,16 +53,28 @@ Substrate ermöglicht. Der Kontaminent reagiert dann sozusagen mit.
 / Wachstumsrate: Zunahme der Zellzahl pro Zeiteinheit
 / Spezifische Wachstumsrate: Wachstumsrateunter Limitierung durch ein Substrat
 / Maximale spez. Wachstumsrate: Wachstumsrate unter optimalen Bedingungen
-#let xs = (0,2,6,8,10)
-#let ys = (1,1,4,4, 3)
+#let xs = (0, 2, 6, 8, 10)
+#let ys = (1, 1, 4, 4, 3)
 
 #figure(
   lq.diagram(
     xlim: (0, 10),
     ylim: (0, 5),
     width: 9cm,
-    xaxis: (subticks: none, ticks: none, position: bottom, tip: tiptoe.stealth, stroke: 1pt),
-    yaxis: (subticks: none, ticks: none, tip: tiptoe.stealth, position: left, stroke: 1pt),
+    xaxis: (
+      subticks: none,
+      ticks: none,
+      position: bottom,
+      tip: tiptoe.stealth,
+      stroke: 1pt,
+    ),
+    yaxis: (
+      subticks: none,
+      ticks: none,
+      tip: tiptoe.stealth,
+      position: left,
+      stroke: 1pt,
+    ),
     xlabel: "Zeit",
     ylabel: "log der Zellzahl",
     lq.plot(xs, ys, stroke: 1.5pt, mark: none),
@@ -82,35 +96,35 @@ Substrate ermöglicht. Der Kontaminent reagiert dann sozusagen mit.
   Wachstum einer MO-Population. Mit $c_0 = #c$ Bakterien. Diese wachsen pro Zeit um $5%$. Daher ist $a = #a$.
 
   $
-  f(t) = c_0 dot a^t
+    f(t) = c_0 dot a^t
   $
   Wie viele Bakterien sind nach 5 Stunden da?
   #let t = 5
   #let res1 = calc.round(c * calc.pow(a, t), digits: 1)
   $
-  f(#t) = #c dot #a^#t = #res1
+    f(#t) = #c dot #a^#t = #res1
   $
   Wann hat sich die Bakterienzahl verdoppelt?
   #let t2 = calc.round(calc.log(2) / calc.log(a), digits: 1)
   $
-  c_0 dot a^t = 2 dot c_0 arrow t = log(2)/log(a)\
-  t = #t2 "h"
+    c_0 dot a^t = 2 dot c_0 arrow t = log(2)/log(a)\
+    t = #t2 "h"
   $
 ]
 
 ==== Michaelis Menten Gelichung
 $
-v = (v_"max"dot [S])/(K_M + [S])
+  v = (v_"max"dot [S])/(K_M + [S])
 $
 
 Die Michaelis Menten Konstante $K_M$ ist die Substratkonzentration, bei der die
 Reaktionsgeschwindigkeit $v$ die Hälfte der maximalen Geschwindigkeit $v_"max"$ beträgt.
 $
-K_M arrow 1/2 dot v_"max"
+  K_M arrow 1/2 dot v_"max"
 $
 
 $
-mu = mu_"max" dot S/(S + K_"S max") ["mg/l"]
+  mu = mu_"max" dot S/(S + K_"S max") ["mg/l"]
 $
 #missing[]
 
@@ -120,7 +134,7 @@ $
 === Temperatur / RGT-Regel
 Die Reaktion-Geschwindigkeit-Temperatur-Regel (RGT-Regel) besagt, dass eine Erhöhung der Temperatur um *10 °C* eine *Verdopplung* der Reaktionsgeschwindigkeit zur Folge hat.
 $
-theta_(1degree "C") = root(tau_2 - tau_1, tau_2/tau_1)
+  theta_(1degree "C") = root(tau_2 - tau_1, tau_2/tau_1)
 $
 Sind die Raten $tau_i$ bekannt für zwei Temperaturen $T_i$, so kann der Faktor $theta$ für Veränderung errechnet werden.
 
@@ -158,9 +172,9 @@ Systemen mit mikrobiellen Prozessen!
 #gc.example()[
   *CSB Berechnung:* (#ce("CH2O"))
   - #ce("1 Mol C #math.dot 32g CSB/Mol C -> 32g #math.quad O2")
-- #ce("2 Mol H #math.dot 8g CSB/Mol H -> 16g #math.quad O2")
-- #ce("1 Mol O #math.dot -16g CSB/Mol O -> -16g #math.quad O2")
-- #sym.arrow.long 32+ 16-16 = 32g CSB/Mol #ce("CH2O")
+  - #ce("2 Mol H #math.dot 8g CSB/Mol H -> 16g #math.quad O2")
+  - #ce("1 Mol O #math.dot -16g CSB/Mol O -> -16g #math.quad O2")
+  - #sym.arrow.long 32+ 16-16 = 32g CSB/Mol #ce("CH2O")
 ]
 
 == Zellertrag/Yield
@@ -168,6 +182,6 @@ Systemen mit mikrobiellen Prozessen!
 Yield bezeichnet die Biomasseausbeute bezogen auf das verbrauchte
 Substrat.
 $
-Y_("X/S") = (X - X_0)/(S_0 - S)
+  Y_("X/S") = (X - X_0)/(S_0 - S)
 $
 #missing[]

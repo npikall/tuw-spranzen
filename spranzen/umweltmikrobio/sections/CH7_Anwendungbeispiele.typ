@@ -1,4 +1,4 @@
-#import "../common.typ":*
+#import "@local/spranzen:0.1.0": *
 = Anwendungsbeipiele
 <anwendungsbeipiele>
 == Mineralölkohlenwasserstoffe
@@ -20,7 +20,7 @@
 // === Schlammalter
 // === Bedeutung der Mikorbiologie
 // === Biofilme
-// 
+//
 // == EBPR - enhanced bio. phosphorus removal
 // <ebpr---enhanced-bio.-phosphorus-removal>
 // == MIC - microbial induced corrosion
