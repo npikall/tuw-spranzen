@@ -1,4 +1,6 @@
-#import "../common.typ": *
+#import "@local/spranzen:0.1.0": *
+#import "@local/spranzen-chemie:0.1.0": *
+
 = Grundlagen der Organischen Chemie
 <grundlagen-der-organischen-chemie>
 

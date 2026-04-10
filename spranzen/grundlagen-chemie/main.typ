@@ -1,5 +1,5 @@
 #import "@preview/rubber-article:0.4.2": *
-#import "common.typ": *
+#import "@local/spranzen:0.1.0": *
 
 #show: article.with(
   header-display: true,
@@ -8,9 +8,11 @@
   eq-chapterwise: true,
 )
 
-#maketitle(title: "Grundlagen der Chemie", authors: ("np",), date: datetime
-  .today()
-  .display("[day].[month].[year]"))
+#maketitle(
+  title: "Grundlagen der Chemie",
+  authors: ("np",),
+  date: datetime.today().display("[day].[month].[year]"),
+)
 
 #outline()
 #pagebreak()

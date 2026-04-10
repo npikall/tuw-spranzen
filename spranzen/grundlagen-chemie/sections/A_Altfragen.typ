@@ -1,4 +1,7 @@
-#import "../common.typ": *
+#import "@local/spranzen:0.1.0": *
+#import "@local/spranzen-chemie:0.1.0": *
+#import "@preview/rubber-article:0.5.2": ctable
+
 #let antwort = antwort.with(display: true)
 
 = Altfragen
@@ -141,9 +144,7 @@
   Es entstehen #calc.round(m_h2, digits: 3) g Wasserstoffgas.
 ]
 #frage[
-  Ein Druckbehälter wird bei 298 K mit einem Gemisch von 0,25 mol/L Distickstofftetroxid (#ce(
-    "N2O4",
-  )), und 0,15 mol/L Stickstoffdioxid (#ce("NO2")) befüllt. Bei dieser Temperatur ist die
+  Ein Druckbehälter wird bei 298 K mit einem Gemisch von 0,25 mol/L Distickstofftetroxid (#ce("N2O4")), und 0,15 mol/L Stickstoffdioxid (#ce("NO2")) befüllt. Bei dieser Temperatur ist die
   Gleichgewichtskonstante K#sub[c] = 0,15 mol/L (Dissoziation von #ce("N2O4") zu #ce("NO2")). Geben
   Sie die Reaktionsgleichung an und berechnen Sie in welche Richtung die Reaktion verlaufen wird.
 ]
@@ -153,7 +154,7 @@
   #let Q = calc.pow(c_no2, 2) / c_n2o4
   $
     Q = c_#ce("NO2")^2 / c_#ce("N2O4") & = #c_no2^2 / #c_n2o4 = #Q \
-                                     Q & < K_c                     \
+                                     Q & < K_c \
                                     #Q & < 0.15
   $
   Hinreaktion begünstigt, Reaktion verläuft nach rechts da Q < K.
@@ -220,8 +221,8 @@
   + O: $3b = 6c + d + e$
 
   $
-    "H" -> "N": 3 dot 2e & = 6c + d + e     \
-                      6e & = 6c + d+ e      \
+    "H" -> "N": 3 dot 2e & = 6c + d + e \
+                      6e & = 6c + d+ e \
                       5e & = 6c + cancel(d) \
                 -"N": 2e & = 2c + cancel(d) \
                    -> 3e & = 4c
@@ -292,11 +293,14 @@
     single(angle: 1)
     fragment("R")
   })
-  #let halogenalkan = skeletize(config: (atom-sep: 3em, angle-increment: 30deg), {
-    fragment("H_3C")
-    single(angle: 0)
-    fragment("Cl")
-  })
+  #let halogenalkan = skeletize(
+    config: (atom-sep: 3em, angle-increment: 30deg),
+    {
+      fragment("H_3C")
+      single(angle: 0)
+      fragment("Cl")
+    },
+  )
   #figure(ctable(
     table.header([Klasse], [Struktur], [Name]),
     [Alken],
@@ -321,9 +325,7 @@
   Beschreiben Sie diese Reaktion (inklusive der Bedingungen) an einem Beispiel.
 ]
 #antwort[
-  Essigsäure #ce("CH3COOH") + Ethanol #ce("CH3CH2OH") #sym.arrow Essigsäureethylester #ce(
-    "CH3COOCH2CH3",
-  )+ Wasser Saures Milieu, Erhöhte Temperatur, Wasserabtransport notwendig
+  Essigsäure #ce("CH3COOH") + Ethanol #ce("CH3CH2OH") #sym.arrow Essigsäureethylester #ce("CH3COOCH2CH3")+ Wasser Saures Milieu, Erhöhte Temperatur, Wasserabtransport notwendig
 ]
 #frage[
   Erklären Sie anhand eines schematischen Energiediagrams den Begriff der „Aktivierungsenergie“.
@@ -386,20 +388,18 @@
 ]
 #antwort[
   $
-     "(I)" quad & 0.15x + 0.35y = 0.3 dot 600        \
+     "(I)" quad & 0.15x + 0.35y = 0.3 dot 600 \
     "(II)" quad & x + y = 600 arrow.long y = 600 - x \
   $
   $
     0.15x + 0.35(600 - x) & = 0.3 dot 600 \
-      0.15x + 210 - 0.35x & = 180         \
-                    -0.2x & = -30         \
-                        x & = 150         \
+      0.15x + 210 - 0.35x & = 180 \
+                    -0.2x & = -30 \
+                        x & = 150 \
   $
 ]
 #frage[
-  Wie viel g #ce("NH3") entstehen durch Einwirken von #ce("NaOH") auf #qty(350, "g") #ce(
-    "(NH4)2SO4",
-  )? Es entsteht als Nebenprodukt Natriumsulfat #ce("Na2SO4") und Wasser. Molmassen:
+  Wie viel g #ce("NH3") entstehen durch Einwirken von #ce("NaOH") auf #qty(350, "g") #ce("(NH4)2SO4")? Es entsteht als Nebenprodukt Natriumsulfat #ce("Na2SO4") und Wasser. Molmassen:
   - N #qty(14.9, "g/mol")
   - H #qty(1.0, "g/mol")
   - O #qty(16.0, "g/mol")
@@ -413,7 +413,7 @@
   #let sol = calc.round(natsulf_mol * nh3_M, digits: 3)
   $
     ce("(NH4)2SO4 ->") & 4 dot 14.9 + 8 dot 1 + 32.1 + 4 dot 16 && = qty(#natsulf_M, "g/mol") \
-         ce("2NH3 ->") & 2 dot (14.9 + 3 dot 1)                 && = qty(#nh3_M, "g/mol")     \
+    ce("2NH3 ->") & 2 dot (14.9 + 3 dot 1) && = qty(#nh3_M, "g/mol") \
   $
   $
     n_ce("(NH4)2SO4") = 350 / #natsulf_M = qty(#natsulf_mol, "mol")\
@@ -430,8 +430,8 @@
   #align(center, ce("2SO3 <=> 2SO2 + O2"))
   $
     Q & = (c_#ce("SO2")^2 dot c_#ce("O2")) / c_#ce("SO3")^2 \
-    Q & = (0.2^2 dot 0.2) / (0.2^2) = 0.2                   \
-    Q & = 0.2 > K_c = 0.0037                                \
+    Q & = (0.2^2 dot 0.2) / (0.2^2) = 0.2 \
+    Q & = 0.2 > K_c = 0.0037 \
   $
   Reaktion läuft nach links ab, da Q > K. #h(1fr)Q.E.D
 ]
@@ -452,9 +452,7 @@
 ]
 
 #frage[
-  Silber (#ce("Ag")) reagiert mit konzentrierter Salpetersäure (#ce("HNO3")) zu Silbernitrat (#ce(
-    "AgNO3",
-  )), Stickstoffmonoxid (#ce("NO")) und Wasser. Stellen Sie die Redoxgleichung auf!
+  Silber (#ce("Ag")) reagiert mit konzentrierter Salpetersäure (#ce("HNO3")) zu Silbernitrat (#ce("AgNO3")), Stickstoffmonoxid (#ce("NO")) und Wasser. Stellen Sie die Redoxgleichung auf!
 ]
 #missing[Lösung mit lin Glg.sys. nicht wirklich machbar!!!]
 #frage[
@@ -608,8 +606,8 @@
   #let M_nh3 = 14 + 3
   #let mol = 25 / M_nh4cl
   $
-    M_"NH4CL" & = 1 dot 14 + 4 dot 1 + 1 dot 35.5 = #M_nh4cl              \
-      M_"NH3" & = 1 dot 14 + 3 dot 1 = #M_nh3                             \
+    M_"NH4CL" & = 1 dot 14 + 4 dot 1 + 1 dot 35.5 = #M_nh4cl \
+      M_"NH3" & = 1 dot 14 + 3 dot 1 = #M_nh3 \
     n_"NH4CL" & = qty("25", "g") / #M_nh4cl = #calc.round(mol, digits: 3) \
   $
   Allgemeine Gasformel:
@@ -624,8 +622,8 @@
     #set math.equation(numbering: none)
     #gc.memo[
       $
-        1 "hPa" & = 1 "mbar"  \
-            "J" & = "Nm"      \
+        1 "hPa" & = 1 "mbar" \
+            "J" & = "Nm" \
            "Pa" & = "N"/"m"^2
       $
     ]
@@ -633,16 +631,14 @@
 ]
 #frage[
   Gasförmiges Brommonochlorid zerfällt zu Brom und Chlor. Bei 500 K ist K#sub[c] = 32. Zu Beginn der
-  Reaktion ist BrCl mit einer Konzentration von 5 mM vorhanden. Welche Konzentrationen an #ce(
-    "BrCI",
-  ), #ce("Br2") und #ce("Cl2") liegen im Gleichgewicht vor?
+  Reaktion ist BrCl mit einer Konzentration von 5 mM vorhanden. Welche Konzentrationen an #ce("BrCI"), #ce("Br2") und #ce("Cl2") liegen im Gleichgewicht vor?
 ]
 #antwort[
   #align(center, ce("2 BrCl <=> Br2 + Cl2"))
   $ K_c = (["Br"_2] dot ["Cl"_2] )/(["BrCl"]^2) = 32 $
   $
-      [ce("Br2")] & = x          \
-      [ce("Cl2")] & = x          \
+      [ce("Br2")] & = x \
+      [ce("Cl2")] & = x \
     [ce("2BrCl")] & = 0.005 - 2x
   $
   $
@@ -681,9 +677,7 @@
   - Unedles Metall: gut oxidierbar, negatives Standardpotential
 ]
 #frage[
-  Stellen Sie die Halbgleichung für die Reduktion von Hypochlorit (#ce("ClO^-")) zu Chlor (#ce(
-    "Cl2",
-  )) auf und berechnen Sie das Potential des Redoxpaares ($"E"_0 = +1.63 "V"$) bei pH 3 und
+  Stellen Sie die Halbgleichung für die Reduktion von Hypochlorit (#ce("ClO^-")) zu Chlor (#ce("Cl2")) auf und berechnen Sie das Potential des Redoxpaares ($"E"_0 = +1.63 "V"$) bei pH 3 und
   $25 degree "C"$, wenn #ce("c(ClO^-)") = #qty(0.1, "mol/L") und #ce("c(Cl2)") = #qty(1, "mol/L").
 ]
 #antwort[
@@ -698,11 +692,14 @@
   Vorkommen).
 ]
 #antwort[
-  #let alkohol = box(skeletize(config: (angle-increment: 30deg, atom-sep: 2em), {
-    fragment("R")
-    single(angle: 0)
-    fragment("OH")
-  }))
+  #let alkohol = box(skeletize(
+    config: (angle-increment: 30deg, atom-sep: 2em),
+    {
+      fragment("R")
+      single(angle: 0)
+      fragment("OH")
+    },
+  ))
   #let aldehyd = box(baseline: 100% - 20pt, skeletize(
     config: (angle-increment: 30deg, atom-sep: 1.5em),
     {
@@ -761,7 +758,13 @@
     ctable(
       cols: "c|cccc",
       vertical-stroke: .6pt,
-      table.header([Element], [m (g/100g)], [M (g/mol)], [n (mol)], [Anteil (%)]),
+      table.header(
+        [Element],
+        [m (g/100g)],
+        [M (g/mol)],
+        [n (mol)],
+        [Anteil (%)],
+      ),
       [C],
       [40.9 %],
       [12],
@@ -788,12 +791,12 @@
 ]
 #antwort[
   $
-    0.65 dot 15 + 0y & = 0.02 dot (15+y)    \
+    0.65 dot 15 + 0y & = 0.02 dot (15+y) \
                 9.75 & = 0.02dot 15 + 0.02y \
-              -0.02y & = 0.02dot 15 - 9.75  \
+              -0.02y & = 0.02dot 15 - 9.75 \
                    y & = -15 - 9.75/(-0.02) \
-                   y & = -15 + 487.5        \
-                   y & = 472.5              \
+                   y & = -15 + 487.5 \
+                   y & = 472.5 \
   $
 ]
 #frage[
@@ -805,8 +808,8 @@
 ]
 #antwort[
   $
-         n & = (x "g") / (qty("55.8", "g/mol"))               \
-         n & = (p dot V)/(R dot T)                            \
+         n & = (x "g") / (qty("55.8", "g/mol")) \
+         n & = (p dot V)/(R dot T) \
          n & = (1013 "mbar" dot 10 "dm"^3)/(8.314 dot 20 "K") \
     m_"Fe" & = n dot M = 6.09 dot 55.8 approx 0.339 "kg"
   $
@@ -836,9 +839,7 @@
   #missing[]
 ]
 #frage[
-  Kaliumpermanganat (#ce("KMnO4")) reagiert in salzsaurer Lösung mit Eisen-(II)-chlorid zu #ce(
-    "MnCl2",
-  ). Stellen Sie die Redoxgleichung auf.
+  Kaliumpermanganat (#ce("KMnO4")) reagiert in salzsaurer Lösung mit Eisen-(II)-chlorid zu #ce("MnCl2"). Stellen Sie die Redoxgleichung auf.
 ]
 #antwort[
   #align(center, ce("2 KMnO4 + 8 FeCl2 => 2 MnCl2 + 2 KCl + 8FeO + 5Cl2"))

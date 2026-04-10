@@ -1,4 +1,7 @@
-#import "../common.typ": *
+#import "@local/spranzen:0.1.0": *
+#import "@local/spranzen-chemie:0.1.0": *
+#import "@preview/rubber-article:0.5.2": ctable
+
 = Säuren und Basen
 <säuren-und-basen>
 == pH-Wert
@@ -68,4 +71,3 @@ durch Kombination einer schwachen Säure/Base mit ihrem Salz.
 $
   "pH" = "pK"_A + log(([S]_0)/(["HA"]_0))
 $
-

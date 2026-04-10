@@ -2,8 +2,9 @@
 // Viele Fragen dieser Online Prüfung sind hier nicht inkludiert.
 // Es waren einige gottlose Fragen mit Zuordnungen usw. die hier nicht dabei sind.
 // Einzig die Rechenbeispiele sind hier abgebildet.
+#import "@local/spranzen:0.1.0": *
+#import "@local/spranzen-chemie:0.1.0": *
 
-#import "../common.typ": *
 #let antwort = antwort.with(display: true)
 #let blank = box(line(length: 1em, stroke: .7pt))
 
@@ -16,9 +17,7 @@
   it
 }
 #frage[
-  Oktan #ce("C8H18") reagiert bei einer chemischen Reaktion mit Sauerstoff zu #ce("CO2") und #ce(
-    "H2O",
-  ). Sie haben #qty(24.9, "g") Oktan. Wie viel g #ce("CO2") entstehen bei einer Ausbeute von 82%?
+  Oktan #ce("C8H18") reagiert bei einer chemischen Reaktion mit Sauerstoff zu #ce("CO2") und #ce("H2O"). Sie haben #qty(24.9, "g") Oktan. Wie viel g #ce("CO2") entstehen bei einer Ausbeute von 82%?
 ]
 
 #antwort[
@@ -32,9 +31,9 @@
   #align(center, ce("1 C8H18 + 8 O2 -> 8 CO2 + 18 H2"))
 
   $
-    n_"Oktan" & = #mass_oktan / (8 dot 12 + 18) = #calc.round(mol, digits: 3)"mol"              \
-      M_"CO2" & = (12 + 2 dot 6) dot 8 = #molarmass_co2 "g"                                     \
-      m_"CO2" & = M_"CO2" dot n_"Oktan" dot 0.82 = #rect($#calc.round(mass_co2, digits: 2)"g"$)
+    n_"Oktan" & = #mass_oktan / (8 dot 12 + 18) = #calc.round(mol, digits: 3)"mol" \
+    M_"CO2" & = (12 + 2 dot 6) dot 8 = #molarmass_co2 "g" \
+    m_"CO2" & = M_"CO2" dot n_"Oktan" dot 0.82 = #rect($#calc.round(mass_co2, digits: 2)"g"$)
   $
 ]
 
@@ -50,8 +49,8 @@
   #set math.equation(numbering: none)
 
   $
-    "M" & = 6 dot 12 + 12 + 6 dot 16 = qty(#calc.round(molar, digits: 2), "g/mol")                \
-    "n" & = qty("158", "mmol/L") dot qty("5", "L") = qty(#n, "mol")                               \
+    "M" & = 6 dot 12 + 12 + 6 dot 16 = qty(#calc.round(molar, digits: 2), "g/mol") \
+    "n" & = qty("158", "mmol/L") dot qty("5", "L") = qty(#n, "mol") \
     "m" & = qty(molar, "g/mol") dot qty(#n, "mol") = #rect($qty(#calc.round(m, digits: 2), "g")$) \
   $
 ]
@@ -161,4 +160,3 @@
   (Ein paar Vorschläge: _Säurehalogenid, E-Alken, Keton, Amid, Phenol, ..._)
 ]
 #antwort[#missing[]]
-

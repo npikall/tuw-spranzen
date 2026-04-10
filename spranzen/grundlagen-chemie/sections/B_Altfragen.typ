@@ -1,4 +1,6 @@
-#import "../common.typ": *
+#import "@local/spranzen:0.1.0": *
+#import "@local/spranzen-chemie:0.1.0": *
+
 #let antwort = antwort.with(display: true)
 #let blank = box(line(length: 1em, stroke: .7pt))
 
@@ -31,9 +33,7 @@
   $
 ]
 #frage[
-  Sie haben ein Gemisch mit (A) #qty(50, "ml") einer #qty(0.05, "g/mol") #ce(
-    "HCl",
-  ) und (B) #qty(50, "ml") einer #qty(0.05, "g/mol") #ce("NH3") ($K_B = 1.8 dot 10^(-5)$) oder (C)
+  Sie haben ein Gemisch mit (A) #qty(50, "ml") einer #qty(0.05, "g/mol") #ce("HCl") und (B) #qty(50, "ml") einer #qty(0.05, "g/mol") #ce("NH3") ($K_B = 1.8 dot 10^(-5)$) oder (C)
   #qty(100, "ml") einer #qty(0.05, "g/mol") dieser Mischung. Berechnen Sie den pH-Wert der der
   ursprünglichen Lösung (A) und der Mischungen mit (B) und (C).
 ]
@@ -281,4 +281,3 @@
     m = #molar_mass_o2 "mol/g" dot #n_o2 = #gram_o2 "g" approx #kg_o2 "kg"
   $
 ]
-
