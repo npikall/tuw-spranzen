@@ -5,7 +5,7 @@
  * it under the terms of the MIT License; see the LICENSE file for details.
  */
 
-#import "../common.typ": *
+#import "@local/spranzen:0.1.0": *
 
 // Content goes here
 = Ausarbeitung
@@ -85,18 +85,10 @@ $ arrow(r)(t) = 1/2 arrow(g) t^2 + arrow(v_0)t $
 
 #let freier-fall = {
   let xs = lq.linspace(0, 10, num: 30)
-  lq.diagram(
-    lq.plot(
-      xs,
-      xs.map(x => -5 * x * x + 50 * x),
-    ),
-  )
+  lq.diagram(lq.plot(xs, xs.map(x => -5 * x * x + 50 * x)))
 }
 
-#figure(
-  freier-fall,
-  caption: [Freier Fall],
-)
+#figure(freier-fall, caption: [Freier Fall])
 #missing[Berechnung und herleitung]
 
 #frage[Definition und Definition der Zentripetalbeschleunigung. Wo tritt sie auf?]
