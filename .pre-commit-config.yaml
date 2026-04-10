@@ -1,8 +1,8 @@
 repos:
-#  - repo: https://github.com/jeffa5/typstfmt
-#    rev: ade0a3553464f7833716d4242f97cfb12e212429
-#    hooks:
-#      - id: typstfmt
+  #  - repo: https://github.com/jeffa5/typstfmt
+  #    rev: ade0a3553464f7833716d4242f97cfb12e212429
+  #    hooks:
+  #      - id: typstfmt
   - repo: local
     hooks:
       - id: typstyle
@@ -14,3 +14,8 @@ repos:
         additional_dependencies: ["cli:typstyle:0.13.9"]
         files: \.typ$
         args: ["-i", "--wrap-text", "--line-width=100"]
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0 # Use the ref you want to point at
+    hooks:
+      - id: check-added-large-files
