@@ -1,4 +1,4 @@
-#import "../common.typ":*
+#import "@local/spranzen:0.1.0": *
 
 = Optische Methoden
 #missing[]

@@ -1,4 +1,4 @@
-#import "../common.typ":*
+#import "@local/spranzen:0.1.0": *
 
 = Titrimetrische Analysen
 *Titration:* Methode zur quantitaiven Bestimmung einer (bekannten) Substanz, bei der der Probelösung so viel Reagenzlösung mit bekanntem Gehalt (=Titer) zugesetzt wird, bis der Analyt vollständig umgesetzt ist und oder ein erkennbarer Endpunkt erreicht wird.

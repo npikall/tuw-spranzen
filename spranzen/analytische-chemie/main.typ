@@ -1,5 +1,5 @@
-#import "@preview/rubber-article:0.3.1":*
-#import "common.typ": github-link
+#import "@preview/rubber-article:0.3.1": *
+#import "@local/spranzen:0.1.0": github-link
 
 #show: article.with(
   eq-numbering: "(1.1)",

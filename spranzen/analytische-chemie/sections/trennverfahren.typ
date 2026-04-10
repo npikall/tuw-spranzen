@@ -1,4 +1,5 @@
-#import "../common.typ":*
+#import "@local/spranzen:0.1.0": *
+#import "@preview/lilaq:0.1.0" as lq
 
 = Trennverfahren
 
@@ -7,7 +8,7 @@ Die Chromatographie kommt bei der Trennung von Stoffen vor, welche in miteinande
 
 Verteilung einer Komponente eines Gemisches zwischen zwei nicht mischbaren Phasen:
 $
-K = (a_"Analyt" ("Organ")) / (a_"Analyt" (H_2O)) = a_"II" /a_"I"
+  K = (a_"Analyt" ("Organ")) / (a_"Analyt" (H_2O)) = a_"II" /a_"I"
 $
 / K: Verteilungunskoeffizient
 / $a_I (I I)$: Aktivität der Substanz
@@ -18,14 +19,14 @@ Diese einfache Gleichung gilt nur, wenn keine Dissoziation, Assoziation, Komplex
 
 === Einfache Verteilung
 $
-K = a_"II"/ a_"I" approx c_"II"/ c_"I" = m_"II"/ v_"II" dot m_"I"/ v_"I" = G/V
+  K = a_"II"/ a_"I" approx c_"II"/ c_"I" = m_"II"/ v_"II" dot m_"I"/ v_"I" = G/V
 $
 Diese Verteilung gilt für verdünnte Lösungen und in Abwesenheit von Nebenreaktionen.
 
 === Multiplikative Verteilung
 Trennwirkung eines Systems in Bezug auf zwei Komponenten durch den Quotienten $alpha$ (= Trennfaktor) gegeben:
 $
-alpha = k_1/k_2
+  alpha = k_1/k_2
 $
 für $v_("II") = v_"I" arrow k_1 = (m_1("II"))/(m_1("I"))$ und $k_2 = (m_2("II"))/(m_2("I"))$
 
@@ -84,31 +85,31 @@ Trennung zweier Stoffe durch Verteilung zwischen zwei miteinander nicht mischbar
 )
 #figure(
   lq.diagram(
-    ylim: (-.5,10),
-    xlim: (0,18),
+    ylim: (-.5, 10),
+    xlim: (0, 18),
     xaxis: (subticks: none),
     yaxis: (subticks: none),
     xlabel: [Zeit $t_R$],
     ylabel: [Signalhöhe h],
     grid: none,
     lq.path(
-      ((0,0), (-1,0)),
-      ((3,2),(-1,0)),
-      ((5,0), (-1.3,0)),
-      ((8,5), (-1,0)),
-      ((10,0), (-2,2)),
-      ((15,9), (-1,0)),
-      ((18,0), (-1,0)),
+      ((0, 0), (-1, 0)),
+      ((3, 2), (-1, 0)),
+      ((5, 0), (-1.3, 0)),
+      ((8, 5), (-1, 0)),
+      ((10, 0), (-2, 2)),
+      ((15, 9), (-1, 0)),
+      ((18, 0), (-1, 0)),
     ),
     lq.vlines(3, 8, 15, line: red),
-    lq.line((0,2), (3,2), ..line-style-1),
-    lq.line((0,5), (8,5), ..line-style-1),
-    lq.line((0,9), (15,9), ..line-style-1),
+    lq.line((0, 2), (3, 2), ..line-style-1),
+    lq.line((0, 5), (8, 5), ..line-style-1),
+    lq.line((0, 9), (15, 9), ..line-style-1),
     lq.place(1.5, 3)[$t_m$],
     lq.place(5, 6)[$t_("R2")$],
     lq.place(12, 8.5)[$t_("R1")$],
-    lq.line((3,1.5), (8,1.5), ..line-style-2),
-    lq.line((3,3), (15,3), ..line-style-2),
+    lq.line((3, 1.5), (8, 1.5), ..line-style-2),
+    lq.line((3, 3), (15, 3), ..line-style-2),
     lq.place(5, 1)[$t_("r2")$],
     lq.place(11, 2.5)[$t_("r1")$],
   ),
@@ -130,11 +131,11 @@ Wechselwirkung der Komponente A mit der stationären bzw. moilen Phase.
 == Grundlagen für die Trennung über die Gasphase
 Als Grundlage dient das Henry'sche Gesetz
 $
-p_1 = p_1^* dot x_1
+  p_1 = p_1^* dot x_1
 $
 bzw. das Rault'sche Gesetz
 $
-p_1 = p_1^* dot x_1 dot gamma_(1,3)
+  p_1 = p_1^* dot x_1 dot gamma_(1,3)
 $
 / $p_1$: Dampfdruck der Komponente 1 übr der Mischung
 / $p_1^*$: Dampfdruck der reinen Komponente
@@ -144,7 +145,7 @@ $
 Das Rault'sche Gesetz besagt, dass der Dampfdruck einer Lösung direkt proportional zum Molenbruch des Lösungsmittels in dieser Lösung ist. Also je mehr Lösungsmittel vorhanden ist, desto höher ist der Dampfdruck der lösung.
 Für eine Trennung ist notwendig:
 $
-(p_1 \/ x_1)/(p_2 \/ x_2) = (p_1^* dot gamma_(1,3))/(p_2^* dot gamma_(2,3)) approx t_"R2" / t_"R1"
+  (p_1 \/ x_1)/(p_2 \/ x_2) = (p_1^* dot gamma_(1,3))/(p_2^* dot gamma_(2,3)) approx t_"R2" / t_"R1"
 $
 
 === Theoretische Trennstufen:
