@@ -1,4 +1,5 @@
-#import "../common.typ":*
+#import "@local/spranzen:0.1.0": *
+#import "@local/spranzen-chemie:0.1.0": *
 = Atombau und chemische Bindungen
 <atombau-und-chemische-bindungen>
 == Atommassen
@@ -11,7 +12,7 @@ $ u = 1.6605402 dot.op 10^(- 24) thin g $
 Die #emph[relative Atommasse] $A_r$ gibt an wie viel Mal schwerer ein
 Atom ist als die atomare Masseneinheit. $ A_r = frac(m (X), u) $ wobei
 $A_r$ die #emph[relative Atommasse] und $m (X)$ die #emph[absolute
-Atommasse] ist.
+  Atommasse] ist.
 
 == Atomaufbau
 <atomaufbau>

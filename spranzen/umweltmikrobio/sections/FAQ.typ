@@ -1,4 +1,5 @@
-#import "../common.typ": *
+#import "@local/spranzen:0.1.0": *
+#import "@local/spranzen-chemie:0.1.0": *
 #let antwort = antwort.with(display: true)
 #fragen-counter.update(0)
 
@@ -51,10 +52,10 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
   Verdopplungsrate berechnen und andersherum.
 
   $
-  t_"Verdopplung" = log(2)/log(a)
+    t_"Verdopplung" = log(2)/log(a)
   $
   $
-  f(t) = c_0 dot a^t
+    f(t) = c_0 dot a^t
   $
 ]
 #nfrage(n: 4)[
@@ -117,7 +118,7 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
 #antwort[
   Der Yield-Koeffizient (Y) oder auch Ausbeute-Koeffizient bezeichnet die Biomasseausbeute (Zuwachs an Biomasse, X) bezogen auf das verbrauchte Substrat (S)
   $
-  Y = X/S
+    Y = X/S
   $
 
   Der Rest (1-Y) wird zum Teil in nutzbare Energie als ATP und zum Teil in nicht nutzbare Energie (Wärme) übergeführt.
@@ -193,13 +194,13 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
 
   Es sind die Raten $tau_i$ für zwei Temperaturen $T_i$ bekannt.
   $
-  theta_(1degree C) = root((tau_2 - tau_1), tau_2 / tau_1)
+    theta_(1degree C) = root((tau_2 - tau_1), tau_2 / tau_1)
   $
 
   Ist der Faktor $theta$ bekannt für eine Reaktion $tau_1$ bei $T_1$, so kann daraus die Rate $tau_2$ bei $T_2$ berechnet werden.
 
   $
-  tau_2 = tau_1 dot theta^(T_2 - T_1)
+    tau_2 = tau_1 dot theta^(T_2 - T_1)
   $
 ]
 

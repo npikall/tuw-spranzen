@@ -1,4 +1,4 @@
-#import "../common.typ":*
+#import "@local/spranzen:0.1.0": *
 
 = Altfragen Studo
 #frage[DTA (Differenz-Thermoanalyse) und DSC (Differential Scanning Calorimetry) erklären, vergleichen und Skizze]
@@ -21,18 +21,23 @@ Abhängigkeit der Temperatur. Wird verwendet bei:
   lq.diagram(
     grid: none,
     xaxis: (ticks: none, mirror: false, tip: tiptoe.stealth),
-    yaxis: (ticks: (-1.5,0,1.5), subticks: none, mirror: false, tip: tiptoe.stealth),
+    yaxis: (
+      ticks: (-1.5, 0, 1.5),
+      subticks: none,
+      mirror: false,
+      tip: tiptoe.stealth,
+    ),
     xlabel: "Temperatur der Umgebung T",
     ylabel: [Temperaturdifferenz $Delta T$],
     lq.path(
-      ((0,0), (-1,0)),
-      ((1,0), (-.5,0)),
-      ((1.5,2), (-.2,0)),
-      ((2,0), (-.5,0)),
-      ((3,0), (-.5,0)),
-      ((3.5,-2), (-.2,0)),
-      ((4,0), (-.5,0)),
-      ((5,0), (-1,0)),
+      ((0, 0), (-1, 0)),
+      ((1, 0), (-.5, 0)),
+      ((1.5, 2), (-.2, 0)),
+      ((2, 0), (-.5, 0)),
+      ((3, 0), (-.5, 0)),
+      ((3.5, -2), (-.2, 0)),
+      ((4, 0), (-.5, 0)),
+      ((5, 0), (-1, 0)),
       label: "DTA",
       stroke: blue,
     ),
@@ -61,7 +66,7 @@ Vorrichtung zum Erzeugen einer inerten oder reaktiven Atmosphäre.
 Siehe @fig-thermogravimetrie.
 
 #frage[UV/VIS Spektroskopie: Signalerzeugung, Skizze, Verwendung, Charaktereigenschaften,
-Chromophore und Auxochrome,...]
+  Chromophore und Auxochrome,...]
 #missing[]
 
 #frage[AAS (Atomabsorptionsspektroskopie): Skizzen, Erklärung, …]
@@ -121,7 +126,7 @@ Folgende Kenngrößen sind entscheidend:
 Die Van Deemter-Gleichung beschreibt den Zusammanhang zwischen der Höhe einer theoretischen Trennstufe und den dynamischen Erscheinungen.
 Sie Beschreibt die Trennleistung in der Gas- und Flüssig- Chromatographie. H ist abhängig von der strömungsgeschwindigkeit u. Je kleiner H ist, desto höher ist die Trennleistung des Systems.
 $
-H = A + B/v + C dot c
+  H = A + B/v + C dot c
 $<eq-deemter>
 
 / H: Trennstufenhöhe
@@ -152,7 +157,7 @@ mittels *Amperometrie*; basiert auf der
 Messung des elektrischen Stroms der durch die elektrochemische Reaktion von Sauerstoff an
 der Elektrode fließt; Sauerstoff wird an der Elektrode reduziert:
 $
-"O"_2 + 4e^- + 2"H"_2"O" #sym.arrow 4"OH"^-
+  "O"_2 + 4e^- + 2"H"_2"O" #sym.arrow 4"OH"^-
 $
 Der Strom, der durch die Reduktion des Sauerstoffs an der Elektrode fließt, ist proportional
 zur Sauerstoffkonzentration in der Gasprobe.
@@ -230,7 +235,7 @@ werden kann
 
 #frage[Lambert Beer'sches Gesetz]
 $
-E_lambda = log_10 (I_0/I_1) = epsilon_lambda c d
+  E_lambda = log_10 (I_0/I_1) = epsilon_lambda c d
 $
 Das Lambert-Beer’sches Gesetz beschreibt die *Abschwächung der Intensität einer Strahlung*
 in Bezug zu deren Anfangsintensität bei dem Durchgang durch ein Medium mit einer

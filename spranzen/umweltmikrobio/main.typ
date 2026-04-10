@@ -1,7 +1,7 @@
-#import "@preview/rubber-article:0.4.0":*
-#import "common.typ":*
+#import "@preview/rubber-article:0.5.2": *
+#import "@local/spranzen:0.1.0": *
 
-#show:article.with(
+#show: article.with(
   header-display: true,
   header-title: "Umweltmikrobiologie",
   eq-numbering: "(1.1)",

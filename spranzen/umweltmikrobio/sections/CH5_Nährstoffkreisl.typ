@@ -1,4 +1,5 @@
-#import "../common.typ":*
+#import "@local/spranzen:0.1.0": *
+#import "@local/spranzen-chemie:0.1.0": *
 = Nährstoffkreislauf und Microbial loop
 <nährstoffkreislauf-und-microbial-loop>
 
@@ -36,16 +37,28 @@ Die *wichtigsten C Senken* sind:
 
 #figure(
   diagram(
-    ..digram-style,
-    node((1,0), "Atmosphäre", name: <atmo>),
-    node((0,1), "Biosphäre", name: <bio>, fill: green),
-    node((2,1), "Hydrosphäre", name: <hydro>, fill: blue.lighten(10%)),
-    node((1,2), "Lithosphäre", name: <litho>, fill: rgb("#c89a2e")),
+    ..diagram-style,
+    node((1, 0), "Atmosphäre", name: <atmo>),
+    node((0, 1), "Biosphäre", name: <bio>, fill: green),
+    node((2, 1), "Hydrosphäre", name: <hydro>, fill: blue.lighten(10%)),
+    node((1, 2), "Lithosphäre", name: <litho>, fill: rgb("#c89a2e")),
     edge(<atmo>, <bio>, "<|-|>", label: "Assimilation,\nDissimilation"),
     edge(<hydro>, <atmo>, "<|-|>", label: [Austausch von #ce("CO2")]),
-    edge(<litho>, <hydro>, "-|>", label: "Lösung von Carbonaten", label-side: right),
+    edge(
+      <litho>,
+      <hydro>,
+      "-|>",
+      label: "Lösung von Carbonaten",
+      label-side: right,
+    ),
     edge(<bio>, <litho>, "-|>", label: "Kalkbildung", label-side: right),
-    edge(<atmo>, <litho>, "-|>", label: align(center)[Bindung von #ce("CO2")\ an Carbonaten], label-side: center),
+    edge(
+      <atmo>,
+      <litho>,
+      "-|>",
+      label: align(center)[Bindung von #ce("CO2")\ an Carbonaten],
+      label-side: center,
+    ),
   ),
 )
 

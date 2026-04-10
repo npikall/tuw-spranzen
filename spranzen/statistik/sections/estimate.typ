@@ -1,4 +1,5 @@
-#import "../common.typ":*
+#import "@local/spranzen:0.1.0": *
+#import "@local/spranzen-mathe:0.1.0": *
 = Schätzungen
 
 == Stichprobe und Grundgesamtheit
@@ -25,7 +26,9 @@ Statistische Schätzer verwenden Information aus einer Stichprobe, um auf Eigens
 
 === Eigenschaften von Schätzern
 - Konsistenz (Schätzer haben eine Unsicherheit, die aber gegen 0 geht bei steigendem Stichprobenumfang).
-  $ forall epsilon > 0: limits(lim)_(n arrow infinity) PP(norm(Gamma_n - Theta) > epsilon) = 0 $
+  $
+    forall epsilon > 0: limits(lim)_(n arrow infinity) PP(norm(Gamma_n - Theta) > epsilon) = 0
+  $
 - (asymptotische) Erwartungstreue $ (limits(lim)_(n arrow infinity)) EE(Gamma_n) = Theta $
 
 === Schätzer für Mittelwert und Varianz
@@ -33,15 +36,15 @@ Die wohl bekanntesten statistischen Schätzer sind die Schätzer für den
 Mittelwert $overline("x")$ und die Varianz $sigma^2$.
 
 $
-overline(X) = overline(x) = 1/n limits(sum)_(i = 1)^n x_i
+  overline(X) = overline(x) = 1/n limits(sum)_(i = 1)^n x_i
 $
 $
-S^2 = sigma^2 = 1/(n-1) limits(sum)_(i = 1)^n (x_i - overline(x))^2
+  S^2 = sigma^2 = 1/(n-1) limits(sum)_(i = 1)^n (x_i - overline(x))^2
 $
 Beide sind konsistent und erwartungstreu. Also:
 $
-EE(overline(X)) = mu_x\
-EE(S^2) = "Var"(X)
+  EE(overline(X)) = mu_x\
+  EE(S^2) = "Var"(X)
 $
 
 == Momentenmethode
@@ -49,7 +52,7 @@ Die Schätzung von Verteilungsparametern mit Hilfe von Schätzern für die
 Momente nennt man Momentenmethode. Die Intuition hinter dieser Schätzmethode ist, dass Stichprobenmomente mit den Momenten der Grundgesamtheit gleichgesetzt werden.
 
 $
-(overline(x), sigma^2) arrow (xi, alpha) arrow "Dichtefunktion"
+  (overline(x), sigma^2) arrow (xi, alpha) arrow "Dichtefunktion"
 $
 
 Die Momentenmethode führt zu konsistenten Schätzern für Parameter,
@@ -62,7 +65,7 @@ Schätzverfahren für die Parameter einer Verteilung. Die Intuition ist, dass f�
 werden, welche eine Stichprobe am besten beschreiben.
 
 $
-L(Theta, x) = limits(product)_(i=1)^n f_X (x_i,Theta)
+  L(Theta, x) = limits(product)_(i=1)^n f_X (x_i,Theta)
 $
 Jener Wert für $Theta$ welcher die Likelihood für eine Stichprobe maximiert wird wird Maximum-Likelihood Schätzer $hat(Theta)_"ML"$ genannt.
 Dabei leitet man zuerst die Verteilung ab und setzt sie null.
@@ -91,7 +94,7 @@ $T_2(X_1,..., X_n)$ der Zufallsstichprobe, sodass für den Parameter $Theta$ zum
 Konfidenzniveau 1 − $alpha$ gilt:
 
 $
-PP(T_1 < Theta < T_2) gt.eq 1 - alpha
+  PP(T_1 < Theta < T_2) gt.eq 1 - alpha
 $
 
 Konfidenzintervalle schließen den zu schätzenden Paramerer zwischen zwei zufälligen Werten
@@ -100,14 +103,7 @@ Konfidenzintervalle schließen den zu schätzenden Paramerer zwischen zwei zufä
   table(
     columns: 8,
     stroke: 0.7pt,
-    strong($q$),
-    [0.75],
-    [0.8],
-    [0.9],
-    [0.95],
-    [0.975],
-    [0.99],
-    [0.995],
+    strong($q$), [0.75], [0.8], [0.9], [0.95], [0.975], [0.99], [0.995],
     strong($z_q$),
     [0.674],
     [0.841],

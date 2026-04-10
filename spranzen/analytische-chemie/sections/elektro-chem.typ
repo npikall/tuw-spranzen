@@ -1,4 +1,4 @@
-#import "../common.typ":*
+#import "@local/spranzen:0.1.0": *
 
 = Elektrochemische Analyseverfahren
 == Elektrochemische Methoden
@@ -9,24 +9,34 @@
     node-fill: colors.at(0),
     spacing: 5pt,
     debug: 0,
-    node((0,0), name: <ohne>, "Verfahren ohne Stromfluss", fill: colors.at(2)),
+    node((0, 0), name: <ohne>, "Verfahren ohne Stromfluss", fill: colors.at(2)),
     edge(),
-    node((rel: (0,1)), "Potentiometrie", fill: colors.at(1)),
-    node((2,0), name: <mit>, "Verfahren mit Stromfluss", fill: colors.at(2)),
+    node((rel: (0, 1)), "Potentiometrie", fill: colors.at(1)),
+    node((2, 0), name: <mit>, "Verfahren mit Stromfluss", fill: colors.at(2)),
     edge(),
-    node((rel: (1,0), to: <mit>), name: <none>, "Verfahren ohne Stoffumsatz", fill: colors.at(1)),
+    node(
+      (rel: (1, 0), to: <mit>),
+      name: <none>,
+      "Verfahren ohne Stoffumsatz",
+      fill: colors.at(1),
+    ),
     edge(<mit>, <full>),
-    node((rel: (0,1), to: <mit>), name: <full>, "Verfahren mit ~100% Stoffumsatz", fill: colors.at(1)),
+    node(
+      (rel: (0, 1), to: <mit>),
+      name: <full>,
+      "Verfahren mit ~100% Stoffumsatz",
+      fill: colors.at(1),
+    ),
     edge(<none>, <kondukt>),
-    node((rel: (0,1), to: <none>), name: <kondukt>, "Konduktometrie"),
+    node((rel: (0, 1), to: <none>), name: <kondukt>, "Konduktometrie"),
     edge(),
-    node((rel: (0,1), to: <kondukt>), name: <volt>, "Voltametrie"),
+    node((rel: (0, 1), to: <kondukt>), name: <volt>, "Voltametrie"),
     edge(),
-    node((rel: (0,1)), "Potentiometr. Titration"),
-    node((rel: (0,1), to: <full>), name: <elgr>, "Elektrogravimetrie"),
+    node((rel: (0, 1)), "Potentiometr. Titration"),
+    node((rel: (0, 1), to: <full>), name: <elgr>, "Elektrogravimetrie"),
     edge(<full>, <elgr>),
     edge(),
-    node((rel: (0,1)), "Caulometrie"),
+    node((rel: (0, 1)), "Caulometrie"),
   ),
 )<fig-elektroanlytische-methoden>
 
@@ -87,8 +97,8 @@ Elektrochemische Methode zur Messung des elektrochemischen Potentials (Spannung)
 - Gemessene Spannung #math.prop Ionenkonzentration (nach der Nernst-Gleichung).
 
 $
-E = E^0 + (R dot T)/(z dot F) dot ln(a_"ox"/a_"red")\
-E = E^0 + 0.059/z dot log(a_"ox")
+  E = E^0 + (R dot T)/(z dot F) dot ln(a_"ox"/a_"red")\
+  E = E^0 + 0.059/z dot log(a_"ox")
 $<eq-nernst>
 
 Die *Zellspannung* ergibt sich aus der Summe des Potential von Mess- und Bezugselektrode:
@@ -154,5 +164,5 @@ Strommessung bei konstantem Potential im diffusionskontrollierten Regime.
 + Messung des resultierenden Stroms → proportional zur Konzentration des elektroaktiven Stoffes.
 
 $
-E = (R T)/(4 F) ln((P_"O2" ("Ref"))/(P_"O2" ("Probe")))
+  E = (R T)/(4 F) ln((P_"O2" ("Ref"))/(P_"O2" ("Probe")))
 $

@@ -1,4 +1,5 @@
-#import "../common.typ":*
+#import "@local/spranzen:0.1.0": *
+#import "@local/spranzen-chemie:0.1.0": *
 = Altfragen
 <altfragen>
 
@@ -300,7 +301,7 @@
 #antwort[
   Der Yield-Koeffizient (Y) oder auch Ausbeute-Koeffizient bezeichnet die Biomasseausbeute (Zuwachs an Biomasse, X) bezogen auf das verbrauchte Substrat (S)
   $
-  Y = X/S
+    Y = X/S
   $
 
   Der Rest (1-Y) wird zum Teil in nutzbare Energie als ATP und zum Teil in nicht nutzbare Energie (Wärme) übergeführt.
@@ -332,10 +333,10 @@
   Verdopplungsrate berechnen und andersherum.
 
   $
-  t_"Verdopplung" = log(2)/log(a)
+    t_"Verdopplung" = log(2)/log(a)
   $
   $
-  f(t) = c_0 dot a^t
+    f(t) = c_0 dot a^t
   $
 ]
 #frage[
@@ -589,13 +590,13 @@
 
   Es sind die Raten $tau_i$ für zwei Temperaturen $T_i$ bekannt.
   $
-  theta_(1degree C) = root((tau_2 - tau_1), tau_2 / tau_1)
+    theta_(1degree C) = root((tau_2 - tau_1), tau_2 / tau_1)
   $
 
   Ist der Faktor $theta$ bekannt für eine Reaktion $tau_1$ bei $T_1$, so kann daraus die Rate $tau_2$ bei $T_2$ berechnet werden.
 
   $
-  tau_2 = tau_1 dot theta^(T_2 - T_1)
+    tau_2 = tau_1 dot theta^(T_2 - T_1)
   $
 ]
 #frage[
@@ -733,22 +734,22 @@
 
   *Stickstoffkreislauf*:
   - *Stickstofffixierung*: #ce("N2 -> NH3 oder NH4") (Ammoniak oder Ammonium) Entweder biotisch durch Bakterien oder abiotisch durch Blitze oder Sonnenlicht.
-- *Nitrifikation*: #ce("NH4 oder NH3 -> NO3") (Nitrat) Bakterien wandeln Ammonium in Nitrat um, damit Pflanzen es aufnehmen können. Umwandlung erfolgt in gut belüfteten Böden oder Wasser.
-- *Ammonifikation*: #ce("NO3 -> NH3 -> NH4") (Ammonium) Pflanzen werden verdauut und das Nitrat wird in Ammoniak umgewandelt, welches nach der Ausscheidung von Bakterien zu Ammonium umgewandelt wird.
-- *Denitrifikation*: #ce("NO3 -> N2") (molekularer Stickstoff) Umwandlung erfolgt in gut belüfteten Böden, wenn Pflanzen es nicht aufnehmen.
+  - *Nitrifikation*: #ce("NH4 oder NH3 -> NO3") (Nitrat) Bakterien wandeln Ammonium in Nitrat um, damit Pflanzen es aufnehmen können. Umwandlung erfolgt in gut belüfteten Böden oder Wasser.
+  - *Ammonifikation*: #ce("NO3 -> NH3 -> NH4") (Ammonium) Pflanzen werden verdauut und das Nitrat wird in Ammoniak umgewandelt, welches nach der Ausscheidung von Bakterien zu Ammonium umgewandelt wird.
+  - *Denitrifikation*: #ce("NO3 -> N2") (molekularer Stickstoff) Umwandlung erfolgt in gut belüfteten Böden, wenn Pflanzen es nicht aufnehmen.
 
-*Phosphorkreislauf*:
+  *Phosphorkreislauf*:
 
-Phosphor kommt eigentlich immer als Phosphat (PO4) vor. Hautsächlich in Gestein. Durch
-Verwitterung gelangt er in den Boden und ins Wasser. Menschen/Tiere essen die Pflanzen
-und scheiden Phosphat wieder aus. Abgestorbene Pflanzen werden von Bakterien
-(Destruenten) wieder zersetzt und Phosphat wird frei (Autolyse). Großer Einfluss des
-Menschen auf diesen Kreislauf.
+  Phosphor kommt eigentlich immer als Phosphat (PO4) vor. Hautsächlich in Gestein. Durch
+  Verwitterung gelangt er in den Boden und ins Wasser. Menschen/Tiere essen die Pflanzen
+  und scheiden Phosphat wieder aus. Abgestorbene Pflanzen werden von Bakterien
+  (Destruenten) wieder zersetzt und Phosphat wird frei (Autolyse). Großer Einfluss des
+  Menschen auf diesen Kreislauf.
 
-*Schwefelkreislauf*:
+  *Schwefelkreislauf*:
 
-Ist wichtig für einige Aminosäuren. Wichtig im Energiestoffwechsel von MO.
-wird nicht elementar, sondern in Form von löslichen Mineralien aufgenommen.
+  Ist wichtig für einige Aminosäuren. Wichtig im Energiestoffwechsel von MO.
+  wird nicht elementar, sondern in Form von löslichen Mineralien aufgenommen.
 ]
 #frage[
   Definition: Dissimilation & Assimilation
@@ -779,10 +780,10 @@ wird nicht elementar, sondern in Form von löslichen Mineralien aufgenommen.
 ]
 #antwort[
   - Karbonate der Hydrosphäre (lösliche salze der kohlensäure #ce("H2CO3"))
-- Karbonate der Lithosphäre (#ce("CaCO3"), #ce("MgCO3"), #ce("NaCO3"))
-- Karbonate der Biospähre (Muschelschalen, Korallen)
-- Sedimente der Tiefsee
-- Fossile Brennstoffe (Kohle, Erdöl, Erdgas)
+  - Karbonate der Lithosphäre (#ce("CaCO3"), #ce("MgCO3"), #ce("NaCO3"))
+  - Karbonate der Biospähre (Muschelschalen, Korallen)
+  - Sedimente der Tiefsee
+  - Fossile Brennstoffe (Kohle, Erdöl, Erdgas)
 ]
 #frage[
   Erklären von abiotisch/biotisch + Beispiel

@@ -1,5 +1,6 @@
-#import "@preview/rubber-article:0.3.0": *
-#import "common.typ":*
+#import "@preview/rubber-article:0.5.2": *
+#import "@local/spranzen:0.1.0": *
+#import "@local/spranzen-mathe:0.1.0": *
 // Formatting the document
 #show: article.with(
   eq-numbering: "(1.1)",
