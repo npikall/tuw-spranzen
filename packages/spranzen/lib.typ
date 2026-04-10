@@ -38,6 +38,16 @@
   )
 }
 
+#let antwort(display: true, body) = {
+  if display { body } else { hide(body) }
+}
+
+#let diagram-style = (
+  node-fill: blue.lighten(50%),
+  node-corner-radius: 5pt,
+  node-stroke: 0.7pt,
+)
+
 // Balanced Columns Function -> deprecated: use balance from rubber-article
 #let eqcolumns(n: 2, gutter: 4%, content) = {
   layout(size => [
