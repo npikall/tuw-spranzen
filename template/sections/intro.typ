@@ -1,12 +1,11 @@
 /*
- * Copyright (C) 2025 npikall.
+ * Copyright (C) {{ year }} npikall.
  *
  * This is free software: you can redistribute it and/or modify
  * it under the terms of the MIT License; see the LICENSE file for details.
  */
 
-#import "../common.typ": *
+#import "@local/spranzen:0.1.0": *
 
-// Content goes here
 = Introduction
 #lorem(50)
