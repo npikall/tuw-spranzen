@@ -1,21 +1,10 @@
 repos:
-  #  - repo: https://github.com/jeffa5/typstfmt
-  #    rev: ade0a3553464f7833716d4242f97cfb12e212429
-  #    hooks:
-  #      - id: typstfmt
-  - repo: local
+  - repo: https://github.com/typstyle-rs/pre-commit-typstyle
+    rev: v0.14.4
     hooks:
       - id: typstyle
-        name: typstyle
-        description: Format files with typstyle
-        entry: typstyle
-        language: rust
-        types: [file]
-        additional_dependencies: ["cli:typstyle:0.13.9"]
-        files: \.typ$
-        args: ["-i", "--wrap-text", "--line-width=100"]
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v6.0.0 # Use the ref you want to point at
+    rev: v6.0.0
     hooks:
       - id: check-added-large-files
