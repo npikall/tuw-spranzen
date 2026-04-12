@@ -6,7 +6,7 @@
  */
 
 // Import the styling and the common types
-#import "@preview/rubber-article:0.4.0": *
+#import "@preview/rubber-article:0.5.2": *
 #import "@local/spranzen:0.1.0": *
 
 // Define the document formating
@@ -18,11 +18,20 @@
   header-title: the-title,
 )
 
+#show "->": sym.arrow
+
 // Set the title, authors, and date
-#maketitle(title: the-title, authors: ("np",), date: datetime
-  .today()
-  .display("[day].[month].[year]"))
+#maketitle(
+  title: the-title,
+  authors: ("np",),
+  date: datetime.today().display("[day].[month].[year]"),
+)
 
 #outline()
 // Insert modules/content
 #include "sections/intro.typ"
+#include "sections/fragen_gravitation.typ"
+#include "sections/fragen_mechanik_starrer_koerper.typ"
+#include "sections/fragen_relativitats_theorie.typ"
+#include "sections/fragen_schwingungen.typ"
+#include "sections/fragen_elektrodynamik.typ"
