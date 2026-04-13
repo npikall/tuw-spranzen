@@ -1,36 +1,72 @@
 #import "@local/spranzen:0.1.0": *
+#import "@local/spranzen-chemie:0.1.0": qty
 
 = Elektrodynamik
 == Punktladungen
 #fragen-counter.update(0)
 #frage[Welche Eigenschaften haben elektrische Ladungen?]
-#missing[]
+- Ladungsarten: positiv/negativ
+- Ladung immer mit Masse verknüpft
+- Einheit Coulomb
+- Quantenladung $Q = n dot e$ (Elektron e hat Ladung #qty("1.6022e-14", "C"))
+- Erhaltung: Summe der elektrischen Ladungen in einem geschlossenem System ist konstant
+- Trennung - Rekombinatio: geladene Teilchen können sich paarweise bilden und annilihieren
+- Invarianz bei Bewegungen: im gegensatz zu bewegten Massen haben bewegte Ladungen immer gleiche
+  Werte
+
 #frage[Was ist die Einheit der elektrischen Ladung?]
-#missing[]
+Coulomb $C$
+
 #frage[Wie lautet das Coulombgesetz?]
-#missing[]
+$
+  F = 1 / (4 dot pi dot epsilon_0) dot (q_1 q_2)/ r^2
+$
+
 == Kraftgesetze
 #frage[Geben Sie das Coulomb-Gesetz der Elektrostatik und das Gravitationsgesetz nach Newton an.]
-#missing[]
+$
+  "Coulomb: " F & = 1 / (4 dot pi dot epsilon_0) dot (q_1 q_2)/ r^2 \
+   "Newton: " F & = G (m_1 m_2)/r
+$
 #frage[Erläutere die einzelnen vorkommenden Größen in Bedeutung und Dimension.]
-#missing[]
+#missing[Erklärung]
 #frage[Was haben beide Gesetze gemeinsam. Worin unterscheiden sie sich]
-#missing[]
+- mathematische struktur
+- es gibt nur positive Massen, d.h. beim Gravitationsgesetz kann es nur Anziehungen geben
+- im Gegensatz dazu gibt es Abstoßungen bei Coulomb (negative ladungen)
+
 #frage[Diskutieren Sie die Bedeutung beider Gesetze und geben Sie Beispiele an wo welches Gesetz
   wesentlich ist]
-#missing[]
+- beide Gesetze sind extrem wichtig
+- Coulombkräfte in kleinen Systemen relevant
+- Gravitationskräfte in großen Systemen relevant
+- Kraftwirkung: für 2 Elektronen mit Abstand von #qty(1, "cm") $"Coulomb" > "Gravutation"$
+
 #frage[Gegeben ist eine Punktladung Q
   + Beschreiben Sie, wie man vorgeht, um deren Feld E zu ermitteln
   + Skizzieren Sie die Feldvektoren einer positiven Punktladung Q und einer negativen Punktladung -Q
 ]
-#missing[]
+$
+  arrow(E)(arrow(r)) = (arrow(F)(arrow(r)))/Q_2 = 1 / ( 4 pi epsilon_0) dot Q/abs(arrow(r))^2 dot arrow(e_r)
+$
+
+- neg: Kreis um Ladung mit Pfeilen nach innen
+- pos: Kreis um Ladung mit Pfeilen nach aussen
+
 #frage[Was ist das Superpositionsprinzip?]
-#missing[]
+Aka. Überlagerungsprinzip, Kraftwirkung zweier Punktladungen durch Anwesenheit einer dritten nicht
+beeinflusst.
+
 == Elektrisches Feld und Potential
 #frage[Gegeben ist eine Punktladung Q. Durch welchen Ausdruck ist das Elektrische Felde E der
-  Punktldung Q gegeben?]
-#missing[]
+  Punktladung Q gegeben?]
+$
+  arrow(E)(arrow(r)) = (arrow(F)(arrow(r)))/Q_2 = 1 / ( 4 pi epsilon_0) dot Q/abs(arrow(r))^2 dot arrow(e_r)
+$
+Ein Quellfeld, es ist radial? gerichtet und hängt vom Abstand von der Punktladung ab.
+
 #frage[Zeigen Sie, dass das Integral entlang eines Geschlossenen Weges gleich null ist.]
+
 #missing[]
 #frage[Wie ist das potential $V_p$ von E definiert und mittels welchen Operators kann E aus $V_p$
   ermittelt werden?]
