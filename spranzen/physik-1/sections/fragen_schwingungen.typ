@@ -1,9 +1,28 @@
 #import "@local/spranzen:0.1.0": *
 = Zeitlich periodische Bewegungen: Schwingungen
+#fragen-counter.update(0)
 == Gedämpfte Schwingung
 #frage[Wie lautet die Schwingungsgleichung der gedämpften Schwingung? Wie wird sie aufgestellt und
   was bedeuten ihre einzelnen Terme?]
-#missing[]
+
+#let schwingung-plot = {
+  let beta = 0.07
+  let A = 2
+  let omega = 1
+  let xs = lq.linspace(1, 30, num: 100)
+  let ys = xs.map(t => calc.exp(-beta * t) * A * calc.sin(omega * 1 / t + t))
+
+  lq.diagram(
+    lq.plot(xs, ys),
+  )
+}
+
+$
+  x(t) = e^(-beta t) dot A dot sin(omega *) // TODO: Formel
+$
+
+#figure(schwingung-plot)
+
 #frage[Geben Sie einen Lösungsansatz an und zeigen Sie, dass er die Schwingungsgleichung erfüllt]
 #missing[]
 #frage[Diskutieren Sie die verschiedenen Lösungen die sich ergeben und skizzieren Sie die

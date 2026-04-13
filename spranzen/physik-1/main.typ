@@ -28,6 +28,10 @@
 )
 
 #outline()
+#show heading.where(level: 1): it => {
+  colbreak()
+  it
+}
 // Insert modules/content
 #include "sections/intro.typ"
 #include "sections/fragen_gravitation.typ"
