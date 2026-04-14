@@ -66,32 +66,59 @@ $
 Ein Quellfeld, es ist radial? gerichtet und hängt vom Abstand von der Punktladung ab.
 
 #frage[Zeigen Sie, dass das Integral entlang eines Geschlossenen Weges gleich null ist.]
+Fuer eine Punktladung entlang eines beliebigen geschlossenen Weges C fuer die Arbeit W:
+$
+  "todo" //TODO: Formel
+$
+Das bedeutet: entlang eines geschlossenen Weges C wird im E-Feld bei Bewegung der Ladung $q_2$ keine Arbeit verrichtet.
+$
+  integral.cont arrow(E) dif arrow(s) = 0
+$
 
-#missing[]
 #frage[Wie ist das potential $V_p$ von E definiert und mittels welchen Operators kann E aus $V_p$
   ermittelt werden?]
-#missing[]
+$
+  V_p (arrow(r)) = - integral arrow(E) (arrow(r) dot dif arrow(r)
+$
+Operator = Integral
+
 == Gauss'sche Gesetze der Elektrostatik
-#frage[Gegeben ist eine Punktladung Q Wie ist der Fluss des E-Feldes durch eine geschlossene Fläche
-  A definiert]
-#missing[]
-#frage[Wie groß ist der Fluss wenn Q außerhalb von A liegt]
-#missing[]
-#frage[Wie groß ist der Fluss wenn Q innerhalb von A liegt]
-#missing[]
+#frage[Gegeben ist eine Punktladung Q. Wie ist der Fluss des E-Feldes durch eine geschlossene Fläche
+  A definiert.]
+#missing[lange formel]
+
+- Wie groß ist der Fluss wenn Q außerhalb von A liegt
+  A umschliesst Q nicht.
+  $
+    integral.cont_A arrow(E) dot dif arrow(f) = 0
+  $
+- Wie groß ist der Fluss wenn Q innerhalb von A liegt
+  $
+    integral.cont_A arrow(E) dot dif arrow(f) = Q / epsilon_0
+  $
 #frage[Wie lautet das Gaußsche Gesetz der Elektrostatik?]
-#missing[]
+$
+  E = Q / (4 pi epsilon_0) dot 1 / R^2
+$
+
 #frage[Gegeben sind zwei Punktladungen, die um einen Abstand a voneinander entfernt sind. a) Welche
   Eigenschaften müssen diese haben, um einen elektrischen Dipol zu bilden.]
-#missing[]
+Ladungen muessen gleich gross sein und entgegengesetzte Vorzeichen haben
+
 #frage[Wie ist das elektrische Dipolmoment definiert?]
-#missing[]
+$
+  arrow(mu_e) = Q dot arrow(a)
+$
+
 #frage[Wie lautet das elektrostatische Potential des Dipols und wie können Sie daraus sein Feld
   ermitteln?]
-#missing[]
+- Potential des E-Feldes: $$
+- Dipolfeld: $$
+
 #frage[Betrachten Sie ein Wassermolekül und ein Kohlendioxidmolekül. Welches der beiden weist ein
   permanentes Dipolmoment auf?]
-#missing[]
+H2O hat ein permanentes Dipolmoment
+
 #frage[Gegeben ist ein elektrischer Dipol mit dem Dipolmoment a) Welche Kräfte und Drehmomente
   wirken auf den Elektrischen Dipol in einem homogenen elektrischen Feld E]
 #missing[]
@@ -99,27 +126,36 @@ Ein Quellfeld, es ist radial? gerichtet und hängt vom Abstand von der Punktladu
 #missing[]
 #frage[In welche Richtung relativ zu �⃗ zeigt das Fernfeld des Dipols auf der y-Achse?]
 #missing[]
-#frage[Gegeben ist ein beliebig geformter elektrischer Leiter. a) Welche Eigenschaften haben
-  Ladungen im Leiter?]
-#missing[]
-#frage[Wie groß ist das elektrische Feld im Inneren des Leiters?]
-#missing[]
+#frage[Gegeben ist ein beliebig geformter elektrischer Leiter.]
+- Welche Eigenschaften haben Ladungen im Leiter?
+In einem Leiter sind Ladungen frei beweglich. Das innere eines Leiters ist Ladungsfrei.
+- Wie groß ist das elektrische Feld im Inneren des Leiters?
+Weil Ladungsfrei = 0
 #frage[Wie groß ist das Feld im Außenraum des Leiters, wenn dieser dieGesamtladung Q trägt?]
 #missing[]
 #frage[Was ist der Spitzeneffekt und wie kommt er zustande?]
-#missing[]
+Hoechste Feldstaerke an der Spitze (hoher Potentialgradient).
+Hohe Flaechenladungsdichte aufgrund der geringen Flaeche an der spitze.
+
 #frage[Was ist ein Faraday'scher Käfig und auf welchem Prinzip beruht er?]
-#missing[]
+Geschlossene Huelle aus elektrisch Leitfaehigem Material.
+Wenn aussen ein Feld anliegt, ist das innere Feldfrei.
+Fuer elektrostatische Abschirmung ist es egal, ob Kaefig geschlossen oder ein Gitter ist.
+Kurz: von Leitern begrenzte Hohlraume
+
 #frage[Gegeben ist ein beliebig geformter elektrischer Leiter. Dieser wird in ein homogenes äußeres
-  elektrisches Feld 𝐸𝐸 0 eingebracht. a) Wie groß ist das resultierende Feld 𝐸𝐸 im Inneren des
-  Leiters?]
-#missing[]
-#frage[In welche Richtung zeigt das Feld 𝐸𝐸 im Außenraum relativ zur Leiteroberfläche]
-#missing[]
+  elektrisches Feld 𝐸𝐸 0 eingebracht.]
+- Wie groß ist das resultierende Feld 𝐸𝐸 im Inneren des Leiters?
+Das innere des Leiters bleibt Feldfrei (=0), aufgrund der Ladungsseparation
+- In welche Richtung zeigt das Feld 𝐸𝐸 im Außenraum relativ zur Leiteroberfläche?
+$arrow(E)$ steht normal zur Leiteroberflaeche.
+
 #frage[Wie verteilen sich die Ladungen auf der Leiteroberfläche?]
-#missing[]
+- Feld frei im Leiter inneren
+- feld im aussenraum steht normal auf der Leiteroberflaeche
+- aussere Feld wird im inneren der Leiters durch Ladungsseparation an der Oberflaeche kompensiert
 #frage[Was passiert, wenn Sie den Leiter trennen und das äußere Feld abschalten?]
-#missing[]
+Ladungsseparation bleibt erhalten, da die jeweilige Ueberschussladung nicht mehr aus den Leiter austreten kann.
 #frage[Gegeben seien zwei leitende Platten im Vakuum der Fläche A mit dem Abstand d. a) Was
   passiert, wenn eine der Platten mit der Gesamtladung Q und die andere mit der Gesamtladung -Q
   geladen wird?]
