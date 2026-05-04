@@ -11,10 +11,10 @@ compile arg:
     typst compile "spranzen/{{ kebabcase(arg) }}/main.typ" "spranzen/{{ kebabcase(arg) }}/{{ kebabcase(arg) }}.pdf"
 
 # compile all documents
-compile-all:
+compile-all *args:
     for dir in spranzen/* ; do \
       echo "Compiling:" $(basename $dir) ; \
-      typst compile $dir/main.typ $dir/$(basename $dir).pdf ; \
+      typst compile $dir/main.typ $dir/$(basename $dir).pdf {{ args }} ; \
     done
 
 # install all local packages
