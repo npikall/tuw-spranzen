@@ -1,6 +1,6 @@
-#import "@preview/codly:1.2.0": *
-#import "@preview/codly-languages:0.1.8": *
-#import "@preview/gentle-clues:1.2.0" as gc // for inserting callouts or admonitions
+#import "@preview/codly:1.3.0": *
+#import "@preview/codly-languages:0.1.10": *
+#import "@preview/gentle-clues:1.3.1" as gc // for inserting callouts or admonitions
 
 #let definition-counter = counter("definition")
 #let definition(body, title: none) = {
