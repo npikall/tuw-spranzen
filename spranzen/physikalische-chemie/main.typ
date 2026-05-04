@@ -7,7 +7,7 @@
 
 // Import the styling and the common types
 #import "@preview/rubber-article:0.5.0": *
-#import "common.typ": *
+#import "@local/spranzen:0.1.0": *
 
 // Define the document formating
 #let the-title = "Physikalische Chemie"

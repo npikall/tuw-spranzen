@@ -1,4 +1,5 @@
-#import "../common.typ": *
+#import "@local/spranzen:0.1.0": *
+#import "@local/spranzen-chemie:0.1.0": *
 
 = Altfragen 03.09.2020
 == Kirchhoff'scher Satz
@@ -49,7 +50,12 @@
   columns: 6,
   stroke: 1pt,
   table.header(
-    [], [1 #sym.arrow 2], [2 #sym.arrow 3], [3 #sym.arrow 4], [4 #sym.arrow 1], [Gesamt]
+    [],
+    [1 #sym.arrow 2],
+    [2 #sym.arrow 3],
+    [3 #sym.arrow 4],
+    [4 #sym.arrow 1],
+    [Gesamt],
   ),
   [$Delta U$], [], [], [], [], [],
   [$Q_"rev"$], [], [], [], [], [],

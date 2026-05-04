@@ -5,7 +5,7 @@
  * it under the terms of the MIT License; see the LICENSE file for details.
  */
 
-#import "../common.typ": *
+#import "@local/spranzen:0.1.0": *
 
 #let tarrow = box(
   tiptoe.line(tip: tiptoe.stealth, length: 1.68em),
