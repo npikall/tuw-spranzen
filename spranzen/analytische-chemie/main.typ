@@ -4,8 +4,8 @@
 #show: article.with(
   eq-numbering: "(1.1)",
   eq-chapterwise: true,
-  show-header: true,
-  header-titel: "Analytische Chemie",
+  header-display: true,
+  header-title: "Analytische Chemie",
 )
 #maketitle(
   title: "Analytische Chemie",

@@ -1,8 +1,8 @@
-#import "@preview/rubber-article:0.5.2":*
+#import "@preview/rubber-article:0.5.2": *
 
 #show: article.with(
-  show-header: true,
-  header-titel: "Luftqualität",
+  header-display: true,
+  header-title: "Luftqualität",
 )
 
 #maketitle(
@@ -60,41 +60,44 @@ Dubson Units
 #figure(
   table(
     columns: 2,
-    align: (center,left,),
+    align: (center, left),
     table.hline(),
-    table.header([Jahr], [Ereignis], ),
+    table.header([Jahr], [Ereignis]),
     table.hline(),
     [400 BC],
     [Hippokrates äußert Vermutung von einer Verbindung],
     [],
     [zwischen schlechter Luft und diversen Krankheiten],
-    [1. Jhdt n.C.
-  ],
-  [Seneca beschreibt Gesundheitsverbesserung außerhalb
-  von stinkender Stadt],
-  [1273],
-  [Smoke Abatement Act in London],
-  [1377],
-  [Rechtsstreit um Mindesthöhe von Schornstein],
-  [14. Jhdt
-],
-[Beschwerde ans Gericht in London],
-[],
-[(schlechter Geruch wegen niedriger Schornsteine)],
-[1610],
-[Beschwerde und Verhandlung zur Lage eines Schweinestalls],
-[19. Jdht
-],
-[London Smog],
-[1972],
-[UN Konferenz in Stockholm (Wendepunkt)],
-[CLRTAP],
-[Convention on Long-range Transboundary Air Pollution],
-[EMEP],
-[European Monitoring and Assesment Programme],
-table.hline(),
-),
-kind: table,
+    [
+      1. Jhdt n.C.
+    ],
+    [Seneca beschreibt Gesundheitsverbesserung außerhalb
+      von stinkender Stadt],
+    [1273],
+    [Smoke Abatement Act in London],
+    [1377],
+    [Rechtsstreit um Mindesthöhe von Schornstein],
+    [
+      14. Jhdt
+    ],
+    [Beschwerde ans Gericht in London],
+    [],
+    [(schlechter Geruch wegen niedriger Schornsteine)],
+    [1610],
+    [Beschwerde und Verhandlung zur Lage eines Schweinestalls],
+    [
+      19. Jdht
+    ],
+    [London Smog],
+    [1972],
+    [UN Konferenz in Stockholm (Wendepunkt)],
+    [CLRTAP],
+    [Convention on Long-range Transboundary Air Pollution],
+    [EMEP],
+    [European Monitoring and Assesment Programme],
+    table.hline(),
+  ),
+  kind: table,
 )
 
 = Luftqualitätsrichtlinie der EU
@@ -103,7 +106,7 @@ kind: table,
 <nationales-recht-in-österreich>
 EU hat mit #emph[„RICHTLINIE 2008/50/EG DES EUROPÄISCHEN PARLAMENTS UND
   DES RATES vom 21. Mai 2008 über Luftqualität und saubere Luft für
-Europa“] das übergeordnete Gesetz. Es befasst sich mit den Schadstoffen
+  Europa“] das übergeordnete Gesetz. Es befasst sich mit den Schadstoffen
 SO2, NO2, CO, O3, Benzol, PM2.5, PM10 und PB. Vierte Tochterrichtlinie
 ergänzt As, Cd, Ni und Benzo(a)pyren als Staubinhaltsstoffe. Die
 Umsetzung in nationales Recht erfolgt durch „IG-L“. Orientierung an
@@ -270,9 +273,9 @@ Studien erschwert.
 #figure(
   table(
     columns: 3,
-    align: (center,center,center,),
+    align: (center, center, center),
     table.hline(),
-    table.header([WHO 2021], [$mu g \/ m^3$], [], ),
+    table.header([WHO 2021], [$mu g \/ m^3$], []),
     table.hline(),
     [JMW],
     [10],
@@ -345,7 +348,9 @@ betrachtet sind höchst Werte im Winter zu bemerken.
 <reaktionen-in-der-troposphäre-1>
 $ N O_2 + H_nu arrow.r.double N O + O upright("...Photolyse") $
 $ O + O_2 arrow.r.double O_3 $ $ O_3 + N O arrow.r.double N O_2 + O 2 $
-$ N O_2 + O_2 + h_nu arrow.l.r.double N O + O_3 upright(" ...Photochemisches Gleichgewicht") $
+$
+  N O_2 + O_2 + h_nu arrow.l.r.double N O + O_3 upright(" ...Photochemisches Gleichgewicht")
+$
 
 = Kohlenmonoxid und NMVOC
 <kohlenmonoxid-und-nmvoc>
@@ -360,9 +365,9 @@ und Ozeanen
 #figure(
   table(
     columns: 2,
-    align: (center,center,),
+    align: (center, center),
     table.hline(),
-    table.header([Source], [$C O \/ y r$], ),
+    table.header([Source], [$C O \/ y r$]),
     table.hline(),
     [Anthropogenic],
     [$700 dot.op 10^9 k g$],
@@ -406,9 +411,9 @@ Rechnen.
 #figure(
   table(
     columns: 2,
-    align: (center,center,),
+    align: (center, center),
     table.hline(),
-    table.header([WHO 2021], [$m g \/ m^3$], ),
+    table.header([WHO 2021], [$m g \/ m^3$]),
     table.hline(),
     [24h],
     [4],
@@ -491,9 +496,9 @@ Benzol ist ein krebserregendes NMVOC.
 #figure(
   table(
     columns: 2,
-    align: (center,center,),
+    align: (center, center),
     table.hline(),
-    table.header([WHO 2021], [$mu g \/ m^3$], ),
+    table.header([WHO 2021], [$mu g \/ m^3$]),
     table.hline(),
     [JMW],
     [1.7],
@@ -557,9 +562,9 @@ nur kurzfristig auf.
 #figure(
   table(
     columns: 3,
-    align: (center,center,center,),
+    align: (center, center, center),
     table.hline(),
-    table.header([WHO 2021], [$mu g \/ m^3$], [], ),
+    table.header([WHO 2021], [$mu g \/ m^3$], []),
     table.hline(),
     [max 8h MW],
     [100 (60 im Sommer)],
@@ -639,9 +644,9 @@ auch bei langfristigen Expositionen zu erwarten.
 #figure(
   table(
     columns: 3,
-    align: (center,center,center,),
+    align: (center, center, center),
     table.hline(),
-    table.header([#strong[WHO 2021];], [$mu g \/ m^3$], [], ),
+    table.header([#strong[WHO 2021];], [$mu g \/ m^3$], []),
     table.hline(),
     [PM10 - JMW],
     [15],
@@ -772,7 +777,7 @@ temperatures above approximately 250°C. This fundamental definition of
 BC agrees with the operationally based definition by Moosmüller et al.
 (2009), who defined BC as #emph["carbonaceous material with a deep black
   appearance. Wavelength independent over the visible and near-visible
-spectral regions"];.
+  spectral regions"];.
 
 Elemental carbon (EC) is formally defined as a "substance containing
 only carbon, carbon that is not bound to other elements, but which may
@@ -870,9 +875,9 @@ Richtwerte.
 #figure(
   table(
     columns: 3,
-    align: (center,center,center,),
+    align: (center, center, center),
     table.hline(),
-    table.header([UNECE], [$mu g \/ m^3$], [], ),
+    table.header([UNECE], [$mu g \/ m^3$], []),
     table.hline(),
     [JMW],
     [8],
@@ -883,7 +888,7 @@ Richtwerte.
     [JMW],
     [1],
     [2007 für für Flechten und Moos; 2-4 für höhere
-    Pflanzen],
+      Pflanzen],
     table.hline(),
   ),
   kind: table,
@@ -913,7 +918,7 @@ nach Lage der Messung under der Saison.
 
 #figure(
   [#box(image("assets/co2_data_mlo.png", width: 60%))
-  #box(image("assets/co2_data_deu.png", width: 60%))],
+    #box(image("assets/co2_data_deu.png", width: 60%))],
   caption: [
     $C O_2$ Data at Hohenpeissenberg, DEU
   ],
@@ -1039,7 +1044,7 @@ den Wasserkreislauf, die Strahlungsbilanz und das Klima.
 <wolkenbildung>
 CCN (Cloud Condensation Nucleus). Fähigkeit zu Aktivierung eines
 Aerosolpartikels als CCN hängt ab von: #emph[Größe, Chemischen
-Zusammensetzung, Übersättigung mit Wasserdampf];. Anorganische
+  Zusammensetzung, Übersättigung mit Wasserdampf];. Anorganische
 Komponenten (Seesalz, SIA) aber auch kohlenstoffhältige (organische)
 Verbindungen. \
 IN (Ice Nucleus). Das sind feste Aerosolpartikel, die bei
@@ -1052,9 +1057,9 @@ Wolken, aber auch Niederschlagsbildung (Bergeron Findeisen Mechanismus),
 die Lebenszeit der Wolken, den Transfer der Feuchtigkeit – mit diversen
 Auswirkungen auf die Wolkenbildung. Beispiele sind: #emph[Mineralstaub,
   Vulkanasche, Biopartikel (Bakterien, Pollen, Pilzsporen), BC /
-organische Verbindungen] Verschiedene Mechanismen der Eiskeimbildung:
+  organische Verbindungen] Verschiedene Mechanismen der Eiskeimbildung:
 #emph[immersion freezing, condensation freezing, contact freezing,
-deposition freezing / nucleation]
+  deposition freezing / nucleation]
 
 #import "@preview/tiaoma:0.3.0"
 #align(center, rect(width: 60%)[

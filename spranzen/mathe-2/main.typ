@@ -2,8 +2,8 @@
 #import "@local/spranzen:0.1.0": *
 
 #show: article.with(
-  show-header: true,
-  header-titel: "Mathe 2",
+  header-display: true,
+  header-title: "Mathe 2",
 )
 
 #maketitle(

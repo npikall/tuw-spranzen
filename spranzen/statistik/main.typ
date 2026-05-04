@@ -5,9 +5,9 @@
 #show: article.with(
   eq-numbering: "(1.1)",
   eq-chapterwise: true,
-  show-header: true,
-  alternating-header: true,
-  header-titel: [Statistik für UIW],
+  header-display: true,
+  header-alternating: true,
+  header-title: [Statistik für UIW],
 )
 
 #show: codly-init.with()
