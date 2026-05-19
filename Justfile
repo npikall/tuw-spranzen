@@ -12,15 +12,17 @@ compile arg:
 
 # compile all documents
 compile-all *args:
-    for dir in spranzen/* ; do \
-      echo "Compiling:" $(basename $dir) ; \
-      typst compile $dir/main.typ $dir/$(basename $dir).pdf {{ args }} ; \
+    #!/usr/bin/env bash
+    set -euo pipefail
+    for doc in spranzen/* ; do \
+      echo "{{ GREEN }}{{ BOLD }}Compiling{{ NORMAL }}:" $doc ; \
+      typst compile $doc/main.typ $doc/$(basename $doc).pdf {{ args }} ; \
     done
 
 # install all local packages
-install-all:
+install-all *args:
     for dir in packages/*/ ; do \
-      gotpm install -e "$dir" ; \
+      gotpm install "$dir" --force {{ args }} ; \
     done
 
 # uninstall all local packages
@@ -39,8 +41,8 @@ new name:
 
 # use typst to watch a document
 @watch name:
-  typst watch spranzen/{{name}}/main.typ spranzen/{{name}}/{{name}}.pdf
+    typst watch spranzen/{{ name }}/main.typ spranzen/{{ name }}/{{ name }}.pdf
 
 # Update the package versions in the template
 @update:
-  uv run ci/latest_version.py
+    uv run ci/latest_version.py
