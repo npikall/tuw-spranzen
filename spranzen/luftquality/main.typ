@@ -1,4 +1,5 @@
 #import "@preview/rubber-article:0.5.2": *
+#import "@local/spranzen:0.1.0": github-link
 
 #show: article.with(
   header-display: true,
@@ -1061,10 +1062,4 @@ Auswirkungen auf die Wolkenbildung. Beispiele sind: #emph[Mineralstaub,
 #emph[immersion freezing, condensation freezing, contact freezing,
   deposition freezing / nucleation]
 
-#import "@preview/tiaoma:0.3.0"
-#align(center, rect(width: 60%)[
-  #show link: set text(font: "Ubuntu Mono")
-  If you want to see the source code of this document or want to contribute or raise an issue, you can find it on GitHub:
-  #tiaoma.qrcode("https://github.com/npikall/tuw-spranzen")
-  #link("https://github.com/npikall/tuw-spranzen")
-])
+#github-link
