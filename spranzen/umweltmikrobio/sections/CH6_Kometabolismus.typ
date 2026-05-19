@@ -1,6 +1,6 @@
 #import "@local/spranzen:0.1.0": *
 #import "@local/spranzen-chemie:0.1.0": *
-#import "@preview/lilaq:0.1.0" as lq
+#import "@preview/lilaq:0.6.0" as lq
 
 = Kometabolismus, Abbau und Transformation
 <kometabolismus-abbau-und-transformation>
@@ -78,7 +78,7 @@ Substrate ermöglicht. Der Kontaminent reagiert dann sozusagen mit.
     xlabel: "Zeit",
     ylabel: "log der Zellzahl",
     lq.plot(xs, ys, stroke: 1.5pt, mark: none),
-    lq.vlines(2, 6, 8, line: .4pt),
+    lq.vlines(2, 6, 8, stroke: .4pt),
     lq.place(1, 4)[Anlauf],
     lq.place(4, 4)[Exponentielles\ Wachstum],
     lq.place(7, 2)[Stationäre\ Phase],
