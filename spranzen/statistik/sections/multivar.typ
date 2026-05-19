@@ -1,7 +1,7 @@
 #import "@local/spranzen:0.1.0": *
-#import "@preview/suiji:0.3.0": *
-#import "@preview/cetz-plot:0.1.1"
-#import "@preview/cetz:0.3.4" // for drawing images
+#import "@preview/suiji:0.5.1": *
+#import "@preview/cetz-plot:0.1.3"
+#import "@preview/cetz:0.5.2" // for drawing images
 
 
 #let show-dict = (
