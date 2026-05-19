@@ -1,5 +1,6 @@
 #import "@local/spranzen:0.1.0": *
 #import "@local/spranzen-mathe:0.1.0": *
+#import "@preview/cetz:0.5.2"
 
 = Lineare Algebra <lineare-algebra>
 == Vektoren <vektoren>

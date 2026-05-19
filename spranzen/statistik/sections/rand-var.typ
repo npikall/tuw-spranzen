@@ -1,4 +1,5 @@
 #import "@local/spranzen:0.1.0": *
+#import "@preview/cetz:0.5.2"
 
 = Zufallsvariablen und Verteilungen
 == Wahrscheinlichkeiten

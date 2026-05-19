@@ -1,5 +1,4 @@
 // Importing some useful packages
-#import "@preview/cetz:0.5.0" // for drawing images
 #import "@preview/fletcher:0.5.8": diagram, edge, node // for drawing diagrams
 #import "@preview/gentle-clues:1.3.1" as gc // for inserting callouts or admonitions
 #import "@preview/lilaq:0.6.0" as lq // for plotting similar to matplotlib
