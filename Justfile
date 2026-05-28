@@ -15,8 +15,18 @@ compile-all *args:
     #!/usr/bin/env bash
     set -euo pipefail
     for doc in spranzen/* ; do \
-      echo "{{ GREEN }}{{ BOLD }}Compiling{{ NORMAL }}:" $doc ; \
-      typst compile $doc/main.typ $doc/$(basename $doc).pdf {{ args }} ; \
+        echo "{{ GREEN }}{{ BOLD }}Compiling{{ NORMAL }}:" $doc ; \
+        typst compile $doc/main.typ $doc/$(basename $doc).pdf {{ args }} ; \
+    done
+
+# check the compileability of all documents
+check:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    for doc in spranzen/* ; do \
+        echo
+        echo "{{ GREEN }}{{ BOLD }}Compiling{{ NORMAL }}:" $doc ; \
+        gotpm check $doc/main.typ
     done
 
 # install all local packages
