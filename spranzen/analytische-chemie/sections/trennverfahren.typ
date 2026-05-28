@@ -1,5 +1,5 @@
 #import "@local/spranzen:0.1.0": *
-#import "@preview/lilaq:0.1.0" as lq
+#import "@preview/lilaq:0.6.0" as lq
 
 = Trennverfahren
 
@@ -101,7 +101,7 @@ Trennung zweier Stoffe durch Verteilung zwischen zwei miteinander nicht mischbar
       ((15, 9), (-1, 0)),
       ((18, 0), (-1, 0)),
     ),
-    lq.vlines(3, 8, 15, line: red),
+    lq.vlines(3, 8, 15, stroke: red),
     lq.line((0, 2), (3, 2), ..line-style-1),
     lq.line((0, 5), (8, 5), ..line-style-1),
     lq.line((0, 9), (15, 9), ..line-style-1),

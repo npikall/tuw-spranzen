@@ -6,7 +6,7 @@
  */
 
 // Import the styling and the common types
-#import "@preview/rubber-article:0.5.0": *
+#import "@preview/rubber-article:0.5.2": *
 #import "@local/spranzen:0.1.0": *
 
 // Define the document formating
