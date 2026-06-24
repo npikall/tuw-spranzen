@@ -12,13 +12,78 @@
 == Messtechnik
 #frage[Erlautern sie den Basis- und mittleren Spitzenpegel (inkl. Definition, Index,
   Bewertungen)?]
+#antwort[
+  *Basispegel ($L_B$)*: Der Basispegel ist der Hintergrundgeraeuschpegel, der waehrend
+  eines Messzeitraums ueberwiegend vorhanden ist. Er wird typischerweise als unteres
+  Perzentil (z.B. L_90 oder L_95) der Pegelverteilung definiert - d.h. dieser Pegel wird
+  in 90% bzw. 95% der Messzeit ueberschritten.
+
+  *Mittlerer Spitzenpegel ($L_S$)*: Der mittlere Spitzenpegel ist der arithmetische
+  Mittelwert aller Pegelspitzen, die deutlich ueber dem Basispegel liegen. Er
+  charakterisiert die auftretenden Maximalpegel von Einzelereignissen (z.B.
+  Vorbeifahrten von Fahrzeugen).
+
+  *Index*:
+  - $L_B$ fuer Basispegel
+  - $L_S$ fuer mittleren Spitzenpegel
+
+  *Bewertungen*:
+  - Die Differenz zwischen Spitzenpegel und Basispegel ($L_S$ - $L_B$) gibt Aufschluss
+    ueber die Schwankungsstaerke des Geraeusches
+  - Grosse Differenzen deuten auf stark fluktuierenden Laerm hin, der als störender
+    empfunden werden kann
+  - Diese Kenngroessen werden insbesondere bei der Bewertung von Verkehrslaerm
+    herangezogen
+  - Sie dienen der Charakterisierung von Laermsituationen und der Planung von
+    Laermschutzmassnahmen
+]
 
 #frage[Warum ist es in der Akustik haeufig erforderlich, nicht nur Einzahlwerte von
   Schalldruckpegeln, sondern Frequenzspektren zu betrachten (inkl. 2 Beispiele)?]
+#antwort[
+  Einzahlwerte wie der A-bewertete Gesamtpegel ($L_A$) geben nur eine summarische
+  Information ueber den Schallpegel, beruecksichtigen aber nicht die frequenzabhaengige
+  Zusammensetzung des Schalls. Frequenzspektren sind aus folgenden Gruenden
+  erforderlich:
 
+  *Gruende*:
+  - Das menschliche Gehoer nimmt Frequenzen unterschiedlich wahr (tiefe und hohe
+    Frequenzen werden bei gleichem physikalischem Pegel unterschiedlich laut empfunden)
+  - Verschiedene Frequenzbereiche haben unterschiedliche Wirkungen auf den Menschen
+    (z.B. Tieffrequenzlaerm kann als drueckend empfunden werden)
+  - Geraeuschquellen haben charakteristische Frequenzmuster, die zur Identifikation
+    beitragen
+  - Laermschutzmassnahmen wirken frequenzabhaengig unterschiedlich
+  - Bestimmte Frequenzen koennen zu Resonanzen oder Transmissionseffekten fuehren
+
+  *Beispiele*:
+  1. *Tieffrequenter Laerm*: Ein Geraeusch mit hohem Tieffrequenzanteil (z.B. von
+    Heizungsanlagen oder Windkraftanlagen) kann bei gleichem A-bewerteten Pegel als
+    stoerender empfunden werden als ein Geraeusch mit mittleren Frequenzen, da
+    Tieffrequenzen schlechter gedaempft werden und durch Bauteile leichter uebertragen
+    werden.
+
+  2. *Tonhaltigkeit*: Ein Geraeusch mit ausgepraegten Tonkomponenten (z.B. ein Pfeifen
+    oder Brummen bei einer bestimmten Frequenz) wird als unangenehmer empfunden als
+    breitbandiges Rauschen gleichen Gesamtpegels. Dies wird durch Spektralanalyse
+    erkennbar und bei der Bewertung durch Zuschlaege beruecksichtigt.
+]
 
 #frage[Welche 2 Arten von Spektren werden ueblicherweise fuer Umgebungslaerm und die
   Prognoserechnung verwendet?]
+#antwort[
+  - *Oktavspektren*: Unterteilen den Frequenzbereich in Oktavbaender, bei denen die
+    obere Grenzfrequenz jeweils doppelt so hoch ist wie die untere. Typische
+    Mittenfrequenzen sind 63 Hz, 125 Hz, 250 Hz, 500 Hz, 1000 Hz, 2000 Hz, 4000 Hz und
+    8000 Hz.
+  - *Terzspektren*: Bieten eine feinere Frequenzaufloesung, indem jede Oktave in drei
+    Baender unterteilt wird. Dies ermoeglicht eine detailliertere Darstellung des
+    Frequenzgangs und wird insbesondere bei Umgebungslaermbewertungen und
+    Prognoserechnungen verwendet.
+
+  Beide Spektraltypen sind in Normen standardisiert und entsprechen gut der
+  frequenzabhaengigen Wahrnehmung des menschlichen Gehoers.
+]
 
 == Schallausbreitung
 
