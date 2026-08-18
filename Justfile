@@ -8,7 +8,7 @@ uv := require("uv")
 
 # compile a typst document
 compile arg:
-    typst compile "spranzen/{{ kebabcase(arg) }}/main.typ" "spranzen/{{ kebabcase(arg) }}/{{ kebabcase(arg) }}.pdf"
+    typst compile --creation-timestamp=0 "spranzen/{{ kebabcase(arg) }}/main.typ" "spranzen/{{ kebabcase(arg) }}/{{ kebabcase(arg) }}.pdf"
 
 # compile all documents
 compile-all *args:
@@ -16,7 +16,7 @@ compile-all *args:
     set -euo pipefail
     for doc in spranzen/* ; do \
         echo "{{ GREEN }}{{ BOLD }}Compiling{{ NORMAL }}:" $doc ; \
-        typst compile $doc/main.typ $doc/$(basename $doc).pdf {{ args }} ; \
+        typst compile --creation-timestamp=0 $doc/main.typ $doc/$(basename $doc).pdf {{ args }} ; \
     done
 
 # check the compileability of all documents
