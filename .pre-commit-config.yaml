@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/typstyle-rs/pre-commit-typstyle
-    rev: v0.14.4
+    rev: v0.15.1
     hooks:
       - id: typstyle
 
