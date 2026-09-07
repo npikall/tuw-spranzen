@@ -48,6 +48,13 @@ uv tool install rust-just
 
 If you are not using a Debian system, please refer to the [just repository](https://github.com/casey/just).
 
+## Releasing
+
+Versions follow [CalVer](https://calver.org/) (`vYYYY.MM.MICRO`, e.g. `v2026.9.0`).
+Pushing a tag matching `v*` triggers the `release` workflow, which compiles every
+document under `spranzen/` and attaches the resulting PDFs to a GitHub Release
+for that tag.
+
 [repology]: https://repology.org/project/typst/versions
 [snap]: https://snapcraft.io/typst
 [rust]: https://rustup.rs/

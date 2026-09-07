@@ -1,0 +1,59 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Install Typst
+        uses: typst-community/setup-typst@727aeceb08573f1484fc2a486fd01c0df0a012a1 # v5.3.0b2
+        with:
+          typst-version: "^0.15.0"
+
+      - name: Install Just
+        uses: taiki-e/install-action@bfbe8c64296994e99e2f3046bfb4983ab5b04fa9 # zola
+        with:
+          tool: just
+
+      - name: Set up Go
+        uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        with:
+          go-version: '1.27'
+          cache: false
+
+      - name: Install GoTPM
+        run: go install github.com/npikall/gotpm@latest
+
+      - name: Install local Typst packages
+        run: just install-all
+
+      - name: Compile all Spranzen
+        run: |
+          mkdir -p dist
+          for doc in spranzen/*/; do
+            name=$(basename "$doc")
+            typst compile --creation-timestamp=0 "$doc/main.typ" "dist/$name.pdf"
+          done
+
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="${GITHUB_REF_NAME}"
+          if gh release view "$tag" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release upload "$tag" dist/*.pdf --repo "$GITHUB_REPOSITORY" --clobber
+          else
+            gh release create "$tag" dist/*.pdf --repo "$GITHUB_REPOSITORY" --title "$tag" --generate-notes
+          fi

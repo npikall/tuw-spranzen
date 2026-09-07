@@ -11,6 +11,7 @@ alias ca := compile-all
 alias q := check
 alias ia := install-all
 alias ua := uninstall-all
+alias r := release
 
 # compile a typst document
 compile arg:
@@ -46,6 +47,24 @@ uninstall-all:
     for dir in packages/*/ ; do \
       gotpm uninstall "$(basename $dir)" --all ; \
     done
+
+# tag the next CalVer release (vYYYY.M.MICRO); does not push the tag
+release:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    year=$(date +%Y)
+    month=$((10#$(date +%m)))
+    prefix="v${year}.${month}."
+    last=$(git tag -l "${prefix}*" | sed "s/^${prefix}//" | sort -n | tail -1)
+    if [ -z "$last" ]; then
+        micro=0
+    else
+        micro=$((last + 1))
+    fi
+    tag="${prefix}${micro}"
+    git tag -a "$tag" -m "Release ${tag}"
+    echo "{{ GREEN }}{{ BOLD }}Tagged{{ NORMAL }}: $tag"
+    echo "Push it with: git push origin $tag"
 
 # list all available spranzen
 list:
