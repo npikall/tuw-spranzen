@@ -1,7 +1,7 @@
 #import "@local/spranzen:0.1.0": *
 
 = Altfragen Studo
-#frage[DTA (Differenz-Thermoanalyse) und DSC (Differential Scanning Calorimetry) erklären, vergleichen und Skizze]
+#question[DTA (Differenz-Thermoanalyse) und DSC (Differential Scanning Calorimetry) erklären, vergleichen und Skizze]
 
 *DTA:*
 
@@ -55,21 +55,21 @@ Verwendung:
 - Reinheitsprüfungen pharmazeutischer Wirkstoffe,
 - Untersuchung von Kristallisationsvorgängen in Polymeren
 
-#frage[HPLC & Bezug zu Stoffen mit absteigender Polarität]
+#question[HPLC & Bezug zu Stoffen mit absteigender Polarität]
 #missing[]
 
 #pagebreak(weak: true)
-#frage[Thermische Gravimetrie, DSC, Prinzip, Skizze, Charaktereigenschaften, Verwendung,...]
+#question[Thermische Gravimetrie, DSC, Prinzip, Skizze, Charaktereigenschaften, Verwendung,...]
 *Thermogravimetrie:* beruht auf *Massenänderung* der Probe in Abhängigkeit von der
 Temperatur; empfindliche Waage, Ofen zur Erzeugung des Temperaturprogrammes,
 Vorrichtung zum Erzeugen einer inerten oder reaktiven Atmosphäre.
 Siehe @fig-thermogravimetrie.
 
-#frage[UV/VIS Spektroskopie: Signalerzeugung, Skizze, Verwendung, Charaktereigenschaften,
+#question[UV/VIS Spektroskopie: Signalerzeugung, Skizze, Verwendung, Charaktereigenschaften,
   Chromophore und Auxochrome,...]
 #missing[]
 
-#frage[AAS (Atomabsorptionsspektroskopie): Skizzen, Erklärung, …]
+#question[AAS (Atomabsorptionsspektroskopie): Skizzen, Erklärung, …]
 *Probenvorbereitung:* feste Proben müssen gelöst bzw. aufgeschlossen werden
 
 *Messprinzip:*
@@ -103,7 +103,7 @@ Siehe @fig-thermogravimetrie.
 - Kontinuierliche Strahlungsquellen: sehr linienreich, quasi kontinuierlich; zur Bestimmung des unspezifischen Hintergrundes
 #missing[]
 
-#frage[Beschreiben Sie, welche Parameter in Zuge der Methodenvalidierung untersucht werden müssen und welche (praktische) Bedeutung diese haben!]
+#question[Beschreiben Sie, welche Parameter in Zuge der Methodenvalidierung untersucht werden müssen und welche (praktische) Bedeutung diese haben!]
 
 *Methodenvalidierung:*
 
@@ -120,7 +120,7 @@ Folgende Kenngrößen sind entscheidend:
 - Selektivität (Maß für Eignung einer Methode einen Stoff von einem anderen zu unterscheiden)
 - Robustheit (Maß für stabilität der Probennahme)
 
-#frage[
+#question[
   *Trennverfahren:* Beschreiben Sie die Van Deemter-Gleichung und die darin auftretenden Terme! Erklären Sie dabei, was diese Terme darstellen, und nennen Sie zumindest eine Möglichkeit, wie diese optimiert werden können!
 ]
 Die Van Deemter-Gleichung beschreibt den Zusammanhang zwischen der Höhe einer theoretischen Trennstufe und den dynamischen Erscheinungen.
@@ -144,7 +144,7 @@ Für gepackte Säulen gilt:
   rect(image("../assets/van-deemter.png", height: 23%)),
 )
 
-#frage[
+#question[
   *Elektroanalytik:* Vergleichen Sie eine Methode zur Bestimmung von $O_2$ in der Gasphase
   mit einer Methode für die Bestimmung des $O_2$-Gehaltes in der Flüssigkeit! (mit
   detaillierter Darstellung des Funktionsprinzips und der gerätetechnischen Realisation)
@@ -184,7 +184,7 @@ Kalibrierungslinie verglichen, um die $"O"_2$-Konzentration zu bestimmen.
 - Vorteil: kein Stromfluss -> keine Wärmeentwicklung
 - Nachteil: Messung kann durch andere gelöste Gase oder Substanzen beeinflusst werden, langsam in bewegten Flüssigkeiten
 
-#frage[
+#question[
   *FTIR Spektrometrie:* Beschreiben und erläutern Sie den grundlegenden Aufbau eines
   FTIR-Spektrometers (mit Skizze) mit allen zum Bereich wichtigen Gerätekomponenten.
   Erklären Sie, auf welchen physikalisch-chemischen Prinzipien die Signalerzeugung im
@@ -193,7 +193,7 @@ Kalibrierungslinie verglichen, um die $"O"_2$-Konzentration zu bestimmen.
 ]
 #missing[]
 
-#frage[
+#question[
   *Fehlerarten* in der analytischen Chemie welche tolerierbar, welche nicht, Skizze
 ]
 
@@ -204,7 +204,7 @@ Siehe @fig-fehler.
 + Ist der statistische Fehler *klein* der systematische allerdings *groß*, so kann dies, wenn bekannt, ausgebessert werden. Ist etwa bekannt, dass eine Messung immer zB 30% unter dem eigentlichen Wert liegt, so kann das ausgebessert werden.
 + Die Fehler sind *groß* #sym.arrow *schlecht*
 
-#frage[
+#question[
   Verbundverfahren vs. Direktverfahren
 ]
 *Verbundverfahren:* Kombination von Methoden und Techniken zur Probenvorbereitung, zum
@@ -213,13 +213,13 @@ Lösen der Probe, zur Abtrennung störender Bestandteile für den Analysevorgang
 *Direktverfahren:* zerstörungsfreie Methode wobei die Probe ohne Zwischenschritte analysiert
 werden kann
 
-#frage[
+#question[
   *Trennverfahren:* Auflösung und Trennstufenzahl
   Definition, Skizze, Gleichung (2 für Auflösung, 1 für TSZ), Optimierung
 ]
 #missing[]
 
-#frage[
+#question[
   Analytische und nicht analytische Kriterien nennen und erklären.
 ]
 
@@ -233,7 +233,7 @@ werden kann
 - Aufwand
 - Zeit
 
-#frage[Lambert Beer'sches Gesetz]
+#question[Lambert Beer'sches Gesetz]
 $
   E_lambda = log_10 (I_0/I_1) = epsilon_lambda c d
 $
@@ -245,7 +245,7 @@ wird. Um eine quantitativ Bestimmung nach dem Lambert-Beer’schen Gesetz durchz
 muss man wissen mit welcher Intensität die Strahlung eintrifft und mit welcher Intensität sie
 austritt. Detektoren (CCD-Sensoren, CMOS)
 
-#frage[
+#question[
   *Röntgenfluoreszenzsnalyse* inkl. Gerätetechnik und Detektoren erklären und skizzieren
 ]
 
@@ -269,7 +269,7 @@ und Röntgenstrahlung mit Wellenlänge $10^(-8) "bis" 10^(-11)$m
   - Vorteil: simultane Aufnahme (schnell)
   - Nachteil: geringe Energieauflösung, geringe Nachweisstärke, schlechtes Signal/Untergrund-Verhältnis
 
-#frage[
+#question[
   *Elektronenstrahl-Mikroanalytik (ESMA):* Beschreiben und erklären Sie, welche Signale
   Sie in der ESMA erhalten können, aus welcher räumlichen Tiefe diese Signale stammen
   und welchen Informationsgehalt sie tragen (mit Skizze).
@@ -279,7 +279,7 @@ und Röntgenstrahlung mit Wellenlänge $10^(-8) "bis" 10^(-11)$m
   Aufbau, Funktion, Skizze, …)
 ]
 
-#frage[
+#question[
   *Abbildende (Mikro-) Analytik:* Erläutern Sie den Aufbau und die Funktion eines
   Rasterelektronenmikroskops. Gehen Sie dabei auch besonders auf die verschiedenen
   Prozesse der Signalerzeugung ein und erläutern Sie, welche Signale generiert werden
@@ -287,7 +287,7 @@ und Röntgenstrahlung mit Wellenlänge $10^(-8) "bis" 10^(-11)$m
   und die Informationstiefe, die das Signal aufweist.
 ]
 
-#frage[
+#question[
   *Massenspektrometrie:* Erläutern Sie Prinzip, gerätetechnische Realisierung (detailliert,
   greifen Sie dabei zumindest eine Bauform heraus, die Sie genauer – mit Skizzebeschreiben) und Informationsgehalt der Massenspektrometrie!
 ]
@@ -304,7 +304,7 @@ und Röntgenstrahlung mit Wellenlänge $10^(-8) "bis" 10^(-11)$m
   rect(image("../assets/massenspektrometer.jpg", width: 50%)),
 )
 
-#frage[
+#question[
   Geben Sie eine systematische Gliederung der Ihnen bekannten *elektroanalytischen
   Verfahren* (Unterteilung mit/ohne Stromfluss). Beschreiben Sie bei jeder Technik,
   welches Signal gemessen wird, welches Messprinzip (oft physikalisch-chemisches)
@@ -314,6 +314,6 @@ und Röntgenstrahlung mit Wellenlänge $10^(-8) "bis" 10^(-11)$m
 
 Siehe @fig-elektroanlytische-methoden
 
-#frage[
+#question[
   *Verfahren zur Probennahme* #sym.arrow Siehe @sssec-verfahren-probenahme
 ]

@@ -5,22 +5,22 @@
 #import "@local/spranzen:0.1.0": *
 #import "@local/spranzen-chemie:0.1.0": *
 
-#let antwort = antwort.with(display: true)
+#let answer = answer.with(display: true)
 #let blank = box(line(length: 1em, stroke: .7pt))
 
 #pagebreak()
 == Altfragen 27.06.2025
 
-#fragen-counter.update(0)
+qcounter.update(0)
 #show heading.where(level: 2): it => {
   pagebreak(weak: true)
   it
 }
-#frage[
+#question[
   Oktan #ce("C8H18") reagiert bei einer chemischen Reaktion mit Sauerstoff zu #ce("CO2") und #ce("H2O"). Sie haben #qty(24.9, "g") Oktan. Wie viel g #ce("CO2") entstehen bei einer Ausbeute von 82%?
 ]
 
-#antwort[
+#answer[
   #let mass_oktan = 24.9 //gramm
   #let mol = mass_oktan / (8 * 12 + 18)
   #let molarmass_co2 = (12 + 2 * 16) * 8
@@ -37,12 +37,12 @@
   $
 ]
 
-#frage[
+#question[
   Sie wollen #qty(5, "L") einer Lösung herstellen mit #qty(158, "mmol/L") #ce("C6H12O6"). Wie viel g
   des Stoffes benötigen sie dafür?
 ]
 
-#antwort[
+#answer[
   #let molar = 6 * 12 + 12 + 6 * 16 // g/mol
   #let n = 158 * 5 / 1000 // mol
   #let m = molar * n
@@ -55,7 +55,7 @@
   $
 ]
 
-#frage[
+#question[
   Bestimmen Sie die Oxidationszahlen von:
   - #ce("Na+")
   - H in #ce("KH")
@@ -72,49 +72,49 @@
       fragment("H")
     })
 ]
-#antwort[#missing[]]
-#frage[
+#answer[#missing[]]
+#question[
   Zink reagiert mit Salpeter säure zu #ce("Zn(NO3)2"), #ce("NO") und Wasser. Stellen sie die Redox
   Gleichung auf. (Inklusive Halbgleichungen, usw.)
 ]
 
-#antwort[
+#answer[
   - Oxidation: #ce("Zn -> Zn+2 + 2e-")
   - Reduktion: ...
 
   - Gesamt: ...
   #missing[]
 ]
-#frage[
+#question[
   In einem Gas befindet sich Iod, Wasserstoff und #ce("IH2"). Die Gleichgewichtskonstante ist
   $K_c = 60$ die Temperatur beträgt $T=393°C$ und Das Volumen des Gases ist $V=1"L"$. Verläuft die
   Rektion nach links oder rechts?
 ]
-#antwort[#missing[]]
-#frage[
+#answer[#missing[]]
+#question[
   Sie erwärmen die Luft in einem Autreifen von $18 degree "C"$ auf $60 degree "C"$. Zu Beginn
   beträgt der Druck #qty(220, "kPa"). Wie hoch ist der Druck nach der Erwärmung?
 ]
 
-#antwort[#missing[]]
+#answer[#missing[]]
 
-#frage[
+#question[
   Sie haben #qty(40, "kg") einer 61% Lösung. Sie wollen eine 4% Lösung daraus herstellen. Wie viel
   kg Wasser müssen sie hinzufügen?
 ]
-#antwort[#missing[]]
+#answer[#missing[]]
 
-#frage[
+#question[
   Aluminium reagiert mit Wasser zu Aluminiumoxid und Wasserstoff. Sie haben #qty(135, "g") Aluminium
   und es herrschen Standardbedingungen. Die Ausbeute von Wasserstoff beträgt 85%. Berechnen Sie das
   Volumen des Wasserstoffes.
 ]
-#antwort[#missing[]]
-#frage[
+#answer[#missing[]]
+#question[
   Berechnen Sie den pH Wert einer #qty(0.85, "M") #ce("NH3") Lösung. ($K_B = 1.8 dot 10^(-5)$)
 ]
-#antwort[#missing[]]
-#frage[
+#answer[#missing[]]
+#question[
   Bestimmen Sie die Namen der folgenden Moleküle/Gruppen.
   #let config = (atom-sep: 2em, angle-increment: 30deg)
   #let mol_1 = skeletize(config: config, {
@@ -159,4 +159,4 @@
 
   (Ein paar Vorschläge: _Säurehalogenid, E-Alken, Keton, Amid, Phenol, ..._)
 ]
-#antwort[#missing[]]
+#answer[#missing[]]

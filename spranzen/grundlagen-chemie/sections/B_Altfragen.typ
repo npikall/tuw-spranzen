@@ -1,24 +1,24 @@
 #import "@local/spranzen:0.1.0": *
 #import "@local/spranzen-chemie:0.1.0": *
 
-#let antwort = antwort.with(display: true)
+#let answer = answer.with(display: true)
 #let blank = box(line(length: 1em, stroke: .7pt))
 
 #pagebreak()
 = Tuwel Prüfungen
 == Altfragen 25.04.2025
 
-#fragen-counter.update(0)
+qcounter.update(0)
 #show heading.where(level: 2): it => {
   pagebreak(weak: true)
   it
 }
 
-#frage[
+#question[
   Ein Stoff hat bei #qty(1013, "mbar") ein Volumen von #qty(1, "dm^3"). Nun ändert sich der Druck
   auf #qty(920, "mbar"). Um welchen Faktor ändert sich das Volumen des Stoffes?
 ]
-#antwort[
+#answer[
   Siehe @eq-gas-isotherm
   #let (p1, p2) = (1013, 920)
   #let v1 = 1
@@ -32,12 +32,12 @@
           V_2 & = qty(#factor, "dm^3")
   $
 ]
-#frage[
+#question[
   Sie haben ein Gemisch mit (A) #qty(50, "ml") einer #qty(0.05, "g/mol") #ce("HCl") und (B) #qty(50, "ml") einer #qty(0.05, "g/mol") #ce("NH3") ($K_B = 1.8 dot 10^(-5)$) oder (C)
   #qty(100, "ml") einer #qty(0.05, "g/mol") dieser Mischung. Berechnen Sie den pH-Wert der der
   ursprünglichen Lösung (A) und der Mischungen mit (B) und (C).
 ]
-#antwort[
+#answer[
   #missing[#v(3cm)]
   // $
   //   "pH"_A = ...\
@@ -45,10 +45,10 @@
   //   "pH"_C = ...\
   // $
 ]
-#frage[
+#question[
   #ce("KMnO4") reagiert mit #ce("MnCl2") zu #ce("MnO2"). Stellen Sie die Redox-Reaktion auf.
 ]
-#antwort[
+#answer[
   #align(center, text(blue)[#ce("KMnO4 + MnCl2 ==> MnO2 + (KCl2)")])
   #set enum(numbering: "I")
   + Reduktion: #ce("K MnO4 ==> MnO2") #h(1cm) #ce("MnO4^- ==> MnO2")
@@ -62,11 +62,11 @@
   // - Reduktion: ...
   // - Gesamtreaktion: #ce("1 KMnO4 + 1 MnCl2 + 2 H2 -> 1 MnO2 + KCl2 + 2 H2O") ???
 ]
-#frage[
+#question[
   Wie viel g #ce("C6H12O6") werden benötigt um eine #qty(24, "l") Lösung mit
   $c = qty("156", "mmol/l")$ zu erhalten?
 ]
-#antwort[
+#answer[
   #let (c, V) = (156, 24)
   #let c_mol = c * 1e-3
   #let n_target = calc.round(c_mol * V, digits: 3)
@@ -78,13 +78,13 @@
   $
 ]
 
-#frage[
+#question[
   Bestimmen sie von `4,5-Diethyl-2-Methyl-octa-2,5-dien`
   - die Anzahl der C-Atome
   - die längste Kette
   - ...
 ]
-#antwort[
+#answer[
   #figure(skeletize(config: (atom-sep: 2em, angle-increment: 30deg), {
     single(angle: 1)
     branch({
@@ -108,12 +108,12 @@
   }))
 ]
 
-#frage[
+#question[
   Es ist ein Ausgangsstoff mit #qty(15, "g") #ce("C6H12O6") gegeben. Es entstehen bei einer Reaktion
   die Stoffe #ce("CO2") und #ce("H2O"). Wie viel g Sauerstoff muss hinzugegeben werden, dass die
   Reaktion vollständig abläuft?
 ]
-#antwort[
+#answer[
   #align(center, ce("C6H12O6 + 6 O2 ==> 6 CO2 + 6 H2O"))
   #let gram_c6h12o6 = 15
   #let molar_mass_c6h12o6 = (6 * 12.01) + (12 * 1.01) + (6 * 16)
@@ -129,7 +129,7 @@
   $
 ]
 
-#frage[
+#question[
   Bestimmen sie die Oxidationszahlen von:
   #show: rest => columns(2, rest)
   - #ce("Na+")
@@ -163,17 +163,17 @@
     fragment("OH")
   })
 ]
-#antwort[
+#answer[
   - #ce("Na^+") +1
   - #ce("H2O2")
   - #ce("KMnO4")
 ]
 
-#frage[
+#question[
   In einem Behälter befinden sich #qty(8.9, "g") #ce("O2"). Die Temperatur beträgt #qty(25, "C") und
   der Luftdruck #qty(1.1013, "bar"). Welches Volumen hat dieses Gas?
 ]
-#antwort[
+#answer[
   #let mass = 8.9 // gram O2
   #let molar_mass = 32 // gram per mol
   #let mol = mass / molar_mass
@@ -189,11 +189,11 @@
   $
 ]
 
-#frage[
+#question[
   Sie haben #qty(26, "kg") einer Lösung mit 83% #ce("HNO3") und Sie wollen eine Lösung mit 4%
   herstellen. Wie viel Wasser müssen Sie hinzufügen?
 ]
-#antwort[
+#answer[
   #let mass = 26
   #let water_mass = ((mass * 0.83) / 0.04) - 26
   $
@@ -202,7 +202,7 @@
   $
 ]
 
-#frage[
+#question[
   In einem Gas befinden sich:
   - #qty(0.005, "mol/l") #ce("H2")
   - #qty(0.002, "mol/l") #ce("Iod")
@@ -212,17 +212,17 @@
   Die Temperatur beträgt #qty(490, "C"), $K_c = 46$. Berechnen Sie die Gleichgewichtskonstante und
   bestimmen Sie ob die Reaktion nach links oder rechts verläuft.
 ]
-#antwort[
+#answer[
   #missing[]
 ]
 
-#frage[
+#question[
   #ce("C8H18") + #blank #ce("O2 =>") #blank #ce("CO2") + #blank #ce("H2")
   - Stellen Sie die Reaktionsgleichung auf.
   - Sie haben #qty(39.2, "g") eines Stoffes mit 56% #ce("C8H18"). Wie viel g #ce("CO2") entstehen
     bei der Reaktion?
 ]
-#antwort[
+#answer[
   #align(center, ce("C8H18 + 8O2 => 8 CO2 + 9 H2"))
 
   // Given:
@@ -244,11 +244,11 @@
   $
 ]
 
-#frage[
+#question[
   Sie haben eine Taucherflasche mit #qty(60, "L") #ce("O2") bei #qty(19.5, "C") und #qty(8.8, "MPa")
   Wie viel g #ce("O2") befinden sich in der Flasche?
 ]
-#antwort[
+#answer[
   // Given:
   #let pressure_mpa = 8.8
   #let volume_l = 60

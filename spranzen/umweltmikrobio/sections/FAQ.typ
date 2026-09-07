@@ -1,15 +1,15 @@
 #import "@local/spranzen:0.1.0": *
 #import "@local/spranzen-chemie:0.1.0": *
-#let antwort = antwort.with(display: true)
-#fragen-counter.update(0)
+#let answer = answer.with(display: true)
+qcounter.update(0)
 
 = FAQ's
 Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen häufiger gestellt wurden. Die Fragen überschneiden sich mit der vorherigen Fragensammlung. Durch Anpassung des Quellcodes können die Antworten ausgeblendet werden, um die Fragen zu lernen.
 
-#nfrage(n: ">5")[
+#nquestion(n: ">5")[
   Aufbau Belebtschlammflocke
 ]
-#antwort[
+#answer[
   Zusammenschluss aus:
   - MO (Bakterien, Protozoen)
   - "tote Partikel" (Detritus, anorganische Stoffe)
@@ -17,10 +17,10 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
   - Extrazelluläre Polymere Substanzen (EPS)
 ]
 
-#nfrage(n: ">5")[
+#nquestion(n: ">5")[
   GAK-Filter vs. BAK-Filter
 ]
-#antwort[
+#answer[
   Aktivkohle kann in granulierter Form, in Pellets, in Körnern, etc. vorkommen. Aktivkohle wird bei der Abwasserreinigung und Trinkwasseraufbereitung verwendet.
 
   Aktivkohle zur Adsorption von organischer Stoffen (Organische Stoffe werden an der Oberfläche der Aktivkohle angelagert)
@@ -29,10 +29,10 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
   / BAK: biologisch aktivierte Aktivkohle, Adsorptive und biologische Prozesse
 ]
 
-#nfrage(n: 5)[
+#nquestion(n: 5)[
   Stickstoffkreislauf
 ]
-#antwort[
+#answer[
   Pflanzen brauchen Stickstoff, können allerdings keinen elementaren Stickstoff verwerten.
   Innerhalb des Stickstoffkreislaufs wird elementarer Stickstoff zu Ammoniak, Ammonium und
   Nitrat umgewandelt, sodass Pflanzen ihn aufnehmen können. Dabei gibt es folgende vier
@@ -43,10 +43,10 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
   - Denitrifikation: NO3 wird in weniger gut belüfteten Böden von Bakterien zu elementarem N umgewandelt, wenn Pflanzen es nicht aufnehmen.
 ]
 
-#nfrage(n: 5)[
+#nquestion(n: 5)[
   Rechenbsp. Wachstum und Verdoppelung
 ]
-#antwort[
+#answer[
   Die Verdopplungszeit hängt von der Wachstumsrate ab. Je höher die Wachstumsrate, desto
   kürzer die Verdopplungszeit. Ist die Wachstumsrate bekannt, kann man die
   Verdopplungsrate berechnen und andersherum.
@@ -58,10 +58,10 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
     f(t) = c_0 dot a^t
   $
 ]
-#nfrage(n: 4)[
+#nquestion(n: 4)[
   Rechenbsp. limitierenderFaktor
 ]
-#antwort[
+#answer[
   In einem Abwasser werden gemessen: $300 " mg BSB"_5$, $60 "mg N"$, $7 "mg P"$.
 
   Was ist der limitierende Faktor für die Biomasseproduktion?
@@ -69,10 +69,10 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
   #missing[]
 ]
 
-#nfrage(n: 4)[
+#nquestion(n: 4)[
   Charakteristika des mikrobiellen Lebens (7 Charakteristika)
 ]
-#antwort[
+#answer[
   - Metabolismus
   - Wachstum/Replikation
   - Evolution
@@ -82,10 +82,10 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
   - genetischer Austausch
 ]
 
-#nfrage(n: 4)[
+#nquestion(n: 4)[
   Heißluft/Dampfsterilisationsverfahren
 ]
-#antwort[
+#answer[
   Sind physikalische Sterilisationsverfahren
 
   *Heißluftsterilisation (trockene Hitze):*
@@ -99,10 +99,10 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
   - 120°C, 2 bar, 20 Minuten
 ]
 
-#nfrage(n: 3)[
+#nquestion(n: 3)[
   Pilze: Rolle im Ökosystem und Bedeutung für den Menschen
 ]
-#antwort[
+#answer[
   - Pilze als Destruenten
   - Flechten (Algen + Pilze)
   - Mykorrhiza (Pflanzen + Pilze)
@@ -112,10 +112,10 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
     - Biotechnologie
 ]
 
-#nfrage(n: 3)[
+#nquestion(n: 3)[
   Was versteht man unter dem Yield-Koeffizienten und was sagt dieser aus?
 ]
-#antwort[
+#answer[
   Der Yield-Koeffizient (Y) oder auch Ausbeute-Koeffizient bezeichnet die Biomasseausbeute (Zuwachs an Biomasse, X) bezogen auf das verbrauchte Substrat (S)
   $
     Y = X/S
@@ -123,10 +123,10 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
 
   Der Rest (1-Y) wird zum Teil in nutzbare Energie als ATP und zum Teil in nicht nutzbare Energie (Wärme) übergeführt.
 ]
-#nfrage(n: 3)[
+#nquestion(n: 3)[
   Definition Anreicherungskultur und Reinkultur
 ]
-#antwort[
+#answer[
   *Anreicherungskultur:*
   Wachstumsbedingungen, für einen Mikroorganismus oder eine Gruppe günstiger als für andere.
 
@@ -136,10 +136,10 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
   Wachstum eines Klons von einem bestimmten Organismus unter Ausschluss jeglicher Individuen anderer Arten oder Stämme von Organismen erfordert Sicherstellung, dass die Kultur aus einer einzigen Zelle hervorgegangen ist
 ]
 
-#nfrage(n: 3)[
+#nquestion(n: 3)[
   Bedeutung von MO für die Umwelt
 ]
-#antwort[
+#answer[
   - dominante Lebensform auf Planeten
   - Evolution des Lebens vorallem mikrobiell
   - überall besiedelt, auch extrem Habitate
@@ -149,10 +149,10 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
 
 ]
 
-#nfrage(n: 3)[
+#nquestion(n: 3)[
   Mikroskopieverfahren
 ]
-#antwort[
+#answer[
   - Hellfeldmikroskopie:
     - Licht fällt durch Objekt
     - Objekt benötigt oft vorherige Einfärbung.
@@ -180,10 +180,10 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
 
 ]
 
-#nfrage(n: 3)[
+#nquestion(n: 3)[
   RGT-Regel
 ]
-#antwort[
+#answer[
   *Reaktion-Geschwindigkeit-Temperatur-Regel*
 
   Innerhalb des Toleranzbereiches gilt für die Abhängigkeit biologischer Prozesse von der
@@ -204,20 +204,20 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
   $
 ]
 
-#nfrage(n: 3)[
+#nquestion(n: 3)[
   Synergismus
 ]
-#antwort[
+#answer[
   Häufig kann ein Stoff von einer Bakterienart allein nicht vollständig abgebaut werden. Das
   Produkt kann aber von einer anderen Art weiter verwertet werden.
   Mikroorganismengemeinschaften können somit gemeinschaftlich Kontaminanten durch
   schrittweisen Teilabbau mineralisieren.
 ]
 
-#nfrage(n: 3)[
+#nquestion(n: 3)[
   Definition Infektion
 ]
-#antwort[
+#answer[
   Schädigung durch infektiösen Erreger.
   Eindringen und Vermehrung eines infektiösen Erregers (MO) in einen Wirtorganismus.
   Reaktion des Wirtes. (Kann zu einer Erkrankung führen oder nicht)
@@ -226,26 +226,26 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
   Siehe @vergleich-chemischer-und-mikrobiologischer-gefährdungen
 ]
 
-#nfrage(n: 3)[
+#nquestion(n: 3)[
   Was bedeutet Zoonose?
 ]
-#antwort[
+#answer[
   Übertragung von Erregern von Tieren auf Menschen
 ]
 
-#nfrage(n: 3)[
+#nquestion(n: 3)[
   3 Möglichkeiten wie Entstehung von Krankheitserregern erklärt werden kann.
 ]
-#antwort[
+#answer[
   - MO speziell um Mensch zu schaden
   - MO versuchen Gleichgewicht herzustellen. Bei Ungleichgewicht kommt es zur Krankheit.
   - Mensch ist zufälliger wirt des MO
 ]
 
-#nfrage(n: 3)[
+#nquestion(n: 3)[
   Kurzgeschlossener und gebrochener Nährstoffkreislauf
 ]
-#antwort[
+#answer[
   *kurzgeschlossener Nährstoffkreislauf*
   - beschreibt den Vorgang, dass Nährstoffe zu einem Großteil in der lebenden Biomasse und nicht im Boden gespeichert sind.
   - Tote Biomasse wird sofort zersetzt und zu 80 Prozent wieder aufgenommen. Die restlichen 20 Prozent gehen verloren.
@@ -256,10 +256,10 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
   - Nährstoffe speichern sich in Senken im System
 ]
 
-#nfrage(n: 3)[
+#nquestion(n: 3)[
   CSB von #ce("CH3COOH") bestimmen
 ]
-#antwort[
+#answer[
   Siehe @csb-und-redfield-stöchiometrie
 
   #ce("CH3COOH -> 2C, 4H, 2O")
@@ -270,11 +270,11 @@ Hier werden jene Fragen aufgelistet, die in den vergangenen Prüfungsterminen h�
   #sym.arrow.long $64g + 32g - 32g = 64g "CSB"$
 ]
 
-#nfrage(n: 3)[
+#nquestion(n: 3)[
   Erkläre Begriff AOC und den Zusammenhang mit Verschleimungen in Wasserleitungen. (Wiederverkeimung)
 ]
 
-#antwort[
+#answer[
   / AOC: Assimilierbarer organischer Kohlenstoff
   AOC gilt als Schlüsselparameter, um die Anzahl der Bakterien im Trinkwasser und dessen mikrobiologische Stabilität zu kontrollieren.
 

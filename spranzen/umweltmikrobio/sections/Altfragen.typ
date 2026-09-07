@@ -3,22 +3,22 @@
 = Altfragen
 <altfragen>
 
-#let antwort = antwort.with(display: true)
+#let answer = answer.with(display: true)
 
 == Altfragen von 2024
-#frage[
+#question[
   Was ist die Bedeutung von Phosphor in der Umweltmikrobiologie?
 ]
-#antwort[
+#answer[
   Phosphor ist wichtigstes wachstumslimitierendes Substrat. Es spielt eine
   zentrale Rolle beim Energiestoffwechsel (ATP) und ist Bestandteil der
   DNA und der Zellmembran. Phosphat ($P O_4^(3 -)$) ist dabei die
   relevanteste Form.
 ]
-#frage[
+#question[
   Beschreiben Sie den aeroben Abbau von aromatischen Kohlenwasserstoffen.
 ]
-#antwort[
+#answer[
   Metabolisierung in 3 Stufen, wobei das Grundmuster des aeroben abbaus
   bei monocyklischen Aromaten, Phenolen und Carbonsäuren und des letzten
   Ringes beim Abbau von PAK gleich ist.
@@ -34,30 +34,30 @@
     gespalten, die in den Stoffwechsel eingeschleust werden.
 
 ]
-#frage[
+#question[
   Was ist die Definition für #emph[Hazard] laut WHO?
 ]
-#antwort[
+#answer[
   Biologische, chemische, physikalische oder radiologische Agenzien, die
   das Potenzial haben Schaden zu verursachen. (WHO 2006)
 ]
-#frage[
+#question[
   Beschreiben Sie die Mechanismen der mikrobiellen Korrosion von Stahl.
 ]
 #missing[]
-#frage[
+#question[
   Welche sind die drei Hauptübertragungswege von Infektionserkrankungen?
 ]
-#antwort[
+#answer[
   - Person zu Person (direkt, indirekt, airborne)
   - Vehikel basierend (waterborne, foodborne, airborne, soilborne)
   - Vektor basierend (anthropods/insects)
 
 ]
-#frage[
+#question[
   Was ist $mu_(upright("max"))$ und $K_s$ in der Wachstumskinetik?
 ]
-#antwort[
+#answer[
   $K_s$ ist die Sättigungskonstante, Nährstoffkonzentration bei
   $mu = 0.5 dot.op mu_(upright("max")) quad [upright("mg") \/ upright("l")]$
   \
@@ -65,11 +65,11 @@
   Zellzahl/-masse pro Zeiteinheit ) \
   $ mu = mu_(upright("max")) frac(S, S + K_(S_(m a x))) $
 ]
-#frage[
+#question[
   Beschreiben Sie die Unterschiede zwischen kontinuierlicher Fermentation
   und Belebungsbecken?
 ]
-#antwort[
+#answer[
   #strong[Kontinuierliche Fermentation:] Ein vollständig durchmischtes
   Becken, dem kontinuierlich Abwasser (Nährlösung) zufließt. Dort wachsen
   MO die das zugeführte Substrat verbrauchen und das System wieder
@@ -85,10 +85,10 @@
   belüfteten Reaktor. In der Praxis erfolgt das durch Abtrennung der
   Biomasse im Nachklärbecken oder auch Membranfiltration.
 ]
-#frage[
+#question[
   Charakterisieren Sie die Grün Alge.
 ]
-#antwort[
+#answer[
   #strong[Grünalge:] (450 Gattungen, \>7500 Arten)
   - größte Gruppe innerhalb der Algen
   - Einzellig, auch koloniebildende Formen
@@ -100,10 +100,10 @@
   - Fortpflanzug: asexuell und sexuell
 
 ]
-#frage[
+#question[
   Beschreiben Sie die Unterschiede zwichen Katabolismus und Anabolismus.
 ]
-#antwort[
+#answer[
   #strong[Katabolismus:] Abbau von Stoffwechselprodukten von komplexen zu
   einfachen Molekülen. Energiefreisetzende (exergone) Stoffumsetzungen.
   Dient zur Energiegewinnung, Lieferung von Baustoffen und der Entgiftung.
@@ -112,10 +112,10 @@
   (endergonen) Stoffumsetzungen und gleichzeitg der aufbauenden
   Stoffwechselreaktionen.
 ]
-#frage[
+#question[
   Erklären Sie Viroid, defekte Viren und Prionen.
 ]
-#antwort[
+#answer[
   #strong[Viroide:] kurzer, zu einem Ring geschlossener RNA Einzelstrang
   (250-400 Basen). Freie DNA, keine Proteine oder Lipide. Replikation in
   Pflanzenzellen. \
@@ -128,12 +128,12 @@
   Desinfektionsmittel.
 ]
 == Altfragen Spranzen
-#fragen-counter.update(0)
+qcounter.update(0)
 
-#frage[
+#question[
   Größenordnung (in Mikrometern): Viren, Bakterien, Pilze, Algen
 ]
-#antwort[
+#answer[
   - Viren: $0,02 – 0,5mu m$
   - Bakterien: $0,2 – 5mu m$
   - Pilze (Hefe): $4 – 8mu m$
@@ -143,22 +143,22 @@
   - Amöben: $100 – 800mu m$
 
 ]
-#frage[
+#question[
   Wie kann man Mikroorganismen klassifizieren? Welche Kriterien stehen zur Verfügung und warum werden gerade diese Kriterien verwendet?
 ]
-#antwort[
+#answer[
   #missing[]
 ]
-#frage[
+#question[
   Vorkommen von Prokaryoten und Größenordnung vom Gesamtvorkommen
 ]
-#antwort[
+#answer[
   #missing[]
 ]
-#frage[
+#question[
   Grünalgen: Charakteristika und wofür werden sie genutzt?
 ]
-#antwort[
+#answer[
   - größte Gruppe der Algen
   - Einzellig, auch koloniebildende Formen
   - Lebensweise autotroph (z.T. parasitär)
@@ -168,10 +168,10 @@
   - Zellwand aussen Cellulose, innen Pektin
 
 ]
-#frage[
+#question[
   Pilze: Rolle im Ökosystem und Bedeutung für Menschen
 ]
-#antwort[
+#answer[
   - Pilze als Destruenten
   - Flechten (Algen + Pilze)
   - Mykorrhiza (Pflanzen + Pilze)
@@ -181,10 +181,10 @@
     - Biotechnologie
 
 ]
-#frage[
+#question[
   3 älteste Bakterienarten aufzählen und beschreiben
 ]
-#antwort[
+#answer[
   Alle drei Gruppen sind im Allgemeinen sehr Hitzebeständig und sind mit Archeen verwandt.
   - *Aquificae* ($>80°C$, mikroaerophil, chemolithotroph)
   - *Thermotogae* ($approx 80degree C$, anaerob, chemoorganotroph)
@@ -192,10 +192,10 @@
     Sulfatreduzierer)
 
 ]
-#frage[
+#question[
   Firmicutes beschreiben
 ]
-#antwort[
+#answer[
   Siehe auch @prokaryonten-bakterien-und-archae
   - 33 Familien, >232 Gattungen
   - Gram positiv
@@ -204,12 +204,12 @@
   - ökol., techn. und medizinisch wichtig
 
 ]
-#frage[
+#question[
   Beschreiben Sie die Eigenschaften von Archaea und Eubacteria und ihre Unterschiede.
 
   Archaea: Eigenschaften und Unterschiede zu Eubacteria
 ]
-#antwort[
+#answer[
   *Gemeinsamkeiten:*
   - Bakterien und Archeen sind 2/3 der Gruppen der MO
   - Einzeller
@@ -224,10 +224,10 @@
   - keine Pathogene Archeen bekannt (? sus)
 
 ]
-#frage[
+#question[
   Wie vermehrt sich ein Virus?
 ]
-#antwort[
+#answer[
   Siehe auch @vermehrung-von-viren
   + Anlagerung
   + Eindringen
@@ -237,21 +237,21 @@
   + Freisetzung
 
 ]
-#frage[
+#question[
   4 Arten der Vireninfektion
 ]
-#antwort[
+#answer[
   - *Lytische Infektion* Tod der Wirtszelle
   - *Persistierenden Infektion* Viren bleiben lange in der Zelle
   - *Latente Infektion* Viren präsent aber keine Symptome
   - *Transformation der Zelle* Entstehung von Tumorezellen
 
 ]
-#frage[
+#question[
   Welche Sicherheitsstufe braucht man im Umgang mit HI-Viren? Welche
   Sicherheitsvorschriften sind zu treffen?
 ]
-#antwort[
+#answer[
   *Stufe 3* Hohes Risiko für Beschäftigte, geringes Risiko für die Bevölkerung. (Organismen die über Atemwege infizieren; z.B. Bacillus anthracis, Mycobacterium tuberculosis, HIV, SARS, Tollwut)
 
   *Vorschriften:*
@@ -266,11 +266,11 @@
   - Schutzausrüstung tragen
 
 ]
-#frage[
+#question[
   Aufbau von Viren
   Warum sind Viren keine Organismen (4 Gründe)
 ]
-#antwort[
+#answer[
   Siehe @viren
   - außerhalb der Zelle Virionen genannt
   - virales Genom im Zentrum
@@ -284,10 +284,10 @@
   - keine Reizbarkeit
 
 ]
-#frage[
+#question[
   Baltimore Klassifizierung von Viren
 ]
-#antwort[
+#answer[
   Siehe @tab-baltimore in @viren.
   Unterteilung in 7 Klassen anhand des Virusgenoms.
   - Klassen 1-3 sind DNA-Viren
@@ -295,10 +295,10 @@
   Viren besitzen Nukleinsäuren in Form von DNA oder RNA. Je nachdem, ob diese einzel- oder
   doppelsträngig vorliegt und anhand ihrer Polarität werden sieben Klassen unterschieden.
 ]
-#frage[
+#question[
   Was versteht man unter dem Yield-Koeffizient und was sagt dieser aus?
 ]
-#antwort[
+#answer[
   Der Yield-Koeffizient (Y) oder auch Ausbeute-Koeffizient bezeichnet die Biomasseausbeute (Zuwachs an Biomasse, X) bezogen auf das verbrauchte Substrat (S)
   $
     Y = X/S
@@ -306,10 +306,10 @@
 
   Der Rest (1-Y) wird zum Teil in nutzbare Energie als ATP und zum Teil in nicht nutzbare Energie (Wärme) übergeführt.
 ]
-#frage[
+#question[
   Definition: Anreicherungskultur und Reinkultur
 ]
-#antwort[
+#answer[
   *Anreicherungskultur:*
   Wachstumsbedingungen, für einen Mikroorganismus oder eine Gruppe günstiger als für andere.
 
@@ -318,16 +318,16 @@
   *Reinkultur:*
   Wachstum eines Klons von einem bestimmten Organismus unter Ausschluss jeglicher Individuen anderer Arten oder Stämme von Organismen erfordert Sicherstellung, dass die Kultur aus einer einzigen Zelle hervorgegangen ist
 ]
-#frage[
+#question[
   Schritte der Anzüchtung einer Kolonie
 ]
-#antwort[
+#answer[
   #missing[#v(1cm)]
 ]
-#frage[
+#question[
   Zusammenhang: Wachstumsrate – Verdopplungszeit
 ]
-#antwort[
+#answer[
   Die Verdopplungszeit hängt von der Wachstumsrate ab. Je höher die Wachstumsrate, desto
   kürzer die Verdopplungszeit. Ist die Wachstumsrate bekannt, kann man die
   Verdopplungsrate berechnen und andersherum.
@@ -339,20 +339,20 @@
     f(t) = c_0 dot a^t
   $
 ]
-#frage[
+#question[
   Sterilisation in der Praxis
 ]
-#antwort[
+#answer[
   Sterilisation kann zu 100% nicht erreicht werden. Daher eine Reduktion vermehrungsfähigen MO um bestimmten Faktor.
   Steril bedeutet $10^(-6)$ MO pro Fläche.
   Desinfektion bedeutet eine Reduktion der MO, sodass keine Infektion mehr erfolgen kann (5 Zehnerpotenzen).
 ]
-#frage[
+#question[
   Chemische Desinfektionsverfahren
 
   Reduktionsstufen bei der Desinfektion: gibt es eine allgemein gültige Regelung?
 ]
-#antwort[
+#answer[
   Siehe @vorkommen-und-bedeutung
 
   - physikalische Verfahren
@@ -374,10 +374,10 @@
   - Desinfizieren: $10^5$
 
 ]
-#frage[
+#question[
   Heißluft/Dampfsterilisationsverfahren
 ]
-#antwort[
+#answer[
   Sind physikalische Sterilisationsverfahren
 
   *Heißluftsterilisation (trockene Hitze):*
@@ -391,10 +391,10 @@
   - 120°C, 2 bar, 20 Minuten
 
 ]
-#frage[
+#question[
   Erklären von PCR (inklusive Teilschritte)
 ]
-#antwort[
+#answer[
   *PCR-Polymerase Kettenreaktion:*
   Polymerasen sind in allen Lebewesen vorkommende Enzyme. Ihre Funktion ist notwendig für die Vermehrung der Erbinformation.
 
@@ -405,10 +405,10 @@
   - Nun hat man zwei Doppelstränge und die PCR beginnt von vorne.
 
 ]
-#frage[
+#question[
   Arten der biologischen Abbaubarkeit
 ]
-#antwort[
+#answer[
   Abbau ist ein Prozess, bei dem organische Chemikalien, durch Lebewesen oder Enzyme
   zersetzt werden.
   - *Biologisch leicht Abbaubar*
@@ -424,10 +424,10 @@
     - Primärangriff oft chemisch/physikalisch
 
 ]
-#frage[
+#question[
   Aufbau Belebtschlammflocke
 ]
-#antwort[
+#answer[
   Zusammenschluss aus:
   - MO (Bakterien, Protozoen)
   - "tote Partikel" (Detritus, anorganische Stoffe)
@@ -435,12 +435,12 @@
   - Extrazelluläre Polymere Substanzen (EPS)
 
 ]
-#frage[
+#question[
   Wodurch unterscheidet sich eine kontinuierliche Fermentation grundlegend vom
   Konzept des Belebungsverfahrens in der Abwasserreinigung? Führen Sie die
   Auswirkungen des Unterschieds kurz aus
 ]
-#antwort[
+#answer[
   #strong[Kontinuierliche Fermentation:] Ein vollständig durchmischtes
   Becken, dem kontinuierlich Abwasser (Nährlösung) zufließt. Dort wachsen
   MO die das zugeführte Substrat verbrauchen und das System wieder
@@ -456,12 +456,12 @@
   belüfteten Reaktor. In der Praxis erfolgt das durch Abtrennung der
   Biomasse im Nachklärbecken oder auch Membranfiltration.
 ]
-#frage[
+#question[
   Was sind die Unterschiede zwischen einem GAK-Filter (granulierter Aktivkohle) und
   einem BAK-Filter (biologisch aktivierte Aktivkohle). Diskutieren Sie kurz die
   Bedeutung der Unterschiede.
 ]
-#antwort[
+#answer[
   Aktivkohle kann in granulierter Form, in Pellets, in Körnern, etc. vorkommen. Aktivkohle wird bei der Abwasserreinigung und Trinkwasseraufbereitung verwendet.
 
   Aktivkohle zur Adsorption von organischer Stoffen (Organische Stoffe werden an der Oberfläche der Aktivkohle angelagert)
@@ -470,17 +470,17 @@
   / BAK: biologisch aktivierte Aktivkohle, Adsorptive und biologische Prozesse
 
 ]
-#frage[
+#question[
   Biologische Nitratreduktion in Trinkwasseraufbereitung
 ]
-#antwort[
+#answer[
   #missing[]
 ]
-#frage[
+#question[
   Beschreiben Sie kurz mittels Skizze das „Schwanenhalsexperiment“ von Pasteur.
   Was wurde damit widerlegt?
 ]
-#antwort[
+#answer[
   Pasteur goss eine nicht sterile Flüssigkeit in einen
   Kolben und dessen hals in einer Flamme zu
   einem Schwanenhals aus. Die Flüssigkeit wurde
@@ -495,10 +495,10 @@
   Flüssigkeit festgestellt werden.
   Er widerlegte damit die Urzeugertheorie.
 ]
-#frage[
+#question[
   Bedeutungen von Mikroorganismen für Umwelt
 ]
-#antwort[
+#answer[
   - dominante Lebensform auf Planeten
   - Evolution des Lebens vorallem mikrobiell
   - überall besiedelt, auch extrem Habitate
@@ -507,16 +507,16 @@
   - Pathogenität
 
 ]
-#frage[
+#question[
   4 Phasen des Wachstums von Mikroorganismen
 ]
-#antwort[
+#answer[
   Siehe @wachstum-und-wachstumskinetik
 ]
-#frage[
+#question[
   Charakteristika des mikrobiellen Lebens
 ]
-#antwort[
+#answer[
   - Metabolismus
   - Wachstum/Replikation
   - Evolution
@@ -526,19 +526,19 @@
   - genetischer Austausch
 
 ]
-#frage[
+#question[
   Anwendungsgebiete der Umweltmikrobiologie (mind. 3)
 ]
-#antwort[
+#answer[
   - Medizin (Insulin, Antibiotika)
   - Lebensmittel (Fermentation, Gährung, Pilze)
   - Industrie (Biokraftstoffe, Abwasserreinigung)
 
 ]
-#frage[
+#question[
   Arbeitsordnung mit biologischen Stoffen
 ]
-#antwort[
+#answer[
   Ermittlung der Gefahren und Meldung
   - Hygiene, Impfung, Organisationsplan (Laborordnung)
   - Vorsorge für besondere Fälle (Dekontamination, Erste Hilfe)
@@ -546,10 +546,10 @@
   - Unterweisung der Arbeitnehmer über Gefahren, Hygiene-, Schutzmaßnahmen
   - Einteilung in vier Sicherheitsstufen
 ]
-#frage[
+#question[
   Nennen sie drei gebräuchliche Mikroskopieverfahren und beschreiben sie diese
 ]
-#antwort[
+#answer[
   - Hellfeldmikroskopie:
     - Licht fällt durch Objekt
     - Objekt benötigt oft vorherige Einfärbung.
@@ -576,10 +576,10 @@
     - Oberflächen erkennbar
 
 ]
-#frage[
+#question[
   RGT-Regel
 ]
-#antwort[
+#answer[
   *Reaktion-Geschwindigkeit-Temperatur-Regel*
 
   Innerhalb des Toleranzbereiches gilt für die Abhängigkeit biologischer Prozesse von der
@@ -599,19 +599,19 @@
     tau_2 = tau_1 dot theta^(T_2 - T_1)
   $
 ]
-#frage[
+#question[
   Ökologische Nische
 ]
-#antwort[
+#answer[
   Eine ökologische Nische ist ein Raum von Umweltfaktoren, in denen Leben für einen bestimmten Organismus möglich ist.
 
   / Fundamentalnische: Nische, in der diese Art allein aufgrund ihrer physiologischen Potenz leben könnte.
   / Realnische: Teil der Fundamentalnische, der unter Berücksichtigung der konkreten aktuellen Standortfaktoren in einem bestimmten Ökosystem tatsächlich von der betreffenden Art belegt wird.
 ]
-#frage[
+#question[
   Annahmen für die Erstellung eines phylogenetischen Stammbaums
 ]
-#antwort[
+#answer[
   Die best-untersuchte DNA-Sequenz der Prokaryoten ist das Gen der 16 S-rDNA Sequenz. Die
   16 S-rDNA Sequenz hat sich in der Evolution nur sehr langsam verändert, weil die
   Proteinsynthese ein komplizierter Prozess ist. Daher ist die 16 S-RNA die ideale Zielsequenz
@@ -621,51 +621,51 @@
   korrekte Lösungen. Vorrausetzung ist die Annahme, dass Veränderungen mit konstanter
   kleiner Rate eingetreten sind.
 ]
-#frage[
+#question[
   Synergismus
 ]
-#antwort[
+#answer[
   Häufig kann ein Stoff von einer Bakterienart allein nicht vollständig abgebaut werden. Das
   Produkt kann aber von einer anderen Art weiter verwertet werden.
   Mikroorganismengemeinschaften können somit gemeinschaftlich Kontaminanten durch
   schrittweisen Teilabbau mineralisieren
 ]
-#frage[
+#question[
   Water borne/based/vektor based erklären
 ]
-#antwort[
+#answer[
   / Water borne: Infektionen, die durch verunreinigtes Wasser übertragen werden (z.B. Durchfallerkrankheiten, Typhus, Cholera)
   / Water washed: Krankheiten aufgrund mangelnder Hygiene
   / Water based: Infektionen, die durch einen im Wasser lebenden wirbellosen Organismus übertragen werden.
   / Water related vector borne: Krankheiten, die von Insekten übertragen werden, die für ihre Vermehrung auf Wasser angewiesen sind (z.B. Malaria, Dengue-Fieber)
 ]
-#frage[
+#question[
   Definition Intoxikation
 ]
-#antwort[
+#answer[
   Schädigung des betrachteten Organismus durch chemische Substanz.
   - klinische oder nicht-klinische Symptome
   - reversibel oder irreversibel
 ]
-#frage[
+#question[
   Definition Infektion
 ]
-#antwort[
+#answer[
   Eindringen und Vermehrung eines infektiösen Erregers (MO) in einen Wirtorganismus.
   Reaktion des Wirtes. (Kann zu einer Erkrankung führen oder nicht)
 
   Achtung: Infektion ist nicht gleich Infektionserkrankung
 ]
-#frage[
+#question[
   Was bedeutet Zoonose? (max. 3 Sätze)
 ]
-#antwort[
+#answer[
   Übertragung von Krankheitserregern von Tieren auf Menschen.
 ]
-#frage[
+#question[
   Wie brechen Krankheiten beim Menschen aus?
 ]
-#antwort[
+#answer[
   / Krankheit: Krankheitssymptome bei einem Wirt (klinische Symptomatik). Kann eine Folge einer Vergiftung oder Infektion sein.
   / Klinische Symptomatik: Entweder durch schädliche Aktivitäten der MO oder durch Abwehrreaktion des Wirtes.
   *Drei verschiedene Übertragungswege:*
@@ -679,36 +679,36 @@
   - Mensch ist zufälliger wirt des MO
 
 ]
-#frage[
+#question[
   Geben Sie die 3 Möglichkeiten an, wie die Entstehung von Krankheitserregern bzw.
   Pathogenität beim Menschen erklärt werden kann (max. 2 Sätze pro Möglichkeit)
 ]
-#antwort[
+#answer[
   - MO speziell um Mensch zu schaden
   - MO versuchen Gleichgewicht herzustellen. Bei Ungleichgewicht kommt es zur Krankheit.
   - Mensch ist zufälliger wirt des MO
 
 ]
-#frage[
+#question[
   Für Wasser assoziierte Krankheiten
 ]
-#antwort[
+#answer[
   - Water-borne: Infektionen, die durch verunreinigtes Wasser übertragen werden (zB. Durchfallkrankheiten, Typhus, Cholera)
   - Water-washed: Krankheiten aufgrund mangelnder Hygiene
   - Water-based: Infektionen, die durch einen im Wasser lebenden wirbellosen Organismus übertragen werden
   - Water-related vector-borne: Krankheiten, die von Insekten übertragen werden, die für ihre Vermehrung auf Wasser angewiesen sind (zB. Malaria, Japanische Enzephalitis)
 ]
-#frage[
+#question[
   Wofür werden Screening-Tests und Kläranlagen-Simulationstests eingesetzt.
   Einsatzbereich und Unterschiede
 ]
-#antwort[
+#answer[
   #missing[]
 ]
-#frage[
+#question[
   Kurzgeschlossener und gebrochener Nährstoffkreislauf
 ]
-#antwort[
+#answer[
   *kurzgeschlossener Nährstoffkreislauf*
   - beschreibt den Vorgang, dass Nährstoffe zu einem Großteil in der lebenden Biomasse und nicht im Boden gespeichert sind.
   - Tote Biomasse wird sofort zersetzt und zu 80 Prozent wieder aufgenommen. Die restlichen 20 Prozent gehen verloren.
@@ -719,13 +719,13 @@
   - Nährstoffe speichern sich in Senken im System
 
 ]
-#frage[
+#question[
   Biologischer Kohlenstoff-, Stickstoff-, Phosphor- und Schwefel-Kreislauf
   Wie stellt man das „moderne“ Bild des mikrobiellen N-Kreislaufs von Ammonium
   bis hin zum molekularen Stickstoff (N2) dar? Skizzieren und beschreiben sie die
   einzelnen Schritte
 ]
-#antwort[
+#answer[
   *Kohlenstoffkreislauf:*
   - *Assimilation*: Aufbau von Biomasse aus CO2 und Wasser. Kohlenstoff wird gebunden und Sauerstoff frei.
   - *Dissimiliation*: Abgestorbene Biomasse wird unter Energiegewinn durch MO zu CO2 veratmet.
@@ -751,10 +751,10 @@
   Ist wichtig für einige Aminosäuren. Wichtig im Energiestoffwechsel von MO.
   wird nicht elementar, sondern in Form von löslichen Mineralien aufgenommen.
 ]
-#frage[
+#question[
   Definition: Dissimilation & Assimilation
 ]
-#antwort[
+#answer[
   *Assimilation*:
 
   Aufbau von Biomasse aus CO2 und Wasser. Kohlenstoff wird gebunden und Sauerstoff frei.
@@ -767,37 +767,37 @@
   - erfolgt meistens unter Energiegewinnung
   - Kohlenstoff-, Stickstoff-, Schwefel-, Phosphat- und Mineralstoffdissimilation
 ]
-#frage[
+#question[
   Erklären Sie kurz die Begriffe Katabolismus und Anabolismus und geben Sie jeweils
   Beispiele.
 ]
-#antwort[
+#answer[
   / Katabolismus: Abbau von Stoffwechselprodukten von komplexen zu einfachen Molekülen (Energiegewinnung)
   / Anabolismus: Ist die Gesamtheit der energieverbrauchenden Stoffumsetzungen und gleichzeitg der aufbauenden Stoffwechselreaktionen (Energieverbrauch)
 ]
-#frage[
+#question[
   Was sind die wichtigsten C-Senken/Reservoirs?
 ]
-#antwort[
+#answer[
   - Karbonate der Hydrosphäre (lösliche salze der kohlensäure #ce("H2CO3"))
   - Karbonate der Lithosphäre (#ce("CaCO3"), #ce("MgCO3"), #ce("NaCO3"))
   - Karbonate der Biospähre (Muschelschalen, Korallen)
   - Sedimente der Tiefsee
   - Fossile Brennstoffe (Kohle, Erdöl, Erdgas)
 ]
-#frage[
+#question[
   Erklären von abiotisch/biotisch + Beispiel
 ]
-#antwort[
+#answer[
   Stickstofffixierung (#ce("N2 -> NH3")) kann entweder biotisch oder abiotisch stattfinden.
   / Biotisch: durch Bakterien
   / Abiotisch: durch Blitze oder Sonnenlicht
 ]
-#frage[
+#question[
   Skizzieren sie die Grundlegende Überlegung hinter der Monod Kinetik und
   diskutieren sie kurz diese Grafik
 ]
-#antwort[
+#answer[
   Die Monod-Kinetik ist ein mathematisches
   Modell der Theoretischen Biologie, das
   Vorhersagen zum Wachstum von
@@ -817,10 +817,10 @@
     ),
   )
 ]
-#frage[
+#question[
   CSB von #ce("CH3COOH") bestimmen
 ]
-#antwort[
+#answer[
   Siehe @csb-und-redfield-stöchiometrie
 
   #ce("CH3COOH -> 2C, 4H, 2O")
@@ -830,28 +830,28 @@
   #ce("2O #math.dot -16g CSB/mol C -> -32g O2")\
   #sym.arrow.long $64g + 32g - 32g = 64g "CSB"$
 ]
-#frage[
+#question[
   Definition Anammox, Deammonifikation
 ]
-#antwort[
+#answer[
   / Anammox: ist ein Akronym, welches sich zusammensetzt aus Anaerobe Ammonium-Oxidation.
   (Deammonifikation = Anammox)
 
   Ammonium (#ce("NH4")) und Nitrat (#ce("NO3")) werden anaerob zu elementraem Stcikstoff (#ce("N2")) und Wasser (#ce("H2O")) oxidiert.
 ]
-#frage[
+#question[
   Bedeutung von Phosphor für die Zelle
 ]
-#antwort[
+#answer[
   Phosphor ist wichtigstes wachstumslimitierendes Substrat. Es spielt eine
   zentrale Rolle beim Energiestoffwechsel (ATP) und ist Bestandteil der
   DNA und der Zellmembran. Phosphat ($P O_4^(3 -)$) ist dabei die
   relevanteste Form.
 ]
-#frage[
+#question[
   Beschreiben Sie den „Microbial-Loop“ am Bsp. Eines kippenden Sees
 ]
-#antwort[
+#answer[
   Die mikrobielle Schleife beschreibt einen Stoffkreislauf im Nahrungsgesetz von Plankton.
   Dabei werden organische Kohlenstoffverbindungen durch Bakterien aufgenommen und
   entlang der klassischen Nahrungskette weitergereicht. Gelöste organische Substanzen

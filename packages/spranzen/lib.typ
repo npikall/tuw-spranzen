@@ -21,14 +21,14 @@
 }
 
 // Formatting for Questions
-#let fragen-counter = counter("fragen")
-#let fcount = context fragen-counter.display()
-#let frage(
-  title: [Frage #fcount],
+#let qcounter = counter("question")
+#let fcount = context qcounter.display()
+#let question(
+  title: [Q #fcount],
   icon: gc._get-icon-for("question"),
   ..args,
 ) = {
-  fragen-counter.step()
+  qcounter.step()
   gc.clue(
     accent-color: rgb("#179299"),
     title: title,
@@ -37,28 +37,28 @@
   )
 }
 
-#let fragen-title(n: 1) = {
-  let fcount = context fragen-counter.display()
-  let title = [Frage #fcount #h(1fr) #n]
+#let question-title(n: 1) = {
+  let fcount = context qcounter.display()
+  let title = [Q #fcount #h(1fr) #n]
   return title
 }
 
 
-#let nfrage(
+#let nquestion(
   n: 1,
   icon: gc._get-icon-for("question"),
   ..args,
 ) = {
-  fragen-counter.step()
+  qcounter.step()
   gc.clue(
     accent-color: rgb("#179299"),
-    title: fragen-title(n: n),
+    title: question-title(n: n),
     icon: icon,
     ..args,
   )
 }
 
-#let antwort(display: true, body) = {
+#let answer(display: true, body) = {
   if display { body } else { hide(body) }
 }
 
@@ -85,7 +85,8 @@
     center,
     rect(width: 60%)[
       #show link: set text(font: "DejaVu Sans Mono")
-      If you want to see the source code of this document or want to contribute or raise an issue, you can find it on GitHub:
+      If you want to see the source code of this document or want to contribute or raise
+      an issue, you can find it on GitHub:
       #tiaoma.qrcode("https://github.com/npikall/tuw-spranzen")
       #link("https://github.com/npikall/tuw-spranzen")
     ],

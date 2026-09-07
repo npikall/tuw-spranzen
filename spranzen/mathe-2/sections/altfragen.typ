@@ -4,31 +4,31 @@
 
 = Altfragen von 12.10.2023
 <altfragen-von-12.10.2023>
-#frage[
+#question[
   Definieren Sie einen Vektorraum (Rechenregeln).
 
 ]
-#frage[
+#question[
   Flächen- und Oberflächenintegrale einer Kugel in Polarkoordinaten
 
 ]
-#frage[
+#question[
   Vektoren im $RR^2$ und herleiten der Paralellogramformel.
 
 ]
-#frage[
+#question[
   Differentialgleichung
 
 ]
-#frage[
+#question[
   Kreuzerlfragen zu Statistik
 
 ]
 #pagebreak()
 = Altfragen 12.01.2024
 <altfragen-12.01.2024>
-#fragen-counter.update(0)
-#frage[
+qcounter.update(0)
+#question[
   Es sei die Matrix $A = mat(delim: "(", 0, 4, 0; 1, 0, 0; 0, 0, - 1)$.
   Finden sie alle Eigenwerte und die dazugehörigen Eigenvektoren.
 ]
@@ -40,7 +40,7 @@ $
   E V (- 1) & = vec(0, 0, 1)
 $
 
-#frage[
+#question[
   Es sei $y prime.double + 9 y = cos 3 x$ gegeben. Finden Sie die
   allgemeine Lösung. Weiters finden sie die Lösung mit den Anfangswerten
   $y (0) = 0 ; quad y prime (0) = 3$
@@ -50,7 +50,7 @@ Allgemeine Lösung: $ y (x) = C_2 cos (3 x) + (C_1 + x / 6) sin (3 x) $
 Mit den Anfangswerten: $y (0) = 0 quad y prime (0) = 3$:
 $ y (x) = (x / 6 + 1) sin (3 x) $
 
-#frage[
+#question[
   Es sind folgende Integrale (Gauß’sches Fehlerintegral) gegeben:
   $
     I (a) = limits(integral.double)_(- a lt.eq x lt.eq a\
@@ -65,7 +65,7 @@ c lt.eq y lt.eq d) g (x) h (y) thin d x thin d y = integral_a^b g (x) thin d x i
 Deshalb wird aus ...
 
 
-#frage[
+#question[
   $Z = f (x , y)$
   ...???
 ]

@@ -2,7 +2,7 @@
 #import "@local/spranzen-chemie:0.1.0": *
 #import "@preview/rubber-article:0.5.2": ctable
 
-#let antwort = antwort.with(display: true)
+#let answer = answer.with(display: true)
 
 = Altfragen
 == Altfragen 12.01.2012
@@ -12,11 +12,11 @@
   it
 }
 
-#frage[
+#question[
   - Geben Sie die Elektronenkonfiguration von Phosphor (Z = 15) im Grundzustand an.
   - Welche formale Ladung (Oxidationszahl) hat Phosphor in Phosphonsäure (#ce("H3PO3"))?
 ]
-#antwort[
+#answer[
   - *Phospohor* (Z=15) #ce("1s^2 2s^2 2p^6 3s^2 3p^3")
   - *Magnesium* (Z=12) #ce("1s^2 2s^2 2p^6 3s^2")
 
@@ -84,11 +84,11 @@
     caption: "Elektronenkonfiguration mittels Merkschema",
   )
 ]
-#frage[
+#question[
   Was versteht man unter dem Begriff „Elektronegativität“? Geben Sie je zwei Beispiele für Elemente
   mit hoher und niedriger Elektronegativität.
 ]
-#antwort[
+#answer[
   Elektronegativität ist ein Maß für die *Fähigkeit* eines Atoms, in einer chemischen Bindung die
   *Bindungselektronen an sich zu ziehen*.
   - Hohe Elektronegativität
@@ -99,11 +99,11 @@
     - Natrium (Na) 0,93
 
 ]
-#frage[
+#question[
   Sie mischen 5 kg einer 40%igen Schwefelsäure mit 25 kg einer 8%igen Schwefelsäure (jeweils in
   Massenprozent). Welchen Gehalt in Massenprozent hat die so erhaltene Schwefelsäure?
 ]
-#antwort[
+#answer[
   #let sol = calc.round((0.4 * 5 + 0.08 * 25) / (5 + 25), digits: 3)
   #let sol-perc = sol * 100
   $
@@ -113,7 +113,7 @@
     x = #sol arrow.long #rect($#sol-perc %$)
   $
 ]
-#frage[
+#question[
   Wieviel g Wasserstoffgas (#ce("H2")) entstehen durch Einwirkung von Schwefelsäure (#ce("H2SO4"))
   auf 20 g Zn (Reinheit 85%)? Es entsteht als Nebenprodukt Zinksulfat (#ce("ZnSO4")).
 
@@ -123,7 +123,7 @@
   - O 16.0 g/mol
   - S 32,1 g/mol
 ]
-#antwort[
+#answer[
   // Gegeben:
   #let m_zn_rein = 0.85 * 20 // g
   #let M_zn = 65.4 // g/mol
@@ -143,12 +143,12 @@
   *Ergebnis:*
   Es entstehen #calc.round(m_h2, digits: 3) g Wasserstoffgas.
 ]
-#frage[
+#question[
   Ein Druckbehälter wird bei 298 K mit einem Gemisch von 0,25 mol/L Distickstofftetroxid (#ce("N2O4")), und 0,15 mol/L Stickstoffdioxid (#ce("NO2")) befüllt. Bei dieser Temperatur ist die
   Gleichgewichtskonstante K#sub[c] = 0,15 mol/L (Dissoziation von #ce("N2O4") zu #ce("NO2")). Geben
   Sie die Reaktionsgleichung an und berechnen Sie in welche Richtung die Reaktion verlaufen wird.
 ]
-#antwort[
+#answer[
   Reaktionsgleichung: #ce("N2O4 <=> 2 NO2")
   #let (c_no2, c_n2o4) = (0.15, 0.25)
   #let Q = calc.pow(c_no2, 2) / c_n2o4
@@ -159,10 +159,10 @@
   $
   Hinreaktion begünstigt, Reaktion verläuft nach rechts da Q < K.
 ]
-#frage[
+#question[
   Berechnen Sie den pH Wert einer 0,25 M Ammoniak Lösung (#ce("NH3")) Lösung (K#sub[B] 1,8·10 -5 ).
 ]
-#antwort[
+#answer[
   #let M_nh3 = 0.25 // mol/L
   #let Kb = 1.8e-5 // mol/L
 
@@ -207,12 +207,12 @@
   // $
 
 ]
-#frage[
+#question[
   Zink (Zn) reagiert mit konzentrierter Salpetersäure (#ce("HNO3")) zu Zinknitrat (#ce("Zn(NO3)2")),
   Stickstoffmonoxid (NO) und Wasser. Stellen Sie die Redoxgleichung nachvollziehbar
   (Halbgleichungen, Bilanzierung, usw.) auf.
 ]
-#antwort[
+#answer[
   #align(center, ce("a Zn + b HNO3 -> c Zn(NO3)2 + d NO + e H2O"))
   #set enum(numbering: "I")
   + Zn: $a = c$
@@ -242,7 +242,7 @@
   + #ce("NO3^- + 4H+ + 3e- -> NO + 2H2O")
   - $3 dot "I" + 2 dot "II" -> "Redoxgleichung"$
 ]
-#frage[
+#question[
   Geben Sie je ein Beispiel (Name und Struktur) für folgende Verbindungsklasse (je 2P):
   - Alken
   - Keton
@@ -250,7 +250,7 @@
   - Alkin
   - Halogenalkan
 ]
-#antwort[
+#answer[
   #let alken = skeletize(config: (atom-sep: 2em, angle-increment: 30deg), {
     fragment("R")
     single(angle: 1)
@@ -320,19 +320,19 @@
     [Trichloridmethan\ (Chloroform)],
   ))
 ]
-#frage[
+#question[
   Carbonsäuren und Alkohole können unter geeigneten Bedingungen eine Veresterungsreaktion eingehen.
   Beschreiben Sie diese Reaktion (inklusive der Bedingungen) an einem Beispiel.
 ]
-#antwort[
+#answer[
   Essigsäure #ce("CH3COOH") + Ethanol #ce("CH3CH2OH") #sym.arrow Essigsäureethylester #ce("CH3COOCH2CH3")+ Wasser Saures Milieu, Erhöhte Temperatur, Wasserabtransport notwendig
 ]
-#frage[
+#question[
   Erklären Sie anhand eines schematischen Energiediagrams den Begriff der „Aktivierungsenergie“.
   Welchen Einfluss hat ein Katalysator auf den Energieverlauf, die Geschwindigkeit sowie die Lage
   des Gleichgewichts der Reaktion?
 ]
-#antwort[
+#answer[
   #let xs = lq.linspace(0, 5, num: 6)
   #let ys = (0, 0, 3, 0, -4, -4)
   #figure(lq.diagram(
@@ -353,13 +353,13 @@
 ]
 
 == Altfragen 05.03.2020
-#fragen-counter.update(0)
+qcounter.update(0)
 
-#frage[
+#question[
   - Geben Sie die Elektronenkonfiguration von Phosphor (Z = 15) im Grundzustand an.
   - Welche formale Ladung (Oxidationszahl) hat Phosphor in Phosphorsäure (#ce("H3PO4"))?
 ]
-#antwort[
+#answer[
   - *Phosphor*: #ce("1s^2 2s^2 2p^6 3s^2 3p^3")
   - Oxidationszahl: (H=+I, O=-II)
   $
@@ -368,11 +368,11 @@
               &   &         &   &           x & = 5 \
   $
 ]
-#frage[
+#question[
   Was versteht man unter dem Begriff „Elektronegativität“? Geben Sie je zwei Beispiele für Elemente
   mit hoher und niedriger Elektronegativität.
 ]
-#antwort[
+#answer[
   Elektronegativität ist ein Maß für die *Fähigkeit* eines Atoms, in einer chemischen Bindung die
   *Bindungselektronen an sich zu ziehen*.
   - Hohe Elektronegativität
@@ -382,11 +382,11 @@
     - Lithium (Li) 0,98
     - Natrium (Na) 0,93
 ]
-#frage[
+#question[
   Wieviel kg 35%ige Schwefelsäure (#ce("H2SO4")) und wie viel kg 15%ige Schwefelsäure sind
   notwendig, um 600 kg einer 30%igen Schwefelsäure herzustellen?
 ]
-#antwort[
+#answer[
   $
      "(I)" quad & 0.15x + 0.35y = 0.3 dot 600 \
     "(II)" quad & x + y = 600 arrow.long y = 600 - x \
@@ -398,14 +398,14 @@
                         x & = 150 \
   $
 ]
-#frage[
+#question[
   Wie viel g #ce("NH3") entstehen durch Einwirken von #ce("NaOH") auf #qty(350, "g") #ce("(NH4)2SO4")? Es entsteht als Nebenprodukt Natriumsulfat #ce("Na2SO4") und Wasser. Molmassen:
   - N #qty(14.9, "g/mol")
   - H #qty(1.0, "g/mol")
   - O #qty(16.0, "g/mol")
   - S #qty(32.1, "g/mol")
 ]
-#antwort[
+#answer[
   #align(center, ce("(NH4)2SO4 + 2NaOH -> Na2SO4 + 2NH3 + H2O"))
   #let natsulf_M = 4 * 14.9 + 8 * 1 + 32.1 + 4 * 16
   #let nh3_M = 2 * (14.9 + 3 * 1)
@@ -420,13 +420,13 @@
     m_ce("NH3") = n_ce("(NH4)2SO4") dot qty(#nh3_M, "g/mol") = qty(#sol, "g")
   $
 ]
-#frage[
+#question[
   Ein Gemisch von jeweils #qty(0.2, "mol/L") Schwefeltrioxid (#ce("SO3")) und Sauerstoff (#ce("O2"))
   werden in einem Druckbehälter auf #qty(1000, "K") erhitzt. Bei dieser Temperatur ist die
   Gleichgewichtskonstante K#sub[c] = #qty(3.7e-3, "mol/L"). Geben Sie die Reaktionsgleichung an und
   berechnen Sie in welche Richtung die Reaktion verlaufen wird.
 ]
-#antwort[
+#answer[
   #align(center, ce("2SO3 <=> 2SO2 + O2"))
   $
     Q & = (c_#ce("SO2")^2 dot c_#ce("O2")) / c_#ce("SO3")^2 \
@@ -435,11 +435,11 @@
   $
   Reaktion läuft nach links ab, da Q > K. #h(1fr)Q.E.D
 ]
-#frage[
+#question[
   Bestimmen Sie den pH-Wert einer #qty(0.1, "M") Natriumacetat (#ce("CH3COONa")) Lösung (K#sub[a] =
   #qty("5.6e-10", "mol/L")).
 ]
-#antwort[
+#answer[
   #let ks = 5.6e-10
   #let c = 0.1
   #let pks = -calc.log(ks, base: 10)
@@ -451,14 +451,14 @@
   $
 ]
 
-#frage[
+#question[
   Silber (#ce("Ag")) reagiert mit konzentrierter Salpetersäure (#ce("HNO3")) zu Silbernitrat (#ce("AgNO3")), Stickstoffmonoxid (#ce("NO")) und Wasser. Stellen Sie die Redoxgleichung auf!
 ]
 #missing[Lösung mit lin Glg.sys. nicht wirklich machbar!!!]
-#frage[
+#question[
   Woraus bestehen Fette und welche großtechnischen Anwendungen gibt es?
 ]
-#antwort[
+#answer[
   Fette sind Ester des dreiwertigen Alkohols Glycerin mit 3, meist verschiedenen, überwiegend
   geradzahligen und unverzweigten alphatischen Monocarbonsäuren (Fettsäuren).
 
@@ -475,10 +475,10 @@
   - Pharmaindustrie:
     - Lipidbasierte Trägersysteme (z. B. Liposomen)
 ]
-#frage[
+#question[
   Zeichnen Sie die allgemeine Struktur einer Aminosäure. Was bauen Aminosäuren auf?
 ]
-#antwort[
+#answer[
   #figure(
     skeletize({
       fragment("N")
@@ -532,10 +532,10 @@
     - durch Peptidbindung zwischen –COOH der einen und #ce("NH2") der anderen Aminosäure
     - lineare Ketten = Peptide, lange Ketten = Proteine
 ]
-#frage[
+#question[
   Erklären Sie warum Naturstoffe in der chemischen Industrie von großem Interesse sind.
 ]
-#antwort[
+#answer[
   - Naturstoffe = bioaktive Moleküle natürlichen Ursprungs
     - oft komplexe, funktionalisierte Moleküle mit spezifischer Wirkung
   - Hohe strukturelle Diversität
@@ -554,30 +554,30 @@
     - Fermentation, Enzymkatalyse, Metabolic Engineering
 ]
 == Altfragen 04.02.2021
-#fragen-counter.update(0)
-#frage[
+qcounter.update(0)
+#question[
   - Geben Sie die Elektronenkonfiguration von #ce("Mg^2+") (Z = 12) an.
   - Welche formale Ladung (Oxidationszahl) hat Chlor in Chloriger Säure (#ce("HClO2"))?
 ]
-#antwort[
+#answer[
   - #ce("1s^2 2s^2 2p^6")
   - Oxidationszahl: Cl = +III
 ]
-#frage[
+#question[
   Was versteht man unter dem Begriff _Ionisierungsenergie_ und _Elektronenaffinität_?
 ]
-#antwort[
+#answer[
   - *Ionisierungsenergie*: Energie, die benötigt wird, um ein Elektron aus dem äußersten besetzten
     Orbital eines gasförmigen Atoms zu entfernen.
   - *Elektronenaffinität*: Energieänderung, die durch Besetzung des niedrigsten unbesetzten Orbitals
     in einem freien Atom durch ein Elektron resultiert.
 ]
-#frage[
+#question[
   Aus #qty(20, "kg") konzentrierter Salzsäure ($"w" = 32%$) soll verdünnte Salzsäure ($"w" = 5%$)
   hergestellt werden. Wieviel Wasser muss zugegeben werden und welche Menge an verdünnter Salzsäure
   wird dadurch erhalten?
 ]
-#antwort[
+#answer[
   $
     "I": 20"kg" + x "kg" = y "kg"\
     "II": 0.32 dot 20 + 0x + 0.05y\
@@ -585,7 +585,7 @@
     x = 128 - 20 = #rect[$108 "kg"$]
   $
 ]
-#frage[
+#question[
   Welches Volumen an gasförmigem Ammoniak (#ce("NH3")) entsteht durch Einwirkung von Natriumhydroxid
   (#ce("NaOH")) auf #qty(25, "g") Ammoniumchlorid (#ce("NH4Cl")) unter Standardbedingungen (#qty(
     1013,
@@ -599,7 +599,7 @@
   - N #qty(14.0, "g/mol")
   - R #qty(8.314, "J/K/mol")
 ]
-#antwort[
+#answer[
   Lin. Glg.system zum ist hier nicht notwendig, da alle Koeffizienten 1 sind.
   #align(center, ce("1 NH4Cl + 1 NaOH -> 1 NH3 + 1 NaCl + 1 H2O"))
   #let M_nh4cl = 1 * 14 + 4 * 1 + 1 * 35.5
@@ -629,11 +629,11 @@
     ]
   ]))
 ]
-#frage[
+#question[
   Gasförmiges Brommonochlorid zerfällt zu Brom und Chlor. Bei 500 K ist K#sub[c] = 32. Zu Beginn der
   Reaktion ist BrCl mit einer Konzentration von 5 mM vorhanden. Welche Konzentrationen an #ce("BrCI"), #ce("Br2") und #ce("Cl2") liegen im Gleichgewicht vor?
 ]
-#antwort[
+#answer[
   #align(center, ce("2 BrCl <=> Br2 + Cl2"))
   $ K_c = (["Br"_2] dot ["Cl"_2] )/(["BrCl"]^2) = 32 $
   $
@@ -646,29 +646,29 @@
     #rect[$x approx 0.0022969...$]
   $
 ]
-#frage[
+#question[
   Ein Liter eines Acetat-Puffers wird aus 1 mol Essigsäure und 2 mol Natriumacetat hergestellt
   (Essigsäure: pK#sub[A] = 4.75). Welchen pH-Wert hat der Puffer vor sowie nach der Zugabe von 0.5
   mol #ce("HCl")?
 ]
-#antwort[
+#answer[
   #missing[]
 ]
-#frage[
+#question[
   Dichromat (#ce("Cr2O7^2-")) reagiert mit Sulfit-Ionen (#ce("SO3^2-")) in schwefelsaurer Lösung zu
   #ce("Cr^3+") und Sulfat-Ionen (#ce("SO4^2-")). Stellen Sie die Redoxgleichung nachvollziehbar
   (Halbgleichungen, Bilanzierung, usw.) auf.
 ]
-#antwort[
+#answer[
   #align(center, ce("Cr2O7^2- + 7 SO3^-2 => 2Cr^3+ + 7 SO4^2-"))
   - Reduktion: #ce("Cr2^2+ => Cr^3+ + e^1-")
   - Oxidation: #ce("SO3 => ...") #text(red)[MISSING]
 ]
-#frage[
+#question[
   Beschreiben Sie die Standardwasserstoffelektrode und erklären Sie die Begriffe _edles Metall_ und
   _unedles Metall_.
 ]
-#antwort[
+#answer[
   Die Standardwasserstoffelektrode dient als Bezugselektrode für die Messung von
   Elektrodenpotential.
   #align(center, ce("2H^+ + 2e^- => H2"))
@@ -676,22 +676,22 @@
   - Edles Metall: schlecht oxidierbar, positives Standardpotential
   - Unedles Metall: gut oxidierbar, negatives Standardpotential
 ]
-#frage[
+#question[
   Stellen Sie die Halbgleichung für die Reduktion von Hypochlorit (#ce("ClO^-")) zu Chlor (#ce("Cl2")) auf und berechnen Sie das Potential des Redoxpaares ($"E"_0 = +1.63 "V"$) bei pH 3 und
   $25 degree "C"$, wenn #ce("c(ClO^-)") = #qty(0.1, "mol/L") und #ce("c(Cl2)") = #qty(1, "mol/L").
 ]
-#antwort[
+#answer[
   $
     E = E_0 + 0.059/n log(c_"ox"/c_"red")\
   $
   #missing[]
 ]
-#frage[
+#question[
   Erklären Sie die strukturellen Unterschiede zwischen Alkoholen, Aldehyden und Carbonsäuren und
   nennen Sie je ein relevantes Beispiel (_relevant_ in Bezug auf Anwendung, Bedeutung oder
   Vorkommen).
 ]
-#antwort[
+#answer[
   #let alkohol = box(skeletize(
     config: (angle-increment: 30deg, atom-sep: 2em),
     {
@@ -732,23 +732,23 @@
 ]
 
 == Testprüfung
-#fragen-counter.update(0)
-#frage[
+qcounter.update(0)
+#question[
   - Geben Sie die Elektronenkonfiguration von Kalium (Z = 19) im Grundzustand an.
   - In welcher Ladung liegt Kalium üblicherweise vor?
 ]
-#antwort[
+#answer[
   - *Kalium*: #ce("1s^2 2s^2 2p^6 3s^2 3p^6 4s^1")
   - Oxidationszahl: K=+I
 ]
-#frage[
+#question[
   Eine Verbrennungsanalyse von Vitamin C ergibt eine Zusammensetzung von 40.9% C, 4.57% H und 54.5%
   O. Bestimmen Sie die Summenformel von Vitamin C (M(O) = #qty(16.0, "g/mol"), M(C) = #qty(
     12.0,
     "g/mol",
   ), M(H) = #qty(1.0, "g/mol")).
 ]
-#antwort[
+#answer[
   #let mol_c = calc.round(40.9 / 12, digits: 3)
   #let mol_h = calc.round(4.57 / 1, digits: 3)
   #let mol_o = calc.round(54.5 / 16, digits: 3)
@@ -785,11 +785,11 @@
   )
   #align(center, ce("C6H8O6"))
 ]
-#frage[
+#question[
   Aus #qty(15, "kg") 65%iger Schwefelsäure (#ce("H2SO4")) soll eine 2%ige gemacht werden. Wieviel
   Wasser muss man zugeben?
 ]
-#antwort[
+#answer[
   $
     0.65 dot 15 + 0y & = 0.02 dot (15+y) \
                 9.75 & = 0.02dot 15 + 0.02y \
@@ -799,14 +799,14 @@
                    y & = 472.5 \
   $
 ]
-#frage[
+#question[
   Metallisches Eisen reagiert mit Salzsäure unter Wasserstoffentwicklung zu Eisen(II)-chlorid.
   Welche Masse an Eisen muss in Salzsäure gelöst werden, um unter Normalbedingungen #qty(10, "L")
   Wasserstoff zu entwickeln? M(Fe) = #qty(55.8, "g/mol")
 
   #align(center, ce("Fe + 2HCl -> FeCl2 + H2"))
 ]
-#antwort[
+#answer[
   $
          n & = (x "g") / (qty("55.8", "g/mol")) \
          n & = (p dot V)/(R dot T) \
@@ -814,14 +814,14 @@
     m_"Fe" & = n dot M = 6.09 dot 55.8 approx 0.339 "kg"
   $
 ]
-#frage[
+#question[
   Ein Behälter wird mit Stickstoff und Wasserstoff in den Konzentrationen #qty(0.6, "g/mol") bzw.
   #qty(0.8, "g/mol") befüllt. Im Gleichgewicht findet man eine Ammoniak Konzentration vom #qty(
     0.2,
     "g/mol",
   ). Berechnen Sie die Gleichgewichtskonstante K#sub[c]!
 ]
-#antwort[
+#answer[
   #align(center, ce("N + 3H <=> NH3"))
   #let Kc = calc.round(0.2 / (0.6 * 0.8), digits: 3)
   $
@@ -830,24 +830,24 @@
   $
   #missing[]
 ]
-#frage[
+#question[
   Ein Liter eines Acetat-Puffers wird aus 1 mol Essigsäure und 1 mol Natriumacetat hergestellt
   (Essigsäure: pK#sub[A] = 4.75). Welchen pH-Wert hat der Puffer, wenn außerdem noch 0.1 mol HCl
   zugefügt werden?
 ]
-#antwort[
+#answer[
   #missing[]
 ]
-#frage[
+#question[
   Kaliumpermanganat (#ce("KMnO4")) reagiert in salzsaurer Lösung mit Eisen-(II)-chlorid zu #ce("MnCl2"). Stellen Sie die Redoxgleichung auf.
 ]
-#antwort[
+#answer[
   #align(center, ce("2 KMnO4 + 8 FeCl2 => 2 MnCl2 + 2 KCl + 8FeO + 5Cl2"))
   #set enum(numbering: "I")
   + #ce("Mn^+7 => Mn^+2 + 5e^-") _Oxidation_
   + #text(red)[MISSING!!]
 ]
-#frage[
+#question[
   Wie lautet der korrekte Name (IUPAC) zu den folgenden Verbindungen? Um welche funktionelle Gruppen
   handelt es sich?
 
@@ -878,26 +878,26 @@
   }))
   #h(1fr)
 ]
-#antwort[
+#answer[
   + 1-Brom-2Chlorethen
   + 2-Oxid-Cyclohexanol ???
 ]
-#frage[
+#question[
   Wo kommt Lignocellulose vor und aus welchen Komponenten besteht sie? Beschreiben Sie den Aufbau
   von Cellulose auf molekularer Ebene.
 ]
-#antwort[
+#answer[
   *Lignocellulose*:
 
   Bildet die Zellwand von Pflanzen (Stützgerüst). Beispiel Holz. Besteht aus _Cellulose_,
   _Hemizellulose_ und _Lignin_.
   #missing[]
 ]
-#frage[
+#question[
   Beschreiben Sie das Konzept eines Katalysators (Definition, Energieschema). Wie läuft der
   Haber-Bosch Prozesses zur Synthese von Ammoniak ab und warum wird ein Katalysator gebraucht?
 ]
-#antwort[
+#answer[
   Ein Katalysator setzt die Aktivierungsenergie herab und beschleunigt die Reaktion.
 
   #ce("N2 + 3 H2 <=> 2 NH3")
