@@ -6,6 +6,12 @@ gotpm := require("gotpm")
 typst := require("typst")
 uv := require("uv")
 
+alias c := compile
+alias ca := compile-all
+alias q := check
+alias ia := install-all
+alias ua := uninstall-all
+
 # compile a typst document
 compile arg:
     typst compile --creation-timestamp=0 "spranzen/{{ kebabcase(arg) }}/main.typ" "spranzen/{{ kebabcase(arg) }}/{{ kebabcase(arg) }}.pdf"
@@ -55,4 +61,4 @@ new name:
 
 # Update the package versions in the template
 @update:
-    uv run ci/latest_version.py
+    gotpm update . -r
