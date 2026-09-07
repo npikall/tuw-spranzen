@@ -2,10 +2,6 @@
 _default:
     @just --list
 
-gotpm := require("gotpm")
-typst := require("typst")
-uv := require("uv")
-
 alias c := compile
 alias ca := compile-all
 alias q := check
