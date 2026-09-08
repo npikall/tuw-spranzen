@@ -44,7 +44,7 @@ jobs:
           mkdir -p dist
           for doc in spranzen/*/; do
             name=$(basename "$doc")
-            typst compile --creation-timestamp=0 "$doc/main.typ" "dist/$name.pdf"
+            typst compile "$doc/main.typ" "dist/$name.pdf"
           done
 
       - name: Publish release
