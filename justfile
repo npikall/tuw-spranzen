@@ -4,6 +4,7 @@ _default:
 
 alias c := compile
 alias ca := compile-all
+alias cp := compile-parallel
 alias q := check
 alias ia := install-all
 alias ua := uninstall-all
@@ -12,6 +13,10 @@ alias r := release
 # compile a typst document
 compile arg:
     typst compile "spranzen/{{ kebabcase(arg) }}/main.typ" "spranzen/{{ kebabcase(arg) }}/{{ kebabcase(arg) }}.pdf"
+
+# compile all documents in parallel
+compile-parallel *args:
+    parallel --line-buffer 'echo -e "{{ GREEN }}{{ BOLD }}Compiling{{ NORMAL }}: {}"; typst compile {}/main.typ {}/$(basename {}).pdf {{ args }}' ::: spranzen/*
 
 # compile all documents
 compile-all *args:
