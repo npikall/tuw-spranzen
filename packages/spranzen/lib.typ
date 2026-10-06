@@ -93,6 +93,31 @@
   )
 ]
 
+// AI Disclaimer, place right below the title
+#let ai-disclaimer = {
+  let accent = rgb("#d97706")
+  block(
+    width: 100%,
+    inset: (x: 1em, y: .8em),
+    radius: (right: 4pt),
+    fill: rgb("#fef3c7"),
+    stroke: (left: 3pt + accent),
+    above: 1.5em,
+    below: 2em,
+    grid(
+      columns: (auto, 1fr),
+      column-gutter: .9em,
+      align: horizon,
+      text(size: 1.8em, fill: accent)[⚠],
+      text(size: .9em)[
+        #text(fill: accent, weight: "bold")[AI Disclaimer] \
+        AI has been used in the creation of this document. Treat its content with care
+        and verify important statements.
+      ],
+    ),
+  )
+}
+
 // Color Palette
 #let colors = (
   aqua,
