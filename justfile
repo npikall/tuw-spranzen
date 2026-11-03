@@ -12,11 +12,11 @@ alias r := release
 
 # compile a typst document
 compile arg:
-    typst compile "spranzen/{{ kebabcase(arg) }}/main.typ" "spranzen/{{ kebabcase(arg) }}/{{ kebabcase(arg) }}.pdf"
+    gotpm run compile "spranzen/{{ kebabcase(arg) }}/main.typ" "spranzen/{{ kebabcase(arg) }}/{{ kebabcase(arg) }}.pdf"
 
 # compile all documents in parallel
 compile-parallel *args:
-    parallel --line-buffer 'echo -e "{{ GREEN }}{{ BOLD }}Compiling{{ NORMAL }}: {}"; typst compile {}/main.typ {}/$(basename {}).pdf {{ args }}' ::: spranzen/*
+    parallel --line-buffer 'echo -e "{{ GREEN }}{{ BOLD }}Compiling{{ NORMAL }}: {}"; gotpm run compile {}/main.typ {}/$(basename {}).pdf {{ args }}' ::: spranzen/*
 
 # compile all documents
 compile-all *args:
@@ -24,7 +24,7 @@ compile-all *args:
     set -euo pipefail
     for doc in spranzen/* ; do \
         echo "{{ GREEN }}{{ BOLD }}Compiling{{ NORMAL }}:" $doc ; \
-        typst compile $doc/main.typ $doc/$(basename $doc).pdf {{ args }} ; \
+        gotpm run compile $doc/main.typ $doc/$(basename $doc).pdf {{ args }} ; \
     done
 
 # check the compileability of all documents
@@ -76,9 +76,9 @@ new name:
     uv run scripts/new_document.py "{{ kebabcase(name) }}"
 
 # use typst to watch a document
-@watch name:
-    typst watch spranzen/{{ name }}/main.typ spranzen/{{ name }}/{{ name }}.pdf
+watch name:
+    gotpm run watch spranzen/{{ name }}/main.typ spranzen/{{ name }}/{{ name }}.pdf
 
 # Update the package versions in the template
-@update:
+update:
     gotpm update . -r
