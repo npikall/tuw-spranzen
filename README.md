@@ -1,60 +1,30 @@
 # TU Wien - Spranzen
 
-This repository is a collection of so called "Spranzen", which are study notes
-for the courses of Environmental Engineering at the TU Wien.
-The notes are written in German and `typst` is used as the main tool.
+"Spranzen" are study notes for the Environmental Engineering courses at TU Wien,
+written in German with [Typst][typst].
 
-## Contributions
+## Contributing
 
-In order to contribute to this repository, please open a Pull Request
-or open an issue.
+Open an issue or a Pull Request.
 
-As the content is exclusively written in `typst`, please make sure to
-install the `typst` compiler. Depending on your system, you can install it by running:
+You need [Typst][typst], [just][just] and [uv][uv]. See
+[packages](packages/README.md) for the local packages.
 
-- Linux:
-  - View [Typst on Repology][repology]
-  - View [Typst's Snap][snap]
-- macOS: `brew install typst`
-- Windows: `winget install --id Typst.Typst`
-
-- If you have a [Rust][rust] toolchain installed, you can install the latest released Typst version with `cargo install --locked typst-cli`
-
-If you would like to add new content consider using
+Create a new document with:
 
 ```bash
 just new <name>
 ```
 
-This will create a new folder with the name `<name>` and the template files.
-To install the `just` command runner read the [developing](#developing) section.
-
-## Developing
-
-For developing purposes, you can use the `pre-commit` hooks by running
-
-```bash
-uv tool install prek
-prek install
-```
-
-This will ensure that the Typst documents are formatted correctly.
-
-To install the `just` command runner, run
-
-```bash
-uv tool install rust-just
-```
-
-If you are not using a Debian system, please refer to the [just repository](https://github.com/casey/just).
+To format documents on commit, install [prek][prek] and run `prek install`.
 
 ## Releasing
 
-Versions follow [CalVer](https://calver.org/) (`vYYYY.MM.MICRO`, e.g. `v2026.9.0`).
-Pushing a tag matching `v*` triggers the `release` workflow, which compiles every
-document under `spranzen/` and attaches the resulting PDFs to a GitHub Release
-for that tag.
+Versions follow [CalVer](https://calver.org/) (`vYYYY.MM.MICRO`, e.g.
+`v2026.9.0`). Pushing a `v*` tag compiles every document under `spranzen/` and
+attaches the PDFs to a GitHub Release.
 
-[repology]: https://repology.org/project/typst/versions
-[snap]: https://snapcraft.io/typst
-[rust]: https://rustup.rs/
+[typst]: https://github.com/typst/typst#installation
+[just]: https://github.com/casey/just#installation
+[uv]: https://docs.astral.sh/uv/getting-started/installation/
+[prek]: https://github.com/j178/prek#installation
