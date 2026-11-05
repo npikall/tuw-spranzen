@@ -18,12 +18,12 @@ jobs:
           persist-credentials: false
 
       - name: Install Typst
-        uses: typst-community/setup-typst@727aeceb08573f1484fc2a486fd01c0df0a012a1 # v5.3.0b2
+        uses: typst-community/setup-typst@6a2cfaf0b28d636b00148f965e315bae81079aaa # v5.3.1
         with:
           typst-version: "^0.15.0"
 
       - name: Install Just
-        uses: taiki-e/install-action@bfbe8c64296994e99e2f3046bfb4983ab5b04fa9 # zola
+        uses: taiki-e/install-action@c509219cf42fba86913069efd0ade2458c59337b # v2.90.1
         with:
           tool: just
 
