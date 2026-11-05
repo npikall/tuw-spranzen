@@ -7,8 +7,8 @@ written in German with [Typst][typst].
 
 Open an issue or a Pull Request.
 
-You need [Typst][typst], [just][just] and [uv][uv]. See
-[packages](packages/README.md) for the local packages.
+You need [Typst][typst], [gotpm][gotpm], [just][just] and [uv][uv]. The
+local packages are installed with gotpm; see [packages](packages/README.md).
 
 Create a new document with:
 
@@ -25,6 +25,7 @@ Versions follow [CalVer](https://calver.org/) (`vYYYY.MM.MICRO`, e.g.
 attaches the PDFs to a GitHub Release.
 
 [typst]: https://github.com/typst/typst#installation
+[gotpm]: https://github.com/npikall/gotpm
 [just]: https://github.com/casey/just#installation
 [uv]: https://docs.astral.sh/uv/getting-started/installation/
 [prek]: https://github.com/j178/prek#installation
