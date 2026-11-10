@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spranzen lernen</title>
+  <link rel="stylesheet" href="/static/app.css">
+</head>
+<body class="page-index">
+  <main class="index">
+    <h1>Spranzen lernen</h1>
+    {{if .Subjects}}
+    <ul class="subjects">
+      {{range .Subjects}}
+      <li><a href="/s/{{.Slug}}"><span class="subject-title">{{.Title}}</span><span class="subject-slug">{{.Slug}}</span></a></li>
+      {{end}}
+    </ul>
+    {{else}}
+    <p class="empty">Keine <code>spranzen/&lt;fach&gt;/study.typ</code> gefunden.</p>
+    {{end}}
+  </main>
+</body>
+</html>
