@@ -82,3 +82,7 @@ watch name:
 # Update the package versions in the template
 update:
     gotpm update . -r
+
+# start the local study web app (optionally open a subject directly)
+study fach="":
+    cd tools/server && go run . -root ../.. {{ if fach == "" { "" } else { quote(kebabcase(fach)) } }}

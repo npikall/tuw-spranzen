@@ -20,8 +20,19 @@
   )
 }
 
+// Content shown in the PDF only, e.g. exam intro text that the study app
+// (tools/server, HTML export) should not show.
+#let pdf-only(body) = context if target() != "html" { body }
+
 // Formatting for Questions
 #let qcounter = counter("question")
+
+// HTML export: plain marked-up question for the study app (tools/server)
+#let html-question(args, n: none) = {
+  let attrs = (class: "q")
+  if type(n) in (str, int, float) { attrs.insert("data-n", str(n)) }
+  html.elem("section", attrs: attrs, args.pos().join())
+}
 #let fcount = context qcounter.display()
 #let question(
   title: [Q #fcount],
@@ -29,12 +40,16 @@
   ..args,
 ) = {
   qcounter.step()
-  gc.clue(
-    accent-color: rgb("#179299"),
-    title: title,
-    icon: icon,
-    ..args,
-  )
+  context if target() == "html" {
+    html-question(args)
+  } else {
+    gc.clue(
+      accent-color: rgb("#179299"),
+      title: title,
+      icon: icon,
+      ..args,
+    )
+  }
 }
 
 #let question-title(n: 1) = {
@@ -50,16 +65,23 @@
   ..args,
 ) = {
   qcounter.step()
-  gc.clue(
-    accent-color: rgb("#179299"),
-    title: question-title(n: n),
-    icon: icon,
-    ..args,
-  )
+  context if target() == "html" {
+    html-question(args, n: n)
+  } else {
+    gc.clue(
+      accent-color: rgb("#179299"),
+      title: question-title(n: n),
+      icon: icon,
+      ..args,
+    )
+  }
 }
 
-#let answer(display: true, body) = {
-  if display { body } else { hide(body) }
+// In HTML export the answer is always emitted; the study app handles hiding.
+#let answer(display: true, body) = context {
+  if target() == "html" {
+    html.elem("div", attrs: (class: "a"), body)
+  } else if display { body } else { hide(body) }
 }
 
 #let diagram-style = (

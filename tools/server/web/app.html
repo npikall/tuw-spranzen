@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{.Study.Title}}</title>
+  <style>{{.Study.Style}}</style>
+  <link rel="stylesheet" href="/static/app.css">
+</head>
+<body class="page-app mode-cards" data-slug="{{.Subject.Slug}}">
+  <header class="bar">
+    <div class="bar-title">
+      <a href="/" class="back" title="Übersicht">←</a>
+      <h1>{{.Study.Title}}</h1>
+      <span class="stats" id="stats"></span>
+    </div>
+    <div class="bar-controls">
+      <div class="seg" role="group" aria-label="Modus">
+        <button data-mode="cards">Karten</button>
+        <button data-mode="list">Liste</button>
+      </div>
+      {{if gt (len .Study.Groups) 1}}
+      <select id="group" aria-label="Abschnitt">
+        <option value="*">Alle Abschnitte</option>
+        {{range .Study.Groups}}<option value="{{.}}">{{if .}}{{.}}{{else}}(ohne Überschrift){{end}}</option>{{end}}
+      </select>
+      {{end}}
+      <select id="filter" aria-label="Filter">
+        <option value="all">Alle Fragen</option>
+        <option value="bad">Nicht gewusst</option>
+        <option value="unrated">Unbewertet</option>
+        <option value="notok">Nicht gewusst + unbewertet</option>
+      </select>
+      <select id="sort" aria-label="Reihenfolge">
+        <option value="order">Reihenfolge</option>
+        <option value="shuffle">Zufällig</option>
+        <option value="freq">Häufigkeit</option>
+      </select>
+      <button id="reveal-all" class="list-only">Alle Antworten</button>
+      <button id="reset" title="Bewertungen löschen">Zurücksetzen</button>
+    </div>
+  </header>
+
+  <main id="deck">
+    {{range .Study.Questions}}
+    <article class="card" data-id="{{.ID}}" data-group="{{.Group}}" data-n="{{.N}}" data-num="{{.Num}}">
+      <header class="card-head">
+        <span class="card-num">Q {{.Num}}</span>
+        {{if .Group}}<span class="card-group">{{.Group}}</span>{{end}}
+        {{if .N}}<span class="badge" title="So oft gefragt">{{.N}}×</span>{{end}}
+        <span class="rating-state"></span>
+      </header>
+      <div class="q-body">{{.Q}}</div>
+      {{if .HasAnswer}}
+      <button class="reveal">Antwort zeigen</button>
+      <div class="a-body">{{.A}}</div>
+      {{else}}
+      <p class="no-answer">Keine Antwort hinterlegt.</p>
+      {{end}}
+      <footer class="rate">
+        <button class="ok" data-rate="ok">✓ Gewusst</button>
+        <button class="bad" data-rate="bad">✗ Nicht gewusst</button>
+      </footer>
+    </article>
+    {{end}}
+    <p class="empty" id="empty" hidden>Keine Fragen für diesen Filter.</p>
+  </main>
+
+  <nav class="pager cards-only">
+    <button id="prev" title="Zurück (←)">←</button>
+    <span id="pos"></span>
+    <button id="next" title="Weiter (→)">→</button>
+    <span class="hint">Leertaste: Antwort · 1: gewusst · 2: nicht gewusst</span>
+  </nav>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
